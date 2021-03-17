@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mi blog estático</title>
+    <link>https://danielzamo.github.io/</link>
+    <description>Recent content on Mi blog estático</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 22 Feb 2021 02:13:50 +0000</lastBuildDate><atom:link href="https://danielzamo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker: Wordpress &#43; Mysql</title>
+      <link>https://danielzamo.github.io/docker-wordpress/</link>
+      <pubDate>Mon, 22 Feb 2021 02:13:50 +0000</pubDate>
+      
+      <guid>https://danielzamo.github.io/docker-wordpress/</guid>
+      <description>Contenedor Docker con dos servicios: Wodpress y Mysql. Para pruebas y desarrollo.
+Referencias  WORDPRESS Y MYSQL con DOCKER COMPOSE, por el Pelado Nerd.  </description>
+    </item>
+    
+    <item>
+      <title>Compilando Openssl con soporte fips</title>
+      <link>https://danielzamo.github.io/openssl-compilando-rhel6-fips/</link>
+      <pubDate>Sun, 21 Feb 2021 01:24:42 +0100</pubDate>
+      
+      <guid>https://danielzamo.github.io/openssl-compilando-rhel6-fips/</guid>
+      <description>Compilación sobre RHEL 6: openssl + fips En este artículo se compila openssl-1.0.2u con soporte del modulo openssl-fips-2.0.16 en sobre un RHEL Server release 6.3 (Santiago). Debería ser valido para sus derivados (CentOS, Nethserver, Scientific Linux, etc. En la misma versión).
+Compilación de openssl + fips  Condiciones cumplidas
+ Distribución: RHEL 6 Versión de openssl fuente: openssl-1.0.2u ( fichero ya ubicado en /usr/local/src/openssl-1.0.2u.tar.gz) Versión modulo fips: openssl-fips-2.0.16 ( fichero ya ubicado en /usr/local/src/openssl-fips-2.</description>
+    </item>
+    
+    <item>
+      <title>Openssl sobre RHEL5 - Perl</title>
+      <link>https://danielzamo.github.io/openssl-compilando-rhel5-perl/</link>
+      <pubDate>Sat, 28 Sep 2019 02:13:50 +0000</pubDate>
+      
+      <guid>https://danielzamo.github.io/openssl-compilando-rhel5-perl/</guid>
+      <description>Compilando openssl sobre RHEL5, con Perl actual Este post expone como cmpilar openssl en una distribución Linux. Previamente se compilando e instala Perl.
+Supuestos iniciales  Los siguientes son supuestos cumplidos inicialmente. Estos son:
+   Las tareas realizadas son ejecutadas sobre una distribucón de Linux basado en Red Hat Enterprise Linux 5 (RHEL 5). Pero estas mismas deberían de funcionar ajustando apropiadamente. La descarga e instalación de los soft se realizara desde el PATH=/usr/local/usr   Compilar e instalar Perl cd /usr/local/src wget https://www.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://danielzamo.github.io/page/about/</link>
+      <pubDate>Fri, 03 Apr 2015 02:13:50 +0000</pubDate>
+      
+      <guid>https://danielzamo.github.io/page/about/</guid>
+      <description>About Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec dolor in magna lobortis egestas. Suspendisse eu erat tempor, tristique neque eu, convallis nulla. Curabitur vel bibendum lacus, at semper mauris. Suspendisse aliquet commodo ex, sed sagittis metus aliquam id. Maecenas feugiat rutrum lorem vel imperdiet. Nullam ornare lectus ut enim finibus, et porttitor mi tincidunt. Aenean lacinia, leo quis vehicula eleifend, quam libero sagittis erat, at euismod augue mauris et sapien.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://danielzamo.github.io/page/contact/</link>
+      <pubDate>Fri, 03 Apr 2015 02:13:50 +0000</pubDate>
+      
+      <guid>https://danielzamo.github.io/page/contact/</guid>
+      <description>Contact Aenean ipsum justo, semper eu nisl ut, pretium tincidunt sem. Praesent et diam sit amet lacus lobortis dictum a id lacus. Quisque hendrerit sit amet turpis eu varius. Ut id lorem ac felis ultrices tincidunt. Pellentesque consequat arcu ac fringilla imperdiet. Phasellus pellentesque, sapien non pulvinar blandit, sapien ante aliquet felis, vel porttitor sapien ante in lacus. Fusce non urna aliquet, malesuada nibh vel, luctus urna. Phasellus ut lacus molestie, varius purus quis, malesuada lorem.</description>
+    </item>
+    
+    <item>
+      <title>(Hu)go Template Primer</title>
+      <link>https://danielzamo.github.io/goisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 02:13:50 +0000</pubDate>
+      
+      <guid>https://danielzamo.github.io/goisforlovers/</guid>
+      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
+This document is a brief primer on using go templates.</description>
+    </item>
+    
+  </channel>
+</rss>
