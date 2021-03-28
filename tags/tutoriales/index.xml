@@ -13,8 +13,7 @@
       
       <guid>https://danielzamo.github.io/python-acceder-variables-de-entorno/</guid>
       <description>Variables de entorno en Python  El mecanismo para establecer las variables de entorno depende de la plataforma. En Python se puede utilizar el módulo os. El mismo abstrae funcionalidad dependiente del sistema operativo, para poder trabajar con estas variables.
-  En tiempo de ejecución Python, mantiene todas las variables de entorno del programa en un diccionario como Objeto os.environ.
-  El objeto os.environ se llena cuando en tiempo de ejecución Python carga el módulo os.</description>
+  En tiempo de ejecución Python, mantiene todas las variables de entorno del programa en el diccionario os.environ como Objeto. Dicho objeto se llena cuando Python carga el módulo os.</description>
     </item>
     
   </channel>
