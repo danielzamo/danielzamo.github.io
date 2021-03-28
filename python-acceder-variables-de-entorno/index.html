@@ -99,7 +99,13 @@
         <div class="post-content clearfix" itemprop="articleBody">
     
 
-    <h2 id="acceder-a-variables-de-entorno">Acceder a variables de entorno</h2>
+    <h2 id="variables-de-entorno-en-python">Variables de entorno en Python</h2>
+<p>El mecanismo para establecer las variables de entorno depende de la plataforma. En Python se puede utilizar el módulo <code>os</code>. El mismo abstrae funcionalidad dependiente del sistema operativo, para poder trabajar con estas variables.</p>
+<p>En tiempo de ejecución Python, mantiene todas las variables de entorno del programa en un diccionario como Objeto <code>os.environ</code>.</p>
+<blockquote>
+<p>El objeto <code>os.environ</code> se llena cuando en tiempo de ejecución Python carga el módulo <code>os</code>. Si se intenta cambiar las variables de entorno después, no funcionará.</p>
+</blockquote>
+<h2 id="acceder-a-variables-de-entorno">Acceder a variables de entorno</h2>
 <pre><code>&gt;&gt;&gt;import os
 &gt;&gt;&gt;os.environ['PATH']
 </code></pre><p>Contenedor Docker con dos servicios: Wodpress y Mysql. Para pruebas y <em>desarrollo</em>.</p>
