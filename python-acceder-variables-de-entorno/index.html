@@ -106,16 +106,33 @@
 <blockquote>
 <p>En tiempo de ejecución Python, mantiene todas las variables de entorno del programa en el diccionario <code>os.environ</code> como Objeto. Dicho objeto se llena cuando Python carga el módulo <code>os</code>. Si se intenta cambiar las variables de entorno después dara error.</p>
 </blockquote>
-<h2 id="acceder-a-variables-de-entorno">Acceder a variables de entorno</h2>
+<h2 id="módulo-so">Módulo <code>so</code></h2>
+<h3 id="acceder-a-variables-de-entorno">Acceder a variables de entorno</h3>
 <pre><code>&gt;&gt;&gt;import os
 &gt;&gt;&gt;os.environ['PATH']
-</code></pre><p>Contenedor Docker con dos servicios: Wodpress y Mysql. Para pruebas y <em>desarrollo</em>.</p>
+'/home/usuario/.linuxbrew/bin:/home/usuario/.linuxbrew/sbin:/home/usuario/.linuxbrew/bin:/home/usuario/.linuxbrew/sbin:/home/usuario/.local/bin:/home/usuario/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin'
+</code></pre><h3 id="acceder-mediante-get">Acceder mediante <code>get</code></h3>
+<p>En caso de no existir la variable invocada, la anterior forma dara un error. Para que no ocurra lo anterior, se puede útilizar el método <code>get</code>, del siguiente modo:</p>
+<pre><code>&gt;&gt;&gt; os.environ.get('VAR_NO_EXISTE')
+&gt;&gt;&gt; var=os.environ.get('VAR_NO_EXISTE')
+&gt;&gt;&gt; print(var)
+None
+</code></pre><h4 id="asignar-un-valor-por-defecto">Asignar un valor por defecto</h4>
+<p>Se puede utilizar la siguiente invocación con <code>get</code>, para asignar un valor por defecto si la variable no existe. Esto es:</p>
+<pre><code>&gt;&gt;&gt; var=os.environ.get('VAR_NO_EXISTE','inicializada ahora')
+&gt;&gt;&gt; print(var)
+inicializada ahora
+&gt;&gt;&gt;
+</code></pre><h3 id="añadirmodificar-variabres-de-entorno">Añadir/modificar variabres de entorno</h3>
+<p>En caso de necesitar añadir o modificar una variable de entorno, se utiliza el operador <code>[]</code> sobre <code>os.environ</code>.</p>
+<pre><code>&gt;&gt;&gt; os.environ['PATH']
+'/home/usuario/.linuxbrew/bin:/home/usuario/.linuxbrew/sbin:/home/usuario/.linuxbrew/bin:/home/usuario/.linuxbrew/sbin:/home/usuario/.local/bin:/home/usuario/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin'
+&gt;&gt;&gt; os.environ['PATH']='/bin/my-path'
+&gt;&gt;&gt; os.environ['PATH']
+'/bin/my-path'
+</code></pre><h2 id="referencias">Referencias</h2>
 <ul>
-<li>Hola</li>
-</ul>
-<h2 id="referencias">Referencias</h2>
-<ul>
-<li><a href="https://www.youtube.com/watch?v=eoFxMaeB9H4&amp;ab_channel=PeladoNerd">WORDPRESS Y MYSQL con DOCKER COMPOSE</a>, por el Pelado Nerd.</li>
+<li><a href="https://www.delftstack.com/es/howto/python/how-to-access-environment-variables-in-python/">Cómo acceder a las variables de entorno en Python</a>, [How-to de Delftstack][delftstack].</li>
 </ul>
 
 </div>
