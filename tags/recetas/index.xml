@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on Mi blog estático</title>
-    <link>https://danielzamo.github.io/tags/python/</link>
-    <description>Recent content in Python on Mi blog estático</description>
+    <title>Recetas on Mi blog estático</title>
+    <link>https://danielzamo.github.io/tags/recetas/</link>
+    <description>Recent content in Recetas on Mi blog estático</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 28 Mar 2021 02:13:50 +0000</lastBuildDate><atom:link href="https://danielzamo.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Mar 2021 02:13:50 +0000</lastBuildDate><atom:link href="https://danielzamo.github.io/tags/recetas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python: acceder/modificar, variables de entorno</title>
       <link>https://danielzamo.github.io/python-acceder-variables-de-entorno/</link>
