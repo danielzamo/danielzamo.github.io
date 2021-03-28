@@ -5,14 +5,14 @@
     <link>https://danielzamo.github.io/post/</link>
     <description>Recent content in Posts on Mi blog estático</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 22 Feb 2021 02:13:50 +0000</lastBuildDate><atom:link href="https://danielzamo.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Mar 2021 02:13:50 +0000</lastBuildDate><atom:link href="https://danielzamo.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Docker: Wordpress &#43; Mysql</title>
-      <link>https://danielzamo.github.io/docker-wordpress/</link>
-      <pubDate>Mon, 22 Feb 2021 02:13:50 +0000</pubDate>
+      <title>Python: acceder a variables de entorno</title>
+      <link>https://danielzamo.github.io/python-acceder-variables-de-entorno/</link>
+      <pubDate>Sun, 28 Mar 2021 02:13:50 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/docker-wordpress/</guid>
-      <description>Contenedor Docker con dos servicios: Wodpress y Mysql. Para pruebas y desarrollo.
+      <guid>https://danielzamo.github.io/python-acceder-variables-de-entorno/</guid>
+      <description>Acceder a variables de entorno import os os.environ[&amp;#39;PATH&amp;#39;] Contenedor Docker con dos servicios: Wodpress y Mysql. Para pruebas y desarrollo.
  Hola  Referencias  WORDPRESS Y MYSQL con DOCKER COMPOSE, por el Pelado Nerd.  </description>
     </item>
     
