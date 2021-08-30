@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>golang on Sitio web estático</title>
+    <title>golang on Sitio web c/Hugo</title>
     <link>https://danielzamo.github.io/tags/golang/</link>
-    <description>Recent content in golang on Sitio web estático</description>
+    <description>Recent content in golang on Sitio web c/Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 02 Apr 2014 02:13:50 +0000</lastBuildDate>

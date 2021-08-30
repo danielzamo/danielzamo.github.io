@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pages on Sitio web estático</title>
+    <title>Pages on Sitio web c/Hugo</title>
     <link>https://danielzamo.github.io/page/</link>
-    <description>Recent content in Pages on Sitio web estático</description>
+    <description>Recent content in Pages on Sitio web c/Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 03 Apr 2015 02:13:50 +0000</lastBuildDate>
