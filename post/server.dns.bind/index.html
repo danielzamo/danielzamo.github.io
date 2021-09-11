@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Servidor DNS con Bind &middot; </title>
         <meta name="description" content="Este documento incluye la configuracion de:
- Servidor DNS Bind sobre CentOS Stream 8 y derivados El despliegue incluye dos vistas (una es LAN interna y la otra una vista WAN) Se configuran las resoluciones directas e inversas   La representacion del despliegue se muestra en esta captura
+ Servidor DNS Bind sobre CentOS Stream 8 y derivados El despliegue incluye dos vistas (una es LAN interna y la otra una vista WAN (pendiente vista WAN - [12-08-2021])) Se configuran las resoluciones directas e inversas   La representacion del despliegue se muestra en esta captura
 Instalación y configuración red interna (vista interna) Instalar Bind dnf -y install bind bind-utils Configurar red interna (vista interna) En este ejemplo la red local esta definida en el rango 10.">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
@@ -88,7 +88,7 @@ Instalación y configuración red interna (vista interna) Instalar Bind dnf -y i
 <p>Este documento incluye la configuracion de:</p>
 <ul>
 <li>Servidor DNS Bind sobre CentOS Stream 8 y derivados</li>
-<li>El despliegue incluye dos vistas (una es LAN interna y la otra una vista WAN)</li>
+<li>El despliegue incluye dos vistas (una es LAN interna y la otra una vista WAN (<em>pendiente vista WAN - [12-08-2021]</em>))</li>
 <li>Se configuran las resoluciones directas e inversas</li>
 </ul>
 </blockquote>
@@ -135,21 +135,13 @@ zone &quot;0.0.10.in-addr.arpa&quot; IN {
         file &quot;0.0.10.db&quot;;
         allow-update { none; };
 };
-</code></pre><h3 id="conf-resolucion-sobre-ipv4">Conf. resolucion sobre IPV4</h3>
+</code></pre><h3 id="conf-resolucion-solo-en-ipv4">Conf. resolucion solo en IPV4</h3>
 <pre><code># Habilitar resolucion de DNS solo para IPV4
 echo 'OPTIONS=&quot;-4&quot;'  &gt;&gt; /etc/sysconfig/named
-</code></pre><h3 id="contenido-ficheros">Contenido ficheros</h3>
-<p>Se lista a continuacion el contenido de los ficheros modificados.</p>
+</code></pre><h4 id="contenido-ficheros">Contenido ficheros</h4>
+<p>Se lista a continuacion el contenido de los ficheros modificados, hasta este paso.</p>
 <pre><code>cat /etc/named.conf
 
-//
-// named.conf
-//
-// Provided by Red Hat bind package to configure the ISC BIND named(8) DNS
-// server as a caching only nameserver (as a localhost DNS resolver only).
-//
-// See /usr/share/doc/bind*/sample/ for example named configuration files.
-//
 acl internal-network {
         10.0.0.0/24;
 };
@@ -198,8 +190,8 @@ zone &quot;0.0.10.in-addr.arpa&quot; IN {
 
 cat /etc/sysconfig/named
 OPTIONS=&quot;-4&quot;
-</code></pre><h2 id="configurar-archivos-de-zonas">Configurar archivos de zonas</h2>
-<h3 id="zona-directa">Zona directa</h3>
+</code></pre><h2 id="configurar-archivos-de-zona-interna">Configurar archivos de zona interna</h2>
+<h3 id="resolucion-directa">Resolucion directa</h3>
 <pre><code>cat /var/named/centos-stream-main.my-asus.net.lan
 
 $TTL 86400
@@ -230,16 +222,16 @@ $TTL 86400
 
 30      IN  PTR     centos-stream-main.my-asus.net.
 31      IN  PTR     www.my-asus.net.
-</code></pre><h3 id="verificar-resolucion">Verificar resolucion</h3>
-<h4 id="habilitar-servicio-dns">Habilitar servicio DNS</h4>
+</code></pre><h2 id="verificar-resolucion">Verificar resolucion</h2>
+<h3 id="habilitar-servicio-dns">Habilitar servicio DNS</h3>
 <pre><code># Habilitar e iniciar Bind
 systemctl enable --now named
 
-</code></pre><h4 id="habilitar-en-firewall">Habilitar en firewall</h4>
+</code></pre><h3 id="habilitar-en-firewall">Habilitar en firewall</h3>
 <pre><code># Habilitar el servicio DNS si firewalld esta activado
 firewall-cmd --add-service=dns --permanent
 firewall-cmd --reload
-</code></pre><h4 id="modificar-el-resolver-apuntando-al-aqui-configurado-si-es-necesario">Modificar el resolver, apuntando al aqui configurado (Si es necesario)</h4>
+</code></pre><h3 id="modificar-el-resolver-apuntando-al-aqui-configurado-si-es-necesario">Modificar el resolver, apuntando al aqui configurado (Si es necesario)</h3>
 <p>En esta caso la especion es:</p>
 <ul>
 <li>Ip DNS: <code>192.168.122.30/24</code></li>
@@ -247,7 +239,7 @@ firewall-cmd --reload
 </ul>
 <pre><code>nmcli connection modify enp1s0 ipv4.dns 192.168.122.30
 nmcli connection down enp1s0; nmcli connection up enp1s0
-</code></pre><h4 id="probando-resolucion">Probando resolucion</h4>
+</code></pre><h3 id="probando-resolucion">Probando resolucion</h3>
 <pre><code>dig centos-stream-main.my-asus.net
 dig -x 10.0.0.30
 </code></pre>
