@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Conf. ruteo simetrico estatico, en CentOS 8 Stream y/o derivados &middot; </title>
-        <meta name="description" content="En este documento se configura el ruteo simetrico y estatico sobre un Linux basado en RHEL ver 8 y/o derivado. Esta configuracion esta en version beta. La configuracion es aplicable a sistemas que tengan dos placas interfaces ethernet. En esta representacion
- Fichero /etc/sysconfig/network-scripts/ifcfg-enp1s0 cat /etc/sysconfig/network-scripts/ifcfg-enp1s0 TYPE=Ethernet PROXY_METHOD=none BROWSER_ONLY=no BOOTPROTO=none DEFROUTE=yes IPV4_FAILURE_FATAL=no IPV6INIT=yes IPV6_AUTOCONF=yes IPV6_DEFROUTE=yes IPV6_FAILURE_FATAL=no NAME=enp1s0 UUID=e4b027b9-68bf-4d07-b747-388dc23cd368 DEVICE=enp1s0 ONBOOT=yes IPADDR=192.168.122.30 PREFIX=24 GATEWAY=192.168.122.1 DNS1=192.168.122.30 DOMAIN=my-asus.net IPV6_PRIVACY=no DNS2=192.168.122.1 Fichero /etc/sysconfig/network-scripts/route-enp1s0 cat /etc/sysconfig/network-scripts/route-enp1s0 ADDRESS0=192.">
+        <title>Ruteo estatico (simetrico), en RHEL 8 y/o derivados &middot; </title>
+        <meta name="description" content="En este documento se configura el ruteo estatico (y simetrico?) sobre un Linux basado en RHEL ver 8 y/o derivado. Esta configuracion esta en version beta, en teoria deberia funcionar en modo simetrico. La configuracion es aplicable a sistemas que tengan dos placas interfaces ethernet. Y en principio no necesita de las ip rule. En esta representacion
+ Fichero /etc/sysconfig/network-scripts/ifcfg-enp1s0 cat /etc/sysconfig/network-scripts/ifcfg-enp1s0 TYPE=Ethernet PROXY_METHOD=none BROWSER_ONLY=no BOOTPROTO=none DEFROUTE=yes IPV4_FAILURE_FATAL=no IPV6INIT=yes IPV6_AUTOCONF=yes IPV6_DEFROUTE=yes IPV6_FAILURE_FATAL=no NAME=enp1s0 UUID=e4b027b9-68bf-4d07-b747-388dc23cd368 DEVICE=enp1s0 ONBOOT=yes IPADDR=192.">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="generator" content="Hugo 0.68.3" />
@@ -66,7 +66,7 @@
 <div class="container">
     <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
         <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Conf. ruteo simetrico estatico, en CentOS 8 Stream y/o derivados</h1>
+    <h1 class="post-title" itemprop="name headline">Ruteo estatico (simetrico), en RHEL 8 y/o derivados</h1>
     
     <p class="post-date post-line">
         <span>Published <time datetime="2021-09-12" itemprop="datePublished">Sun, Sep 12, 2021</time></span>
@@ -84,8 +84,9 @@
     
 
     <blockquote>
-<p>En este documento se configura el ruteo simetrico y estatico sobre un Linux basado en RHEL ver 8 y/o derivado. Esta configuracion esta en version beta.
+<p>En este documento se configura el ruteo estatico (y simetrico?) sobre un Linux basado en RHEL ver 8 y/o derivado. Esta configuracion esta en version <em>beta</em>, en teoria deberia funcionar en modo simetrico.
 La configuracion es aplicable a sistemas que tengan dos placas interfaces ethernet.
+<em>Y en principio no necesita de las ip rule</em>.
 En <a href="/ruteo.simetrico.estatico.png" title="Ruteo estatico.">esta representacion</a></p>
 </blockquote>
 <p><img src="/ruteo.simetrico.estatico.png" alt="Ruteo estatico." title="Ruteo estatico."></p>
