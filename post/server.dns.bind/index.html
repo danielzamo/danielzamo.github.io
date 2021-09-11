@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Servidor DNS con Bind &middot; </title>
         <meta name="description" content="Este documento incluye la configuracion de:
- Servidor DNS Bind sobre CentOS Stream 8 y derivados   Instalación y configuración red interna (vista interna) Instalar Bind dnf -y install bind bind-utils Configurar red interna (vista interna) En este ejemplo la red local esta definida en el rango 10.0.0.0/24. El nombre de dominio es my-asus.net.
-Fichero /etc/named.conf vi /etc/named.conf ... ... acl internal-network { 10.0.0.0/24; }; ... ... options { .">
+ Servidor DNS Bind sobre CentOS Stream 8 y derivados El despliegue incluye dos vistas (una es LAN interna y la otra una vista WAN) Se configuran las resoluciones directas e inversas   La representacion del despliegue se muestra en esta captura
+Instalación y configuración red interna (vista interna) Instalar Bind dnf -y install bind bind-utils Configurar red interna (vista interna) En este ejemplo la red local esta definida en el rango 10.">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="generator" content="Hugo 0.68.3" />
@@ -88,8 +88,12 @@ Fichero /etc/named.conf vi /etc/named.conf ... ... acl internal-network { 10.0.0
 <p>Este documento incluye la configuracion de:</p>
 <ul>
 <li>Servidor DNS Bind sobre CentOS Stream 8 y derivados</li>
+<li>El despliegue incluye dos vistas (una es LAN interna y la otra una vista WAN)</li>
+<li>Se configuran las resoluciones directas e inversas</li>
 </ul>
 </blockquote>
+<p>La representacion del despliegue se muestra en <a href="/server.dns.bind.png" title="Arq. inicial - serv. DNS bind, c/2 vistas">esta captura</a></p>
+<p><img src="/server.dns.bind.png" alt="Arq. inicial - serv. DNS bind, c/2 vistas" title="Arq. inicial - serv. DNS bind, c/2 vistas"></p>
 <h1 id="instalación-y-configuración-red-interna-vista-interna">Instalación y configuración red interna (vista interna)</h1>
 <h2 id="instalar-bind">Instalar Bind</h2>
 <pre><code>dnf -y install bind bind-utils
@@ -228,13 +232,11 @@ $TTL 86400
 31      IN  PTR     www.my-asus.net.
 </code></pre><h3 id="verificar-resolucion">Verificar resolucion</h3>
 <h4 id="habilitar-servicio-dns">Habilitar servicio DNS</h4>
-<pre><code># Habilitar y comenzar Bind
-
+<pre><code># Habilitar e iniciar Bind
 systemctl enable --now named
 
 </code></pre><h4 id="habilitar-en-firewall">Habilitar en firewall</h4>
 <pre><code># Habilitar el servicio DNS si firewalld esta activado
-
 firewall-cmd --add-service=dns --permanent
 firewall-cmd --reload
 </code></pre><h4 id="modificar-el-resolver-apuntando-al-aqui-configurado-si-es-necesario">Modificar el resolver, apuntando al aqui configurado (Si es necesario)</h4>
