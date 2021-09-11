@@ -17,7 +17,7 @@
       <pubDate>Sun, 12 Sep 2021 01:18:21 +0200</pubDate>
       
       <guid>https://danielzamo.github.io/post/ruteo.simetrico.estatico/</guid>
-      <description> En este documento se configura el ruteo simetrico y estatico sobre un Linux basado en RHEL ver 8 y/o derivado. Esta configuracion esta en version beta. La configuracion es aplicable a sistemas que tengan dos placas interfaces ethernet. En [esta representacion][ruteo.simetrico.estatico]
+      <description> En este documento se configura el ruteo simetrico y estatico sobre un Linux basado en RHEL ver 8 y/o derivado. Esta configuracion esta en version beta. La configuracion es aplicable a sistemas que tengan dos placas interfaces ethernet. En esta representacion
  </description>
     </item>
     
