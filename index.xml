@@ -6,10 +6,21 @@
     <description>Recent content on Sitio web c/Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 31 Aug 2021 00:05:21 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 11 Sep 2021 22:21:06 +0200</lastBuildDate>
     
 	<atom:link href="https://danielzamo.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Servidor DNS con Bind</title>
+      <link>https://danielzamo.github.io/post/server.dns.bind/</link>
+      <pubDate>Sat, 11 Sep 2021 22:21:06 +0200</pubDate>
+      
+      <guid>https://danielzamo.github.io/post/server.dns.bind/</guid>
+      <description>Este documento incluye la configuracion de:
+ Servidor DNS Bind sobre CentOS Stream 8 y derivados   Instalación y configuración red interna (vista interna) Instalar Bind dnf -y install bind bind-utils Configurar red interna (vista interna) En este ejemplo la red local esta definida en el rango 10.0.0.0/24. El nombre de dominio es my-asus.net.
+Fichero /etc/named.conf vi /etc/named.conf ... ... acl internal-network { 10.0.0.0/24; }; ... ... options { .</description>
+    </item>
     
     <item>
       <title>Extensiones Visual Studio Code</title>
