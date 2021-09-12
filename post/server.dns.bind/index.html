@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Servidor DNS con Bind &middot; </title>
         <meta name="description" content="Este documento incluye la configuracion de:
- Servidor DNS Bind sobre CentOS Stream 8 y derivados El despliegue incluye dos redes (una es LAN interna y la otra una WAN (pendiente al [12-08-2021])) Se configuran las resoluciones directas e inversas   La representacion del despliegue se muestra en esta captura
+ Servidor DNS Bind sobre CentOS Stream 8 y derivados El despliegue incluye dos redes (una es LAN interna y la otra una WAN Se configuran las resoluciones directas e inversas Se definen dos vistas.   La representacion del despliegue se muestra en esta captura
 Instalación y configuración red interna Instalar Bind dnf -y install bind bind-utils Configurar red interna En este ejemplo la red local esta definida en el rango 10.">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
@@ -88,8 +88,9 @@ Instalación y configuración red interna Instalar Bind dnf -y install bind bind
 <p>Este documento incluye la configuracion de:</p>
 <ul>
 <li>Servidor DNS Bind sobre CentOS Stream 8 y derivados</li>
-<li>El despliegue incluye dos redes (una es LAN interna y la otra una WAN (<em>pendiente al [12-08-2021]</em>))</li>
+<li>El despliegue incluye dos redes (una es LAN interna y la otra una WAN</li>
 <li>Se configuran las resoluciones directas e inversas</li>
+<li>Se definen dos vistas.</li>
 </ul>
 </blockquote>
 <p>La representacion del despliegue se muestra en <a href="/server.dns.bind.png" title="Arq. inicial - serv. DNS bind, interface sobre redes diferentes">esta captura</a></p>
@@ -100,61 +101,20 @@ Instalación y configuración red interna Instalar Bind dnf -y install bind bind
 </code></pre><h2 id="configurar-red-interna">Configurar red interna</h2>
 <p>En este ejemplo la red local esta definida en el rango <code>10.0.0.0/24</code>. El nombre de dominio es <code>my-asus.net</code>.</p>
 <h3 id="fichero-etcnamedconf">Fichero /etc/named.conf</h3>
-<pre><code>vi /etc/named.conf
-
-...
-...
-acl internal-network {
-        10.0.0.0/24;
-};
-...
-...
-options {
-... 
-# Modificar las siguientes lineas
-#       listen-on port 53 { 127.0.0.1; };
-        listen-on port 53 { any; };
-#       listen-on-v6 port 53 { ::1; };
-        listen-on-v6 port 53 { any; };
-...
-...
-# Se agrega la siguiente linea
-       allow-transfer  { localhost; };
-...
-...
-
-# Al final agrego las zonas de red y dominio
-
-zone &quot;my-asus.net&quot; IN {
-        type master;
-        file &quot;centos-stream-main.my-asus.net&quot;;
-        allow-update { none; };
-};
-zone &quot;0.0.10.in-addr.arpa&quot; IN {
-        type master;
-        file &quot;0.0.10.db&quot;;
-        allow-update { none; };
-};
-</code></pre><h3 id="conf-resolucion-solo-en-ipv4">Conf. resolucion solo en IPV4</h3>
-<pre><code># Habilitar resolucion de DNS solo para IPV4
-echo 'OPTIONS=&quot;-4&quot;'  &gt;&gt; /etc/sysconfig/named
-</code></pre><h4 id="contenido-ficheros">Contenido ficheros</h4>
-<p>Se lista a continuacion el contenido de los ficheros modificados, hasta este paso.</p>
 <pre><code>cat /etc/named.conf
 
-acl internal-network {
-        10.0.0.0/24;
-};
+acl internal-network { 10.0.0.0/24; };
+acl external-network { 192.168.122.0/24; };
 options {
         listen-on port 53 { any; };
-        listen-on-v6 port 53 { any; };
+        listen-on-v6 { any; };
         directory       &quot;/var/named&quot;;
         dump-file       &quot;/var/named/data/cache_dump.db&quot;;
         statistics-file &quot;/var/named/data/named_stats.txt&quot;;
         memstatistics-file &quot;/var/named/data/named_mem_stats.txt&quot;;
         secroots-file   &quot;/var/named/data/named.secroots&quot;;
         recursing-file  &quot;/var/named/data/named.recursing&quot;;
-        allow-query     { localhost; internal-network; };
+        allow-query     { localhost; internal-network; external-network; };
         allow-transfer  { localhost; };
         recursion yes;
         dnssec-enable yes;
@@ -162,7 +122,6 @@ options {
         managed-keys-directory &quot;/var/named/dynamic&quot;;
         pid-file &quot;/run/named/named.pid&quot;;
         session-keyfile &quot;/run/named/session.key&quot;;
-        /* https://fedoraproject.org/wiki/Changes/CryptoPolicy */
         include &quot;/etc/crypto-policies/back-ends/bind.config&quot;;
 };
 logging {
@@ -171,25 +130,25 @@ logging {
                 severity dynamic;
         };
 };
-zone &quot;.&quot; IN {
-        type hint;
-        file &quot;named.ca&quot;;
+view &quot;internal&quot; {
+        match-clients { localhost; internal-network; };
+        zone &quot;.&quot; IN { type hint; file &quot;named.ca&quot;; };
+        zone &quot;my-asus.net&quot; IN { type master; file &quot;my-asus.net.lan&quot;; allow-update { none; }; };
+        zone &quot;0.0.10.in-addr.arpa&quot; IN { type master; file &quot;0.0.10.db&quot;; allow-update { none; }; };
+        include &quot;/etc/named.rfc1912.zones&quot;;
+        include &quot;/etc/named.root.key&quot;;
 };
-include &quot;/etc/named.rfc1912.zones&quot;;
-include &quot;/etc/named.root.key&quot;;
-zone &quot;my-asus.net&quot; IN {                                                                                                                                                                                                                     
-        type master;
-        file &quot;centos-stream-main.my-asus.net&quot;;
-        allow-update { none; };
-};
-zone &quot;0.0.10.in-addr.arpa&quot; IN {
-        type master;
-        file &quot;0.0.10.db&quot;;
-        allow-update { none; };
+view &quot;external&quot; {
+        match-clients { any; };
+        allow-query { any; };
+        recursion no;
+        zone &quot;my-asus.net&quot; IN { type master; file &quot;my-asus.net.wan&quot;; allow-update { none; }; };
+        zone &quot;30.122.168.192.in-addr.arpa&quot; IN { type master; file &quot;30.122.168.192.db&quot;; allow-update { none; }; };
 };
 
-cat /etc/sysconfig/named
-OPTIONS=&quot;-4&quot;
+</code></pre><h3 id="conf-resolucion-solo-en-ipv4">Conf. resolucion solo en IPV4</h3>
+<pre><code># Habilitar resolucion de DNS solo para IPV4
+echo 'OPTIONS=&quot;-4&quot;'  &gt;&gt; /etc/sysconfig/named
 </code></pre><h2 id="configurar-archivos-de-zona-interna">Configurar archivos de zona interna</h2>
 <h3 id="resolucion-directa">Resolucion directa</h3>
 <pre><code>cat /var/named/centos-stream-main.my-asus.net.lan
@@ -222,6 +181,42 @@ $TTL 86400
 
 30      IN  PTR     centos-stream-main.my-asus.net.
 31      IN  PTR     www.my-asus.net.
+</code></pre><h2 id="configurar-archivos-de-zona-external">Configurar archivos de zona external</h2>
+<h3 id="resolucion-directa-1">Resolucion directa</h3>
+<pre><code>cat /var/named/30.122.168.192.db
+
+$TTL 86400
+@   IN  SOA     centos-stream-main.my-asus.net. root.my-asus.net. (
+        2021110903  ;Serial
+        3600        ;Refresh
+        1800        ;Retry
+        604800      ;Expire
+        86400       ;Minimum TTL
+)
+        IN  NS      centos-stream-main.my-asus.net.
+
+30      IN  PTR     centos-stream-main.my-asus.net.
+31      IN  PTR     www.my-asus.net.
+
+</code></pre><h3 id="resolucion-inversa-1">Resolucion inversa</h3>
+<pre><code>at /var/named/my-asus.net.wan
+
+$TTL 86400
+@   IN  SOA    centos-stream-main.my-asus.net.    root.my-asus.net. (
+        2021110903  ;Serial
+        3600        ;Refresh
+        1800        ;Retry
+        604800      ;Expire
+        86400       ;Minimum TTL
+)
+        IN  NS      centos-stream-main.my-asus.net.
+        IN  A       192.168.122.30
+
+centos-stream-main     IN  A    192.168.122.30
+www                    IN  A    192.168.122.31
+
+ns1                    IN  CNAME    centos-stream-main.my-asus.net.
+
 </code></pre><h2 id="verificar-resolucion">Verificar resolucion</h2>
 <h3 id="habilitar-servicio-dns">Habilitar servicio DNS</h3>
 <pre><code># Habilitar e iniciar Bind

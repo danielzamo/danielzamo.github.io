@@ -6,10 +6,20 @@
     <description>Recent content on Sitio web c/Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 12 Sep 2021 01:18:21 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 12 Sep 2021 02:14:42 +0200</lastBuildDate>
     
 	<atom:link href="https://danielzamo.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Servidor DNS con BIND - parte II</title>
+      <link>https://danielzamo.github.io/post/server.dns.bind-parte-2/</link>
+      <pubDate>Sun, 12 Sep 2021 02:14:42 +0200</pubDate>
+      
+      <guid>https://danielzamo.github.io/post/server.dns.bind-parte-2/</guid>
+      <description>Este documento es una segunda parte de la conf. del servidor de DNS bind. En particular se expone la configuracion de las resoluciones de los elementos de la red externan.
+ BIND: configurar red externa En esta seccion, se configura BIND sobre la red externa (aunque tiene asignado un Ip privado en realidad, es a fines practicos contextual). La especificacion de la red externa configurada es 192.168.122.0/24. El nombre de dominio es my-asus.</description>
+    </item>
     
     <item>
       <title>Ruteo estatico (simetrico), en RHEL 8 y/o derivados</title>
@@ -28,7 +38,7 @@
       
       <guid>https://danielzamo.github.io/post/server.dns.bind/</guid>
       <description>Este documento incluye la configuracion de:
- Servidor DNS Bind sobre CentOS Stream 8 y derivados El despliegue incluye dos redes (una es LAN interna y la otra una WAN (pendiente al [12-08-2021])) Se configuran las resoluciones directas e inversas   La representacion del despliegue se muestra en esta captura
+ Servidor DNS Bind sobre CentOS Stream 8 y derivados El despliegue incluye dos redes (una es LAN interna y la otra una WAN Se configuran las resoluciones directas e inversas Se definen dos vistas.   La representacion del despliegue se muestra en esta captura
 Instalación y configuración red interna Instalar Bind dnf -y install bind bind-utils Configurar red interna En este ejemplo la red local esta definida en el rango 10.</description>
     </item>
     
