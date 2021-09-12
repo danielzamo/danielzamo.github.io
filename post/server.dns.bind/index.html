@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Servidor DNS con Bind &middot; </title>
         <meta name="description" content="Este documento incluye la configuracion de:
- Servidor DNS Bind sobre CentOS Stream 8 y derivados El despliegue incluye dos vistas (una es LAN interna y la otra una vista WAN (pendiente vista WAN - [12-08-2021])) Se configuran las resoluciones directas e inversas   La representacion del despliegue se muestra en esta captura
-Instalación y configuración red interna (vista interna) Instalar Bind dnf -y install bind bind-utils Configurar red interna (vista interna) En este ejemplo la red local esta definida en el rango 10.">
+ Servidor DNS Bind sobre CentOS Stream 8 y derivados El despliegue incluye dos redes (una es LAN interna y la otra una WAN (pendiente al [12-08-2021])) Se configuran las resoluciones directas e inversas   La representacion del despliegue se muestra en esta captura
+Instalación y configuración red interna Instalar Bind dnf -y install bind bind-utils Configurar red interna En este ejemplo la red local esta definida en el rango 10.">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="generator" content="Hugo 0.68.3" />
@@ -88,16 +88,16 @@ Instalación y configuración red interna (vista interna) Instalar Bind dnf -y i
 <p>Este documento incluye la configuracion de:</p>
 <ul>
 <li>Servidor DNS Bind sobre CentOS Stream 8 y derivados</li>
-<li>El despliegue incluye dos vistas (una es LAN interna y la otra una vista WAN (<em>pendiente vista WAN - [12-08-2021]</em>))</li>
+<li>El despliegue incluye dos redes (una es LAN interna y la otra una WAN (<em>pendiente al [12-08-2021]</em>))</li>
 <li>Se configuran las resoluciones directas e inversas</li>
 </ul>
 </blockquote>
-<p>La representacion del despliegue se muestra en <a href="/server.dns.bind.png" title="Arq. inicial - serv. DNS bind, c/2 vistas">esta captura</a></p>
-<p><img src="/server.dns.bind.png" alt="Arq. inicial - serv. DNS bind, c/2 vistas" title="Arq. inicial - serv. DNS bind, c/2 vistas"></p>
-<h1 id="instalación-y-configuración-red-interna-vista-interna">Instalación y configuración red interna (vista interna)</h1>
+<p>La representacion del despliegue se muestra en <a href="/server.dns.bind.png" title="Arq. inicial - serv. DNS bind, interface sobre redes diferentes">esta captura</a></p>
+<p><img src="/server.dns.bind.png" alt="Arq. inicial - serv. DNS bind, c/2 interface sobre redes diferentes" title="Arq. inicial - serv. DNS bind, interface sobre redes diferentes"></p>
+<h1 id="instalación-y-configuración-red-interna">Instalación y configuración red interna</h1>
 <h2 id="instalar-bind">Instalar Bind</h2>
 <pre><code>dnf -y install bind bind-utils
-</code></pre><h2 id="configurar-red-interna-vista-interna">Configurar red interna (vista interna)</h2>
+</code></pre><h2 id="configurar-red-interna">Configurar red interna</h2>
 <p>En este ejemplo la red local esta definida en el rango <code>10.0.0.0/24</code>. El nombre de dominio es <code>my-asus.net</code>.</p>
 <h3 id="fichero-etcnamedconf">Fichero /etc/named.conf</h3>
 <pre><code>vi /etc/named.conf

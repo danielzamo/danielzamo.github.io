@@ -28,8 +28,8 @@
       
       <guid>https://danielzamo.github.io/post/server.dns.bind/</guid>
       <description>Este documento incluye la configuracion de:
- Servidor DNS Bind sobre CentOS Stream 8 y derivados El despliegue incluye dos vistas (una es LAN interna y la otra una vista WAN (pendiente vista WAN - [12-08-2021])) Se configuran las resoluciones directas e inversas   La representacion del despliegue se muestra en esta captura
-Instalación y configuración red interna (vista interna) Instalar Bind dnf -y install bind bind-utils Configurar red interna (vista interna) En este ejemplo la red local esta definida en el rango 10.</description>
+ Servidor DNS Bind sobre CentOS Stream 8 y derivados El despliegue incluye dos redes (una es LAN interna y la otra una WAN (pendiente al [12-08-2021])) Se configuran las resoluciones directas e inversas   La representacion del despliegue se muestra en esta captura
+Instalación y configuración red interna Instalar Bind dnf -y install bind bind-utils Configurar red interna En este ejemplo la red local esta definida en el rango 10.</description>
     </item>
     
     <item>
