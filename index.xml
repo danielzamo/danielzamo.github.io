@@ -17,9 +17,10 @@
       <pubDate>Mon, 13 Sep 2021 21:13:21 +0200</pubDate>
       
       <guid>https://danielzamo.github.io/post/dns/</guid>
-      <description> dig (a secas), realiza una consulta de los servidores NS raíz
+      <description>dig (a secas), realiza una consulta de los servidores NS raíz
  dig  dig google.com
- dig google.com Referencias  https://root-servers.org/ &amp;lt;&amp;mdash; servidores root https://eltallerdelbit.com/resolucion-dns-dig-linux/ https://blog.standalonecomplex.es/2010/05/16/guia-de-dig/ http://somebooks.es/comando-dig-ubuntu/ https://rm-rf.es/como-usar-el-comando-dig-ejemplos/ https://www.hostinger.es/tutoriales/comando-dig-linux https://www.administracionderedes.com/consulta-iterativa-recursiva/ https://www.ibm.com/docs/en/zos/2.2.0?topic=uzudc-dig-command-query-name-servers https://learn.akamai.com/en-us/webhelp/pulsar-diagnostic-tools/pulsar-diagnostic-tools/GUID-80B4B9A1-16B2-4D70-8100-7B2617102002.html https://www.youtube.com/watch?v=sUhEqT_HSBI&amp;amp;ab_channel=ProfeSang  </description>
+ dig google.com  ¿Cuáles son los servidores de nombres, responsables de los TLD (dominios de nivel superior)? Ejemplo los de .com
+ dig NS .com +short Referencias  https://root-servers.org/ &amp;lt;&amp;mdash; servidores root https://eltallerdelbit.com/resolucion-dns-dig-linux/ https://blog.standalonecomplex.es/2010/05/16/guia-de-dig/ http://somebooks.es/comando-dig-ubuntu/ https://rm-rf.es/como-usar-el-comando-dig-ejemplos/ https://www.hostinger.es/tutoriales/comando-dig-linux https://www.administracionderedes.com/consulta-iterativa-recursiva/ https://www.ibm.com/docs/en/zos/2.2.0?topic=uzudc-dig-command-query-name-servers https://learn.akamai.com/en-us/webhelp/pulsar-diagnostic-tools/pulsar-diagnostic-tools/GUID-80B4B9A1-16B2-4D70-8100-7B2617102002.html https://www.youtube.com/watch?v=sUhEqT_HSBI&amp;amp;ab_channel=ProfeSang &amp;lt;&amp;mdash; Video explicado simple y bien https://www.cloudns.net/blog/10-most-used-dig-commands/ &amp;lt;&amp;mdash; Ejemplo de como consultar un TLD (top level domain) https://www.</description>
     </item>
     
     <item>
