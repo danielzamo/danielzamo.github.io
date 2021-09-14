@@ -24,6 +24,19 @@
     </item>
     
     <item>
+      <title>Servidor de DNS con Bind</title>
+      <link>https://danielzamo.github.io/servidor.dns.bind/</link>
+      <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://danielzamo.github.io/servidor.dns.bind/</guid>
+      <description>Este documento incluye la configuracion de:
+El despliegue incluye dos redes (una es LAN interna y la otra una WAN Se configuran las resoluciones directas e inversas Se definen dos vistas.
+ Las tareas realizadas son hechas sobre un servidor con una instalación de distribución CentOS Stream 8.
+La representación de la arq. de red del despliegue se muestra en esta captura.
+Instalación y configuración red interna Instalar Bind dnf -y install bind bind-utils Fichero /etc/named.</description>
+    </item>
+    
+    <item>
       <title>About</title>
       <link>https://danielzamo.github.io/page/about/</link>
       <pubDate>Fri, 03 Apr 2015 02:13:50 +0000</pubDate>
