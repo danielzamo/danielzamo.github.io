@@ -6,10 +6,22 @@
     <description>Recent content in Posts on Sitio web estatico</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 28 Sep 2014 02:13:50 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Sep 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://danielzamo.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>DNS y comando dig</title>
+      <link>https://danielzamo.github.io/dns.dig/</link>
+      <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://danielzamo.github.io/dns.dig/</guid>
+      <description>DNS Consulta recursiva  dig (a secas), realiza una consulta de los servidores NS raíz
+ dig  ¿Consulta de www.axians.com a un servidor de TLD (dominios de nivel superior) .com?
+ dig ....  ¿Consulta de www.axians.com a un servidor autoritativo de la zona?
+ dig Referencias  https://root-servers.org/ &amp;lt;— servidores root https://eltallerdelbit.com/resolucion-dns-dig-linux/ https://blog.standalonecomplex.es/2010/05/16/guia-de-dig/ http://somebooks.es/comando-dig-ubuntu/ https://rm-rf.es/como-usar-el-comando-dig-ejemplos/ https://www.hostinger.es/tutoriales/comando-dig-linux https://www.administracionderedes.com/consulta-iterativa-recursiva/ https://www.ibm.com/docs/en/zos/2.2.0?topic=uzudc-dig-command-query-name-servers https://learn.akamai.com/en-us/webhelp/pulsar-diagnostic-tools/pulsar-diagnostic-tools/GUID-80B4B9A1-16B2-4D70-8100-7B2617102002.html https://www.youtube.com/watch?v=sUhEqT_HSBI&amp;amp;ab_channel=ProfeSang &amp;lt;— Video explicado simple y bien https://www.cloudns.net/blog/10-most-used-dig-commands/ &amp;lt;— Ejemplo de como consultar un TLD (top level domain) https://www.</description>
+    </item>
     
     <item>
       <title>Creating a New Theme</title>
