@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>DNS - consulta recursiva</title>
+      <link>https://danielzamo.github.io/dns.query.recursive/</link>
+      <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://danielzamo.github.io/dns.query.recursive/</guid>
+      <description>DNS Consulta recursiva En la figura.</description>
+    </item>
+    
+    <item>
       <title>DNS y comando dig</title>
       <link>https://danielzamo.github.io/dig/</link>
       <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
@@ -19,15 +28,6 @@
       <guid>https://danielzamo.github.io/dig/</guid>
       <description>Utilidad dig  La siguiente secuencia de comandos, es por simular una busqueda recursiva de un autoritativo de zona. En particular un registro de tipo A www.axians.com. Es basicamente una busqueda completa que realiza un cache DNS, si ha dicho registro, no lo tiene almacenado previamente. Lo interesante a observar aqui, es:
  Un primer y simple uso de la herramienta dig. Observar la información que muestra el comando. En particular los flag, segun el servidor que haya respondido.</description>
-    </item>
-    
-    <item>
-      <title>DNS y comando dig</title>
-      <link>https://danielzamo.github.io/dns.query.recursive/</link>
-      <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://danielzamo.github.io/dns.query.recursive/</guid>
-      <description>DNS Consulta recursiva En la [figura][query.recursiva.numerate].</description>
     </item>
     
     <item>
