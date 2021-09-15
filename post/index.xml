@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Sitio web estatico</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Tue, 14 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Sep 2021 22:34:53 +0200</lastBuildDate>
     
 	<atom:link href="https://danielzamo.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>El comando lsof</title>
+      <link>https://danielzamo.github.io/lsof.cmd/</link>
+      <pubDate>Wed, 15 Sep 2021 22:34:53 +0200</pubDate>
+      
+      <guid>https://danielzamo.github.io/lsof.cmd/</guid>
+      <description>How to list all open files To list all open files, run the lsof command without any arguments: lsof
+Listar todos los archivos abiertos Para listar todos los archivos abiertos, ejecutar lsof sin argumentos
+lsof Listar archivos abiertos por procesos pertenecientes a un usuario en particular lsof -u &amp;lt;USER-NAME&amp;gt; Referencias  Linux lsof command  </description>
+    </item>
     
     <item>
       <title>Comando dig</title>

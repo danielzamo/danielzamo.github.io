@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://danielzamo.github.io/lsof.cmd/</loc>
+    <lastmod>2021-09-15T22:34:53+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://danielzamo.github.io/post/</loc>
+    <lastmod>2021-09-15T22:34:53+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://danielzamo.github.io/</loc>
+    <lastmod>2021-09-15T22:34:53+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://danielzamo.github.io/dig/</loc>
     <lastmod>2021-09-14T00:00:00+00:00</lastmod>
   </url>
@@ -13,17 +28,7 @@
   </url>
   
   <url>
-    <loc>https://danielzamo.github.io/post/</loc>
-    <lastmod>2021-09-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://danielzamo.github.io/servidor.dns.bind/</loc>
-    <lastmod>2021-09-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://danielzamo.github.io/</loc>
     <lastmod>2021-09-14T00:00:00+00:00</lastmod>
   </url>
   
