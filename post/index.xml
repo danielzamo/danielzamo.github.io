@@ -17,9 +17,9 @@
       <pubDate>Wed, 15 Sep 2021 22:34:53 +0200</pubDate>
       
       <guid>https://danielzamo.github.io/lsof.cmd/</guid>
-      <description>How to list all open files To list all open files, run the lsof command without any arguments: lsof
-Listar todos los archivos abiertos Para listar todos los archivos abiertos, ejecutar lsof sin argumentos
-lsof Listar archivos abiertos por procesos pertenecientes a un usuario en particular lsof -u &amp;lt;USER-NAME&amp;gt; Referencias  Linux lsof command  </description>
+      <description>Listar todos los archivos abiertos Para listar todos los archivos abiertos, ejecutar lsof sin argumentos
+ Warn: La salida puede tardar y/o ser muy extensa. Recordemos que en un sistema basado en UniX (como lo es Linux) todos los elementos son ficheros.
+ lsof Listar archivos abiertos por procesos pertenecientes a un usuario en particular lsof -u &amp;lt;USER-NAME&amp;gt; Referencias  Linux lsof command  </description>
     </item>
     
     <item>
