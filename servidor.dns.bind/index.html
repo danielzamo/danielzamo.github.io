@@ -104,6 +104,13 @@ Se definen dos vistas.</p>
 <p>Las tareas realizadas son hechas sobre un servidor con una instalación de distribución CentOS Stream 8.</p>
 <p>La representación de la arq. de red del despliegue se muestra en <a href="/images/server.dns.bind.png" title="Arq. inicial - serv. DNS bind, c/2 interface sobre redes diferentes">esta captura</a>.</p>
 <p><img src="/images/server.dns.bind.png" alt="Servidor DNS Bind" title="Arq. inicial - serv. DNS bind, c/2 interface sobre redes diferentes"></p>
+<p><em>Especificación:</em></p>
+<ul>
+<li>Red internal: <code>10.0.0.0/24</code></li>
+<li>IP internal: <code>10.0.0.30</code></li>
+<li>Red external: <code>192.168.122.0/24</code></li>
+<li>IP external: <code>192.168.122.30</code></li>
+</ul>
 <h1 id="instalación-y-configuración-red-interna">Instalación y configuración red interna</h1>
 <h2 id="instalar-bind">Instalar Bind</h2>
 <pre><code>dnf -y install bind bind-utils
@@ -228,8 +235,10 @@ ns1                    IN  CNAME    centos-stream-main.my-asus.net.
 firewall-cmd --reload
 </code></pre><h2 id="modificar-el-resolver-apuntando-al-aqui-configurado-si-es-necesario">Modificar el resolver, apuntando al aqui configurado (Si es necesario)</h2>
 <p>En esta caso la especion es:</p>
-<p><em>Ip DNS</em>: 192.168.122.30/24
-<em>Interface</em>: enp1s0</p>
+<ul>
+<li><em>Ip DNS</em>: 192.168.122.30/24</li>
+<li><em>Interface</em>: enp1s0</li>
+</ul>
 <pre><code>nmcli connection modify enp1s0 ipv4.dns 192.168.122.30
 nmcli connection down enp1s0; nmcli connection up enp1s0
 </code></pre><h3 id="probando-resolucion">Probando resolucion</h3>

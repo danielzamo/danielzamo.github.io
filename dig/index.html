@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DNS y comando dig &middot; </title>
+        <meta name="description" content="DNS y comando dig">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.68.3" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="DNS y comando dig">
+<meta property="og:description" content="DNS y comando dig">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://danielzamo.github.io/dig/">
+        <link rel="stylesheet" href="https://danielzamo.github.io/dist/site.css">
+        <link rel="stylesheet" href="https://danielzamo.github.io/dist/syntax.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+        
+        
+
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a href="https://danielzamo.github.io/">Sitio web estatico</a>
+                            </h1>
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" aria-label="Twitter" href="https://twitter.com/danieloscarzamo" rel="me" >
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" aria-label="Github" href="https://github.com/danielzamo" rel="me">
+                                <i class="fa fa-github-alt" aria-hidden="true"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Email" aria-label="Send an Email" href="mailto:daniel.oscar.zamo@gmail.com">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a href="/hugoisforlovers/">Getting Started with Hugo</a>
+    </li>
+
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">DNS y comando dig</h1>
+    
+        <p class="post-description" itemprop="description">DNS y comando dig</p>
+    
+    <p class="post-date post-line">
+        <span>Published <time datetime="2021-09-14" itemprop="datePublished">Tue, Sep 14, 2021</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="#" itemprop="url" rel="author">Daniel Oscar Zamo</a>
+            </span>
+        </span>
+    </p>
+    
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    <h1 id="utilidad-dig">Utilidad <code>dig</code></h1>
+<h2 id="heading"></h2>
+<p>La siguiente secuencia de comandos, es por simular una busqueda recursiva de un autoritativo de zona. En particular un registro de tipo <strong>A</strong> <code>www.axians.com</code>. Es basicamente una busqueda completa que realiza un cache DNS, si ha dicho registro, no lo tiene almacenado previamente.
+Lo interesante a observar aqui, es:</p>
+<ul>
+<li>Un primer y simple uso de la herramienta <code>dig</code>.</li>
+<li>Observar la información que muestra el comando. En particular los flag, segun el servidor que haya respondido.</li>
+</ul>
+<p><em>Consultando los server-root</em></p>
+<blockquote>
+<p><code>dig</code> (a secas), muestra cuales son los server-root. A continuacion se invoca <code>dig</code> y que su respuesta sea la simplificada.</p>
+</blockquote>
+<pre><code># dig +short
+dig +short
+e.root-servers.net.
+k.root-servers.net.
+d.root-servers.net.
+b.root-servers.net.
+g.root-servers.net.
+l.root-servers.net.
+a.root-servers.net.
+c.root-servers.net.
+i.root-servers.net.
+h.root-servers.net.
+j.root-servers.net.
+f.root-servers.net.
+m.root-servers.net.
+</code></pre><p><strong>¿Consultar sobre el server-root <code>e.root-servers.net.</code> por el dominio <code>www.axians.com</code></strong></p>
+<pre><code>dig @e.root-servers.net. www.google.com
+</code></pre><blockquote>
+<p>Los <em><strong>server-root</strong></em> no responden con <strong>IP</strong> de servidores (registros <strong>DNS</strong> del <strong>tipo A</strong>) del dominio completo consultado (<code>www.axians.com</code>, en este ejemplo), pues su finalidad no es almacenar este tipo de numeros <strong>IP</strong>.</p>
+<p>Sus respuestas son indicando que servidores del tipo <strong>TLD</strong> (servidores <strong>Top Level Domain</strong>) gestionan el <strong>dominio de nivel superior</strong> consultado. En este caso <code>com.</code></p>
+</blockquote>
+<p><strong>¿Consultar sobre el TDL <code>a.gtld-servers.net.</code> el dominio <code>www.axians.com</code>?</strong></p>
+<pre><code>dig @a.gtld-servers.net. www.axians.com
+</code></pre><blockquote>
+<p>Los TLD tampoco tienen la responsabilidad de responder con registros del tipo A o autoritativos, pues no registran numeros de IP. Si que responden en que servidor autorativo de la zona del dominio.</p>
+</blockquote>
+<p><strong>Consultar sobre el servidor autoritativo <code>ns2.perf1.fr.</code> de la zona, el registro (de tipo <strong>A</strong>) de <code>www.axians.com</code></strong></p>
+<pre><code>dig @ns2.perf1.fr. www.axians.com
+
+; &lt;&lt;&gt;&gt; DiG 9.16.1-Ubuntu &lt;&lt;&gt;&gt; @ns2.perf1.fr. www.axians.com
+; (2 servers found)
+;; global options: +cmd
+;; Got answer:
+;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 7792
+;; flags: qr aa rd; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 6c610dbf6918de4f0100000061424dcf6277d8a66a434e03 (good)
+;; QUESTION SECTION:
+;www.axians.com.                        IN      A
+
+;; ANSWER SECTION:
+www.axians.com.         86400   IN      CNAME   axians.com.
+axians.com.             300     IN      A       20.71.232.110
+
+;; Query time: 32 msec
+;; SERVER: 81.92.87.76#53(81.92.87.76)
+;; WHEN: mié sep 15 21:47:27 CEST 2021
+;; MSG SIZE  rcvd: 101
+</code></pre><h1 id="referencias">Referencias</h1>
+<ul>
+<li><a href="https://root-servers.org/">https://root-servers.org/</a> &lt;— servidores root</li>
+<li><a href="https://eltallerdelbit.com/resolucion-dns-dig-linux/">https://eltallerdelbit.com/resolucion-dns-dig-linux/</a></li>
+<li><a href="https://blog.standalonecomplex.es/2010/05/16/guia-de-dig/">https://blog.standalonecomplex.es/2010/05/16/guia-de-dig/</a></li>
+<li><a href="http://somebooks.es/comando-dig-ubuntu/">http://somebooks.es/comando-dig-ubuntu/</a></li>
+<li><a href="https://rm-rf.es/como-usar-el-comando-dig-ejemplos/">https://rm-rf.es/como-usar-el-comando-dig-ejemplos/</a></li>
+<li><a href="https://www.hostinger.es/tutoriales/comando-dig-linux">https://www.hostinger.es/tutoriales/comando-dig-linux</a></li>
+<li><a href="https://www.administracionderedes.com/consulta-iterativa-recursiva/">https://www.administracionderedes.com/consulta-iterativa-recursiva/</a></li>
+<li><a href="https://www.ibm.com/docs/en/zos/2.2.0?topic=uzudc-dig-command-query-name-servers">https://www.ibm.com/docs/en/zos/2.2.0?topic=uzudc-dig-command-query-name-servers</a></li>
+<li><a href="https://learn.akamai.com/en-us/webhelp/pulsar-diagnostic-tools/pulsar-diagnostic-tools/GUID-80B4B9A1-16B2-4D70-8100-7B2617102002.html">https://learn.akamai.com/en-us/webhelp/pulsar-diagnostic-tools/pulsar-diagnostic-tools/GUID-80B4B9A1-16B2-4D70-8100-7B2617102002.html</a></li>
+<li><a href="https://www.youtube.com/watch?v=sUhEqT_HSBI&amp;ab_channel=ProfeSang">https://www.youtube.com/watch?v=sUhEqT_HSBI&amp;ab_channel=ProfeSang</a> &lt;— Video explicado simple y bien</li>
+<li><a href="https://www.cloudns.net/blog/10-most-used-dig-commands/">https://www.cloudns.net/blog/10-most-used-dig-commands/</a> &lt;— Ejemplo de como consultar un TLD (top level domain)</li>
+<li><a href="https://www.cloudns.net/wiki/article/40/">https://www.cloudns.net/wiki/article/40/</a></li>
+<li><a href="https://es.wikipedia.org/wiki/Sistema_de_nombres_de_dominio">https://es.wikipedia.org/wiki/Sistema_de_nombres_de_dominio</a> &lt;— tipos de registros DNS</li>
+<li><a href="https://stackoverflow.com/questions/706077/dns-how-to-dig-thru-the-right-domain-name-from-the-tld">https://stackoverflow.com/questions/706077/dns-how-to-dig-thru-the-right-domain-name-from-the-tld</a></li>
+<li><a href="https://www.youtube.com/watch?v=LqSqrtxrW7w&amp;ab_channel=DefectoDigital">https://www.youtube.com/watch?v=LqSqrtxrW7w&amp;ab_channel=DefectoDigital</a> &lt;— buena explicacion de DNS</li>
+<li><a href="https://www.youtube.com/watch?v=PLTndeCSdzk&amp;ab_channel=UniversitatPolit%C3%A8cnicadeVal%C3%A8ncia-UPV">https://www.youtube.com/watch?v=PLTndeCSdzk&amp;ab_channel=UniversitatPolit%C3%A8cnicadeVal%C3%A8ncia-UPV</a></li>
+</ul>
+
+</div>
+
+        <footer class="post-footer clearfix"><div class="share">
+            <a class="icon-twitter" href="https://twitter.com/share?text=DNS%20y%20comando%20dig&url=https%3a%2f%2fdanielzamo.github.io%2fdig%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" aria-label="Share on Twitter">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+    </div>
+</footer>
+
+        
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a href="https://danielzamo.github.io/">Sitio web estatico</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#" aria-label="Back to Top">
+                        <i class="fa fa-angle-up" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2021 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://danielzamo.github.io/js/jquery-1.11.3.min.js"></script>
+        <script src="https://danielzamo.github.io/js/jquery.fitvids.js"></script>
+        <script src="https://danielzamo.github.io/js/scripts.js"></script>
+    </body>
+</html>
+
