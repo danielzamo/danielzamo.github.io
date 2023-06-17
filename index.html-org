@@ -1,0 +1,421 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<head>
+	<meta name="generator" content="Hugo 0.101.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Daniel Oscar Zamo</title>
+
+    <link rel="canonical" href="https://danielzamo.github.io/" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.main.min.98471d643308c9fec32d8a7cd69078394f24cea0b3840cace4dc383a83268c36.css" integrity="sha256-mEcdZDMIyf7DLYp81pB4OU8kzqCzhAys5Nw4OoMmjDY=" crossorigin="anonymous" media="screen,print" />
+
+    
+        <meta property="og:title" content="CV - Daniel Oscar Zamo" />
+        <meta property="og:url" content="https://danielzamo.github.io/" />
+        <meta property="og:type" content="website" />
+        
+            <meta property="og:image" content="https://danielzamo.github.io/img/avatar.png" />
+        
+        
+            <meta property="og:description" content="Con más de 10 años de experiencia, motivado por seguir trabajando con sistemas basadas en Linux. Tanto en servidores físicos reales o tecnologías virtualizadas y/o de contenedores. Scpriting bash, …" />
+            <meta name="description" content="Con más de 10 años de experiencia, motivado por seguir trabajando con sistemas basadas en Linux. Tanto en servidores físicos reales o tecnologías virtualizadas y/o de contenedores. Scpriting bash, …" />
+        
+    
+
+    
+</head>
+
+<body>
+    <div class="content">
+        
+        <div class="content__left">
+        
+            <h1 class="mainHeading">Daniel O. <span>Zamo</span></h1>
+            
+<div id="profile" class="section">
+    <div class="section__heading">
+        <h2 class="section__title">Perfil</h2>
+    </div>
+    <div class="section__content">
+        <p>Con más de 10 años de experiencia, motivado por seguir trabajando con sistemas basadas en Linux. Tanto en servidores físicos reales o tecnologías virtualizadas y/o de contenedores. Scpriting bash, Python y automatizaciones orquestación Ansible.</p>
+    </div>
+</div>
+
+
+            
+<div id="experience" class="section">
+    <div class="section__heading">
+        <h2 class="section__title">Experiencia</h2>
+    </div>
+    <div class="section__content">
+        <div class="experience">
+            
+            
+            <div class="experience__item">
+            
+                <div class="experience__header">
+                    <h3 class="experience__company">
+                        Atos
+                    </h3>
+                    <h3 class="experience__place">Madrid, España</h3>
+                </div>
+                
+                <div class="experience__job">
+                    <div class="experience__subheader">
+                        <h3 class="experience__position">
+                            Técnico especialista
+                        </h3>
+                        <h3 class="experience__date">Dic. 2022 - Mar. 2023</h3>
+                    </div>
+                    <ul>
+                        
+                        <li class="experience__bullet">Tareas de monitoreo de sistemas basados en arquitectura HPC tipo Beowulf.</li>
+                        
+                        <li class="experience__bullet">Generación de reportes.</li>
+                        
+                    </ul>
+                    <div class="experience__badges">
+                        <ul>
+                            
+                            <li class="experience__badge">Bash</li>
+                            
+                            <li class="experience__badge">Editor de texto docx</li>
+                            
+                            <li class="experience__badge">Grafana</li>
+                            
+                            <li class="experience__badge">Hoja de cálculo</li>
+                            
+                            <li class="experience__badge">Python</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+            <div class="experience__item">
+            
+                <div class="experience__header">
+                    <h3 class="experience__company">
+                        Axians
+                    </h3>
+                    <h3 class="experience__place">Madrid, España</h3>
+                </div>
+                
+                <div class="experience__job">
+                    <div class="experience__subheader">
+                        <h3 class="experience__position">
+                            Técnico Ingeniería de sistemas
+                        </h3>
+                        <h3 class="experience__date">Jun. 2021 - Nov. 2022</h3>
+                    </div>
+                    <ul>
+                        
+                        <li class="experience__bullet">Despliegues/orquestación de arquitecturas sistemas Linux basados en RHEL y derivados. Sobre servidores de hardware físicos reales y/o virtualizados.</li>
+                        
+                        <li class="experience__bullet">Mantenimiento, despliegues de sistemas y servicios basados en TCP/IP.</li>
+                        
+                    </ul>
+                    <div class="experience__badges">
+                        <ul>
+                            
+                            <li class="experience__badge">Bash</li>
+                            
+                            <li class="experience__badge">DHCP</li>
+                            
+                            <li class="experience__badge">DNS</li>
+                            
+                            <li class="experience__badge">firewalld</li>
+                            
+                            <li class="experience__badge">IP</li>
+                            
+                            <li class="experience__badge">iptables</li>
+                            
+                            <li class="experience__badge">KVM</li>
+                            
+                            <li class="experience__badge">Python</li>
+                            
+                            <li class="experience__badge">RHEL</li>
+                            
+                            <li class="experience__badge">VMware</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+            
+<div id="education" class="section">
+    <div class="section__heading">
+        <h2 class="section__title">
+            Educación
+        </h2>
+    </div>
+    <div class="section__content">
+        
+            <div class="education__item">
+                <h3 class="education__title">Máster en Ingeniería del Software</h3>
+                <h4 class="education__place">Universidad Politecnica de Madrid</h4>
+                <h4 class="education__date">2008 - 2010</h4>
+                <div class="education__description"></div>
+                <br>
+            </div>
+        
+            <div class="education__item">
+                <h3 class="education__title">Profesor en Tecnología Electrónica</h3>
+                <h4 class="education__place">Universidad Nacional de San Luis - Argentina</h4>
+                <h4 class="education__date">2003 - 2006</h4>
+                <div class="education__description"></div>
+                <br>
+            </div>
+        
+            <div class="education__item">
+                <h3 class="education__title">Técnico Universitario en Microprocesadores</h3>
+                <h4 class="education__place">Universidad Nacional de San Luis</h4>
+                <h4 class="education__date">Mar. 1997 - Dic. 2000</h4>
+                <div class="education__description"></div>
+                <br>
+            </div>
+        
+            <div class="education__item">
+                <h3 class="education__title">Técnico Electrónico</h3>
+                <h4 class="education__place">ENET N 1 - Argentina</h4>
+                <h4 class="education__date">1997 - 2000</h4>
+                <div class="education__description">Argentina</div>
+                <br>
+            </div>
+        
+    </div>
+</div>
+
+
+            
+<div id="references" class="section">
+    <div class="section__heading">
+        <h2 class="section__title">References</h2>
+    </div>
+    <div class="section__content">
+        <div class="references">
+            
+            <div class="references__item">
+                <div class="references__person">
+                    <div class="references__header">
+                        <h3 class="references__name">
+                            Person One
+                        </h3>
+                    </div>
+                    <div class="references__subheader">
+                        <h4 class="references__relation">
+                            Co-worker at Super Cool Company
+                        </h4>
+                    </div>
+                    
+                        <li class="references__contact">
+                            <i class="fas fa-phone"></i><span>+44 123 456 790</span>
+                        </li>
+                    
+                        <li class="references__contact">
+                            <i class="fas fa-envelope"></i><span>contact@person-one.com</span>
+                        </li>
+                    
+                        <li class="references__contact">
+                            <i class="fas fa-map-marker-alt"></i><span>Melbourne, Australia</span>
+                        </li>
+                    
+                </div>
+            </div>
+            
+            <div class="references__item">
+                <div class="references__person">
+                    <div class="references__header">
+                        <h3 class="references__name">
+                            Person Two
+                        </h3>
+                    </div>
+                    <div class="references__subheader">
+                        <h4 class="references__relation">
+                            Boss at Super Cool Company
+                        </h4>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+        </div>
+        
+        <div class="content__right">
+        
+            
+    <div class="sideSection avatar">
+        <div class="avatar__container">
+            <img class="avatar__img" src="img/avatar.png" alt="photo of me">
+        </div>
+    </div>
+
+            
+<div class="sideSection contact">
+    <ul>
+        
+        <li class="contact__item">
+            <i class="fas fa-phone"></i><span>+34 644 565479</span>
+        </li>
+        
+        <li class="contact__item">
+            <i class="fas fa-envelope"></i><span>daniel.oscar.zamo@gmail.com</span>
+        </li>
+        
+        <li class="contact__item">
+            <i class="fas fa-globe"></i><span>danielzamo.github.io</span>
+        </li>
+        
+        <li class="contact__item">
+            <i class="fas fa-map-marker-alt"></i><span>España</span>
+        </li>
+        
+    </ul>
+</div>
+
+
+            
+<div class="sideSection">
+    <div class="sideSection__heading">
+        <h2 class="sideSection__title">Skills</h2>
+    </div>
+    <div class="sideSection__content">
+        <ul class="skills">
+            <li>
+                
+                <ul class="skills__group">
+                    <span>Lenguajes</span>
+                    <br>
+                    
+                    <li><a href="https://www.gnu.org/software/gawk/manual/gawk.html" target="_blank">Awk</a></li>
+                    
+                    <li><a href="https://opensource.com/resources/what-bash" target="_blank">Bash</a></li>
+                    
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">CSS</a></li>
+                    
+                    <li><a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a></li>
+                    
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript" target="_blank">Javascript</a></li>
+                    
+                    <li><a href="https://palletsprojects.com/p/jinja/" target="_blank">Jinja</a></li>
+                    
+                    <li><a href="https://www.genbeta.com/guia-de-inicio/que-es-markdown-para-que-sirve-y-como-usarlo" target="_blank">Markdown</a></li>
+                    
+                    <li><a href="https://www.python.org/" target="_blank">Python</a></li>
+                    
+                    <li><a href="https://aws.amazon.com/what-is/sql/" target="_blank">SQL</a></li>
+                    
+                </ul>
+                
+                <ul class="skills__group">
+                    <span>Contenedores</span>
+                    <br>
+                    
+                    <li><a href="https://cloud.google.com/anthos/clusters/docs/on-prem/latest/concepts/using-containerd?hl=es-419" target="_blank">Containerd</a></li>
+                    
+                    <li><a href="https://aws.amazon.com/es/docker/" target="_blank">Docker</a></li>
+                    
+                    <li><a href="https://www.ionos.es/digitalguide/servidores/know-how/que-es-lxd/" target="_blank">ldx/lxc</a></li>
+                    
+                    <li><a href="https://www.redhat.com/es/topics/containers/what-is-podman" target="_blank">Podman</a></li>
+                    
+                </ul>
+                
+                <ul class="skills__group">
+                    <span>Virtualización</span>
+                    <br>
+                    
+                    <li><a href="https://www.linux-kvm.org/page/Main_Page" target="_blank">KVM</a></li>
+                    
+                    <li><a href="https://www.proxmox.com/en/" target="_blank">Proxmox</a></li>
+                    
+                    <li><a href="https://www.vmware.com/" target="_blank">VMware</a></li>
+                    
+                    <li><a href="https://xenproject.org/" target="_blank">Xen</a></li>
+                    
+                </ul>
+                
+                <ul class="skills__group">
+                    <span>Frameworks</span>
+                    <br>
+                    
+                    <li><a href="https://pythonbasics.org/what-is-flask-python/" target="_blank">Flask</a></li>
+                    
+                    <li><a href="https://gohugo.io/" target="_blank">Hugo</a></li>
+                    
+                </ul>
+                
+                <ul class="skills__group">
+                    <span>Tecnologías</span>
+                    <br>
+                    
+                    <li><a href="https://en.wikipedia.org/wiki/Concurrent_Versions_System" target="_blank">cvs</a></li>
+                    
+                    <li><a href="https://about.gitlab.com/topics/version-control/what-is-git-version-control/" target="_blank">git</a></li>
+                    
+                    <li><a href="https://www.javatpoint.com/svn" target="_blank">svn</a></li>
+                    
+                </ul>
+                
+                <ul class="skills__group">
+                    <span>Tecnologías</span>
+                    <br>
+                    
+                    <li><a href="https://www.techtarget.com/whatis/definition/GitLab" target="_blank">Gitlab</a></li>
+                    
+                    <li><a href="https://en.wikipedia.org/wiki/GitHub" target="_blank">Github</a></li>
+                    
+                    <li><a href="https://www.ansible.com/" target="_blank">Ansible</a></li>
+                    
+                </ul>
+                
+                <ul class="skills__group">
+                    <span>Otras tecnologías, utilidades</span>
+                    <br>
+                    
+                    <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_expressions" target="_blank">Expresiones regulares</a></li>
+                    
+                    <li><a href="https://es.wikipedia.org/wiki/L%C3%A1tex" target="_blank">LaTeX</a></li>
+                    
+                    <li><a href="https://en.wikipedia.org/wiki/Sed" target="_blank">Sed</a></li>
+                    
+                </ul>
+                
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+            
+
+            
+
+            
+
+        </div>
+    </div>
+</body>
+</html>
