@@ -1,288 +1,288 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Daniel Oscar Zamo</title>
-    <link>https://danielzamo.github.io/tags/</link>
-    <description>Recent content in Tags on Daniel Oscar Zamo</description>
+    <title>Tags on Daniel O. Zamo</title>
+    <link>https://danielzamo.github.com/tags/</link>
+    <description>Recent content in Tags on Daniel O. Zamo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Jan 2020 17:09:26 +0000</lastBuildDate><atom:link href="https://danielzamo.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Jan 2020 17:09:26 +0000</lastBuildDate><atom:link href="https://danielzamo.github.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker</title>
-      <link>https://danielzamo.github.io/tags/docker/</link>
+      <link>https://danielzamo.github.com/tags/docker/</link>
       <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/docker/</guid>
+      <guid>https://danielzamo.github.com/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>JavaScript</title>
-      <link>https://danielzamo.github.io/tags/javascript/</link>
+      <link>https://danielzamo.github.com/tags/javascript/</link>
       <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/javascript/</guid>
+      <guid>https://danielzamo.github.com/tags/javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>JSON</title>
-      <link>https://danielzamo.github.io/tags/json/</link>
+      <link>https://danielzamo.github.com/tags/json/</link>
       <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/json/</guid>
+      <guid>https://danielzamo.github.com/tags/json/</guid>
       <description></description>
     </item>
     
     <item>
       <title>node.js</title>
-      <link>https://danielzamo.github.io/tags/node.js/</link>
+      <link>https://danielzamo.github.com/tags/node.js/</link>
       <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/node.js/</guid>
+      <guid>https://danielzamo.github.com/tags/node.js/</guid>
       <description></description>
     </item>
     
     <item>
       <title>REST APIs</title>
-      <link>https://danielzamo.github.io/tags/rest-apis/</link>
+      <link>https://danielzamo.github.com/tags/rest-apis/</link>
       <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/rest-apis/</guid>
+      <guid>https://danielzamo.github.com/tags/rest-apis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Atlassian Ecosystem</title>
-      <link>https://danielzamo.github.io/tags/atlassian-ecosystem/</link>
+      <link>https://danielzamo.github.com/tags/atlassian-ecosystem/</link>
       <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/atlassian-ecosystem/</guid>
+      <guid>https://danielzamo.github.com/tags/atlassian-ecosystem/</guid>
       <description></description>
     </item>
     
     <item>
       <title>BOSH</title>
-      <link>https://danielzamo.github.io/tags/bosh/</link>
+      <link>https://danielzamo.github.com/tags/bosh/</link>
       <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/bosh/</guid>
+      <guid>https://danielzamo.github.com/tags/bosh/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DevOps</title>
-      <link>https://danielzamo.github.io/tags/devops/</link>
+      <link>https://danielzamo.github.com/tags/devops/</link>
       <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/devops/</guid>
+      <guid>https://danielzamo.github.com/tags/devops/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Java</title>
-      <link>https://danielzamo.github.io/tags/java/</link>
+      <link>https://danielzamo.github.com/tags/java/</link>
       <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/java/</guid>
+      <guid>https://danielzamo.github.com/tags/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>monit</title>
-      <link>https://danielzamo.github.io/tags/monit/</link>
+      <link>https://danielzamo.github.com/tags/monit/</link>
       <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/monit/</guid>
+      <guid>https://danielzamo.github.com/tags/monit/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
-      <link>https://danielzamo.github.io/tags/python/</link>
+      <link>https://danielzamo.github.com/tags/python/</link>
       <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/python/</guid>
+      <guid>https://danielzamo.github.com/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>agile</title>
-      <link>https://danielzamo.github.io/tags/agile/</link>
+      <link>https://danielzamo.github.com/tags/agile/</link>
       <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/agile/</guid>
+      <guid>https://danielzamo.github.com/tags/agile/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Continuous Delivery</title>
-      <link>https://danielzamo.github.io/tags/continuous-delivery/</link>
+      <link>https://danielzamo.github.com/tags/continuous-delivery/</link>
       <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/continuous-delivery/</guid>
+      <guid>https://danielzamo.github.com/tags/continuous-delivery/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Continuous Integration</title>
-      <link>https://danielzamo.github.io/tags/continuous-integration/</link>
+      <link>https://danielzamo.github.com/tags/continuous-integration/</link>
       <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/continuous-integration/</guid>
+      <guid>https://danielzamo.github.com/tags/continuous-integration/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Culture</title>
-      <link>https://danielzamo.github.io/tags/culture/</link>
+      <link>https://danielzamo.github.com/tags/culture/</link>
       <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/culture/</guid>
+      <guid>https://danielzamo.github.com/tags/culture/</guid>
       <description></description>
     </item>
     
     <item>
       <title>apache</title>
-      <link>https://danielzamo.github.io/tags/apache/</link>
+      <link>https://danielzamo.github.com/tags/apache/</link>
       <pubDate>Thu, 01 Jan 2009 14:09:10 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/apache/</guid>
+      <guid>https://danielzamo.github.com/tags/apache/</guid>
       <description></description>
     </item>
     
     <item>
       <title>redirect</title>
-      <link>https://danielzamo.github.io/tags/redirect/</link>
+      <link>https://danielzamo.github.com/tags/redirect/</link>
       <pubDate>Thu, 01 Jan 2009 14:09:10 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/redirect/</guid>
+      <guid>https://danielzamo.github.com/tags/redirect/</guid>
       <description></description>
     </item>
     
     <item>
       <title>rewrite</title>
-      <link>https://danielzamo.github.io/tags/rewrite/</link>
+      <link>https://danielzamo.github.com/tags/rewrite/</link>
       <pubDate>Thu, 01 Jan 2009 14:09:10 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/rewrite/</guid>
+      <guid>https://danielzamo.github.com/tags/rewrite/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ssl</title>
-      <link>https://danielzamo.github.io/tags/ssl/</link>
+      <link>https://danielzamo.github.com/tags/ssl/</link>
       <pubDate>Thu, 01 Jan 2009 14:09:10 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/ssl/</guid>
+      <guid>https://danielzamo.github.com/tags/ssl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>web development</title>
-      <link>https://danielzamo.github.io/tags/web-development/</link>
+      <link>https://danielzamo.github.com/tags/web-development/</link>
       <pubDate>Thu, 01 Jan 2009 14:09:10 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/web-development/</guid>
+      <guid>https://danielzamo.github.com/tags/web-development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Atlassian Developer Ecosystem</title>
-      <link>https://danielzamo.github.io/tags/atlassian-developer-ecosystem/</link>
+      <link>https://danielzamo.github.com/tags/atlassian-developer-ecosystem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/atlassian-developer-ecosystem/</guid>
+      <guid>https://danielzamo.github.com/tags/atlassian-developer-ecosystem/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bamboo</title>
-      <link>https://danielzamo.github.io/tags/bamboo/</link>
+      <link>https://danielzamo.github.com/tags/bamboo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/bamboo/</guid>
+      <guid>https://danielzamo.github.com/tags/bamboo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>bash/shell</title>
-      <link>https://danielzamo.github.io/tags/bash/shell/</link>
+      <link>https://danielzamo.github.com/tags/bash/shell/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/bash/shell/</guid>
+      <guid>https://danielzamo.github.com/tags/bash/shell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bitbucket</title>
-      <link>https://danielzamo.github.io/tags/bitbucket/</link>
+      <link>https://danielzamo.github.com/tags/bitbucket/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/bitbucket/</guid>
+      <guid>https://danielzamo.github.com/tags/bitbucket/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CI/CD pipelines</title>
-      <link>https://danielzamo.github.io/tags/ci/cd-pipelines/</link>
+      <link>https://danielzamo.github.com/tags/ci/cd-pipelines/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/ci/cd-pipelines/</guid>
+      <guid>https://danielzamo.github.com/tags/ci/cd-pipelines/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Confluence</title>
-      <link>https://danielzamo.github.io/tags/confluence/</link>
+      <link>https://danielzamo.github.com/tags/confluence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/confluence/</guid>
+      <guid>https://danielzamo.github.com/tags/confluence/</guid>
       <description></description>
     </item>
     
     <item>
       <title>JIRA</title>
-      <link>https://danielzamo.github.io/tags/jira/</link>
+      <link>https://danielzamo.github.com/tags/jira/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/jira/</guid>
+      <guid>https://danielzamo.github.com/tags/jira/</guid>
       <description></description>
     </item>
     
     <item>
       <title>jQuery</title>
-      <link>https://danielzamo.github.io/tags/jquery/</link>
+      <link>https://danielzamo.github.com/tags/jquery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/jquery/</guid>
+      <guid>https://danielzamo.github.com/tags/jquery/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Maven</title>
-      <link>https://danielzamo.github.io/tags/maven/</link>
+      <link>https://danielzamo.github.com/tags/maven/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/maven/</guid>
+      <guid>https://danielzamo.github.com/tags/maven/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spring</title>
-      <link>https://danielzamo.github.io/tags/spring/</link>
+      <link>https://danielzamo.github.com/tags/spring/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/spring/</guid>
+      <guid>https://danielzamo.github.com/tags/spring/</guid>
       <description></description>
     </item>
     
     <item>
       <title>xml/xslt</title>
-      <link>https://danielzamo.github.io/tags/xml/xslt/</link>
+      <link>https://danielzamo.github.com/tags/xml/xslt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://danielzamo.github.io/tags/xml/xslt/</guid>
+      <guid>https://danielzamo.github.com/tags/xml/xslt/</guid>
       <description></description>
     </item>
     
