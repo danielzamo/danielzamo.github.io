@@ -1,249 +1,517 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w2.org/1999/xhtml">
 <html lang="en">
-    <head>
-	<meta name="generator" content="Hugo 0.101.0" />
-            <meta charset="utf-8" />
-    <title>CV </title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Text about the site">
-    <meta property="og:title" content="CV" />
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://danielzamo.github.io" />
-    <link rel="sitemap" type="application/xml" title="Sitemap" href=""/>
-    <link rel="canonical" href="https://danielzamo.github.io/" />    <link rel="apple-touch-icon" sizes="180x180" href="https://danielzamo.github.io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://danielzamo.github.io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://danielzamo.github.io/favicon-16x16.png">
-    <link rel="manifest" href="https://danielzamo.github.io/site.webmanifest">
-    <link rel="mask-icon" href="https://danielzamo.github.io/safari-pinned-tab.svg" color="">
-    <link rel="shortcut icon" href="https://danielzamo.github.io/favicon.ico">
-    <meta name="msapplication-TileColor" content="">
-
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.33.2/js/jquery.terminal.min.js"></script>
-    <script src="https://unpkg.com/jquery.terminal/js/autocomplete_menu.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.33.2/css/jquery.terminal.min.css" rel="stylesheet"/>
-
-    <style>
-        body {
-            width: 100%;
-            font-size: 18px;
-        }
-    </style>
-    
-    </head>
-        <body>
-        
-<script> 
-jQuery(document).ready(function($) {
-    var animation = false;
-    var availableCommands = ["all", "whois", 'social', 'work', 'education',
-                    'skills', 'softskills', 'languages',
-                    'projects',
-	            
-                    
-                    
-                    
-                     'source' 
-                    ] 
-
-    $('body').terminal(function(command, term) {
-
-     
-    function whois () {
-        term.echo ("");
-        
-        term.echo ("");
-      }
-
-    function social () {
-        term.echo("");
-        
-            
-        
-        term.echo("")
-    }
-	    
-    function certifications () {
-        term.echo("");
-        
-    }
-	    
-    function work () {
-        term.echo("");
-        
-    }
-
-    function education () {
-        term.echo("");
-        
-    }
-
-    function skills () {
-        term.echo(" ");
-        
-    }
-    function softskills () {
-        term.echo("");
-        
-    }
-      
-    function languages () {
-        term.echo("");
-        
-    }
-
-    
-    function projects () {
-        term.echo("");
-        
-    }
-
-    function misc (){
-        term.echo ("")
-        term.echo("[[b;;]]" + "\n")
-        term.echo ("[[;;]]")
-        term.echo ("")
-    }
-
-    function help () {
-        term.echo("\n[[b;white;]Available commands:]\n" +
-                  "\n" + availableCommands.join(' ')+ '\n') 
-    }
-
-      function source() {
-          term.echo("        _______            \n"+
-                    "       |       |           \n"+
-                    "       |       |           \n"+
-                    "       |_______|_______    \n"+
-	                "               |       |   \n"+
-                    "               |       |   \n"+
-                    " ______________|_______|   \n"+
-                    "|      |       |       |   \n"+
-                    "|      |       |       |   \n"+
-                    "|______|_______|_______|   \n"+
-                    "[[;red;]May the source be with you]\n"+
-                    "[[;grey;]https://github.com/4s3ti/terminalcv\n");
-      }
-
-    
-    function progress(percent, width) {
-        var size = Math.round(width*percent/100);
-        var left = '', taken = '', i;
-        for (i=size; i--;) {
-            taken += '=';
-        }
-        if (taken.length > 0) {
-            taken = taken.replace(/=$/, '>');
-        }
-        for (i=width-size; i--;) {
-            left += ' ';
-        }
-        return '[' + taken + left + '] ' + percent + '%';
-    }
-
-    function loading () {
-        var i = 0, size = 30;
-        prompt = term.get_prompt();
-        string = progress(0, size);
-        term.set_prompt(progress);
-        animation = true;
-        (function loop() {
-            string = progress(i++, size);
-            term.set_prompt(string);
-            if (i < 100) {
-                timer = setTimeout(loop, 10);
-            } else {
-                term.echo(progress(i, size) + ' [[b;green;]OK]').set_prompt(prompt);
-                animation = false
-            }
-        })();
-    }
-
-       
-        commands = command.split(/[ ]+/);
-        switch(commands[0]) {
-            case 'whois':
-                whois();
-                break;
-            case 'social':
-                social();
-                break;
-            case 'work':
-                work();
-                break;
-            case 'education':
-                education();
-                break;
-            case 'skills':
-                skills();
-                break;
-            case 'softskills':
-                softskills();
-                break;
-            case 'languages':
-                languages();
-                break;
-            case 'projects':
-                projects();
-                break;
-	    case 'certifications':
-                certifications();
-                break;
-            case 'misc':
-                misc();
-                break;
-            case 'help':
-                help();
-                break;
-            case 'all':
-                whois();
-                social();
-                work();
-                education();
-                skills();
-                softskills();
-                languages();
-                projects();
-		certifications();
-                
-                
-                    source();
-                
-                break;
-            
-            case ':(){:|:&};:':
-            case 'source':
-                source();
-                break;
-            
-            default:
-                term.echo("\nunknown command: " + command + "\n" +
-                          "please type 'help' for a list of available commands\n");
-        }
-    }, {
-        prompt: '[[;grey;]][[;grey;]:~$]' + " ",
-        greetings: "[[b;white;]]",
-        keydown: function(e, term) {
-            if (animation) {
-                if (e.which == 68 && e.ctrlKey) { 
-                    clearTimeout(timer);
-                    animation = false;
-                    term.echo(string + ' [[b;red;]FAIL]')
-                    .set_prompt(prompt);
-                }
-                return false;
-            }
+    <meta charset="utf-8"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "https:\/\/danielzamo.github.io"
         },
-        autocompleteMenu: true,
-        completion: availableCommands
+        "articleSection": "",
+        "name": "CV",
+        "headline": "CV",
+        "description": "Text about the site",
+        "inLanguage": "en",
+        "author": "Sebastian Pech",
+        "creator": "Sebastian Pech",
+        "publisher": "Sebastian Pech",
+        "accountablePerson": "Sebastian Pech",
+        "copyrightHolder": "Sebastian Pech",
+        "copyrightYear": "0001",
+        "datePublished": "0001-01-01T00:00:00Z",
         
-    });
-});
+        "url" : "\/",
+        "wordCount" : "0",
+        "keywords" : [ "Blog" ]
+    }
 </script>
+<title>CV</title><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Text about the site">
+<meta name="author" content="Sebastian Pech">
+<link rel="icon" href="https://danielzamo.github.io/favicon.ico">
 
-        </body>
+
+<meta itemprop="name" content="CV">
+<meta itemprop="description" content="Text about the site">
+<meta property="og:title" content="CV" />
+<meta property="og:description" content="Text about the site" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://danielzamo.github.io/" /><meta property="og:site_name" content="CV" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="CV"/>
+<meta name="twitter:description" content="Text about the site"/>
+<meta name="twitter:site" content="@spech84"/>
+
+
+<link rel="alternate" href="https://danielzamo.github.io/index.xml" type="application/rss+xml" title="CV"/>
+
+
+
+
+
+<link rel="stylesheet" href="https://danielzamo.github.io/css/vendor.min.eb09cbf51ed02f407edabd4b18df3ad585c785c38fd1caf9d69f8f55677e6804309e606cafe5d2366b87a0916e8503b6bbfc7093881db2884e07f359a6e9a12c.css" integrity="sha512-6wnL9R7QL0B&#43;2r1LGN861YXHhcOP0cr51p&#43;PVWd&#43;aAQwnmBsr&#43;XSNmuHoJFuhQO2u/xwk4gdsohOB/NZpumhLA==">
+
+
+<body>
+
+
+
+
+
+<div class="container">
+    <main>
+
+<h1>Good Boy - CV</h1>
+<div class="subtitle">Rescue dog at ACME Police Station</div>
+
+
+
+<section id="section-personal-data">
+    <h2><i class="fas fa-user"></i> Personal Data</h2>
+    <ul class="listspecial">
+        
+            <li><strong><i class="fas fa-user"></i> Name</strong>Good Boy</p>
+        
+            <li><strong><i class="fas fa-map-marker-alt"></i> Address</strong>xxx, 12345 xxxx</p>
+        
+            <li><strong><i class="fas fa-mobile-alt"></i> Phone</strong>+12 34567 89000</p>
+        
+            <li><strong><i class="fas fa-envelope"></i> Email</strong><a href="mailto:good.boy@example.org">good.boy@example.org</a></p>
+        
+            <li><strong><i class="fas fa-globe"></i> Website</strong>example.org</p>
+        
+            <li><strong><i class="far fa-calendar-alt"></i> Date of birth</strong>01.01.1111</p>
+        
+    </ul>
+</section>
+
+
+
+<section id="section-brief-profile">
+    <h2><i class="fas fa-th-list"></i> Brief Profile</h2>
+    
+        <div class="innerContainer">
+            <h3 class="innerLeft">Strengths</h3>
+            <div class="innerRight">
+                
+                    <p>Strong bite</p>
+                
+                    <p>Fast sprinter</p>
+                
+                    <p>Great jumping power</p>
+                
+            </div>
+        </div>
+    
+        <div class="innerContainer">
+            <h3 class="innerLeft">Skills</h3>
+            <div class="innerRight">
+                
+                    <p>Rescue people</p>
+                
+                    <p>Eating</p>
+                
+            </div>
+        </div>
+    
+        <div class="innerContainer">
+            <h3 class="innerLeft">Certifications</h3>
+            <div class="innerRight">
+                
+                    <p>Bodyguard</p>
+                
+                    <p>Security Officer</p>
+                
+            </div>
+        </div>
+    
+</section>
+
+
+
+<section id="section-experience">
+    <h2><i class="fas fa-briefcase"></i> Experience</h2>
+    
+        <div class="innerContainer">
+            <h3 class="innerLeft">01/2018<br />-<br/> Today</h3>
+            <div class="innerRight">
+                <h3>Rescue dog</h3>
+                <p><a href="https://www.example.org" target="_blank" rel="noopener noreferrer">ACME Police</a></p>
+                
+                    <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro.</p>
+                
+                    <p>De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia.</p>
+                
+                    <p>De apocalypsi gorger omero undead survivor dictum mauris.</p>
+                
+                <p>
+                    
+                        <span class="tag">Zombie</span>
+                    
+                        <span class="tag">ipsum</span>
+                    
+                        <span class="tag">inferno</span>
+                    
+                        <span class="tag">survivor</span>
+                    
+                        <span class="tag">undead</span>
+                    
+                </p>
+            </div>
+        </div>
+    
+        <div class="innerContainer">
+            <h3 class="innerLeft">06/2014<br />-<br/> 12/2017</h3>
+            <div class="innerRight">
+                <h3>Rescue dog</h3>
+                <p><a href="https://www.example.com" target="_blank" rel="noopener noreferrer">ABCD Police</a></p>
+                
+                    <p>Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby.</p>
+                
+                    <p>The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus.</p>
+                
+                    <p>Zonbi tattered for solum oculi eorum defunctis go lum cerebro.</p>
+                
+                <p>
+                    
+                        <span class="tag">evil</span>
+                    
+                        <span class="tag">voodoo</span>
+                    
+                        <span class="tag">flesh eater</span>
+                    
+                </p>
+            </div>
+        </div>
+    
+        <div class="innerContainer">
+            <h3 class="innerLeft">01/2010<br />-<br/> 05/2014</h3>
+            <div class="innerRight">
+                <h3>Guard dog</h3>
+                <p><a href="https://www.example.com" target="_blank" rel="noopener noreferrer">XYZ Guard dogs</a></p>
+                
+                    <p>Cum horribilem walking dead resurgere de crazed sepulcris creaturis, zombie sicut de grave feeding iride et serpens.</p>
+                
+                    <p>Pestilentia, shaun ofthe dead scythe animated corpses ipsa screams.</p>
+                
+                    <p>Pestilentia est plague haec decaying ambulabat mortuos.</p>
+                
+                    <p>Sicut zeder apathetic malus voodoo. Aenean a dolor plan et terror soulless vulnerum contagium accedunt, mortui iam vivam unlife.</p>
+                
+                    <p>Qui tardius moveri, brid eof reanimator sed in magna copia sint terribiles undeath legionis.</p>
+                
+                    <p>Alii missing oculis aliorum sicut serpere crabs nostram.</p>
+                
+                <p>
+                    
+                        <span class="tag">voodoo</span>
+                    
+                        <span class="tag">Pestilentia</span>
+                    
+                        <span class="tag">undeath</span>
+                    
+                </p>
+            </div>
+        </div>
+    
+</section>
+
+
+
+    
+    <section id="section-academic-education">
+        <h2><i class="fas fa-university"></i> Academic Education</h2>
+        
+            <div class="innerContainer">
+                <h3 class="innerLeft">01/2010<br />-<br/> 05/2014</h3>
+                <div class="innerRight">
+                    <h3>Dog University</h3>
+                    <p><a href="https://www.example.com" target="_blank" rel="noopener noreferrer">Dog school A</a></p>
+                    <p>Master of Arts</p>
+                </div>
+            </div>
+        
+    </section>
+    
+
+    
+    <section id="section-professional-training">
+        <h2><i class="fas fa-road"></i> Professional Training</h2>
+        
+            <div class="innerContainer">
+                <h3 class="innerLeft">01/2010<br />-<br/> 05/2014</h3>
+                <div class="innerRight">
+                    <h3>Dog Professional Training</h3>
+                    <p><a href="https://www.example.com" target="_blank" rel="noopener noreferrer">Dog school B</a></p>
+                    <p>Guard dog</p>
+                </div>
+            </div>
+        
+    </section>
+    
+
+    
+    <section id="section-school-education">
+        <h2><i class="fas fa-school"></i> School Education</h2>
+        
+            <div class="innerContainer">
+                <h3 class="innerLeft">01/2010<br />-<br/> 05/2014</h3>
+                <div class="innerRight">
+                    <h3>Secondary school</h3>
+                    <p><a href="https://www.example.com" target="_blank" rel="noopener noreferrer">ACME Secondary School</a></p>
+                    <p>Advanced technical college certificate</p>
+                </div>
+            </div>
+        
+    </section>
+    
+
+    
+    <section id="section-further-education">
+        <h2><i class="fas fa-chalkboard-teacher"></i> Further Education</h2>
+        
+            <div class="innerContainer">
+                <h3 class="innerLeft">01/2010<br />-<br/> 05/2014</h3>
+                <div class="innerRight">
+                    <h3>PersonalTrainer</h3>
+                    <p><a href="https://www.example.com" target="_blank" rel="noopener noreferrer">ACME University</a></p>
+                    <p>PersonalTrainer A-License</p>
+                </div>
+            </div>
+        
+    </section>
+    
+
+
+
+    
+    <section id="section-diplomas">
+        <h2><i class="fas fa-certificate"></i> Diplomas</h2>
+        <ul class="listsimple">
+            
+                <li>01/2020 Sicut zeder apathetic malus voodoo</li>
+            
+                <li>01/2020 Alii missing oculis aliorum</li>
+            
+                <li>01/2020 Cum horribilem walking</li>
+            
+                <li>01/2020 Qui tardius moveri</li>
+            
+        </ul>
+    </section>
+    
+
+    
+    <section id="section-sprachkenntnisse">
+        <h2><i class="fas fa-language"></i> Sprachkenntnisse</h2>
+        <ul class="listsimple">
+            
+                <li>German (native)</li>
+            
+                <li>English (CEFR Level B2)</li>
+            
+        </ul>
+    </section>
+    
+
+    
+    <section id="section-organisationen">
+        <h2><i class="fas fa-users"></i> Organisationen</h2>
+        <ul class="listsimple">
+            
+                <li>Dog school A</li>
+            
+                <li>Dog school B</li>
+            
+        </ul>
+    </section>
+    
+
+    
+    <section id="section-fahigkeiten">
+        <h2><i class="fas fa-sliders-h"></i> Fähigkeiten</h2>
+        <ul class="listsimple">
+            
+                <li>Bite</li>
+            
+                <li>Watch Me command</li>
+            
+                <li>Sit command</li>
+            
+                <li>Down command</li>
+            
+        </ul>
+    </section>
+    
+
+    
+    <section id="section-interessen">
+        <h2><i class="fas fa-chess"></i> Interessen</h2>
+        <ul class="listsimple">
+            
+                <li>Dance</li>
+            
+                <li>Agility</li>
+            
+                <li>Sleep</li>
+            
+                <li>Eat</li>
+            
+        </ul>
+    </section>
+    
+
+
+
+<section id="section-contact">
+    <h2><i class="fas fa-address-card"></i> Contact</h2>
+    <ul class="listspecial">
+        
+            <li><strong><i class="fas fa-user"></i> Name</strong>Good Boy</p>
+        
+            <li><strong><i class="fas fa-map-marker-alt"></i> Address</strong>xxx, 12345 xxxx</p>
+        
+            <li><strong><i class="fas fa-mobile-alt"></i> Phone</strong>+12 34567 89000</p>
+        
+            <li><strong><i class="fas fa-envelope"></i> Email</strong><a href="mailto:good.boy@example.org">good.boy@example.org</a></p>
+        
+    </ul>
+    <ul>
+  <li class="list-inline-item"><a href="https://github.com/spech66" target="_blank" rel="noopener noreferrer" title="GitHub" class="fab fa-github fa-2x white-text"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li class="list-inline-item"><a href="https://linkedin.com/in/sebastian-pech" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="fab fa-linkedin fa-2x white-text"></a></li>
+
+
+
+
+
+
+
+  <li class="list-inline-item"><a href="https://www.xing.com/profile/Sebastian_Pech3" target="_blank" rel="noopener noreferrer" title="Xing" class="fab fa-xing fa-2x white-text"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li class="list-inline-item"><a href="https://twitter.com/spech84" target="_blank" rel="noopener noreferrer" title="Twitter" class="fab fa-twitter fa-2x white-text"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+</section>
+
+<div class="fabs">
+    
+        
+            <a href="https://danielzamo.github.io/" class="btn">EN</a>
+        
+            <a href="https://danielzamo.github.io/de/" class="btn">DE</a>
+        
+    
+    <button class="btn-toggle-theme btn" aria-label="Toggle theme"><i class="fas fa-adjust"></i></button>
+    <a href="#" class="btn" aria-label="Go to top"><i class="fas fa-arrow-circle-up"></i></a>    
+</div>
+
+<footer>
+    &copy; 2023 Sebastian Pech.
+    Theme by <a href="https://www.spech.de" target="_blank" rel="noopener noreferrer">Sebastian Pech</a>.
+</footer>
+</main>
+    <aside class="sidebar">
+
+
+
+    
+    <img src="https://danielzamo.github.io/photo_hu8d4b12ac63a57ef95674746282b3441d_107028_320x0_resize_q75_box.jpg" width="320" height="458" alt="Photo" />
+
+
+
+
+<nav>
+    <ul>
+        
+        <li><a href="#section-personal-data"><i class="fas fa-user"></i> Personal Data</a></li>
+        <li><a href="#section-brief-profile"><i class="fas fa-th-list"></i> Brief Profile</a></li>
+        <li><a href="#section-experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+        <li><a href="#section-academic-education"><i class="fas fa-university"></i> Academic Education</a></li>
+        <li><a href="#section-professional-training"><i class="fas fa-road"></i> Professional Training</a></li>
+        <li><a href="#section-school-education"><i class="fas fa-school"></i> School Education</a></li>
+        <li><a href="#section-further-education"><i class="fas fa-chalkboard-teacher"></i> Further Education</a></li>
+        <li><a href="#section-diplomas"><i class="fas fa-certificate"></i> Diplomas</a></li>
+        <li><a href="#section-sprachkenntnisse"><i class="fas fa-language"></i> Sprachkenntnisse</a></li>
+        <li><a href="#section-organisationen"><i class="fas fa-users"></i> Organisationen</a></li>
+        <li><a href="#section-fahigkeiten"><i class="fas fa-sliders-h"></i> Fähigkeiten</a></li>
+        <li><a href="#section-interessen"><i class="fas fa-chess"></i> Interessen</a></li>
+        <li><a href="#section-contact"><i class="fas fa-address-card"></i> Contact</a></li>
+    </ul>
+</nav>
+</aside>
+</div>
+
+
+
+
+<script src="https://danielzamo.github.io/js/vendor.min.53b51cb6c4952b60cd74da92b1ad8a252d939018e1f6aac128fe26324486481cac9e34875d845e3c8333c14d79d6dc0b2a5f5ca61ac8a4e0a5c8c58c5b1bc3ee.js" integrity="sha512-U7UctsSVK2DNdNqSsa2KJS2TkBjh9qrBKP4mMkSGSBysnjSHXYRePIMzwU151twLKl9cphrIpOClyMWMWxvD7g=="></script>
+
+
+</body>
 </html>
