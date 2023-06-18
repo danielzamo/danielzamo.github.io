@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w2.org/1999/xhtml">
+<html lang="de">
+    <head>
+	<meta name="generator" content="Hugo 0.101.0" />
+            <meta charset="utf-8" />
+    <title>Lebenslauf </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Text about the site">
+    <meta property="og:title" content="Lebenslauf" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="/" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href=""/>
+    <link rel="canonical" href="/de/" />    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.33.2/js/jquery.terminal.min.js"></script>
+    <script src="https://unpkg.com/jquery.terminal/js/autocomplete_menu.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.33.2/css/jquery.terminal.min.css" rel="stylesheet"/>
+
+    <style>
+        body {
+            width: 100%;
+            font-size: 18px;
+        }
+    </style>
+    
+    </head>
+        <body>
+        
+<script> 
+jQuery(document).ready(function($) {
+    var animation = false;
+    var availableCommands = ["all", "whois", 'social', 'work', 'education',
+                    'skills', 'softskills', 'languages',
+                    'projects',
+	            
+                    
+                    
+                    
+                     'source' 
+                    ] 
+
+    $('body').terminal(function(command, term) {
+
+     
+    function whois () {
+        term.echo ("");
+        
+        term.echo ("");
+      }
+
+    function social () {
+        term.echo("");
+        
+            
+        
+        term.echo("")
+    }
+	    
+    function certifications () {
+        term.echo("");
+        
+    }
+	    
+    function work () {
+        term.echo("");
+        
+    }
+
+    function education () {
+        term.echo("");
+        
+    }
+
+    function skills () {
+        term.echo(" ");
+        
+    }
+    function softskills () {
+        term.echo("");
+        
+    }
+      
+    function languages () {
+        term.echo("");
+        
+    }
+
+    
+    function projects () {
+        term.echo("");
+        
+    }
+
+    function misc (){
+        term.echo ("")
+        term.echo("[[b;;]]" + "\n")
+        term.echo ("[[;;]]")
+        term.echo ("")
+    }
+
+    function help () {
+        term.echo("\n[[b;white;]Available commands:]\n" +
+                  "\n" + availableCommands.join(' ')+ '\n') 
+    }
+
+      function source() {
+          term.echo("        _______            \n"+
+                    "       |       |           \n"+
+                    "       |       |           \n"+
+                    "       |_______|_______    \n"+
+	                "               |       |   \n"+
+                    "               |       |   \n"+
+                    " ______________|_______|   \n"+
+                    "|      |       |       |   \n"+
+                    "|      |       |       |   \n"+
+                    "|______|_______|_______|   \n"+
+                    "[[;red;]May the source be with you]\n"+
+                    "[[;grey;]https://github.com/4s3ti/terminalcv\n");
+      }
+
+    
+    function progress(percent, width) {
+        var size = Math.round(width*percent/100);
+        var left = '', taken = '', i;
+        for (i=size; i--;) {
+            taken += '=';
+        }
+        if (taken.length > 0) {
+            taken = taken.replace(/=$/, '>');
+        }
+        for (i=width-size; i--;) {
+            left += ' ';
+        }
+        return '[' + taken + left + '] ' + percent + '%';
+    }
+
+    function loading () {
+        var i = 0, size = 30;
+        prompt = term.get_prompt();
+        string = progress(0, size);
+        term.set_prompt(progress);
+        animation = true;
+        (function loop() {
+            string = progress(i++, size);
+            term.set_prompt(string);
+            if (i < 100) {
+                timer = setTimeout(loop, 10);
+            } else {
+                term.echo(progress(i, size) + ' [[b;green;]OK]').set_prompt(prompt);
+                animation = false
+            }
+        })();
+    }
+
+       
+        commands = command.split(/[ ]+/);
+        switch(commands[0]) {
+            case 'whois':
+                whois();
+                break;
+            case 'social':
+                social();
+                break;
+            case 'work':
+                work();
+                break;
+            case 'education':
+                education();
+                break;
+            case 'skills':
+                skills();
+                break;
+            case 'softskills':
+                softskills();
+                break;
+            case 'languages':
+                languages();
+                break;
+            case 'projects':
+                projects();
+                break;
+	    case 'certifications':
+                certifications();
+                break;
+            case 'misc':
+                misc();
+                break;
+            case 'help':
+                help();
+                break;
+            case 'all':
+                whois();
+                social();
+                work();
+                education();
+                skills();
+                softskills();
+                languages();
+                projects();
+		certifications();
+                
+                
+                    source();
+                
+                break;
+            
+            case ':(){:|:&};:':
+            case 'source':
+                source();
+                break;
+            
+            default:
+                term.echo("\nunknown command: " + command + "\n" +
+                          "please type 'help' for a list of available commands\n");
+        }
+    }, {
+        prompt: '[[;grey;]][[;grey;]:~$]' + " ",
+        greetings: "[[b;white;]]",
+        keydown: function(e, term) {
+            if (animation) {
+                if (e.which == 68 && e.ctrlKey) { 
+                    clearTimeout(timer);
+                    animation = false;
+                    term.echo(string + ' [[b;red;]FAIL]')
+                    .set_prompt(prompt);
+                }
+                return false;
+            }
+        },
+        autocompleteMenu: true,
+        completion: availableCommands
+        
+    });
+});
+</script>
+
+        </body>
+</html>
