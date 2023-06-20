@@ -1,6 +1,6 @@
 var relearn_search_index = [
   {
-    "content": "Entradas relacionadas a Kubernetes\n",
+    "content": "Entradas relacionadas a Kubernetes.\nTodo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.\n",
     "description": "",
     "tags": null,
     "title": "kubernetes",
