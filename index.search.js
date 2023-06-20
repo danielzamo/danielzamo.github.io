@@ -58,6 +58,13 @@ var relearn_search_index = [
     "uri": "/tags/documentation/index.html"
   },
   {
+    "content": "En este sitio comparto algunos artículos e implementaciones que utilizo como referencias de estudio o lectura.\nEl sitio esta generado con Hugo y utiliza el theme Hugo Relearn Theme.\n",
+    "description": "",
+    "tags": null,
+    "title": "Home",
+    "uri": "/index.html"
+  },
+  {
     "content": "",
     "description": "",
     "tags": null,
@@ -70,12 +77,5 @@ var relearn_search_index = [
     "tags": null,
     "title": "Tags",
     "uri": "/tags/index.html"
-  },
-  {
-    "content": "En este sitio comparto algunos artículos e implementaciones que utilizo como referencias de estudio o lectura.\nEl sitio esta generado con Hugo y utiliza el theme Hugo Relearn Theme.\n",
-    "description": "",
-    "tags": null,
-    "title": "Web danielzamo",
-    "uri": "/index.html"
   }
 ]
