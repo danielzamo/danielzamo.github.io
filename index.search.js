@@ -24,10 +24,10 @@ var relearn_search_index = [
       "kubernetes"
     ],
     "title": "Daemonset",
-    "uri": "/kubernetes/03-daemonset/index.html"
+    "uri": "/kubernetes/pod/daemonset/03-daemonset/index.html"
   },
   {
-    "content": "Definición de un manifiesto mínimo [dzamo@victus my-codes]$ cat kubernetes/01-pod-minimal.yaml apiVersion: v1 kind: Pod metadata: name: nginx spec: containers: - name: nginx image: nginx:alpine Aplicando manifiesto (crear pod) [dzamo@victus my-codes]$ kubectl apply -f kubernetes/01-pod-minimal.yaml ",
+    "content": "Manifiesto mínimo [dzamo@victus my-codes]$ cat kubernetes/01-pod-minimal.yaml apiVersion: v1 kind: Pod metadata: name: nginx spec: containers: - name: nginx image: nginx:alpine Aplicando manifiesto (crear pod) [dzamo@victus my-codes]$ kubectl apply -f kubernetes/01-pod-minimal.yaml ",
     "description": "",
     "tags": [
       "documentation",
@@ -45,6 +45,16 @@ var relearn_search_index = [
     ],
     "title": "Environment \u0026 Resources",
     "uri": "/kubernetes/pod/environment-resources/index.html"
+  },
+  {
+    "content": " En Kubernetes definir/crear un daemonset hace que el pod/contenedor/es se ejecute en todos los nodos del cluster. Este tipo componente puede utilizarse, por ejemplo para aplicaciones que esten encargas de monitorizar los nodos del cluster kubernetes. Definición mediante manifiesto [dzamo@victus my-codes]$ cat kubernetes/03-daemonset.yaml apiVersion: apps/v1 kind: DaemonSet metadata: name: nginx-deployment spec: selector: matchLabels: app: nginx template: metadata: labels: app: nginx spec: containers: - name: nginx image: nginx:alpine ports: - containerPort: 80 Aplicar el manifiesto [dzamo@victus my-codes]$ kubectl apply -f kubernetes/03-daemonset.yaml Otros comandos [dzamo@victus kubernetes]$ kubectl apply -f codes-cli/03-daemonset.yaml [dzamo@victus kubernetes]$ kubectl get daemonset [dzamo@victus kubernetes]$ k get pods # El siguiente comando elimina el daemonset (de todos los nodos, y mediante el manifiesto. [dzamo@victus kubernetes]$ kubectl delete -f codes-cli/03-daemonset.yaml ",
+    "description": "",
+    "tags": [
+      "documentation",
+      "kubernetes"
+    ],
+    "title": "Daemonset",
+    "uri": "/kubernetes/pod/daemonset/index.html"
   },
   {
     "content": "",

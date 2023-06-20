@@ -7,13 +7,16 @@
     <loc>http://danielzamo.github.io/kubernetes/pod/index.html</loc>
   </url>
   <url>
-    <loc>http://danielzamo.github.io/kubernetes/03-daemonset/index.html</loc>
+    <loc>http://danielzamo.github.io/kubernetes/pod/daemonset/03-daemonset/index.html</loc>
   </url>
   <url>
     <loc>http://danielzamo.github.io/kubernetes/pod/pod-minimal/index.html</loc>
   </url>
   <url>
     <loc>http://danielzamo.github.io/kubernetes/pod/environment-resources/index.html</loc>
+  </url>
+  <url>
+    <loc>http://danielzamo.github.io/kubernetes/pod/daemonset/index.html</loc>
   </url>
   <url>
     <loc>http://danielzamo.github.io/categories/index.html</loc>
