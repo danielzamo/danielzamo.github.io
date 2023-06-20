@@ -33,7 +33,7 @@ var relearn_search_index = [
       "documentation",
       "kubernetes"
     ],
-    "title": "Pod",
+    "title": "Definición pod mediante manifiesto",
     "uri": "/kubernetes/pod/pod-minimal/index.html"
   },
   {
