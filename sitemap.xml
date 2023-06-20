@@ -4,6 +4,9 @@
     <loc>http://danielzamo.github.io/k8s/index.html</loc>
   </url>
   <url>
+    <loc>http://danielzamo.github.io/k8s/pod/index.html</loc>
+  </url>
+  <url>
     <loc>http://danielzamo.github.io/kubernetes/03-daemonset/index.html</loc>
   </url>
   <url>
@@ -14,9 +17,6 @@
   </url>
   <url>
     <loc>http://danielzamo.github.io/kubernetes/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/k8s/pod/index.html</loc>
   </url>
   <url>
     <loc>http://danielzamo.github.io/basics/index.html</loc>
