@@ -44,7 +44,7 @@ var relearn_search_index = [
     "uri": "/kubernetes/05-services/index.html"
   },
   {
-    "content": "¿Qué son los pods? Los pod son set de contenedores. Pueden ser solo un contenedor como tener múltiples contenedores. Normalmente 1 pod tiene 1 solo contenedor. Manifiesto de definición de 1 pod apiVersion: v1 kind: Pod metadata: name: nginx spec: containers: - name: nginx image: nginx:alpine ",
+    "content": "¿Qué son los pods? Un pod es el componente mas pequeño/atómico de Kubernetes. Los pod son set de contenedores. Pueden ser solo un contenedor como tener múltiples contenedores. Normalmente 1 pod tiene 1 solo contenedor. Manifiesto de definición de 1 pod apiVersion: v1 kind: Pod metadata: name: nginx spec: containers: - name: nginx image: nginx:alpine ",
     "description": "",
     "tags": [
       "k8s"
