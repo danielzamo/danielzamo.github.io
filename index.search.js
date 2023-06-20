@@ -24,6 +24,26 @@ var relearn_search_index = [
     "uri": "/kubernetes/03-daemonset/index.html"
   },
   {
+    "content": "En esta sección se muestra como definir un deployment.\nEste tipo de componentes de Kubernetes se ejecutaran sobre todos los nodos del cluster. Este tipo puede utilizarse por ejemplo para monitorizar los nodos (si están disponibles).\n",
+    "description": "",
+    "tags": [
+      "documentation",
+      "k8s"
+    ],
+    "title": "Deployment",
+    "uri": "/kubernetes/04-deployment/index.html"
+  },
+  {
+    "content": "En esta sección se muestra como definir un services.\nEste tipo de componentes de Kubernetes se ejecutaran sobre todos los nodos del cluster. Este tipo puede utilizarse por ejemplo para monitorizar los nodos (si están disponibles).\n",
+    "description": "",
+    "tags": [
+      "documentation",
+      "k8s"
+    ],
+    "title": "Services",
+    "uri": "/kubernetes/05-services/index.html"
+  },
+  {
     "content": "",
     "description": "",
     "tags": null,
