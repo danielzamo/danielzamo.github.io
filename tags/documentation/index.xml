@@ -14,7 +14,7 @@
       <description>En esta sección se muestra como definir un daemonset.
 Este tipo de componentes de Kubernetes se ejecuta sobre todos los nodos del cluster Kubernetes. Este tipo puede utilizarse por ejemplo para monitorizar los nodos (si están disponibles). Ejemplo:
 [1] Manifiesto
-[dzamo@victus kubernetes]$ cat codes-cli/03-daemonset.yaml apiVersion: apps/v1 kind: DaemonSet metadata: name: nginx-deployment spec: selector: matchLabels: app: nginx template: metadata: labels: app: nginx spec: containers: - name: nginx image: nginx:alpine env: - name: variable_1 value: &amp;#34;hola&amp;#34; - name: variable_2 value: &amp;#34;mundo&amp;#34; - name: DD_AGENT_HOST valueFrom: fieldRef: fieldPath: status.</description>
+[dzamo@victus kubernetes]$ cat codes-cli/03-daemonset.yaml apiVersion: apps/v1 kind: DaemonSet metadata: name: nginx-deployment spec: selector: matchLabels: app: nginx template: metadata: labels: app: nginx spec: containers: - name: nginx image: nginx:alpine ports: - containerPort: 80 [2] Aplicar el manifiesto</description>
     </item>
     <item>
       <title>Deployment</title>
