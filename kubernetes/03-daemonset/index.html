@@ -5,10 +5,9 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.101.0">
     <meta name="generator" content="Relearn 5.16.2+tip">
-    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="">
     <meta name="author" content="dzamo">
-    <title></title>
+    <title>Daemonset :: Site</title>
     <link href="/images/logo.svg?1687225547" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/css/fontawesome-all.min.css?1687225547" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687225547" rel="stylesheet"></noscript>
@@ -46,7 +45,7 @@
       }
     </style>
   </head>
-  <body class="mobile-support html" data-url="/kubernetes/pod/index.html">
+  <body class="mobile-support html" data-url="/kubernetes/03-daemonset/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
@@ -56,31 +55,17 @@
             <span class="nav nav-next topbar-link"><i class="fa fa-chevron-right fa-fw"></i></span>
           </div>
           <div class="navigation">
-            <a class="nav nav-prev topbar-link" href="/kubernetes/03-daemonset/index.html" title="Daemonset (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+            <a class="nav nav-prev topbar-link" href="/kubernetes/index.html" title="Kubernetes (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
           </div>
           <div id="breadcrumbs">
             <span id="sidebar-toggle-span">
               <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
 </span>
-            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Sitio de contenido estático</span></a><meta itemprop="position" content="1"> &gt; </li>
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/kubernetes/index.html"><span itemprop="name">Kubernetes</span></a><meta itemprop="position" content="2"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Site</span><meta itemprop="position" content="3"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Daemonset</span><meta itemprop="position" content="3"></li>
             </ol>
-          </div>
-          <div class="default-animation progress">
-            <div class="toc-wrapper">
-<nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#chapter-1">Chapter 1</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-            </div>
           </div>
         </div>
       </nav>
@@ -89,12 +74,15 @@
 
           <article class="default">
             <header class="headline">
+<div class="tags">
+  <a class="tag-link" href="/tags/documentation/index.html">documentation</a>
+  <a class="tag-link" href="/tags/k8s/index.html">k8s</a>
+</div>
             </header>
-<h1 id=""></h1>
+<h1 id="daemonset">Daemonset</h1>
 
-<h3 id="chapter-1">Chapter 1</h3>
-<h1 id="pod">Pod</h1>
-<p>Introducción a los pod</p>
+<p>En esta sección se muestra como definir un daemonset.</p>
+<p>Este tipo de componentes de Kubernetes se ejecutaran sobre todos los nodos del cluster. Este tipo puede utilizarse por ejemplo para monitorizar los nodos (si están disponibles).</p>
 
             <footer class="footline">
 
@@ -198,8 +186,7 @@
         <ul class="topics enlarge morespace">
           <li data-nav-id="/basics/index.html" class=""><a class="padding" href="/basics/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">1.</b> Basics</a></li>
           <li data-nav-id="/kubernetes/index.html" class="parent alwaysopen"><a class="padding" href="/kubernetes/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">2.</b> Kubernetes</a><ul id="subsections-8702f471f80db9562475d423dd2cfd2a" class="morespace">
-          <li data-nav-id="/kubernetes/03-daemonset/index.html" class=""><a class="padding" href="/kubernetes/03-daemonset/index.html">Daemonset</a></li>
-          <li data-nav-id="/kubernetes/pod/index.html" class="active"><a class="padding" href="/kubernetes/pod/index.html"></a></li></ul></li>
+          <li data-nav-id="/kubernetes/03-daemonset/index.html" class="active"><a class="padding" href="/kubernetes/03-daemonset/index.html">Daemonset</a></li></ul></li>
         </ul>
         <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
         <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">

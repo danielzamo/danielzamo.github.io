@@ -7,7 +7,16 @@
     <loc>http://danielzamo.github.io/kubernetes/index.html</loc>
   </url>
   <url>
+    <loc>http://danielzamo.github.io/kubernetes/03-daemonset/index.html</loc>
+  </url>
+  <url>
     <loc>http://danielzamo.github.io/categories/index.html</loc>
+  </url>
+  <url>
+    <loc>http://danielzamo.github.io/tags/documentation/index.html</loc>
+  </url>
+  <url>
+    <loc>http://danielzamo.github.io/tags/k8s/index.html</loc>
   </url>
   <url>
     <loc>http://danielzamo.github.io/index.html</loc>
