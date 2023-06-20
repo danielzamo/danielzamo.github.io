@@ -7,9 +7,9 @@
     <meta name="generator" content="Relearn 5.16.2+tip">
     <meta name="description" content="">
     <meta name="author" content="dzamo">
-    <title>Services :: Site</title>
-    <link href="/kubernetes/05-services/index.xml" rel="alternate" type="application/rss+xml" title="Services :: Site">
-    <link href="/kubernetes/05-services/index.print.html" rel="alternate" type="text/html" title="Services :: Site">
+    <title>Pod :: Site</title>
+    <link href="/k8s/pod/index.xml" rel="alternate" type="application/rss+xml" title="Pod :: Site">
+    <link href="/k8s/pod/index.print.html" rel="alternate" type="text/html" title="Pod :: Site">
     <link href="/images/logo.svg?1687261390" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/css/fontawesome-all.min.css?1687261390" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687261390" rel="stylesheet"></noscript>
@@ -47,20 +47,20 @@
       }
     </style>
   </head>
-  <body class="mobile-support html" data-url="/kubernetes/05-services/index.html">
+  <body class="mobile-support html" data-url="/k8s/pod/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
       <nav id="topbar" class="highlightable">
         <div>
           <div class="navigation">
-            <span class="nav nav-next topbar-link"><i class="fa fa-chevron-right fa-fw"></i></span>
+            <a class="nav nav-next topbar-link" href="/kubernetes/index.html" title="Kubernetes (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
           </div>
           <div class="navigation">
-            <a class="nav nav-prev topbar-link" href="/kubernetes/04-deployment/index.html" title="Deployment (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+            <a class="nav nav-prev topbar-link" href="/k8s/index.html" title="k8s (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
           </div>
           <div id="top-print-link">
-            <a class="print-link topbar-link" title='Print whole chapter (CTRL+ALT+p)' href="/kubernetes/05-services/index.print.html">
+            <a class="print-link topbar-link" title='Print whole chapter (CTRL+ALT+p)' href="/k8s/pod/index.print.html">
               <i class="fas fa-print fa-fw"></i>
             </a>
           </div>
@@ -68,11 +68,26 @@
             <span id="sidebar-toggle-span">
               <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
 </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Inicio sitio</span></a><meta itemprop="position" content="1"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/kubernetes/index.html"><span itemprop="name">Kubernetes</span></a><meta itemprop="position" content="2"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Services</span><meta itemprop="position" content="3"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/k8s/index.html"><span itemprop="name">k8s</span></a><meta itemprop="position" content="2"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Pod</span><meta itemprop="position" content="3"></li>
             </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#qué-son-los-pods">¿Qué son los pods?</a>
+      <ul>
+        <li><a href="#creación-de-un-pod-desde-el-cli">Creación de un pod desde el CLI</a></li>
+        <li><a href="#manifiesto-para-crear-1-pod">Manifiesto para crear 1 pod</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
           </div>
         </div>
       </nav>
@@ -82,15 +97,31 @@
           <article class="default">
             <header class="headline">
 <div class="tags">
-  <a class="tag-link" href="/tags/documentation/index.html">documentation</a>
   <a class="tag-link" href="/tags/k8s/index.html">k8s</a>
 </div>
             </header>
-<h1 id="services">Services</h1>
+<h1 id="pod">Pod</h1>
 
-<p>En esta sección se muestra como definir un services.</p>
-<p>Este tipo de componentes de Kubernetes se ejecutaran sobre todos los nodos del cluster. Este tipo puede utilizarse por ejemplo para monitorizar los nodos (si están disponibles).</p>
-
+<h2 id="qué-son-los-pods">¿Qué son los pods?</h2>
+<ul>
+<li>Un pod es el componente mas pequeño/atómico de Kubernetes.</li>
+<li>Los pod son set de contenedores.</li>
+<li>Un pod puede tener múltiples/varios contenedores, aunque normalmente solo contendrá 1.</li>
+</ul>
+<h3 id="creación-de-un-pod-desde-el-cli">Creación de un pod desde el CLI</h3>
+<p>El siguiente comando crea un pod. Para esto por ejemplo se puede ejecutar:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl create deployment deployment-pod-nginx-01 --image<span style="color:#f92672">=</span>nginx 
+</span></span></code></pre></div><h3 id="manifiesto-para-crear-1-pod">Manifiesto para crear 1 pod</h3>
+<p>Normalmente se utilizarán manifiestos para crear componenetes a desplegar en el cluster de Kubernetes. Estos están codificados en ficheros <code>yaml</code>. A continuación se especifica la creación de un pod. El código mínimo es el siguiente:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>apiVersion: v1
+</span></span><span style="display:flex;"><span>kind: Pod
+</span></span><span style="display:flex;"><span>metadata:
+</span></span><span style="display:flex;"><span>  name: nginx
+</span></span><span style="display:flex;"><span>spec:
+</span></span><span style="display:flex;"><span>  containers:
+</span></span><span style="display:flex;"><span>  - name: nginx
+</span></span><span style="display:flex;"><span>    image: nginx:alpine
+</span></span></code></pre></div>
             <footer class="footline">
 
             </footer>
@@ -187,12 +218,12 @@
       <div id="content-wrapper" class="highlightable">
         <ul class="topics enlarge morespace">
           <li data-nav-id="/basics/index.html" class=""><a class="padding" href="/basics/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">1.</b> Basics</a></li>
-          <li data-nav-id="/k8s/index.html" class="alwaysopen"><a class="padding" href="/k8s/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">2.</b> k8s</a><ul id="subsections-a67fc94926e5af961893801cc640b41a" class="morespace">
-          <li data-nav-id="/k8s/pod/index.html" class=""><a class="padding" href="/k8s/pod/index.html">Pod</a></li></ul></li>
-          <li data-nav-id="/kubernetes/index.html" class="parent alwaysopen"><a class="padding" href="/kubernetes/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">9.</b> Kubernetes</a><ul id="subsections-8702f471f80db9562475d423dd2cfd2a" class="morespace">
+          <li data-nav-id="/k8s/index.html" class="parent alwaysopen"><a class="padding" href="/k8s/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">2.</b> k8s</a><ul id="subsections-a67fc94926e5af961893801cc640b41a" class="morespace">
+          <li data-nav-id="/k8s/pod/index.html" class="active"><a class="padding" href="/k8s/pod/index.html">Pod</a></li></ul></li>
+          <li data-nav-id="/kubernetes/index.html" class="alwaysopen"><a class="padding" href="/kubernetes/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">9.</b> Kubernetes</a><ul id="subsections-8702f471f80db9562475d423dd2cfd2a" class="morespace">
           <li data-nav-id="/kubernetes/03-daemonset/index.html" class=""><a class="padding" href="/kubernetes/03-daemonset/index.html">Daemonset</a></li>
           <li data-nav-id="/kubernetes/04-deployment/index.html" class=""><a class="padding" href="/kubernetes/04-deployment/index.html">Deployment</a></li>
-          <li data-nav-id="/kubernetes/05-services/index.html" class="active"><a class="padding" href="/kubernetes/05-services/index.html">Services</a></li></ul></li>
+          <li data-nav-id="/kubernetes/05-services/index.html" class=""><a class="padding" href="/kubernetes/05-services/index.html">Services</a></li></ul></li>
         </ul>
         <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter"></div>
         <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter">
