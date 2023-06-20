@@ -27,16 +27,6 @@ var relearn_search_index = [
     "uri": "/kubernetes/03-daemonset/index.html"
   },
   {
-    "content": "Environments y resources ",
-    "description": "",
-    "tags": [
-      "documentation",
-      "kubernetes"
-    ],
-    "title": "Environment \u0026 Resources",
-    "uri": "/kubernetes/pod/environment-resources/index.html"
-  },
-  {
     "content": "Definición de un manifiesto mínimo [dzamo@victus my-codes]$ cat kubernetes/01-pod-minimal.yaml apiVersion: v1 kind: Pod metadata: name: nginx spec: containers: - name: nginx image: nginx:alpine Aplicando manifiesto (crear pod) [dzamo@victus my-codes]$ kubectl apply -f kubernetes/01-pod-minimal.yaml ",
     "description": "",
     "tags": [
@@ -45,6 +35,16 @@ var relearn_search_index = [
     ],
     "title": "Pod",
     "uri": "/kubernetes/pod/pod-minimal/index.html"
+  },
+  {
+    "content": "Environments y resources ",
+    "description": "",
+    "tags": [
+      "documentation",
+      "kubernetes"
+    ],
+    "title": "Environment \u0026 Resources",
+    "uri": "/kubernetes/pod/environment-resources/index.html"
   },
   {
     "content": "",
