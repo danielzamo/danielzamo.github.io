@@ -1,0 +1,17 @@
+nodeExporter:
+  enabled: false
+prometheusOperator:
+  enabled: true
+prometheus:
+  enabled: true
+  additionalServiceMonitors:
+  - name: fluent-bit
+    jobLabel: "generic-scraper-http"
+    selector:
+      matchLabels:
+        app: fluent-bit
+    endpoints:
+      - port: metrics
+        interval: 30s
+        path: /api/v1/metrics/prometheus
+        scheme: http
