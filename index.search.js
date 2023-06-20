@@ -1,12 +1,5 @@
 var relearn_search_index = [
   {
-    "content": "Discover what this Hugo theme is all about and the core-concepts behind it.\n",
-    "description": "",
-    "tags": null,
-    "title": "Basics",
-    "uri": "/basics/index.html"
-  },
-  {
     "content": "Entradas relacionadas a Kubernetes\n",
     "description": "",
     "tags": null,
@@ -58,6 +51,13 @@ var relearn_search_index = [
     ],
     "title": "Pod",
     "uri": "/k8s/pod/index.html"
+  },
+  {
+    "content": "Discover what this Hugo theme is all about and the core-concepts behind it.\n",
+    "description": "",
+    "tags": null,
+    "title": "Basics",
+    "uri": "/basics/index.html"
   },
   {
     "content": "",
