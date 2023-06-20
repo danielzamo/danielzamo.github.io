@@ -10,21 +10,21 @@
     <title>k8s :: Site</title>
     <link href="http://danielzamo.github.io/k8s/index.html" rel="canonical" type="text/html" title="k8s :: Site">
     <link href="/k8s/index.xml" rel="alternate" type="application/rss+xml" title="k8s :: Site">
-    <link href="/images/logo.svg?1687262189" rel="icon" type="image/svg+xml">
+    <link href="/images/logo.svg?1687262273" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1687262189" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687262189" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1687262189" rel="stylesheet">
-    <link href="/css/auto-complete.css?1687262189" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1687262189" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1687262189" rel="stylesheet">
-    <link href="/css/fonts.css?1687262189" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1687262189" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1687262189" rel="stylesheet">
-    <link href="/css/theme-relearn-dark.css?1687262189" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1687262189" rel="stylesheet">
-    <link href="/css/print.css?1687262189" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1687262189" rel="stylesheet">
-    <link href="/css/ie.css?1687262189" rel="stylesheet">
-    <script src="/js/url.js?1687262189"></script>
-    <script src="/js/variant.js?1687262189"></script>
+    <link href="/css/fontawesome-all.min.css?1687262273" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687262273" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1687262273" rel="stylesheet">
+    <link href="/css/auto-complete.css?1687262273" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1687262273" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1687262273" rel="stylesheet">
+    <link href="/css/fonts.css?1687262273" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1687262273" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1687262273" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1687262273" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1687262273" rel="stylesheet">
+    <link href="/css/print.css?1687262273" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1687262273" rel="stylesheet">
+    <link href="/css/ie.css?1687262273" rel="stylesheet">
+    <script src="/js/url.js?1687262273"></script>
+    <script src="/js/variant.js?1687262273"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -97,10 +97,10 @@
 <li>Los pod son set de contenedores.</li>
 <li>Un pod puede tener múltiples/varios contenedores, aunque normalmente solo contendrá 1.</li>
 </ul>
-<h3 id="creación-de-un-pod-desde-el-cli">Creación de un pod desde el CLI</h3>
+<h2 id="creación-de-un-pod-desde-el-cli">Creación de un pod desde el CLI</h2>
 <p>El siguiente comando crea un pod. Para esto por ejemplo se puede ejecutar:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl create deployment deployment-pod-nginx-01 --image<span style="color:#f92672">=</span>nginx 
-</span></span></code></pre></div><h3 id="manifiesto-para-crear-1-pod">Manifiesto para crear 1 pod</h3>
+</span></span></code></pre></div><h2 id="manifiesto-para-crear-1-pod">Manifiesto para crear 1 pod</h2>
 <p>Normalmente se utilizan manifiestos, para crear los componentes para desplegar las aplicaciones en un cluster <a href="https://kubernetes.io" target="_blank">kubernetes</a>. Estos están codificados en ficheros <code>yaml</code>. A continuación se especifica la creación de un pod (mínimo) mediante un fichero de este tipo. El código es el siguiente:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat 01-pod-minimal.md
 </span></span><span style="display:flex;"><span>apiVersion: v1
@@ -111,7 +111,7 @@
 </span></span><span style="display:flex;"><span>  containers:
 </span></span><span style="display:flex;"><span>  - name: nginx
 </span></span><span style="display:flex;"><span>    image: nginx:alpine
-</span></span></code></pre></div><h4 id="aplicando-el-manifiesto">Aplicando el manifiesto</h4>
+</span></span></code></pre></div><h3 id="aplicando-el-manifiesto">Aplicando el manifiesto</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl create -f 01-pod-minimal.md
 </span></span></code></pre></div>
             <footer class="footline">
@@ -169,8 +169,8 @@
         </div>
       </main>
     </div>
-    <script src="/js/clipboard.min.js?1687262189" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1687262189" defer></script>
-    <script src="/js/theme.js?1687262189" defer></script>
+    <script src="/js/clipboard.min.js?1687262273" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1687262273" defer></script>
+    <script src="/js/theme.js?1687262273" defer></script>
   </body>
 </html>
