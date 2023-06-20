@@ -9,21 +9,21 @@
     <meta name="description" content="">
     <meta name="author" content="dzamo">
     <title></title>
-    <link href="/images/logo.svg?1687230179" rel="icon" type="image/svg+xml">
+    <link href="/images/logo.svg?1687230280" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1687230179" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687230179" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1687230179" rel="stylesheet">
-    <link href="/css/auto-complete.css?1687230179" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1687230179" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1687230179" rel="stylesheet">
-    <link href="/css/fonts.css?1687230179" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1687230179" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1687230179" rel="stylesheet">
-    <link href="/css/theme-relearn-dark.css?1687230179" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1687230179" rel="stylesheet">
-    <link href="/css/print.css?1687230179" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1687230179" rel="stylesheet">
-    <link href="/css/ie.css?1687230179" rel="stylesheet">
-    <script src="/js/url.js?1687230179"></script>
-    <script src="/js/variant.js?1687230179"></script>
+    <link href="/css/fontawesome-all.min.css?1687230280" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687230280" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1687230280" rel="stylesheet">
+    <link href="/css/auto-complete.css?1687230280" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1687230280" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1687230280" rel="stylesheet">
+    <link href="/css/fonts.css?1687230280" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1687230280" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1687230280" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1687230280" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1687230280" rel="stylesheet">
+    <link href="/css/print.css?1687230280" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1687230280" rel="stylesheet">
+    <link href="/css/ie.css?1687230280" rel="stylesheet">
+    <script src="/js/url.js?1687230280"></script>
+    <script src="/js/variant.js?1687230280"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -99,10 +99,10 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose
 <p>Esto va a permitirle a Rancher poder conectarse a Upcloud para crear VMs que después va a poder usar como nodos de Kubernetes.</p>
 <p>Una vez logueados en Rancher, vamos a <code>Tools -&gt; Drivers -&gt; Add Node Driver</code></p>
 <p>
-<a href="#image-ef098551affaa4ebf4f980ced061b146" class="lightbox-link">
+<a href="#image-47c32905c42848824fdb975ad6372879" class="lightbox-link">
 <img src="/kubernetes/codes-cli/22/readme/./rancher-drivers.png" alt="" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-ef098551affaa4ebf4f980ced061b146">
+<a href="javascript:history.back();" class="lightbox" id="image-47c32905c42848824fdb975ad6372879">
 <img src="/kubernetes/codes-cli/22/readme/./rancher-drivers.png" alt="" class="lightbox-image" loading="lazy">
 </a></p>
 <p>Luego llenamos los siguientes datos</p>
@@ -110,19 +110,19 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose
 Custom UI URL: https://github.com/montel-ig/ui-driver-upcloud/releases/download/1.0.1/component.js
 Whitelist Domains: github.com
 </code></pre><p>
-<a href="#image-a585c76e9d39dfc04b49f66137e90bf4" class="lightbox-link">
+<a href="#image-1f2d0be06638c19490e6cfe14c3d5d0e" class="lightbox-link">
 <img src="/kubernetes/codes-cli/22/readme/./rancher-drivers-2.png" alt="" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-a585c76e9d39dfc04b49f66137e90bf4">
+<a href="javascript:history.back();" class="lightbox" id="image-1f2d0be06638c19490e6cfe14c3d5d0e">
 <img src="/kubernetes/codes-cli/22/readme/./rancher-drivers-2.png" alt="" class="lightbox-image" loading="lazy">
 </a></p>
 <p>El Custom UI URL es simplemente para tener una URL mas bonita a la hora de crear nuestros perfiles para los workers, no es necesaria</p>
 <p>Y listo! Ahora podemos crear un cluster seleccionando Upcloud como nuestro proveedor</p>
 <p>
-<a href="#image-19af789748340dc1e36cf21ff800ef36" class="lightbox-link">
+<a href="#image-b85c1a2ed94f78e41346136f8f69015a" class="lightbox-link">
 <img src="/kubernetes/codes-cli/22/readme/./rancher-upcloud-create.png" alt="" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-19af789748340dc1e36cf21ff800ef36">
+<a href="javascript:history.back();" class="lightbox" id="image-b85c1a2ed94f78e41346136f8f69015a">
 <img src="/kubernetes/codes-cli/22/readme/./rancher-upcloud-create.png" alt="" class="lightbox-image" loading="lazy">
 </a></p>
 
@@ -134,8 +134,8 @@ Whitelist Domains: github.com
         </div>
       </main>
     </div>
-    <script src="/js/clipboard.min.js?1687230179" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1687230179" defer></script>
-    <script src="/js/theme.js?1687230179" defer></script>
+    <script src="/js/clipboard.min.js?1687230280" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1687230280" defer></script>
+    <script src="/js/theme.js?1687230280" defer></script>
   </body>
 </html>
