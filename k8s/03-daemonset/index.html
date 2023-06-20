@@ -7,8 +7,9 @@
     <meta name="generator" content="Relearn 5.16.2+tip">
     <meta name="description" content="">
     <meta name="author" content="dzamo">
-    <title>k8s :: Tag :: Site</title>
-    <link href="/tags/k8s/index.xml" rel="alternate" type="application/rss+xml" title="k8s :: Tag :: Site">
+    <title>Daemonset :: Site</title>
+    <link href="/k8s/03-daemonset/index.xml" rel="alternate" type="application/rss+xml" title="Daemonset :: Site">
+    <link href="/k8s/03-daemonset/index.print.html" rel="alternate" type="text/html" title="Daemonset :: Site">
     <link href="/images/logo.svg?1687262189" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/css/fontawesome-all.min.css?1687262189" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687262189" rel="stylesheet"></noscript>
@@ -46,47 +47,98 @@
       }
     </style>
   </head>
-  <body class="mobile-support html" data-url="/tags/k8s/index.html">
+  <body class="mobile-support html" data-url="/k8s/03-daemonset/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
       <nav id="topbar" class="highlightable">
         <div>
           <div class="navigation">
-            <span class="nav nav-next topbar-link"><i class="fa fa-chevron-right fa-fw"></i></span>
+            <a class="nav nav-next topbar-link" href="/kubernetes/index.html" title="Kubernetes (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
           </div>
           <div class="navigation">
-            <a class="nav nav-prev topbar-link" href="/index.html" title="Inicio sitio (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+            <a class="nav nav-prev topbar-link" href="/k8s/pod/index.html" title="Pod (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="top-print-link">
+            <a class="print-link topbar-link" title='Print whole chapter (CTRL+ALT+p)' href="/k8s/03-daemonset/index.print.html">
+              <i class="fas fa-print fa-fw"></i>
+            </a>
           </div>
           <div id="breadcrumbs">
             <span id="sidebar-toggle-span">
               <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
 </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Inicio sitio</span></a><meta itemprop="position" content="1"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/tags/index.html"><span itemprop="name">Tags</span></a><meta itemprop="position" content="2"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Tag :: k8s</span><meta itemprop="position" content="3"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/k8s/index.html"><span itemprop="name">k8s</span></a><meta itemprop="position" content="2"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Daemonset</span><meta itemprop="position" content="3"></li>
             </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#manifiesto-de-un-daemonset-básico">Manifiesto de un daemonset básico</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
           </div>
         </div>
       </nav>
       <main id="body-inner" class="highlightable default" tabindex="-1">
         <div class="flex-block-wrapper">
 
-          <article>
+          <article class="default">
             <header class="headline">
+<div class="tags">
+  <a class="tag-link" href="/tags/documentation/index.html">documentation</a>
+  <a class="tag-link" href="/tags/k8s/index.html">k8s</a>
+</div>
             </header>
-<h1 id="tag--k8s">Tag :: k8s</h1>
-<ul class="columnize">
-  <li><a href="/k8s/03-daemonset/index.html">Daemonset</a></li>
-  <li><a href="/kubernetes/04-deployment/index.html">Deployment</a></li>
-  <li><a href="/k8s/pod/index.html">Pod</a></li>
-  <li><a href="/kubernetes/05-services/index.html">Services</a></li>
-</ul>
+<h1 id="daemonset">Daemonset</h1>
 
+<ul>
+<li>En <em>Kubernetes</em> definir/crear un <em>daemonset</em> hace que el componente se ejecute en todos los nodos del cluster. Este tipo componentes puede utilizarse por ejemplo para aplicaciones que monitorizan los nodos.</li>
+</ul>
+<h3 id="manifiesto-de-un-daemonset-básico">Manifiesto de un daemonset básico</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ cat codes-cli/03-daemonset.yaml
+</span></span><span style="display:flex;"><span>apiVersion: apps/v1
+</span></span><span style="display:flex;"><span>kind: DaemonSet
+</span></span><span style="display:flex;"><span>metadata:
+</span></span><span style="display:flex;"><span>  name: nginx-deployment
+</span></span><span style="display:flex;"><span>spec:
+</span></span><span style="display:flex;"><span>  selector:
+</span></span><span style="display:flex;"><span>    matchLabels:
+</span></span><span style="display:flex;"><span>      app: nginx
+</span></span><span style="display:flex;"><span>  template:
+</span></span><span style="display:flex;"><span>    metadata:
+</span></span><span style="display:flex;"><span>      labels:
+</span></span><span style="display:flex;"><span>        app: nginx
+</span></span><span style="display:flex;"><span>    spec:
+</span></span><span style="display:flex;"><span>      containers:
+</span></span><span style="display:flex;"><span>      - name: nginx
+</span></span><span style="display:flex;"><span>        image: nginx:alpine
+</span></span><span style="display:flex;"><span>        ports:
+</span></span><span style="display:flex;"><span>        - containerPort: <span style="color:#ae81ff">80</span>
+</span></span></code></pre></div><p><em>[2] Aplicar el manifiesto</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl apply -f 03-daemonset.yaml
+</span></span></code></pre></div><p><em>[3] Otros comandos</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ kubectl apply -f codes-cli/03-daemonset.yaml 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ kubectl get daemonset
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ k get pods
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># El siguiente comando elimina el daemonset (de todos los nodos, y mediante el manifiesto.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ kubectl delete -f codes-cli/03-daemonset.yaml
+</span></span></code></pre></div>
             <footer class="footline">
+
             </footer>
-          </article>        </div>
+          </article>
+        </div>
       </main>
     </div>
     <aside id="sidebar" class="default-animation">
@@ -177,9 +229,9 @@
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics enlarge morespace">
-          <li data-nav-id="/k8s/index.html" class="alwaysopen"><a class="padding" href="/k8s/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">1.</b> k8s</a><ul id="subsections-a67fc94926e5af961893801cc640b41a" class="morespace">
+          <li data-nav-id="/k8s/index.html" class="parent alwaysopen"><a class="padding" href="/k8s/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">1.</b> k8s</a><ul id="subsections-a67fc94926e5af961893801cc640b41a" class="morespace">
           <li data-nav-id="/k8s/pod/index.html" class=""><a class="padding" href="/k8s/pod/index.html">Pod</a></li>
-          <li data-nav-id="/k8s/03-daemonset/index.html" class=""><a class="padding" href="/k8s/03-daemonset/index.html">Daemonset</a></li></ul></li>
+          <li data-nav-id="/k8s/03-daemonset/index.html" class="active"><a class="padding" href="/k8s/03-daemonset/index.html">Daemonset</a></li></ul></li>
           <li data-nav-id="/kubernetes/index.html" class="alwaysopen"><a class="padding" href="/kubernetes/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">9.</b> Kubernetes</a><ul id="subsections-8702f471f80db9562475d423dd2cfd2a" class="morespace">
           <li data-nav-id="/kubernetes/04-deployment/index.html" class=""><a class="padding" href="/kubernetes/04-deployment/index.html">Deployment</a></li>
           <li data-nav-id="/kubernetes/05-services/index.html" class=""><a class="padding" href="/kubernetes/05-services/index.html">Services</a></li></ul></li>

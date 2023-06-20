@@ -16,14 +16,14 @@ var relearn_search_index = [
     "uri": "/k8s/pod/index.html"
   },
   {
-    "content": "En esta sección se muestra como definir un daemonset.\nEste tipo de componentes de Kubernetes se ejecuta sobre todos los nodos del cluster Kubernetes. Este tipo puede utilizarse por ejemplo para monitorizar los nodos (si están disponibles). Ejemplo:\n[1] Manifiesto\n[dzamo@victus kubernetes]$ cat codes-cli/03-daemonset.yaml apiVersion: apps/v1 kind: DaemonSet metadata: name: nginx-deployment spec: selector: matchLabels: app: nginx template: metadata: labels: app: nginx spec: containers: - name: nginx image: nginx:alpine ports: - containerPort: 80 [2] Aplicar el manifiesto\nkubectl apply -f 03-daemonset.yaml [3] Otros comandos\n[dzamo@victus kubernetes]$ kubectl apply -f codes-cli/03-daemonset.yaml [dzamo@victus kubernetes]$ kubectl get daemonset [dzamo@victus kubernetes]$ k get pods # El siguiente comando elimina el daemonset (de todos los nodos, y mediante el manifiesto. [dzamo@victus kubernetes]$ kubectl delete -f codes-cli/03-daemonset.yaml ",
+    "content": " En Kubernetes definir/crear un daemonset hace que el componente se ejecute en todos los nodos del cluster. Este tipo componentes puede utilizarse por ejemplo para aplicaciones que monitorizan los nodos. Manifiesto de un daemonset básico [dzamo@victus kubernetes]$ cat codes-cli/03-daemonset.yaml apiVersion: apps/v1 kind: DaemonSet metadata: name: nginx-deployment spec: selector: matchLabels: app: nginx template: metadata: labels: app: nginx spec: containers: - name: nginx image: nginx:alpine ports: - containerPort: 80 [2] Aplicar el manifiesto\nkubectl apply -f 03-daemonset.yaml [3] Otros comandos\n[dzamo@victus kubernetes]$ kubectl apply -f codes-cli/03-daemonset.yaml [dzamo@victus kubernetes]$ kubectl get daemonset [dzamo@victus kubernetes]$ k get pods # El siguiente comando elimina el daemonset (de todos los nodos, y mediante el manifiesto. [dzamo@victus kubernetes]$ kubectl delete -f codes-cli/03-daemonset.yaml ",
     "description": "",
     "tags": [
       "documentation",
       "k8s"
     ],
     "title": "Daemonset",
-    "uri": "/kubernetes/03-daemonset/index.html"
+    "uri": "/k8s/03-daemonset/index.html"
   },
   {
     "content": "En esta sección se muestra como definir un deployment.\nEste tipo de componentes de Kubernetes se ejecutaran sobre todos los nodos del cluster. Este tipo puede utilizarse por ejemplo para monitorizar los nodos (si están disponibles).\n",
