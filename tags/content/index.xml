@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content on </title>
+    <link>/tags/content/index.html</link>
+    <description>Recent content in Content on </description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/tags/content/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown syntax</title>
+      <link>/cont/markdown/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/cont/markdown/index.html</guid>
+      <description>Let&amp;rsquo;s face it: Writing content for the web is tiresome. WYSIWYG editors help alleviate this task, but they generally result in horrible code, or worse yet, ugly web pages.
+Markdown is a better way to write HTML, without all the complexities and ugliness that usually accompanies it.
+Some of the key benefits are:
+Markdown is simple to learn, with minimal extra characters so it&amp;rsquo;s also quicker to write content. Less chance of errors when writing in Markdown.</description>
+    </item>
+    <item>
+      <title>Marrrkdown rules</title>
+      <link>/cont/markdown.pir/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/cont/markdown.pir/index.html</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chapters on </title>
+    <link>/tests/chapters/index.html</link>
+    <description>Recent content in Chapters on </description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/tests/chapters/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1</title>
+      <link>/tests/chapters/1/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/1/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>1</title>
+      <link>/tests/chapters/1.pir/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/1.pir/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>10</title>
+      <link>/tests/chapters/10/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/10/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>11</title>
+      <link>/tests/chapters/10.pir/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/10.pir/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>11</title>
+      <link>/tests/chapters/11/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/11/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>12</title>
+      <link>/tests/chapters/12/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/12/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>13</title>
+      <link>/tests/chapters/13/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/13/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>14</title>
+      <link>/tests/chapters/14/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/14/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>15</title>
+      <link>/tests/chapters/15/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/15/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>16</title>
+      <link>/tests/chapters/16/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/16/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>17</title>
+      <link>/tests/chapters/17/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/17/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>18</title>
+      <link>/tests/chapters/18/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/18/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>19</title>
+      <link>/tests/chapters/19/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/19/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2</title>
+      <link>/tests/chapters/2/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/2/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2</title>
+      <link>/tests/chapters/2.pir/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/2.pir/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>20</title>
+      <link>/tests/chapters/20/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/20/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>21</title>
+      <link>/tests/chapters/21/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/21/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>22</title>
+      <link>/tests/chapters/22/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/22/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>23</title>
+      <link>/tests/chapters/23/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/23/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>24</title>
+      <link>/tests/chapters/24/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/24/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>25</title>
+      <link>/tests/chapters/25/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/25/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>26</title>
+      <link>/tests/chapters/26/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/26/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>27</title>
+      <link>/tests/chapters/27/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/27/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>28</title>
+      <link>/tests/chapters/28/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/28/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>29</title>
+      <link>/tests/chapters/29/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/29/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>3</title>
+      <link>/tests/chapters/3/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/3/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>3</title>
+      <link>/tests/chapters/3.pir/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/3.pir/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>30</title>
+      <link>/tests/chapters/30/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/30/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>4</title>
+      <link>/tests/chapters/4/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/4/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>4</title>
+      <link>/tests/chapters/4.pir/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/4.pir/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5</title>
+      <link>/tests/chapters/5/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/5/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5</title>
+      <link>/tests/chapters/5.pir/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/5.pir/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>6</title>
+      <link>/tests/chapters/6/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/6/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>6</title>
+      <link>/tests/chapters/6.pir/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/6.pir/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>7</title>
+      <link>/tests/chapters/7/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/7/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>7</title>
+      <link>/tests/chapters/7.pir/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/7.pir/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>8</title>
+      <link>/tests/chapters/8/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/8/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>8</title>
+      <link>/tests/chapters/8.pir/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/8.pir/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>9</title>
+      <link>/tests/chapters/9/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/9/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>9</title>
+      <link>/tests/chapters/9.pir/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/9.pir/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>The one and only hidden child</title>
+      <link>/tests/chapters/children-1/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tests/chapters/children-1/index.html</guid>
+      <description>Placeholder&amp;hellip;</description>
+    </item>
+  </channel>
+</rss>
