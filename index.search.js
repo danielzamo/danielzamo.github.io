@@ -7,7 +7,7 @@ var relearn_search_index = [
     "uri": "/k8s/index.html"
   },
   {
-    "content": "¿Qué es un pod? Un pod es el componente mas pequeño/atómico de Kubernetes. Los pod son set de contenedores. Un pod puede tener múltiples/varios contenedores, aunque normalmente solo contendrá 1. Creación de un pod desde el CLI El siguiente comando crea un pod. Para esto por ejemplo se puede ejecutar:\nkubectl create deployment deployment-pod-nginx-01 --image=nginx Manifiesto para crear 1 pod Normalmente se utilizarán manifiestos para crear componenetes a desplegar en el cluster de Kubernetes. Estos están codificados en ficheros yaml. A continuación se especifica la creación de un pod. El código mínimo es el siguiente:\napiVersion: v1 kind: Pod metadata: name: nginx spec: containers: - name: nginx image: nginx:alpine ",
+    "content": "¿Qué es un pod? Un pod es el componente mas pequeño/atómico de Kubernetes. Los pod son set de contenedores. Un pod puede tener múltiples/varios contenedores, aunque normalmente solo contendrá 1. Creación de un pod desde el CLI El siguiente comando crea un pod. Para esto por ejemplo se puede ejecutar:\nkubectl create deployment deployment-pod-nginx-01 --image=nginx Manifiesto para crear 1 pod Normalmente se utilizan manifiestos, para crear los componentes para desplegar las aplicaciones en un cluster kubernetes. Estos están codificados en ficheros yaml. A continuación se especifica la creación de un pod (mínimo) mediante un fichero de este tipo. El código es el siguiente:\ncat 01-pod-minimal.md apiVersion: v1 kind: Pod metadata: name: nginx spec: containers: - name: nginx image: nginx:alpine Aplicando el manifiesto kubectl create -f 01-pod-minimal.md ",
     "description": "",
     "tags": [
       "k8s"
