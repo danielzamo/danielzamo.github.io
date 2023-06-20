@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://danielzamo.github.io/k8s/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/k8s/pod/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/k8s/03-daemonset/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/kubernetes/04-deployment/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/kubernetes/05-services/index.html</loc>
-  </url>
-  <url>
     <loc>http://danielzamo.github.io/kubernetes/index.html</loc>
+  </url>
+  <url>
+    <loc>http://danielzamo.github.io/kubernetes/pod/index.html</loc>
+  </url>
+  <url>
+    <loc>http://danielzamo.github.io/kubernetes/03-daemonset/index.html</loc>
   </url>
   <url>
     <loc>http://danielzamo.github.io/categories/index.html</loc>
@@ -28,7 +19,7 @@
     <loc>http://danielzamo.github.io/index.html</loc>
   </url>
   <url>
-    <loc>http://danielzamo.github.io/tags/k8s/index.html</loc>
+    <loc>http://danielzamo.github.io/tags/kubernetes/index.html</loc>
   </url>
   <url>
     <loc>http://danielzamo.github.io/tags/index.html</loc>

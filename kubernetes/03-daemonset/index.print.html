@@ -10,21 +10,21 @@
     <title>Daemonset :: Site</title>
     <link href="http://danielzamo.github.io/kubernetes/03-daemonset/index.html" rel="canonical" type="text/html" title="Daemonset :: Site">
     <link href="/kubernetes/03-daemonset/index.xml" rel="alternate" type="application/rss+xml" title="Daemonset :: Site">
-    <link href="/images/logo.svg?1687261886" rel="icon" type="image/svg+xml">
+    <link href="/images/logo.svg?1687272471" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1687261886" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687261886" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1687261886" rel="stylesheet">
-    <link href="/css/auto-complete.css?1687261886" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1687261886" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1687261886" rel="stylesheet">
-    <link href="/css/fonts.css?1687261886" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1687261886" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1687261886" rel="stylesheet">
-    <link href="/css/theme-relearn-dark.css?1687261886" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1687261886" rel="stylesheet">
-    <link href="/css/print.css?1687261886" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1687261886" rel="stylesheet">
-    <link href="/css/ie.css?1687261886" rel="stylesheet">
-    <script src="/js/url.js?1687261886"></script>
-    <script src="/js/variant.js?1687261886"></script>
+    <link href="/css/fontawesome-all.min.css?1687272471" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687272471" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1687272471" rel="stylesheet">
+    <link href="/css/auto-complete.css?1687272471" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1687272471" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1687272471" rel="stylesheet">
+    <link href="/css/fonts.css?1687272471" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1687272471" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1687272471" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1687272471" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1687272471" rel="stylesheet">
+    <link href="/css/print.css?1687272471" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1687272471" rel="stylesheet">
+    <link href="/css/ie.css?1687272471" rel="stylesheet">
+    <script src="/js/url.js?1687272471"></script>
+    <script src="/js/variant.js?1687272471"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -60,7 +60,7 @@
 </span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Inicio sitio</span></a><meta itemprop="position" content="1"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/kubernetes/index.html"><span itemprop="name">Kubernetes</span></a><meta itemprop="position" content="2"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/kubernetes/index.html"><span itemprop="name">k8s</span></a><meta itemprop="position" content="2"> &gt; </li>
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Daemonset</span><meta itemprop="position" content="3"></li>
             </ol>
           </div>
@@ -73,17 +73,15 @@
             <header class="headline">
 <div class="tags">
   <a class="tag-link" href="/tags/documentation/index.html">documentation</a>
-  <a class="tag-link" href="/tags/k8s/index.html">k8s</a>
+  <a class="tag-link" href="/tags/kubernetes/index.html">kubernetes</a>
 </div>
             </header>
 <h1 id="daemonset">Daemonset</h1>
 
-<p>En esta sección se muestra como definir un daemonset.</p>
 <ul>
-<li>Este tipo de componentes de Kubernetes se ejecuta sobre todos los nodos del cluster Kubernetes. Este tipo puede utilizarse por ejemplo para monitorizar los nodos (si están disponibles).</li>
+<li>En <em>Kubernetes</em> definir/crear un <em>daemonset</em> hace que el componente se ejecute en todos los nodos del cluster. Este tipo componentes puede utilizarse por ejemplo para aplicaciones que monitorizan los nodos.</li>
 </ul>
-<p><em><strong>Ejemplo:</strong></em></p>
-<p><em>[1] Manifiesto</em></p>
+<h3 id="manifiesto-de-un-daemonset-básico">Manifiesto de un daemonset básico</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ cat codes-cli/03-daemonset.yaml
 </span></span><span style="display:flex;"><span>apiVersion: apps/v1
 </span></span><span style="display:flex;"><span>kind: DaemonSet
@@ -103,9 +101,9 @@
 </span></span><span style="display:flex;"><span>        image: nginx:alpine
 </span></span><span style="display:flex;"><span>        ports:
 </span></span><span style="display:flex;"><span>        - containerPort: <span style="color:#ae81ff">80</span>
-</span></span></code></pre></div><p><em>[2] Aplicar el manifiesto</em></p>
+</span></span></code></pre></div><h3 id="aplicar-el-manifiesto">Aplicar el manifiesto</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl apply -f 03-daemonset.yaml
-</span></span></code></pre></div><p><em>[3] Otros comandos</em></p>
+</span></span></code></pre></div><h3 id="otros-comandos">Otros comandos</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ kubectl apply -f codes-cli/03-daemonset.yaml 
 </span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ kubectl get daemonset
 </span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ k get pods
@@ -120,8 +118,8 @@
         </div>
       </main>
     </div>
-    <script src="/js/clipboard.min.js?1687261886" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1687261886" defer></script>
-    <script src="/js/theme.js?1687261886" defer></script>
+    <script src="/js/clipboard.min.js?1687272471" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1687272471" defer></script>
+    <script src="/js/theme.js?1687272471" defer></script>
   </body>
 </html>
