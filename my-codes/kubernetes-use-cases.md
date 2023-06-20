@@ -1,8 +1,10 @@
-# README.md
+# Kubernetes running examples
 
-## Kubernetes
+## Objetivos
 
-En este apartado se indica referencias y/o comandos para ejecutar los códigos compartidos también en este repositorio en directorios descendientes raiz. 
+> En este README.md se intenta resumir algunos de los comandos de las sesiones de trabajo donde fueron utilizados en código que también se deja compartido aquí.
+
+## Sesiones de trabajo ejecutadas
 
 ```bash
  # my-codes/kubernetes/01-pod-minimal
