@@ -53,13 +53,6 @@ var relearn_search_index = [
     "uri": "/kubernetes/index.html"
   },
   {
-    "content": "Discover what this Hugo theme is all about and the core-concepts behind it.\n",
-    "description": "",
-    "tags": null,
-    "title": "Basics",
-    "uri": "/basics/index.html"
-  },
-  {
     "content": "",
     "description": "",
     "tags": null,
