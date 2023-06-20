@@ -9,20 +9,20 @@
     <meta name="description" content="">
     <meta name="author" content="dzamo">
     <title></title>
-    <link href="/images/logo.svg?1687226483" rel="icon" type="image/svg+xml">
+    <link href="/images/logo.svg?1687227226" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1687226483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687226483" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1687226483" rel="stylesheet">
-    <link href="/css/auto-complete.css?1687226483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1687226483" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1687226483" rel="stylesheet">
-    <link href="/css/fonts.css?1687226483" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1687226483" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1687226483" rel="stylesheet">
-    <link href="/css/theme-auto.css?1687226483" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1687226483" rel="stylesheet">
-    <link href="/css/print.css?1687226483" rel="stylesheet" media="print">
-    <link href="/css/ie.css?1687226483" rel="stylesheet">
-    <script src="/js/url.js?1687226483"></script>
-    <script src="/js/variant.js?1687226483"></script>
+    <link href="/css/fontawesome-all.min.css?1687227226" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687227226" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1687227226" rel="stylesheet">
+    <link href="/css/auto-complete.css?1687227226" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1687227226" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1687227226" rel="stylesheet">
+    <link href="/css/fonts.css?1687227226" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1687227226" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1687227226" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1687227226" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1687227226" rel="stylesheet">
+    <link href="/css/print.css?1687227226" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1687227226" rel="stylesheet">
+    <script src="/js/url.js?1687227226"></script>
+    <script src="/js/variant.js?1687227226"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -38,7 +38,7 @@
       window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
       // some further base stuff
       var baseUriFull='http:\/\/danielzamo.github.io/';
-      window.variants && variants.init( [ 'auto' ] );
+      window.variants && variants.init( [ 'relearn-dark', 'relearn-light' ] );
     </script>
     <style>
       #body img.bg-white {
@@ -57,6 +57,11 @@
           </div>
           <div class="navigation">
             <a class="nav nav-prev topbar-link" href="/kubernetes/05-services/index.html" title="Services (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="top-print-link">
+            <a class="print-link topbar-link" title='Print whole chapter (CTRL+ALT+p)' href="/kubernetes/pod/index.print.html">
+              <i class="fas fa-print fa-fw"></i>
+            </a>
           </div>
           <div id="breadcrumbs">
             <span id="sidebar-toggle-span">
@@ -182,12 +187,12 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1687226483" defer></script>
-        <script src="/js/lunr/lunr.min.js?1687226483" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1687226483" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1687226483" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1687226483" defer></script>
-        <script src="/js/search.js?1687226483" defer></script>
+        <script src="/js/auto-complete.js?1687227226" defer></script>
+        <script src="/js/lunr/lunr.min.js?1687227226" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1687227226" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1687227226" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1687227226" defer></script>
+        <script src="/js/search.js?1687227226" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics enlarge morespace">
@@ -198,9 +203,9 @@
           <li data-nav-id="/kubernetes/05-services/index.html" class=""><a class="padding" href="/kubernetes/05-services/index.html">Services</a></li>
           <li data-nav-id="/kubernetes/pod/index.html" class="active"><a class="padding" href="/kubernetes/pod/index.html"></a></li></ul></li>
         </ul>
-        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
-        <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
-        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter"></div>
+        <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch">
           <ul>
             <li id="select-language-container" class="footerLangSwitch">
               <div class="padding select-container">
@@ -214,14 +219,15 @@
                 <div class="select-clear"></div>
               </div>
             </li>
-            <li id="select-variant-container" class="footerVariantSwitch">
+            <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
               <div class="padding select-container">
                 <i class="fas fa-paint-brush fa-fw"></i>
                 <span>&nbsp;</span>
                 <div class="select-style">
                   <label class="a11y-only" for="select-variant">Theme</label>
                   <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
-                    <option id="auto" value="auto" selected>Auto</option>
+                    <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                    <option id="relearn-light" value="relearn-light">Relearn Light</option>
                   </select>
                 </div>
                 <div class="select-clear"></div>
@@ -251,12 +257,12 @@
           <a class="github-button" href="https://github.com/McShelby/hugo-theme-relearn" data-icon="octicon-star" data-show-count="true" aria-label="Star McShelby/hugo-theme-relearn on GitHub">Star</a>
           <a class="github-button" href="https://github.com/McShelby/hugo-theme-relearn/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork McShelby/hugo-theme-relearn on GitHub">Fork</a>
           <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
-          <script async src="/js/buttons.js?1687226483"></script>
+          <script async src="/js/buttons.js?1687227226"></script>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1687226483" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1687226483" defer></script>
-    <script src="/js/theme.js?1687226483" defer></script>
+    <script src="/js/clipboard.min.js?1687227226" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1687227226" defer></script>
+    <script src="/js/theme.js?1687227226" defer></script>
   </body>
 </html>
