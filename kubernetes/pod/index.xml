@@ -6,5 +6,12 @@
     <description>Recent content in Pod on Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="http://danielzamo.github.io/kubernetes/pod/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Environment</title>
+      <link>http://danielzamo.github.io/kubernetes/pod/environment/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/kubernetes/pod/environment/index.html</guid>
+      <description>Variables del entorno </description>
+    </item>
   </channel>
 </rss>

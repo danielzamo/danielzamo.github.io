@@ -7,9 +7,9 @@
     <meta name="generator" content="Relearn 5.16.2+tip">
     <meta name="description" content="">
     <meta name="author" content="dzamo">
-    <title>Inicio sitio :: Site</title>
-    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Inicio sitio :: Site">
-    <link href="/index.print.html" rel="alternate" type="text/html" title="Inicio sitio :: Site">
+    <title>Environment :: Site</title>
+    <link href="/kubernetes/pod/environment/index.xml" rel="alternate" type="application/rss+xml" title="Environment :: Site">
+    <link href="/kubernetes/pod/environment/index.print.html" rel="alternate" type="text/html" title="Environment :: Site">
     <link href="/images/logo.svg?1687273115" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/css/fontawesome-all.min.css?1687273115" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687273115" rel="stylesheet"></noscript>
@@ -47,20 +47,20 @@
       }
     </style>
   </head>
-  <body class="mobile-support html" data-url="/index.html">
+  <body class="mobile-support html" data-url="/kubernetes/pod/environment/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
       <nav id="topbar" class="highlightable">
         <div>
           <div class="navigation">
-            <a class="nav nav-next topbar-link" href="/kubernetes/index.html" title="kubernetes (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+            <a class="nav nav-next topbar-link" href="/kubernetes/03-daemonset/index.html" title="Daemonset (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
           </div>
           <div class="navigation">
-            <span class="nav nav-prev topbar-link"><i class="fa fa-chevron-left fa-fw"></i></span>
+            <a class="nav nav-prev topbar-link" href="/kubernetes/pod/index.html" title="Pod (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
           </div>
           <div id="top-print-link">
-            <a class="print-link topbar-link" title='Print whole chapter (CTRL+ALT+p)' href="/index.print.html">
+            <a class="print-link topbar-link" title='Print whole chapter (CTRL+ALT+p)' href="/kubernetes/pod/environment/index.print.html">
               <i class="fas fa-print fa-fw"></i>
             </a>
           </div>
@@ -68,29 +68,38 @@
             <span id="sidebar-toggle-span">
               <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
 </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Inicio sitio</span><meta itemprop="position" content="1"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Inicio sitio</span></a><meta itemprop="position" content="1"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/kubernetes/index.html"><span itemprop="name">kubernetes</span></a><meta itemprop="position" content="2"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/kubernetes/pod/index.html"><span itemprop="name">Pod</span></a><meta itemprop="position" content="3"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Environment</span><meta itemprop="position" content="4"></li>
             </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#variables-del-entorno">Variables del entorno</a></li>
+  </ul>
+</nav>
+            </div>
           </div>
         </div>
       </nav>
-      <main id="body-inner" class="highlightable home" tabindex="-1">
+      <main id="body-inner" class="highlightable default" tabindex="-1">
         <div class="flex-block-wrapper">
 
-          <article class="home">
+          <article class="default">
             <header class="headline">
+<div class="tags">
+  <a class="tag-link" href="/tags/documentation/index.html">documentation</a>
+  <a class="tag-link" href="/tags/kubernetes/index.html">kubernetes</a>
+</div>
             </header>
-<h1 id="inicio-sitio">Inicio sitio</h1>
+<h1 id="environment">Environment</h1>
 
-<p>En este sitio comparto algunos artículos e implementaciones que utilizo como referencias de estudio o lectura.</p>
-<p>El sitio esta generado con <a href="https://gohugo.io/" target="_blank">Hugo</a> y utiliza el theme <a href="https://mcshelby.github.io/hugo-theme-relearn/basics/configuration/index.html" target="_blank">Hugo Relearn Theme</a>.</p>
-<p>
-<a href="#image-107e2a8a7124c79fb4725f57bc4e27bf" class="lightbox-link">
-<img src="images/magic.gif?classes=shadow" alt="Magic" class="shadow" style="height: auto; width: auto;" loading="lazy">
-</a>
-<a href="javascript:history.back();" class="lightbox" id="image-107e2a8a7124c79fb4725f57bc4e27bf">
-<img src="images/magic.gif?classes=shadow" alt="Magic" class="lightbox-image" loading="lazy">
-</a></p>
+<h2 id="variables-del-entorno">Variables del entorno</h2>
 
             <footer class="footline">
 
@@ -187,9 +196,9 @@
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics enlarge morespace collapsible-menu">
-          <li data-nav-id="/kubernetes/index.html" class="alwaysopen"><input type="checkbox" id="section-8702f471f80db9562475d423dd2cfd2a" aria-controls="subsections-8702f471f80db9562475d423dd2cfd2a" checked><label for="section-8702f471f80db9562475d423dd2cfd2a"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu kubernetes</span></label><a class="padding" href="/kubernetes/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">1.</b> kubernetes</a><ul id="subsections-8702f471f80db9562475d423dd2cfd2a" class="morespace collapsible-menu">
-          <li data-nav-id="/kubernetes/pod/index.html" class="alwaysopen"><input type="checkbox" id="section-356698455ff932802acbd2e5590feda2" aria-controls="subsections-356698455ff932802acbd2e5590feda2" checked><label for="section-356698455ff932802acbd2e5590feda2"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Pod</span></label><a class="padding" href="/kubernetes/pod/index.html">Pod</a><ul id="subsections-356698455ff932802acbd2e5590feda2" class="morespace collapsible-menu">
-          <li data-nav-id="/kubernetes/pod/environment/index.html" class=""><a class="padding" href="/kubernetes/pod/environment/index.html">Environment</a></li></ul></li>
+          <li data-nav-id="/kubernetes/index.html" class="parent alwaysopen"><input type="checkbox" id="section-8702f471f80db9562475d423dd2cfd2a" aria-controls="subsections-8702f471f80db9562475d423dd2cfd2a" checked><label for="section-8702f471f80db9562475d423dd2cfd2a"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu kubernetes</span></label><a class="padding" href="/kubernetes/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">1.</b> kubernetes</a><ul id="subsections-8702f471f80db9562475d423dd2cfd2a" class="morespace collapsible-menu">
+          <li data-nav-id="/kubernetes/pod/index.html" class="parent alwaysopen"><input type="checkbox" id="section-356698455ff932802acbd2e5590feda2" aria-controls="subsections-356698455ff932802acbd2e5590feda2" checked><label for="section-356698455ff932802acbd2e5590feda2"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Pod</span></label><a class="padding" href="/kubernetes/pod/index.html">Pod</a><ul id="subsections-356698455ff932802acbd2e5590feda2" class="morespace collapsible-menu">
+          <li data-nav-id="/kubernetes/pod/environment/index.html" class="active"><a class="padding" href="/kubernetes/pod/environment/index.html">Environment</a></li></ul></li>
           <li data-nav-id="/kubernetes/03-daemonset/index.html" class=""><a class="padding" href="/kubernetes/03-daemonset/index.html">Daemonset</a></li></ul></li>
         </ul>
         <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter"></div>

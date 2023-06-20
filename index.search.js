@@ -3,7 +3,7 @@ var relearn_search_index = [
     "content": "Entradas relacionadas a Kubernetes\n",
     "description": "",
     "tags": null,
-    "title": "k8s",
+    "title": "kubernetes",
     "uri": "/kubernetes/index.html"
   },
   {
@@ -25,6 +25,16 @@ var relearn_search_index = [
     ],
     "title": "Daemonset",
     "uri": "/kubernetes/03-daemonset/index.html"
+  },
+  {
+    "content": "Variables del entorno ",
+    "description": "",
+    "tags": [
+      "documentation",
+      "kubernetes"
+    ],
+    "title": "Environment",
+    "uri": "/kubernetes/pod/environment/index.html"
   },
   {
     "content": "",
