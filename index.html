@@ -5,25 +5,25 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.101.0">
     <meta name="generator" content="Relearn 5.16.2+tip">
-    <meta name="description" content="">
-    <meta name="author" content="dzamo">
+    <meta name="description" content="Documentation theme based Hugo Relearn Theme">
+    <meta name="author" content="Daniel Oscar Zamo">
     <title>Inicio sitio :: Site</title>
     <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Inicio sitio :: Site">
     <link href="/index.print.html" rel="alternate" type="text/html" title="Inicio sitio :: Site">
-    <link href="/images/logo.svg?1687273115" rel="icon" type="image/svg+xml">
+    <link href="/images/logo.svg?1687274018" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1687273115" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687273115" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1687273115" rel="stylesheet">
-    <link href="/css/auto-complete.css?1687273115" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1687273115" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1687273115" rel="stylesheet">
-    <link href="/css/fonts.css?1687273115" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1687273115" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1687273115" rel="stylesheet">
-    <link href="/css/theme-relearn-dark.css?1687273115" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1687273115" rel="stylesheet">
-    <link href="/css/print.css?1687273115" rel="stylesheet" media="print">
-    <link href="/css/ie.css?1687273115" rel="stylesheet">
-    <script src="/js/url.js?1687273115"></script>
-    <script src="/js/variant.js?1687273115"></script>
+    <link href="/css/fontawesome-all.min.css?1687274018" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687274018" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1687274018" rel="stylesheet">
+    <link href="/css/auto-complete.css?1687274018" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1687274018" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1687274018" rel="stylesheet">
+    <link href="/css/fonts.css?1687274018" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1687274018" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1687274018" rel="stylesheet">
+    <link href="/css/theme-auto.css?1687274018" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1687274018" rel="stylesheet">
+    <link href="/css/print.css?1687274018" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1687274018" rel="stylesheet">
+    <script src="/js/url.js?1687274018"></script>
+    <script src="/js/variant.js?1687274018"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -39,7 +39,7 @@
       window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
       // some further base stuff
       var baseUriFull='http:\/\/danielzamo.github.io/';
-      window.variants && variants.init( [ 'relearn-dark', 'relearn-light' ] );
+      window.variants && variants.init( [ 'auto', 'relearn-bright', 'relearn-light', 'relearn-dark', 'learn', 'neon', 'blue', 'green', 'red' ] );
     </script>
     <style>
       #body img.bg-white {
@@ -47,7 +47,7 @@
       }
     </style>
   </head>
-  <body class="mobile-support html" data-url="/index.html">
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
@@ -62,6 +62,11 @@
           <div id="top-print-link">
             <a class="print-link topbar-link" title='Print whole chapter (CTRL+ALT+p)' href="/index.print.html">
               <i class="fas fa-print fa-fw"></i>
+            </a>
+          </div>
+          <div id="top-github-link">
+            <a class="github-link topbar-link" title='Edit (CTRL+ALT+w)' href="https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/_index.en.md" target="_blank">
+              <i class="fas fa-pen fa-fw"></i>
             </a>
           </div>
           <div id="breadcrumbs">
@@ -85,10 +90,10 @@
 <p>En este sitio comparto algunos artículos e implementaciones que utilizo como referencias de estudio o lectura.</p>
 <p>El sitio esta generado con <a href="https://gohugo.io/" target="_blank">Hugo</a> y utiliza el theme <a href="https://mcshelby.github.io/hugo-theme-relearn/basics/configuration/index.html" target="_blank">Hugo Relearn Theme</a>.</p>
 <p>
-<a href="#image-107e2a8a7124c79fb4725f57bc4e27bf" class="lightbox-link">
+<a href="#image-f361032bc03c252361dd5d77e26209d5" class="lightbox-link">
 <img src="images/magic.gif?classes=shadow" alt="Magic" class="shadow" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-107e2a8a7124c79fb4725f57bc4e27bf">
+<a href="javascript:history.back();" class="lightbox" id="image-f361032bc03c252361dd5d77e26209d5">
 <img src="images/magic.gif?classes=shadow" alt="Magic" class="lightbox-image" loading="lazy">
 </a></p>
 
@@ -99,7 +104,7 @@
         </div>
       </main>
     </div>
-    <aside id="sidebar" class="default-animation">
+    <aside id="sidebar" class="default-animation showVisitedLinks">
       <div id="header-wrapper" class="default-animation">
         <div id="header" class="default-animation">
           <style>
@@ -178,23 +183,23 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1687273115" defer></script>
-        <script src="/js/lunr/lunr.min.js?1687273115" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1687273115" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1687273115" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1687273115" defer></script>
-        <script src="/js/search.js?1687273115" defer></script>
+        <script src="/js/auto-complete.js?1687274018" defer></script>
+        <script src="/js/lunr/lunr.min.js?1687274018" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1687274018" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1687274018" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1687274018" defer></script>
+        <script src="/js/search.js?1687274018" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics enlarge morespace collapsible-menu">
-          <li data-nav-id="/kubernetes/index.html" class="alwaysopen"><input type="checkbox" id="section-8702f471f80db9562475d423dd2cfd2a" aria-controls="subsections-8702f471f80db9562475d423dd2cfd2a" checked><label for="section-8702f471f80db9562475d423dd2cfd2a"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu kubernetes</span></label><a class="padding" href="/kubernetes/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">1.</b> kubernetes</a><ul id="subsections-8702f471f80db9562475d423dd2cfd2a" class="morespace collapsible-menu">
-          <li data-nav-id="/kubernetes/pod/index.html" class="alwaysopen"><input type="checkbox" id="section-356698455ff932802acbd2e5590feda2" aria-controls="subsections-356698455ff932802acbd2e5590feda2" checked><label for="section-356698455ff932802acbd2e5590feda2"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Pod</span></label><a class="padding" href="/kubernetes/pod/index.html">Pod</a><ul id="subsections-356698455ff932802acbd2e5590feda2" class="morespace collapsible-menu">
-          <li data-nav-id="/kubernetes/pod/environment/index.html" class=""><a class="padding" href="/kubernetes/pod/environment/index.html">Environment</a></li></ul></li>
-          <li data-nav-id="/kubernetes/03-daemonset/index.html" class=""><a class="padding" href="/kubernetes/03-daemonset/index.html">Daemonset</a></li></ul></li>
+          <li data-nav-id="/kubernetes/index.html" class=""><input type="checkbox" id="section-8702f471f80db9562475d423dd2cfd2a" aria-controls="subsections-8702f471f80db9562475d423dd2cfd2a"><label for="section-8702f471f80db9562475d423dd2cfd2a"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu kubernetes</span></label><a class="padding" href="/kubernetes/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">1.</b> kubernetes<i class="fas fa-check read-icon"></i></a><ul id="subsections-8702f471f80db9562475d423dd2cfd2a" class="morespace collapsible-menu">
+          <li data-nav-id="/kubernetes/pod/index.html" class="alwaysopen"><input type="checkbox" id="section-356698455ff932802acbd2e5590feda2" aria-controls="subsections-356698455ff932802acbd2e5590feda2" checked><label for="section-356698455ff932802acbd2e5590feda2"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Pod</span></label><a class="padding" href="/kubernetes/pod/index.html">Pod<i class="fas fa-check read-icon"></i></a><ul id="subsections-356698455ff932802acbd2e5590feda2" class="morespace collapsible-menu">
+          <li data-nav-id="/kubernetes/pod/environment/index.html" class=""><a class="padding" href="/kubernetes/pod/environment/index.html">Environment<i class="fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/kubernetes/03-daemonset/index.html" class=""><a class="padding" href="/kubernetes/03-daemonset/index.html">Daemonset<i class="fas fa-check read-icon"></i></a></li></ul></li>
         </ul>
-        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter"></div>
-        <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter">
-        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch">
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter"></div>
+        <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch showVisitedLinks">
           <ul>
             <li id="select-language-container" class="footerLangSwitch">
               <div class="padding select-container">
@@ -215,15 +220,22 @@
                 <div class="select-style">
                   <label class="a11y-only" for="select-variant">Theme</label>
                   <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
-                    <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
+                    <option id="auto" value="auto" selected>Auto</option>
+                    <option id="relearn-bright" value="relearn-bright">Relearn Bright</option>
                     <option id="relearn-light" value="relearn-light">Relearn Light</option>
+                    <option id="relearn-dark" value="relearn-dark">Relearn Dark</option>
+                    <option id="learn" value="learn">Learn</option>
+                    <option id="neon" value="neon">Neon</option>
+                    <option id="blue" value="blue">Blue</option>
+                    <option id="green" value="green">Green</option>
+                    <option id="red" value="red">Red</option>
                   </select>
                 </div>
                 <div class="select-clear"></div>
               </div>
               <script>window.variants && variants.markSelectedVariant();</script>
             </li>
-            <li class="footerVisitedLinks"><button class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i><span>&nbsp;</span>Clear History</button></li>
+            <li class="footerVisitedLinks showVisitedLinks"><button class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i><span>&nbsp;</span>Clear History</button></li>
           </ul>
         </div>
         <div id="footer" class="footerFooter showFooter">
@@ -246,12 +258,12 @@
           <a class="github-button" href="https://github.com/McShelby/hugo-theme-relearn" data-icon="octicon-star" data-show-count="true" aria-label="Star McShelby/hugo-theme-relearn on GitHub">Star</a>
           <a class="github-button" href="https://github.com/McShelby/hugo-theme-relearn/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork McShelby/hugo-theme-relearn on GitHub">Fork</a>
           <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
-          <script async src="/js/buttons.js?1687273115"></script>
+          <script async src="/js/buttons.js?1687274018"></script>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1687273115" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1687273115" defer></script>
-    <script src="/js/theme.js?1687273115" defer></script>
+    <script src="/js/clipboard.min.js?1687274018" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1687274018" defer></script>
+    <script src="/js/theme.js?1687274018" defer></script>
   </body>
 </html>
