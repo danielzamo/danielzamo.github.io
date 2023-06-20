@@ -32,5 +32,12 @@ Este tipo de componentes de Kubernetes se ejecutaran sobre todos los nodos del c
       <description>En esta sección se muestra como definir un services.
 Este tipo de componentes de Kubernetes se ejecutaran sobre todos los nodos del cluster. Este tipo puede utilizarse por ejemplo para monitorizar los nodos (si están disponibles).</description>
     </item>
+    <item>
+      <title>Pod</title>
+      <link>http://danielzamo.github.io/kubernetes/pod/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/kubernetes/pod/index.html</guid>
+      <description>¿Qué son los pods? Los pod son set de contenedores. Pueden ser solo un contenedor como tener múltiples contenedores. Normalmente 1 pod tiene 1 solo contenedor. Manifiesto de definición de 1 pod apiVersion: v1 kind: Pod metadata: name: nginx spec: containers: - name: nginx image: nginx:alpine </description>
+    </item>
   </channel>
 </rss>
