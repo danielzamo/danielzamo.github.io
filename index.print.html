@@ -10,21 +10,21 @@
     <title>Inicio sitio :: Site</title>
     <link href="http://danielzamo.github.io/index.html" rel="canonical" type="text/html" title="Inicio sitio :: Site">
     <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Inicio sitio :: Site">
-    <link href="/images/logo.svg?1687274972" rel="icon" type="image/svg+xml">
+    <link href="/images/logo.svg?1687295720" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1687274972" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687274972" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1687274972" rel="stylesheet">
-    <link href="/css/auto-complete.css?1687274972" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1687274972" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1687274972" rel="stylesheet">
-    <link href="/css/fonts.css?1687274972" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1687274972" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1687274972" rel="stylesheet">
-    <link href="/css/theme-auto.css?1687274972" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1687274972" rel="stylesheet">
-    <link href="/css/print.css?1687274972" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1687274972" rel="stylesheet">
-    <link href="/css/ie.css?1687274972" rel="stylesheet">
-    <script src="/js/url.js?1687274972"></script>
-    <script src="/js/variant.js?1687274972"></script>
+    <link href="/css/fontawesome-all.min.css?1687295720" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687295720" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1687295720" rel="stylesheet">
+    <link href="/css/auto-complete.css?1687295720" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1687295720" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1687295720" rel="stylesheet">
+    <link href="/css/fonts.css?1687295720" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1687295720" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1687295720" rel="stylesheet">
+    <link href="/css/theme-auto.css?1687295720" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1687295720" rel="stylesheet">
+    <link href="/css/print.css?1687295720" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1687295720" rel="stylesheet">
+    <link href="/css/ie.css?1687295720" rel="stylesheet">
+    <script src="/js/url.js?1687295720"></script>
+    <script src="/js/variant.js?1687295720"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -75,10 +75,10 @@
 <p>En este sitio comparto algunos artículos e implementaciones que utilizo como referencias de estudio o lectura.</p>
 <p>El sitio esta generado con <a href="https://gohugo.io/" target="_blank">Hugo</a> y utiliza el theme <a href="https://mcshelby.github.io/hugo-theme-relearn/basics/configuration/index.html" target="_blank">Hugo Relearn Theme</a>.</p>
 <p>
-<a href="#image-b78a3d8567b6759952d53d6821cb2d71" class="lightbox-link">
+<a href="#image-b827cb8cbc44e1ea2fabecb3bacdc594" class="lightbox-link">
 <img src="/images/magic.gif?classes=shadow" alt="Magic" class="shadow" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-b78a3d8567b6759952d53d6821cb2d71">
+<a href="javascript:history.back();" class="lightbox" id="image-b827cb8cbc44e1ea2fabecb3bacdc594">
 <img src="/images/magic.gif?classes=shadow" alt="Magic" class="lightbox-image" loading="lazy">
 </a></p>
 
@@ -120,9 +120,25 @@
 <li>Un pod puede tener múltiples/varios contenedores, aunque normalmente solo contendrá 1.</li>
 </ul>
 <h2 id="creación-de-un-pod-desde-el-cli">Creación de un pod desde el CLI</h2>
-<p>El siguiente comando crea un pod. Para esto por ejemplo se puede ejecutar:</p>
+<p>El siguiente comando crea un <em>pod</em>, como un <em>deployment</em>. Para esto por ejemplo se puede ejecutar:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl create deployment deployment-pod-nginx-01 --image<span style="color:#f92672">=</span>nginx 
-</span></span></code></pre></div><h2 id="creación-de-pod-desde-un-manifiesto-mínimo">Creación de pod desde un manifiesto (mínimo)</h2>
+</span></span></code></pre></div><h3 id="algunos-comandos">Algunos comandos</h3>
+<h4 id="matando-el-pod">Matando el pod</h4>
+<p>Para matar el anterior pod se puede ejecutar:</p>
+<pre tabindex="0"><code>[dzamo@victus my-readings] alias k=&#39;kubectl&#39;
+# pods en ejecución
+[dzamo@victus my-readings] k get pods
+# eliminar el pod del deployment
+[dzamo@victus my-readings] k delete pod deployment-pod-nginx-01-77c5f959c5-z4hfn
+</code></pre><h4 id="borrar-el-deployment-borrar-el-pod">Borrar el deployment (borrar el pod)</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus my-readings<span style="color:#f92672">]</span> alias k<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;kubectl&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># pods en ejecución</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus my-readings<span style="color:#f92672">]</span> k get deployments
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># eliminar el pod del deployment</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus my-readings<span style="color:#f92672">]</span> k delete deployment deployment-pod-nginx-01
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus my-readings<span style="color:#f92672">]</span> k get deployments
+</span></span></code></pre></div><p>Al haber sido credo con el comando <code>kubectl create deployment .... </code>, el orquetador <em>Kubernetes</em> vuelve a levantar el <em>pod</em>.</p>
+<h2 id="creación-de-pod-desde-un-manifiesto-mínimo">Creación de pod desde un manifiesto (mínimo)</h2>
 <p>Normalmente se utilizan manifiestos, para crear los componentes para desplegar las aplicaciones en un cluster <a href="https://kubernetes.io" target="_blank">kubernetes</a>. Estos están codificados en ficheros <code>yaml</code>. A continuación se especifica la creación de un pod (mínimo) mediante un fichero de este tipo. El código es el siguiente:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat 01-pod-minimal.md
 </span></span><span style="display:flex;"><span>apiVersion: v1
@@ -155,6 +171,22 @@
 <h1 id="environment--resources">Environment &amp; Resources</h1>
 
 <h2 id="environments-y-resources">Environments y resources</h2>
+
+            <footer class="footline">
+
+            </footer>
+          </article>
+
+          <article class="default">
+            <header class="headline">
+<div class="tags">
+  <a class="tag-link" href="/tags/documentation/index.html">documentation</a>
+  <a class="tag-link" href="/tags/kubernetes/index.html">kubernetes</a>
+</div>
+            </header>
+<h1 id="pod-manifiesto-mínimo">Pod manifiesto mínimo</h1>
+
+<h2 id="pod-mínimo">Pod mínimo</h2>
 
             <footer class="footline">
 
@@ -213,8 +245,8 @@
         </div>
       </main>
     </div>
-    <script src="/js/clipboard.min.js?1687274972" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1687274972" defer></script>
-    <script src="/js/theme.js?1687274972" defer></script>
+    <script src="/js/clipboard.min.js?1687295720" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1687295720" defer></script>
+    <script src="/js/theme.js?1687295720" defer></script>
   </body>
 </html>

@@ -7,7 +7,7 @@ var relearn_search_index = [
     "uri": "/kubernetes/index.html"
   },
   {
-    "content": "¿Qué es un pod? Un pod es un set de contenedor/es. Un pod es el componente mas pequeño/atómico de Kubernetes. Un pod puede tener múltiples/varios contenedores, aunque normalmente solo contendrá 1. Creación de un pod desde el CLI El siguiente comando crea un pod. Para esto por ejemplo se puede ejecutar:\nkubectl create deployment deployment-pod-nginx-01 --image=nginx Creación de pod desde un manifiesto (mínimo) Normalmente se utilizan manifiestos, para crear los componentes para desplegar las aplicaciones en un cluster kubernetes. Estos están codificados en ficheros yaml. A continuación se especifica la creación de un pod (mínimo) mediante un fichero de este tipo. El código es el siguiente:\ncat 01-pod-minimal.md apiVersion: v1 kind: Pod metadata: name: nginx spec: containers: - name: nginx image: nginx:alpine Aplicando el manifiesto Para aplicar (crear el pod) se puede ejecutar:\nkubectl create -f 01-pod-minimal.md Nota: Observar en el manifiesto se ha utilizado kind: Pod una vez corriendo el propio pod si se lo borra (kubectl delete ....) el pod se destruye/borra y Kubernetes no lo volvera a levantar (los de tipo kind: Pod simplemente se destruyen).\n",
+    "content": "¿Qué es un pod? Un pod es un set de contenedor/es. Un pod es el componente mas pequeño/atómico de Kubernetes. Un pod puede tener múltiples/varios contenedores, aunque normalmente solo contendrá 1. Creación de un pod desde el CLI El siguiente comando crea un pod, como un deployment. Para esto por ejemplo se puede ejecutar:\nkubectl create deployment deployment-pod-nginx-01 --image=nginx Algunos comandos Matando el pod Para matar el anterior pod se puede ejecutar:\n[dzamo@victus my-readings] alias k='kubectl' # pods en ejecución [dzamo@victus my-readings] k get pods # eliminar el pod del deployment [dzamo@victus my-readings] k delete pod deployment-pod-nginx-01-77c5f959c5-z4hfn Borrar el deployment (borrar el pod) [dzamo@victus my-readings] alias k='kubectl' # pods en ejecución [dzamo@victus my-readings] k get deployments # eliminar el pod del deployment [dzamo@victus my-readings] k delete deployment deployment-pod-nginx-01 [dzamo@victus my-readings] k get deployments Al haber sido credo con el comando kubectl create deployment .... , el orquetador Kubernetes vuelve a levantar el pod.\nCreación de pod desde un manifiesto (mínimo) Normalmente se utilizan manifiestos, para crear los componentes para desplegar las aplicaciones en un cluster kubernetes. Estos están codificados en ficheros yaml. A continuación se especifica la creación de un pod (mínimo) mediante un fichero de este tipo. El código es el siguiente:\ncat 01-pod-minimal.md apiVersion: v1 kind: Pod metadata: name: nginx spec: containers: - name: nginx image: nginx:alpine Aplicando el manifiesto Para aplicar (crear el pod) se puede ejecutar:\nkubectl create -f 01-pod-minimal.md Nota: Observar en el manifiesto se ha utilizado kind: Pod una vez corriendo el propio pod si se lo borra (kubectl delete ....) el pod se destruye/borra y Kubernetes no lo volvera a levantar (los de tipo kind: Pod simplemente se destruyen).\n",
     "description": "",
     "tags": [
       "kubernetes",
@@ -35,6 +35,16 @@ var relearn_search_index = [
     ],
     "title": "Environment \u0026 Resources",
     "uri": "/kubernetes/pod/environment-resources/index.html"
+  },
+  {
+    "content": "Pod mínimo ",
+    "description": "",
+    "tags": [
+      "documentation",
+      "kubernetes"
+    ],
+    "title": "Pod manifiesto mínimo",
+    "uri": "/kubernetes/pod/pod-minimal/index.html"
   },
   {
     "content": "",

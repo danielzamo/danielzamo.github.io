@@ -11,8 +11,8 @@
       <link>http://danielzamo.github.io/kubernetes/pod/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://danielzamo.github.io/kubernetes/pod/index.html</guid>
-      <description>¿Qué es un pod? Un pod es un set de contenedor/es. Un pod es el componente mas pequeño/atómico de Kubernetes. Un pod puede tener múltiples/varios contenedores, aunque normalmente solo contendrá 1. Creación de un pod desde el CLI El siguiente comando crea un pod. Para esto por ejemplo se puede ejecutar:
-kubectl create deployment deployment-pod-nginx-01 --image=nginx Creación de pod desde un manifiesto (mínimo) Normalmente se utilizan manifiestos, para crear los componentes para desplegar las aplicaciones en un cluster kubernetes.</description>
+      <description>¿Qué es un pod? Un pod es un set de contenedor/es. Un pod es el componente mas pequeño/atómico de Kubernetes. Un pod puede tener múltiples/varios contenedores, aunque normalmente solo contendrá 1. Creación de un pod desde el CLI El siguiente comando crea un pod, como un deployment. Para esto por ejemplo se puede ejecutar:
+kubectl create deployment deployment-pod-nginx-01 --image=nginx Algunos comandos Matando el pod Para matar el anterior pod se puede ejecutar:</description>
     </item>
     <item>
       <title>Daemonset</title>
@@ -27,6 +27,13 @@ kubectl create deployment deployment-pod-nginx-01 --image=nginx Creación de pod
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://danielzamo.github.io/kubernetes/pod/environment-resources/index.html</guid>
       <description>Environments y resources </description>
+    </item>
+    <item>
+      <title>Pod manifiesto mínimo</title>
+      <link>http://danielzamo.github.io/kubernetes/pod/pod-minimal/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/kubernetes/pod/pod-minimal/index.html</guid>
+      <description>Pod mínimo </description>
     </item>
   </channel>
 </rss>
