@@ -27,14 +27,14 @@ var relearn_search_index = [
     "uri": "/kubernetes/03-daemonset/index.html"
   },
   {
-    "content": "Variables del entorno ",
+    "content": "Environments y resources ",
     "description": "",
     "tags": [
       "documentation",
       "kubernetes"
     ],
-    "title": "Environment",
-    "uri": "/kubernetes/pod/environment/index.html"
+    "title": "Environment \u0026 Resources",
+    "uri": "/kubernetes/pod/environment-resources/index.html"
   },
   {
     "content": "",
