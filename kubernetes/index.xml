@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kubernetes on Site</title>
+    <link>http://danielzamo.github.io/kubernetes/index.html</link>
+    <description>Recent content in Kubernetes on Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://danielzamo.github.io/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Daemonset</title>
+      <link>http://danielzamo.github.io/kubernetes/03-daemonset/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/kubernetes/03-daemonset/index.html</guid>
+      <description>En esta sección se muestra como definir un daemonset.
+Este tipo de componentes de Kubernetes se ejecutaran sobre todos los nodos del cluster. Este tipo puede utilizarse por ejemplo para monitorizar los nodos (si están disponibles).</description>
+    </item>
+    <item>
+      <title>Deployment</title>
+      <link>http://danielzamo.github.io/kubernetes/04-deployment/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/kubernetes/04-deployment/index.html</guid>
+      <description>En esta sección se muestra como definir un deployment.
+Este tipo de componentes de Kubernetes se ejecutaran sobre todos los nodos del cluster. Este tipo puede utilizarse por ejemplo para monitorizar los nodos (si están disponibles).</description>
+    </item>
+    <item>
+      <title>Services</title>
+      <link>http://danielzamo.github.io/kubernetes/05-services/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/kubernetes/05-services/index.html</guid>
+      <description>En esta sección se muestra como definir un services.
+Este tipo de componentes de Kubernetes se ejecutaran sobre todos los nodos del cluster. Este tipo puede utilizarse por ejemplo para monitorizar los nodos (si están disponibles).</description>
+    </item>
+  </channel>
+</rss>
