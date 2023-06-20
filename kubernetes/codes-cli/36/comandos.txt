@@ -1,1 +1,0 @@
-kubectl -n kube-system create secret generic digitalocean --from-literal=api-key=<TU_API_KEY>
