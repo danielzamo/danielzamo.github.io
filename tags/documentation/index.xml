@@ -15,13 +15,6 @@
 kubectl create deployment deployment-pod-nginx-01 --image=nginx Algunos comandos Matando el pod Para matar el anterior pod se puede ejecutar:</description>
     </item>
     <item>
-      <title>Daemonset</title>
-      <link>http://danielzamo.github.io/kubernetes/pod/daemonset/03-daemonset/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/kubernetes/pod/daemonset/03-daemonset/index.html</guid>
-      <description>En Kubernetes definir/crear un daemonset hace que el componente se ejecute en todos los nodos del cluster. Este tipo componentes puede utilizarse por ejemplo para aplicaciones que monitorizan los nodos. Manifiesto de un daemonset básico [dzamo@victus kubernetes]$ cat codes-cli/03-daemonset.yaml apiVersion: apps/v1 kind: DaemonSet metadata: name: nginx-deployment spec: selector: matchLabels: app: nginx template: metadata: labels: app: nginx spec: containers: - name: nginx image: nginx:alpine ports: - containerPort: 80 Aplicar el manifiesto kubectl apply -f 03-daemonset.</description>
-    </item>
-    <item>
       <title>Definición pod mediante manifiesto</title>
       <link>http://danielzamo.github.io/kubernetes/pod/pod-minimal/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -29,11 +22,12 @@ kubectl create deployment deployment-pod-nginx-01 --image=nginx Algunos comandos
       <description>Manifiesto mínimo [dzamo@victus my-codes]$ cat kubernetes/01-pod-minimal.yaml apiVersion: v1 kind: Pod metadata: name: nginx spec: containers: - name: nginx image: nginx:alpine Aplicando manifiesto (crear pod) [dzamo@victus my-codes]$ kubectl apply -f kubernetes/01-pod-minimal.yaml </description>
     </item>
     <item>
-      <title>Environment &amp; Resources</title>
-      <link>http://danielzamo.github.io/kubernetes/pod/environment-resources/index.html</link>
+      <title>Sección env</title>
+      <link>http://danielzamo.github.io/kubernetes/pod/env/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/kubernetes/pod/environment-resources/index.html</guid>
-      <description>Environments y resources </description>
+      <guid>http://danielzamo.github.io/kubernetes/pod/env/index.html</guid>
+      <description>Relevantes en esta nota Sección variables de entorno, definición env en manifiesto. Utilización de variables recuperadas desde kubernetes Downward API Manifiesto apiVersion: v1 kind: Pod metadata: name: nginx spec: containers: - name: nginx image: nginx:alpine env: - name: var_1 value: &amp;#34;value_val_1&amp;#34; - name: var_2 value: &amp;#34;value_val_2&amp;#34; - name: DD_AGENT_HOST valueFrom: fieldRef: fieldPath: status.hostIP env En la sección env se pueden definir/pasar variables de entornos. En lo anterior es:
+env: # Variables de entorno - name: var_1 ## &amp;#39;Nombre 1&amp;#39; value: &amp;#34;value_val_1&amp;#34; ## Valor variable &amp;#39;Nombre 1&amp;#39; - name: var_2 ## &amp;#39;Nombre 2&amp;#39; value: &amp;#34;value_val_2&amp;#34; ## Valor variable &amp;#39;Nombre 2&amp;#39; - name: dd_agent_host ## Variable definida desde el &amp;#34;Downward API&amp;#34; (son variables/valores que se pueden consultar) valueFrom: fieldRef: fieldPath: status.</description>
     </item>
     <item>
       <title>Daemonset</title>

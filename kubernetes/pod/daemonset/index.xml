@@ -6,12 +6,5 @@
     <description>Recent content in Daemonset on Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="http://danielzamo.github.io/kubernetes/pod/daemonset/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Daemonset</title>
-      <link>http://danielzamo.github.io/kubernetes/pod/daemonset/03-daemonset/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/kubernetes/pod/daemonset/03-daemonset/index.html</guid>
-      <description>En Kubernetes definir/crear un daemonset hace que el componente se ejecute en todos los nodos del cluster. Este tipo componentes puede utilizarse por ejemplo para aplicaciones que monitorizan los nodos. Manifiesto de un daemonset básico [dzamo@victus kubernetes]$ cat codes-cli/03-daemonset.yaml apiVersion: apps/v1 kind: DaemonSet metadata: name: nginx-deployment spec: selector: matchLabels: app: nginx template: metadata: labels: app: nginx spec: containers: - name: nginx image: nginx:alpine ports: - containerPort: 80 Aplicar el manifiesto kubectl apply -f 03-daemonset.</description>
-    </item>
   </channel>
 </rss>

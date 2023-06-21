@@ -10,21 +10,21 @@
     <title>kubernetes :: Site</title>
     <link href="http://danielzamo.github.io/kubernetes/index.html" rel="canonical" type="text/html" title="kubernetes :: Site">
     <link href="/kubernetes/index.xml" rel="alternate" type="application/rss+xml" title="kubernetes :: Site">
-    <link href="/images/logo.svg?1687302040" rel="icon" type="image/svg+xml">
+    <link href="/images/logo.svg?1687346709" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1687302040" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687302040" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1687302040" rel="stylesheet">
-    <link href="/css/auto-complete.css?1687302040" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1687302040" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1687302040" rel="stylesheet">
-    <link href="/css/fonts.css?1687302040" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1687302040" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1687302040" rel="stylesheet">
-    <link href="/css/theme-auto.css?1687302040" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1687302040" rel="stylesheet">
-    <link href="/css/print.css?1687302040" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1687302040" rel="stylesheet">
-    <link href="/css/ie.css?1687302040" rel="stylesheet">
-    <script src="/js/url.js?1687302040"></script>
-    <script src="/js/variant.js?1687302040"></script>
+    <link href="/css/fontawesome-all.min.css?1687346709" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687346709" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1687346709" rel="stylesheet">
+    <link href="/css/auto-complete.css?1687346709" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1687346709" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1687346709" rel="stylesheet">
+    <link href="/css/fonts.css?1687346709" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1687346709" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1687346709" rel="stylesheet">
+    <link href="/css/theme-auto.css?1687346709" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1687346709" rel="stylesheet">
+    <link href="/css/print.css?1687346709" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1687346709" rel="stylesheet">
+    <link href="/css/ie.css?1687346709" rel="stylesheet">
+    <script src="/js/url.js?1687346709"></script>
+    <script src="/js/variant.js?1687346709"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -175,10 +175,70 @@
   <a class="tag-link" href="/tags/kubernetes/index.html">kubernetes</a>
 </div>
             </header>
-<h1 id="environment--resources">Environment &amp; Resources</h1>
+<h1 id="sección-env">Sección env</h1>
 
-<h2 id="environments-y-resources">Environments y resources</h2>
-
+<h2 id="relevantes-en-esta-nota">Relevantes en esta nota</h2>
+<ul>
+<li>Sección variables de entorno, definición <code>env</code> en manifiesto.</li>
+<li>Utilización de variables recuperadas desde <a href="https://kubernetes.io/docs/concepts/workloads/pods/downward-api/" target="_blank">kubernetes Downward API</a></li>
+</ul>
+<h2 id="manifiesto">Manifiesto</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>apiVersion: v1
+</span></span><span style="display:flex;"><span>kind: Pod
+</span></span><span style="display:flex;"><span>metadata:
+</span></span><span style="display:flex;"><span>  name: nginx
+</span></span><span style="display:flex;"><span>spec:
+</span></span><span style="display:flex;"><span>  containers:
+</span></span><span style="display:flex;"><span>  - name: nginx
+</span></span><span style="display:flex;"><span>    image: nginx:alpine
+</span></span><span style="display:flex;"><span>    env:
+</span></span><span style="display:flex;"><span>    - name: var_1
+</span></span><span style="display:flex;"><span>      value: <span style="color:#e6db74">&#34;value_val_1&#34;</span>
+</span></span><span style="display:flex;"><span>    - name: var_2
+</span></span><span style="display:flex;"><span>      value: <span style="color:#e6db74">&#34;value_val_2&#34;</span>
+</span></span><span style="display:flex;"><span>    - name: DD_AGENT_HOST
+</span></span><span style="display:flex;"><span>      valueFrom:
+</span></span><span style="display:flex;"><span>        fieldRef:
+</span></span><span style="display:flex;"><span>          fieldPath: status.hostIP
+</span></span></code></pre></div><h3 id="env">env</h3>
+<p>En la sección <code>env</code> se pueden definir/pasar variables de entornos. En lo anterior es:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    env:                          <span style="color:#75715e"># Variables de entorno</span>
+</span></span><span style="display:flex;"><span>    - name: var_1                 <span style="color:#75715e">## &#39;Nombre 1&#39;</span>
+</span></span><span style="display:flex;"><span>      value: <span style="color:#e6db74">&#34;value_val_1&#34;</span>        <span style="color:#75715e">## Valor variable &#39;Nombre 1&#39;</span>
+</span></span><span style="display:flex;"><span>    - name: var_2                 <span style="color:#75715e">## &#39;Nombre 2&#39;</span>
+</span></span><span style="display:flex;"><span>      value: <span style="color:#e6db74">&#34;value_val_2&#34;</span>        <span style="color:#75715e">## Valor variable &#39;Nombre 2&#39;</span>
+</span></span><span style="display:flex;"><span>    - name: dd_agent_host         <span style="color:#75715e">## Variable definida desde el &#34;Downward API&#34; (son variables/valores que se pueden consultar)</span>
+</span></span><span style="display:flex;"><span>      valueFrom:
+</span></span><span style="display:flex;"><span>        fieldRef:
+</span></span><span style="display:flex;"><span>          fieldPath: status.hostIP <span style="color:#75715e">## Se asigna el valor de hostIP (su valor se recupera desde la &#34;Downward API&#34; de kubernetes) donde esta corriendo el pod, en este caso.</span>
+</span></span></code></pre></div><h2 id="sesión-comandos">Sesión comandos</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ kubectl apply -f 03-pod-w-env.yaml
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ kubectl get pod
+</span></span><span style="display:flex;"><span>NAME          READY   STATUS    RESTARTS   AGE
+</span></span><span style="display:flex;"><span>nginx-w-env   1/1     Running   <span style="color:#ae81ff">0</span>          18s
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ kubectl exec nginx-w-env -- env
+</span></span><span style="display:flex;"><span>PATH<span style="color:#f92672">=</span>/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+</span></span><span style="display:flex;"><span>HOSTNAME<span style="color:#f92672">=</span>nginx-w-env
+</span></span><span style="display:flex;"><span>NGINX_VERSION<span style="color:#f92672">=</span>1.25.1
+</span></span><span style="display:flex;"><span>PKG_RELEASE<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>NJS_VERSION<span style="color:#f92672">=</span>0.7.12
+</span></span><span style="display:flex;"><span>dd_agent_host<span style="color:#f92672">=</span>10.0.0.84
+</span></span><span style="display:flex;"><span>var_1<span style="color:#f92672">=</span>value_var_1
+</span></span><span style="display:flex;"><span>var_2<span style="color:#f92672">=</span>value_var_2
+</span></span><span style="display:flex;"><span>KUBERNETES_PORT<span style="color:#f92672">=</span>tcp://10.43.0.1:443
+</span></span><span style="display:flex;"><span>KUBERNETES_PORT_443_TCP<span style="color:#f92672">=</span>tcp://10.43.0.1:443
+</span></span><span style="display:flex;"><span>KUBERNETES_PORT_443_TCP_PROTO<span style="color:#f92672">=</span>tcp
+</span></span><span style="display:flex;"><span>KUBERNETES_PORT_443_TCP_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">443</span>
+</span></span><span style="display:flex;"><span>KUBERNETES_PORT_443_TCP_ADDR<span style="color:#f92672">=</span>10.43.0.1
+</span></span><span style="display:flex;"><span>KUBERNETES_SERVICE_HOST<span style="color:#f92672">=</span>10.43.0.1
+</span></span><span style="display:flex;"><span>KUBERNETES_SERVICE_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">443</span>
+</span></span><span style="display:flex;"><span>KUBERNETES_SERVICE_PORT_HTTPS<span style="color:#f92672">=</span><span style="color:#ae81ff">443</span>
+</span></span><span style="display:flex;"><span>HOME<span style="color:#f92672">=</span>/root
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ kubectl exec -it nginx-w-env -- sh
+</span></span><span style="display:flex;"><span>/ <span style="color:#75715e"># hostname</span>
+</span></span><span style="display:flex;"><span>nginx-w-env
+</span></span><span style="display:flex;"><span>/ <span style="color:#75715e"># exit</span>
+</span></span></code></pre></div>
             <footer class="footline">
 
             </footer>
@@ -230,62 +290,13 @@
             </footer>
           </article>
 
-          <section>
-            <h1 class="a11y-only">Subsections of Daemonset</h1>
-          <article class="default">
-            <header class="headline">
-<div class="tags">
-  <a class="tag-link" href="/tags/documentation/index.html">documentation</a>
-  <a class="tag-link" href="/tags/kubernetes/index.html">kubernetes</a>
-</div>
-            </header>
-<h1 id="daemonset">Daemonset</h1>
-
-<ul>
-<li>En <em>Kubernetes</em> definir/crear un <em>daemonset</em> hace que el componente se ejecute en todos los nodos del cluster. Este tipo componentes puede utilizarse por ejemplo para aplicaciones que monitorizan los nodos.</li>
-</ul>
-<h3 id="manifiesto-de-un-daemonset-básico">Manifiesto de un daemonset básico</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ cat codes-cli/03-daemonset.yaml
-</span></span><span style="display:flex;"><span>apiVersion: apps/v1
-</span></span><span style="display:flex;"><span>kind: DaemonSet
-</span></span><span style="display:flex;"><span>metadata:
-</span></span><span style="display:flex;"><span>  name: nginx-deployment
-</span></span><span style="display:flex;"><span>spec:
-</span></span><span style="display:flex;"><span>  selector:
-</span></span><span style="display:flex;"><span>    matchLabels:
-</span></span><span style="display:flex;"><span>      app: nginx
-</span></span><span style="display:flex;"><span>  template:
-</span></span><span style="display:flex;"><span>    metadata:
-</span></span><span style="display:flex;"><span>      labels:
-</span></span><span style="display:flex;"><span>        app: nginx
-</span></span><span style="display:flex;"><span>    spec:
-</span></span><span style="display:flex;"><span>      containers:
-</span></span><span style="display:flex;"><span>      - name: nginx
-</span></span><span style="display:flex;"><span>        image: nginx:alpine
-</span></span><span style="display:flex;"><span>        ports:
-</span></span><span style="display:flex;"><span>        - containerPort: <span style="color:#ae81ff">80</span>
-</span></span></code></pre></div><h3 id="aplicar-el-manifiesto">Aplicar el manifiesto</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl apply -f 03-daemonset.yaml
-</span></span></code></pre></div><h3 id="otros-comandos">Otros comandos</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ kubectl apply -f codes-cli/03-daemonset.yaml 
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ kubectl get daemonset
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ k get pods
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># El siguiente comando elimina el daemonset (de todos los nodos, y mediante el manifiesto.</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ kubectl delete -f codes-cli/03-daemonset.yaml
-</span></span></code></pre></div>
-            <footer class="footline">
-
-            </footer>
-          </article>
-
-          </section>
           </section>
           </section>
         </div>
       </main>
     </div>
-    <script src="/js/clipboard.min.js?1687302040" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1687302040" defer></script>
-    <script src="/js/theme.js?1687302040" defer></script>
+    <script src="/js/clipboard.min.js?1687346709" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1687346709" defer></script>
+    <script src="/js/theme.js?1687346709" defer></script>
   </body>
 </html>
