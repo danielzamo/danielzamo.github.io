@@ -10,21 +10,21 @@
     <title>Pod :: Site</title>
     <link href="http://danielzamo.github.io/kubernetes/pod/index.html" rel="canonical" type="text/html" title="Pod :: Site">
     <link href="/kubernetes/pod/index.xml" rel="alternate" type="application/rss+xml" title="Pod :: Site">
-    <link href="/images/logo.svg?1687346709" rel="icon" type="image/svg+xml">
+    <link href="/images/logo.svg?1687357912" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1687346709" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687346709" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1687346709" rel="stylesheet">
-    <link href="/css/auto-complete.css?1687346709" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1687346709" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1687346709" rel="stylesheet">
-    <link href="/css/fonts.css?1687346709" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1687346709" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1687346709" rel="stylesheet">
-    <link href="/css/theme-auto.css?1687346709" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1687346709" rel="stylesheet">
-    <link href="/css/print.css?1687346709" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1687346709" rel="stylesheet">
-    <link href="/css/ie.css?1687346709" rel="stylesheet">
-    <script src="/js/url.js?1687346709"></script>
-    <script src="/js/variant.js?1687346709"></script>
+    <link href="/css/fontawesome-all.min.css?1687357912" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687357912" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1687357912" rel="stylesheet">
+    <link href="/css/auto-complete.css?1687357912" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1687357912" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1687357912" rel="stylesheet">
+    <link href="/css/fonts.css?1687357912" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1687357912" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1687357912" rel="stylesheet">
+    <link href="/css/theme-auto.css?1687357912" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1687357912" rel="stylesheet">
+    <link href="/css/print.css?1687357912" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1687357912" rel="stylesheet">
+    <link href="/css/ie.css?1687357912" rel="stylesheet">
+    <script src="/js/url.js?1687357912"></script>
+    <script src="/js/variant.js?1687357912"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -236,6 +236,59 @@
   <a class="tag-link" href="/tags/kubernetes/index.html">kubernetes</a>
 </div>
             </header>
+<h1 id="sección-resources">Sección resources</h1>
+
+<h2 id="relevantes-en-esta-nota">Relevantes en esta nota</h2>
+<ul>
+<li>
+<p>Sección variables de entorno, definición <code>env</code> en manifiesto.</p>
+</li>
+<li>
+<p>Por medio de los <code>resources</code> es que se pueden asignan diferentes recursos a nuestros objetos (contenedores y/o pod).</p>
+</li>
+<li>
+<p>Dichos recursos pueden ser asignados a diferentes contenedores.</p>
+</li>
+<li>
+<p>Tipos de resources?</p>
+<ul>
+<li>Existen al menos 2 tipos de resources que se pueden asignar. Los tipos <em><strong>requests</strong></em> y los <em><strong>limits</strong></em>.</li>
+</ul>
+</li>
+<li>
+<p>URL <a href="https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/" target="_blank">Resource Management for Pods and Containers</a>.</p>
+</li>
+</ul>
+<h2 id="manifiesto">Manifiesto</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"></code></pre></div><h2 id="tipos-de-resources">Tipos de resources</h2>
+<h4 id="resuorces-requests">Resuorces requests</h4>
+<p>Son los recursos que garantizamos que <em><strong>siempre</strong></em> va a tener disponible el objeto. En el ejemplo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>    resources:
+</span></span><span style="display:flex;"><span>      requests:
+</span></span><span style="display:flex;"><span>        memory: <span style="color:#e6db74">&#34;64Mi&#34;</span>
+</span></span><span style="display:flex;"><span>        cpu: <span style="color:#e6db74">&#34;200m&#34;</span>
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><p><em>Donde:</em></p>
+<ul>
+<li><code>memory: &quot;64Mi&quot;</code>: es la cantidad de memoria garantizada que tendrá disponible el objeto (pod o contenedor), en el ejemplo <code>&quot;64Mi&quot;</code> son 64 Megas bytes (la M esta en mayuscula).</li>
+<li><code>cpu: &quot;200m&quot;</code>: es la cantidad de <em>mili cores</em> que debe estar garantizado. A su vez <code>1000 mili core</code> es equivalente a <code>1 core de CPU</code>. De modo que si en el nodo/host se tiene un total de <code>10 core CPU</code> la asignación <em><strong>requests</strong></em> de <code>cpu: &quot;200m&quot;</code> es que <em>2 core</em> serán garantizados de disponible para el objeto.</li>
+</ul>
+<h2 id="sesión-comandos">Sesión comandos</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>...
+</span></span></code></pre></div>
+            <footer class="footline">
+
+            </footer>
+          </article>
+
+          <article class="default">
+            <header class="headline">
+<div class="tags">
+  <a class="tag-link" href="/tags/documentation/index.html">documentation</a>
+  <a class="tag-link" href="/tags/kubernetes/index.html">kubernetes</a>
+</div>
+            </header>
 <h1 id="daemonset">Daemonset</h1>
 
 <ul>
@@ -279,8 +332,8 @@
         </div>
       </main>
     </div>
-    <script src="/js/clipboard.min.js?1687346709" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1687346709" defer></script>
-    <script src="/js/theme.js?1687346709" defer></script>
+    <script src="/js/clipboard.min.js?1687357912" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1687357912" defer></script>
+    <script src="/js/theme.js?1687357912" defer></script>
   </body>
 </html>

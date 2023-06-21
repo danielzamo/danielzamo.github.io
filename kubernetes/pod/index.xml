@@ -22,6 +22,18 @@
 env: # Variables de entorno - name: var_1 ## &amp;#39;Nombre 1&amp;#39; value: &amp;#34;value_val_1&amp;#34; ## Valor variable &amp;#39;Nombre 1&amp;#39; - name: var_2 ## &amp;#39;Nombre 2&amp;#39; value: &amp;#34;value_val_2&amp;#34; ## Valor variable &amp;#39;Nombre 2&amp;#39; - name: dd_agent_host ## Variable definida desde el &amp;#34;Downward API&amp;#34; (son variables/valores que se pueden consultar) valueFrom: fieldRef: fieldPath: status.</description>
     </item>
     <item>
+      <title>Sección resources</title>
+      <link>http://danielzamo.github.io/kubernetes/pod/resources/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/kubernetes/pod/resources/index.html</guid>
+      <description>Relevantes en esta nota Sección variables de entorno, definición env en manifiesto.
+Por medio de los resources es que se pueden asignan diferentes recursos a nuestros objetos (contenedores y/o pod).
+Dichos recursos pueden ser asignados a diferentes contenedores.
+Tipos de resources?
+Existen al menos 2 tipos de resources que se pueden asignar. Los tipos requests y los limits. URL Resource Management for Pods and Containers.
+Manifiesto Tipos de resources Resuorces requests Son los recursos que garantizamos que siempre va a tener disponible el objeto.</description>
+    </item>
+    <item>
       <title>Daemonset</title>
       <link>http://danielzamo.github.io/kubernetes/pod/daemonset/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

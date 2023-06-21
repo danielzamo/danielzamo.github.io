@@ -37,6 +37,16 @@ var relearn_search_index = [
     "uri": "/kubernetes/pod/env/index.html"
   },
   {
+    "content": "Relevantes en esta nota Sección variables de entorno, definición env en manifiesto.\nPor medio de los resources es que se pueden asignan diferentes recursos a nuestros objetos (contenedores y/o pod).\nDichos recursos pueden ser asignados a diferentes contenedores.\nTipos de resources?\nExisten al menos 2 tipos de resources que se pueden asignar. Los tipos requests y los limits. URL Resource Management for Pods and Containers.\nManifiesto Tipos de resources Resuorces requests Son los recursos que garantizamos que siempre va a tener disponible el objeto. En el ejemplo:\n... resources: requests: memory: \"64Mi\" cpu: \"200m\" ... Donde:\nmemory: \"64Mi\": es la cantidad de memoria garantizada que tendrá disponible el objeto (pod o contenedor), en el ejemplo \"64Mi\" son 64 Megas bytes (la M esta en mayuscula). cpu: \"200m\": es la cantidad de mili cores que debe estar garantizado. A su vez 1000 mili core es equivalente a 1 core de CPU. De modo que si en el nodo/host se tiene un total de 10 core CPU la asignación requests de cpu: \"200m\" es que 2 core serán garantizados de disponible para el objeto. Sesión comandos ... ",
+    "description": "",
+    "tags": [
+      "documentation",
+      "kubernetes"
+    ],
+    "title": "Sección resources",
+    "uri": "/kubernetes/pod/resources/index.html"
+  },
+  {
     "content": " En Kubernetes definir/crear un daemonset hace que el pod/contenedor/es se ejecute en todos los nodos del cluster. Este tipo componente puede utilizarse, por ejemplo para aplicaciones que esten encargas de monitorizar los nodos del cluster kubernetes. Definición mediante manifiesto [dzamo@victus my-codes]$ cat kubernetes/03-daemonset.yaml apiVersion: apps/v1 kind: DaemonSet metadata: name: nginx-deployment spec: selector: matchLabels: app: nginx template: metadata: labels: app: nginx spec: containers: - name: nginx image: nginx:alpine ports: - containerPort: 80 Aplicar el manifiesto [dzamo@victus my-codes]$ kubectl apply -f kubernetes/03-daemonset.yaml Otros comandos [dzamo@victus kubernetes]$ kubectl apply -f codes-cli/03-daemonset.yaml [dzamo@victus kubernetes]$ kubectl get daemonset [dzamo@victus kubernetes]$ k get pods # El siguiente comando elimina el daemonset (de todos los nodos, y mediante el manifiesto. [dzamo@victus kubernetes]$ kubectl delete -f codes-cli/03-daemonset.yaml ",
     "description": "",
     "tags": [
