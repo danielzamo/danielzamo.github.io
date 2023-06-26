@@ -10,21 +10,21 @@
     <title>Ansible - AWX :: Site</title>
     <link href="http://danielzamo.github.io/projects/ansible-awx/index.html" rel="canonical" type="text/html" title="Ansible - AWX :: Site">
     <link href="/projects/ansible-awx/index.xml" rel="alternate" type="application/rss+xml" title="Ansible - AWX :: Site">
-    <link href="/images/logo.svg?1687745146" rel="icon" type="image/svg+xml">
+    <link href="/images/logo.svg?1687759621" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1687745146" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687745146" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1687745146" rel="stylesheet">
-    <link href="/css/auto-complete.css?1687745146" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1687745146" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1687745146" rel="stylesheet">
-    <link href="/css/fonts.css?1687745146" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1687745146" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1687745146" rel="stylesheet">
-    <link href="/css/theme-auto.css?1687745146" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1687745146" rel="stylesheet">
-    <link href="/css/print.css?1687745146" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1687745146" rel="stylesheet">
-    <link href="/css/ie.css?1687745146" rel="stylesheet">
-    <script src="/js/url.js?1687745146"></script>
-    <script src="/js/variant.js?1687745146"></script>
+    <link href="/css/fontawesome-all.min.css?1687759621" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687759621" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1687759621" rel="stylesheet">
+    <link href="/css/auto-complete.css?1687759621" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1687759621" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1687759621" rel="stylesheet">
+    <link href="/css/fonts.css?1687759621" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1687759621" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1687759621" rel="stylesheet">
+    <link href="/css/theme-auto.css?1687759621" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1687759621" rel="stylesheet">
+    <link href="/css/print.css?1687759621" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1687759621" rel="stylesheet">
+    <link href="/css/ie.css?1687759621" rel="stylesheet">
+    <script src="/js/url.js?1687759621"></script>
+    <script src="/js/variant.js?1687759621"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -78,9 +78,55 @@
             </header>
 <h1 id="ansible---awx">Ansible - AWX</h1>
 
-<p>Este proyecto es el despliegue de <em>Ansible AWX</em>, que es la edición comunitaria de Red Hat Ansible Tower.</p>
+<p>Este proyecto es el despliegue de <em><strong>Ansible AWX</strong></em>, que es la edición comunitaria de <em><strong>Red Hat Ansible Tower</strong></em>.</p>
+<p>En la siguiente representación se muestra un diagrama del despliegue. El cual es realizado sobre un <em>host motor</em> de <em>kubernetes</em> con <em>minikube</em> con <em>libvirt</em> como runtime (driver <em>kvm</em>).</p>
+<p>
+<a href="#image-6adfb3a4974f486694e6ac651a8191bf" class="lightbox-link">
+<img src="/projects/ansible-awx/images/projects/ansible-server-awx.png?classes=shadow" alt="Representación del servicio Ansible AWX desplegado" class="shadow" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-6adfb3a4974f486694e6ac651a8191bf">
+<img src="/projects/ansible-awx/images/projects/ansible-server-awx.png?classes=shadow" alt="Representación del servicio Ansible AWX desplegado" class="lightbox-image" loading="lazy">
+</a></p>
 <h2 id="tecnologías-utilizadas">Tecnologías utilizadas</h2>
-<p>&hellip;</p>
+<ul>
+<li>Contenedores: kubernetes / minikube</li>
+<li>Dist. Linux: AlmaLinux 9</li>
+</ul>
+<h2 id="sesión-de-instalaciónconfiguración">Sesión de instalación/configuración</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl get pods -A
+</span></span><span style="display:flex;"><span>git clone https://github.com/ansible/awx-operator.git
+</span></span><span style="display:flex;"><span>cd awx-operator/
+</span></span><span style="display:flex;"><span>git branch
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Revisar en https://github.com/ansible/awx-operator.git la última versión</span>
+</span></span><span style="display:flex;"><span>git checkout 2.2.1
+</span></span><span style="display:flex;"><span>git branch
+</span></span><span style="display:flex;"><span>export NAMESPACE<span style="color:#f92672">=</span>ansible-awx
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## source /etc/profile.d/snap.sh</span>
+</span></span><span style="display:flex;"><span>make deploy
+</span></span><span style="display:flex;"><span>kubectl get pods -n $NAMESPACE
+</span></span><span style="display:flex;"><span>kubectl get pods -A
+</span></span><span style="display:flex;"><span>kubectl get pods -n $NAMESPACE
+</span></span><span style="display:flex;"><span>cp awx-demo.yml ansible-awx.yml
+</span></span><span style="display:flex;"><span>vi ansible-awx.yml
+</span></span><span style="display:flex;"><span>kubectl config set-context --current --namespace<span style="color:#f92672">=</span>$NAMESPACE
+</span></span><span style="display:flex;"><span>kubectl apply -f ansible-awx.yml
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Con el siguiente comando se puede ver el estado de la instalación</span>
+</span></span><span style="display:flex;"><span>kubectl logs -f deployments/awx-operator-controller-manager -c awx-manager
+</span></span><span style="display:flex;"><span>kubectl get pods -n $NAMESPACE
+</span></span><span style="display:flex;"><span>kubectl get pods -l <span style="color:#e6db74">&#34;app.kubernetes.io/managed-by=awx-operator&#34;</span>
+</span></span><span style="display:flex;"><span>kubectl get service -l <span style="color:#e6db74">&#34;app.kubernetes.io/managed-by=awx-operator&#34;</span>
+</span></span><span style="display:flex;"><span>minikube service ansible-awx-service --url -n ansible-awx
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Con el siguiente comando tengo el password para el usuario &#34;admin&#34;</span>
+</span></span><span style="display:flex;"><span>kubectl get secret ansible-awx-admin-password -o jsonpath<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{.data.password}&#34;</span> | base64 --decode; echo
+</span></span><span style="display:flex;"><span>kubectl port-forward service/ansible-awx-service --address 0.0.0.0 10445:80
+</span></span></code></pre></div><p>Ansible AWX debería estar disponible en el URL <code>http://&lt;IP_SERVIDOR_MINIKUBE&gt;:10445</code>. En este caso ahora implementado el ingreso a la interface Web se muestra en la siguiente captura.</p>
+<p>
+<a href="#image-dbb4125c744ac25c8dd5786fe843a8a4" class="lightbox-link">
+<img src="/projects/ansible-awx/images/projects/ansible-awx-gui-welcome.png" alt="Ingreso a la interface Web de Ansible AWX desplegado" style="height: auto; width: auto;" loading="lazy">
+</a>
+<a href="javascript:history.back();" class="lightbox" id="image-dbb4125c744ac25c8dd5786fe843a8a4">
+<img src="/projects/ansible-awx/images/projects/ansible-awx-gui-welcome.png" alt="Ingreso a la interface Web de Ansible AWX desplegado" class="lightbox-image" loading="lazy">
+</a></p>
 <h2 id="repositorio">Repositorio</h2>
 <p>&hellip;</p>
 
@@ -92,8 +138,8 @@
         </div>
       </main>
     </div>
-    <script src="/js/clipboard.min.js?1687745146" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1687745146" defer></script>
-    <script src="/js/theme.js?1687745146" defer></script>
+    <script src="/js/clipboard.min.js?1687759621" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1687759621" defer></script>
+    <script src="/js/theme.js?1687759621" defer></script>
   </body>
 </html>
