@@ -14,5 +14,13 @@
       <description>Entradas relacionadas a Kubernetes.
 Todo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.</description>
     </item>
+    <item>
+      <title>Proyectos</title>
+      <link>http://danielzamo.github.io/projects/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/projects/index.html</guid>
+      <description>Entradas relacionadas a proyectos de implementaciones realizados.
+Todo el código implementado en estos proyectos poseen repositorios en el cloud. En este sitio se comparten los URL de donde se encuentran ubicados.</description>
+    </item>
   </channel>
 </rss>

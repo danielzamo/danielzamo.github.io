@@ -1,5 +1,15 @@
 var relearn_search_index = [
   {
+    "content": "Este proyecto es el despliegue de Ansible AWX, que es la edición comunitaria de Red Hat Ansible Tower.\nTecnologías utilizadas …\nRepositorio …\n",
+    "description": "",
+    "tags": [
+      "kubernetes",
+      "projects"
+    ],
+    "title": "Ansible - AWX",
+    "uri": "/projects/ansible-awx/index.html"
+  },
+  {
     "content": "Entradas relacionadas a Kubernetes.\nTodo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.\n",
     "description": "",
     "tags": null,
@@ -15,6 +25,13 @@ var relearn_search_index = [
     ],
     "title": "Pod",
     "uri": "/kubernetes/pod/index.html"
+  },
+  {
+    "content": "Entradas relacionadas a proyectos de implementaciones realizados.\nTodo el código implementado en estos proyectos poseen repositorios en el cloud. En este sitio se comparten los URL de donde se encuentran ubicados.\n",
+    "description": "",
+    "tags": null,
+    "title": "Proyectos",
+    "uri": "/projects/index.html"
   },
   {
     "content": "Manifiesto mínimo [dzamo@victus my-codes]$ cat kubernetes/01-pod-minimal.yaml apiVersion: v1 kind: Pod metadata: name: nginx spec: containers: - name: nginx image: nginx:alpine Aplicando manifiesto (crear pod) [dzamo@victus my-codes]$ kubectl apply -f kubernetes/01-pod-minimal.yaml ",
@@ -83,6 +100,13 @@ var relearn_search_index = [
     "tags": null,
     "title": "Tag :: kubernetes",
     "uri": "/tags/kubernetes/index.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "Tag :: projects",
+    "uri": "/tags/projects/index.html"
   },
   {
     "content": "",

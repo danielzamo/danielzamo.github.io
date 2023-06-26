@@ -7,9 +7,9 @@
     <meta name="generator" content="Relearn 5.16.2+tip">
     <meta name="description" content="Documentation theme based Hugo Relearn Theme">
     <meta name="author" content="Daniel Oscar Zamo">
-    <title>Definición pod mediante manifiesto :: Site</title>
-    <link href="http://danielzamo.github.io/kubernetes/pod/pod-minimal/index.html" rel="canonical" type="text/html" title="Definición pod mediante manifiesto :: Site">
-    <link href="/kubernetes/pod/pod-minimal/index.xml" rel="alternate" type="application/rss+xml" title="Definición pod mediante manifiesto :: Site">
+    <title>Ansible - AWX :: Site</title>
+    <link href="http://danielzamo.github.io/projects/ansible-awx/index.html" rel="canonical" type="text/html" title="Ansible - AWX :: Site">
+    <link href="/projects/ansible-awx/index.xml" rel="alternate" type="application/rss+xml" title="Ansible - AWX :: Site">
     <link href="/images/logo.svg?1687744571" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/css/fontawesome-all.min.css?1687744572" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687744572" rel="stylesheet"></noscript>
@@ -48,7 +48,7 @@
       }
     </style>
   </head>
-  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/kubernetes/pod/pod-minimal/index.html">
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/projects/ansible-awx/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
@@ -60,9 +60,8 @@
 </span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Inicio sitio</span></a><meta itemprop="position" content="1"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/kubernetes/index.html"><span itemprop="name">kubernetes</span></a><meta itemprop="position" content="2"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/kubernetes/pod/index.html"><span itemprop="name">Pod</span></a><meta itemprop="position" content="3"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Definición pod mediante manifiesto</span><meta itemprop="position" content="4"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/projects/index.html"><span itemprop="name">Proyectos</span></a><meta itemprop="position" content="2"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Ansible - AWX</span><meta itemprop="position" content="3"></li>
             </ol>
           </div>
         </div>
@@ -73,25 +72,18 @@
           <article class="default">
             <header class="headline">
 <div class="tags">
-  <a class="tag-link" href="/tags/documentation/index.html">documentation</a>
   <a class="tag-link" href="/tags/kubernetes/index.html">kubernetes</a>
+  <a class="tag-link" href="/tags/projects/index.html">projects</a>
 </div>
             </header>
-<h1 id="definición-pod-mediante-manifiesto">Definición pod mediante manifiesto</h1>
+<h1 id="ansible---awx">Ansible - AWX</h1>
 
-<h2 id="manifiesto-mínimo">Manifiesto mínimo</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus my-codes<span style="color:#f92672">]</span>$ cat kubernetes/01-pod-minimal.yaml
-</span></span><span style="display:flex;"><span>apiVersion: v1
-</span></span><span style="display:flex;"><span>kind: Pod
-</span></span><span style="display:flex;"><span>metadata:
-</span></span><span style="display:flex;"><span>  name: nginx
-</span></span><span style="display:flex;"><span>spec:
-</span></span><span style="display:flex;"><span>  containers:
-</span></span><span style="display:flex;"><span>  - name: nginx
-</span></span><span style="display:flex;"><span>    image: nginx:alpine
-</span></span></code></pre></div><h2 id="aplicando-manifiesto-crear-pod">Aplicando manifiesto (crear pod)</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus my-codes<span style="color:#f92672">]</span>$ kubectl apply -f kubernetes/01-pod-minimal.yaml
-</span></span></code></pre></div>
+<p>Este proyecto es el despliegue de <em>Ansible AWX</em>, que es la edición comunitaria de Red Hat Ansible Tower.</p>
+<h2 id="tecnologías-utilizadas">Tecnologías utilizadas</h2>
+<p>&hellip;</p>
+<h2 id="repositorio">Repositorio</h2>
+<p>&hellip;</p>
+
             <footer class="footline">
 
             </footer>
