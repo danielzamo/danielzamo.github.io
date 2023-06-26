@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Inicio sitio on Site</title>
+    <link>http://danielzamo.github.io/index.html</link>
+    <description>Recent content in Inicio sitio on Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://danielzamo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes cluster k3s</title>
+      <link>http://danielzamo.github.io/kubernetes-cluster-k3s/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/kubernetes-cluster-k3s/index.html</guid>
+      <description> En este proyecto se despliega un cluster Kubernetes basado en k3s.
+URL repositorio: Gitlab/dzamo/kubernetes-clustger-k3s
+Tecnologías usadas Alma Linux 9 K3s Ansible - roles Instalación desatendida del sistema operativo KVM. Reserva y creación del recurso vía CLI - virt-install </description>
+    </item>
+    <item>
+      <title>Kubernetes - despliegues</title>
+      <link>http://danielzamo.github.io/kubernetes-deployments/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/kubernetes-deployments/index.html</guid>
+      <description>Entradas relacionadas a despliegues de implementaciones realizados.
+Todo el código implementado en estos proyectos poseen repositorios en el cloud, se intentará aquí agregar el URL donde se encuentra el código fuente o especificación de la implementación realizada.</description>
+    </item>
+    <item>
+      <title>Kubernetes - notas</title>
+      <link>http://danielzamo.github.io/kubernetes-notes/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/kubernetes-notes/index.html</guid>
+      <description>Entradas relacionadas a Kubernetes.
+Todo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.</description>
+    </item>
+  </channel>
+</rss>

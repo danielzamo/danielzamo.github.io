@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kubernetes on Site</title>
+    <link>http://danielzamo.github.io/tags/kubernetes/index.html</link>
+    <description>Recent content in kubernetes on Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://danielzamo.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ansible - AWX</title>
+      <link>http://danielzamo.github.io/kubernetes-deployments/ansible-awx/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/kubernetes-deployments/ansible-awx/index.html</guid>
+      <description>Este proyecto es el despliegue de Ansible AWX, que es la edición comunitaria de Red Hat Ansible Tower.
+En la siguiente representación se muestra un diagrama del despliegue. El cual es realizado sobre un host motor de kubernetes con minikube con libvirt como runtime (driver kvm).
+Tecnologías utilizadas Contenedores: kubernetes / minikube Dist. Linux: AlmaLinux 9 Sesión de instalación/configuración kubectl get pods -A git clone https://github.com/ansible/awx-operator.git cd awx-operator/ git branch # Revisar en https://github.</description>
+    </item>
+    <item>
+      <title>Pod</title>
+      <link>http://danielzamo.github.io/kubernetes-notes/pod/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/kubernetes-notes/pod/index.html</guid>
+      <description>¿Qué es un pod? Un pod es un set de contenedor/es. Un pod es el componente mas pequeño/atómico de Kubernetes. Un pod puede tener múltiples/varios contenedores, aunque normalmente solo contendrá 1. Creación de un pod desde el CLI El siguiente comando crea un pod, como un deployment. Para esto por ejemplo se puede ejecutar:
+kubectl create deployment deployment-pod-nginx-01 --image=nginx Algunos comandos Matando el pod Para matar el anterior pod se puede ejecutar:</description>
+    </item>
+    <item>
+      <title>Definición pod mediante manifiesto</title>
+      <link>http://danielzamo.github.io/kubernetes-notes/pod/pod-minimal/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/kubernetes-notes/pod/pod-minimal/index.html</guid>
+      <description>Manifiesto mínimo [dzamo@victus my-codes]$ cat kubernetes/01-pod-minimal.yaml apiVersion: v1 kind: Pod metadata: name: nginx spec: containers: - name: nginx image: nginx:alpine Aplicando manifiesto (crear pod) [dzamo@victus my-codes]$ kubectl apply -f kubernetes/01-pod-minimal.yaml </description>
+    </item>
+    <item>
+      <title>Sección env</title>
+      <link>http://danielzamo.github.io/kubernetes-notes/pod/env/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/kubernetes-notes/pod/env/index.html</guid>
+      <description>Relevantes en esta nota Sección variables de entorno, definición env en manifiesto. Utilización de variables recuperadas desde kubernetes Downward API Manifiesto apiVersion: v1 kind: Pod metadata: name: nginx spec: containers: - name: nginx image: nginx:alpine env: - name: var_1 value: &amp;#34;value_val_1&amp;#34; - name: var_2 value: &amp;#34;value_val_2&amp;#34; - name: DD_AGENT_HOST valueFrom: fieldRef: fieldPath: status.hostIP env En la sección env se pueden definir/pasar variables de entornos. En lo anterior es:
+env: # Variables de entorno - name: var_1 ## &amp;#39;Nombre 1&amp;#39; value: &amp;#34;value_val_1&amp;#34; ## Valor variable &amp;#39;Nombre 1&amp;#39; - name: var_2 ## &amp;#39;Nombre 2&amp;#39; value: &amp;#34;value_val_2&amp;#34; ## Valor variable &amp;#39;Nombre 2&amp;#39; - name: dd_agent_host ## Variable definida desde el &amp;#34;Downward API&amp;#34; (son variables/valores que se pueden consultar) valueFrom: fieldRef: fieldPath: status.</description>
+    </item>
+    <item>
+      <title>Sección resources</title>
+      <link>http://danielzamo.github.io/kubernetes-notes/pod/resources/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/kubernetes-notes/pod/resources/index.html</guid>
+      <description>Relevantes en esta nota Por medio de los resources es que se pueden asignan diferentes recursos a nuestros objetos. Dichos recursos pueden ser asignados a diferentes contenedores (no solo a los pod). Tipos de resources? Existen al menos 2 tipos de resources que se pueden asignar. Los tipos requests y los limits. La documentación mas completa se encuentra publicada en Resource Management for Pods and Containers. Manifiesto apiVersion: v1 kind: Pod metadata: name: nginx spec: containers: - name: nginx image: nginx:alpine env: - name: var_1 value: &amp;#34;val_var_1&amp;#34; - name: dd_agent_host valueFrom: fieldRef: fieldPath: status.</description>
+    </item>
+    <item>
+      <title>Daemonset</title>
+      <link>http://danielzamo.github.io/kubernetes-notes/pod/daemonset/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/kubernetes-notes/pod/daemonset/index.html</guid>
+      <description>En Kubernetes definir/crear un daemonset hace que el pod/contenedor/es se ejecute en todos los nodos del cluster. Este tipo componente puede utilizarse, por ejemplo para aplicaciones que esten encargas de monitorizar los nodos del cluster kubernetes. Definición mediante manifiesto [dzamo@victus my-codes]$ cat kubernetes/03-daemonset.yaml apiVersion: apps/v1 kind: DaemonSet metadata: name: nginx-deployment spec: selector: matchLabels: app: nginx template: metadata: labels: app: nginx spec: containers: - name: nginx image: nginx:alpine ports: - containerPort: 80 Aplicar el manifiesto [dzamo@victus my-codes]$ kubectl apply -f kubernetes/03-daemonset.</description>
+    </item>
+  </channel>
+</rss>
