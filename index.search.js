@@ -10,7 +10,7 @@ var relearn_search_index = [
     "uri": "/kubernetes-deployments/ansible-awx/index.html"
   },
   {
-    "content": " En este proyecto se despliega un cluster Kubernetes basado en k3s.\nTecnologías usadas Linux Alma Linux 9 K3s Ansible - roles Instalación desatendida del sistema operativo KVM. Reserva y creación del recurso vía CLI - virt-install ",
+    "content": " En este proyecto se despliega un cluster Kubernetes basado en k3s.\nURL repositorio: Gitlab/dzamo/kubernetes-clustger-k3s\nTecnologías usadas Linux Alma Linux 9 K3s Ansible - roles Instalación desatendida del sistema operativo KVM. Reserva y creación del recurso vía CLI - virt-install ",
     "description": "",
     "tags": null,
     "title": "Kubernetes cluster k3s",
