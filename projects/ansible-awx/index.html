@@ -10,20 +10,20 @@
     <title>Ansible - AWX :: Site</title>
     <link href="/projects/ansible-awx/index.xml" rel="alternate" type="application/rss+xml" title="Ansible - AWX :: Site">
     <link href="/projects/ansible-awx/index.print.html" rel="alternate" type="text/html" title="Ansible - AWX :: Site">
-    <link href="/images/logo.svg?1687760602" rel="icon" type="image/svg+xml">
+    <link href="/images/logo.svg?1687761083" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1687760602" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687760602" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1687760602" rel="stylesheet">
-    <link href="/css/auto-complete.css?1687760602" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1687760602" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1687760602" rel="stylesheet">
-    <link href="/css/fonts.css?1687760602" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1687760602" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1687760602" rel="stylesheet">
-    <link href="/css/theme-auto.css?1687760602" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1687760602" rel="stylesheet">
-    <link href="/css/print.css?1687760602" rel="stylesheet" media="print">
-    <link href="/css/ie.css?1687760602" rel="stylesheet">
-    <script src="/js/url.js?1687760602"></script>
-    <script src="/js/variant.js?1687760602"></script>
+    <link href="/css/fontawesome-all.min.css?1687761083" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687761083" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1687761083" rel="stylesheet">
+    <link href="/css/auto-complete.css?1687761083" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1687761083" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1687761083" rel="stylesheet">
+    <link href="/css/fonts.css?1687761083" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1687761083" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1687761083" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1687761083" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1687761083" rel="stylesheet">
+    <link href="/css/print.css?1687761083" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1687761083" rel="stylesheet">
+    <script src="/js/url.js?1687761083"></script>
+    <script src="/js/variant.js?1687761083"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -39,7 +39,7 @@
       window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
       // some further base stuff
       var baseUriFull='http:\/\/danielzamo.github.io/';
-      window.variants && variants.init( [ 'auto', 'relearn-bright', 'relearn-light', 'relearn-dark', 'learn', 'neon', 'blue', 'green', 'red' ] );
+      window.variants && variants.init( [ 'relearn-dark' ] );
     </script>
     <style>
       #body img.bg-white {
@@ -62,11 +62,6 @@
           <div id="top-print-link">
             <a class="print-link topbar-link" title='Print whole chapter (CTRL+ALT+p)' href="/projects/ansible-awx/index.print.html">
               <i class="fas fa-print fa-fw"></i>
-            </a>
-          </div>
-          <div id="top-github-link">
-            <a class="github-link topbar-link" title='Edit (CTRL+ALT+w)' href="https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/projects/ansible-awx/_index.en.md" target="_blank">
-              <i class="fas fa-pen fa-fw"></i>
             </a>
           </div>
           <div id="breadcrumbs">
@@ -108,10 +103,10 @@
 <p>Este proyecto es el despliegue de <em><strong>Ansible AWX</strong></em>, que es la edición comunitaria de <em><strong>Red Hat Ansible Tower</strong></em>.</p>
 <p>En la siguiente representación se muestra un diagrama del despliegue. El cual es realizado sobre un <em>host motor</em> de <em>kubernetes</em> con <em>minikube</em> con <em>libvirt</em> como runtime (driver <em>kvm</em>).</p>
 <p>
-<a href="#image-96901d264c95a164833c2009d75e02b0" class="lightbox-link">
+<a href="#image-3e6f5c22163c9c953b5e9af741f5e06d" class="lightbox-link">
 <img src="/projects/ansible-awx/ansible-server-awx.png" alt="Representación del servicio Ansible AWX desplegado" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-96901d264c95a164833c2009d75e02b0">
+<a href="javascript:history.back();" class="lightbox" id="image-3e6f5c22163c9c953b5e9af741f5e06d">
 <img src="/projects/ansible-awx/ansible-server-awx.png" alt="Representación del servicio Ansible AWX desplegado" class="lightbox-image" loading="lazy">
 </a></p>
 <h2 id="tecnologías-utilizadas">Tecnologías utilizadas</h2>
@@ -148,10 +143,10 @@
 </span></span><span style="display:flex;"><span>kubectl port-forward service/ansible-awx-service --address 0.0.0.0 10445:80
 </span></span></code></pre></div><p>Ansible AWX debería estar disponible en el URL <code>http://&lt;IP_SERVIDOR_MINIKUBE&gt;:10445</code>. En este caso ahora implementado el ingreso a la interface Web se muestra en la siguiente captura.</p>
 <p>
-<a href="#image-686add9c4eb4a5e671273c3de0e283a8" class="lightbox-link">
+<a href="#image-4b5dd98de0690ea266450c4f2408027f" class="lightbox-link">
 <img src="/projects/ansible-awx/ansible-awx-gui-welcome.png" alt="Ingreso a la interface Web de Ansible AWX desplegado" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-686add9c4eb4a5e671273c3de0e283a8">
+<a href="javascript:history.back();" class="lightbox" id="image-4b5dd98de0690ea266450c4f2408027f">
 <img src="/projects/ansible-awx/ansible-awx-gui-welcome.png" alt="Ingreso a la interface Web de Ansible AWX desplegado" class="lightbox-image" loading="lazy">
 </a></p>
 <h2 id="repositorio">Repositorio</h2>
@@ -243,12 +238,12 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1687760602" defer></script>
-        <script src="/js/lunr/lunr.min.js?1687760602" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1687760602" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1687760602" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1687760602" defer></script>
-        <script src="/js/search.js?1687760602" defer></script>
+        <script src="/js/auto-complete.js?1687761083" defer></script>
+        <script src="/js/lunr/lunr.min.js?1687761083" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1687761083" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1687761083" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1687761083" defer></script>
+        <script src="/js/search.js?1687761083" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics enlarge morespace collapsible-menu">
@@ -261,9 +256,9 @@
           <li data-nav-id="/projects/index.html" class="parent "><input type="checkbox" id="section-ba62b9623d32a4c8493b9d3003850d60" aria-controls="subsections-ba62b9623d32a4c8493b9d3003850d60" checked><label for="section-ba62b9623d32a4c8493b9d3003850d60"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Proyectos</span></label><a class="padding" href="/projects/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">2.</b> Proyectos<i class="fas fa-check read-icon"></i></a><ul id="subsections-ba62b9623d32a4c8493b9d3003850d60" class="morespace collapsible-menu">
           <li data-nav-id="/projects/ansible-awx/index.html" class="active"><a class="padding" href="/projects/ansible-awx/index.html">Ansible - AWX<i class="fas fa-check read-icon"></i></a></li></ul></li>
         </ul>
-        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter"></div>
-        <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter">
-        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch showVisitedLinks">
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter"></div>
+        <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVisitedLinks">
           <ul>
             <li id="select-language-container" class="footerLangSwitch">
               <div class="padding select-container">
@@ -277,22 +272,14 @@
                 <div class="select-clear"></div>
               </div>
             </li>
-            <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+            <li id="select-variant-container" class="footerVariantSwitch">
               <div class="padding select-container">
                 <i class="fas fa-paint-brush fa-fw"></i>
                 <span>&nbsp;</span>
                 <div class="select-style">
                   <label class="a11y-only" for="select-variant">Theme</label>
                   <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
-                    <option id="auto" value="auto" selected>Auto</option>
-                    <option id="relearn-bright" value="relearn-bright">Relearn Bright</option>
-                    <option id="relearn-light" value="relearn-light">Relearn Light</option>
-                    <option id="relearn-dark" value="relearn-dark">Relearn Dark</option>
-                    <option id="learn" value="learn">Learn</option>
-                    <option id="neon" value="neon">Neon</option>
-                    <option id="blue" value="blue">Blue</option>
-                    <option id="green" value="green">Green</option>
-                    <option id="red" value="red">Red</option>
+                    <option id="relearn-dark" value="relearn-dark" selected>Relearn Dark</option>
                   </select>
                 </div>
                 <div class="select-clear"></div>
@@ -322,12 +309,12 @@
           <a class="github-button" href="https://github.com/McShelby/hugo-theme-relearn" data-icon="octicon-star" data-show-count="true" aria-label="Star McShelby/hugo-theme-relearn on GitHub">Star</a>
           <a class="github-button" href="https://github.com/McShelby/hugo-theme-relearn/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork McShelby/hugo-theme-relearn on GitHub">Fork</a>
           <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
-          <script async src="/js/buttons.js?1687760602"></script>
+          <script async src="/js/buttons.js?1687761083"></script>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1687760602" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1687760602" defer></script>
-    <script src="/js/theme.js?1687760602" defer></script>
+    <script src="/js/clipboard.min.js?1687761083" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1687761083" defer></script>
+    <script src="/js/theme.js?1687761083" defer></script>
   </body>
 </html>
