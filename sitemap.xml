@@ -1,28 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://danielzamo.github.io/projects/ansible-awx/index.html</loc>
+    <loc>http://danielzamo.github.io/kubernetes-deployments/ansible-awx/index.html</loc>
   </url>
   <url>
-    <loc>http://danielzamo.github.io/kubernetes/index.html</loc>
+    <loc>http://danielzamo.github.io/kubernetes-cluster-k3s/index.html</loc>
   </url>
   <url>
-    <loc>http://danielzamo.github.io/kubernetes/pod/index.html</loc>
+    <loc>http://danielzamo.github.io/kubernetes-deployments/index.html</loc>
   </url>
   <url>
-    <loc>http://danielzamo.github.io/projects/index.html</loc>
+    <loc>http://danielzamo.github.io/kubernetes-notes/pod/index.html</loc>
   </url>
   <url>
-    <loc>http://danielzamo.github.io/kubernetes/pod/pod-minimal/index.html</loc>
+    <loc>http://danielzamo.github.io/kubernetes-notes/index.html</loc>
   </url>
   <url>
-    <loc>http://danielzamo.github.io/kubernetes/pod/env/index.html</loc>
+    <loc>http://danielzamo.github.io/kubernetes-notes/pod/pod-minimal/index.html</loc>
   </url>
   <url>
-    <loc>http://danielzamo.github.io/kubernetes/pod/resources/index.html</loc>
+    <loc>http://danielzamo.github.io/kubernetes-notes/pod/env/index.html</loc>
   </url>
   <url>
-    <loc>http://danielzamo.github.io/kubernetes/pod/daemonset/index.html</loc>
+    <loc>http://danielzamo.github.io/kubernetes-notes/pod/resources/index.html</loc>
+  </url>
+  <url>
+    <loc>http://danielzamo.github.io/kubernetes-notes/pod/daemonset/index.html</loc>
   </url>
   <url>
     <loc>http://danielzamo.github.io/categories/index.html</loc>
