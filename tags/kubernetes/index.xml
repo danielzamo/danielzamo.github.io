@@ -21,7 +21,7 @@ kubectl create deployment deployment-pod-nginx-01 --image=nginx Algunos comandos
       <guid>http://danielzamo.github.io/kubernetes-deployments/ansible-awx/index.html</guid>
       <description>Este proyecto es el despliegue de Ansible AWX, edición comunitaria de Red Hat Ansible Tower.
 En la siguiente representación se muestra un diagrama del despliegue. El cual es realizado sobre un host motor de kubernetes con minikube con libvirt como runtime (driver kvm).
-Tecnologías utilizadas Contenedores: kubernetes / minikube Dist. Linux: AlmaLinux 9 Sesión de instalación/configuración kubectl get pods -A git clone https://github.com/ansible/awx-operator.git cd awx-operator/ git branch # Revisar en https://github.</description>
+Tecnologías utilizadas Contenedores: kubernetes / k3s or minikube Dist. Linux: AlmaLinux 9 Sesión de instalación/configuración La sesión siguiente fue realizada tanto sobre un cluster de minikube como en uno con k3s.</description>
     </item>
     <item>
       <title>Definición pod mediante manifiesto</title>
