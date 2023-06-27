@@ -1,15 +1,5 @@
 var relearn_search_index = [
   {
-    "content": "Este proyecto es el despliegue de Ansible AWX, que es la edición comunitaria de Red Hat Ansible Tower.\nEn la siguiente representación se muestra un diagrama del despliegue. El cual es realizado sobre un host motor de kubernetes con minikube con libvirt como runtime (driver kvm).\nTecnologías utilizadas Contenedores: kubernetes / minikube Dist. Linux: AlmaLinux 9 Sesión de instalación/configuración kubectl get pods -A git clone https://github.com/ansible/awx-operator.git cd awx-operator/ git branch # Revisar en https://github.com/ansible/awx-operator.git la última versión git checkout 2.2.1 git branch export NAMESPACE=ansible-awx ## source /etc/profile.d/snap.sh make deploy kubectl get pods -n $NAMESPACE kubectl get pods -A kubectl get pods -n $NAMESPACE cp awx-demo.yml ansible-awx.yml vi ansible-awx.yml kubectl config set-context --current --namespace=$NAMESPACE kubectl apply -f ansible-awx.yml ## Con el siguiente comando se puede ver el estado de la instalación kubectl logs -f deployments/awx-operator-controller-manager -c awx-manager kubectl get pods -n $NAMESPACE kubectl get pods -l \"app.kubernetes.io/managed-by=awx-operator\" kubectl get service -l \"app.kubernetes.io/managed-by=awx-operator\" minikube service ansible-awx-service --url -n ansible-awx # Con el siguiente comando tengo el password para el usuario \"admin\" kubectl get secret ansible-awx-admin-password -o jsonpath=\"{.data.password}\" | base64 --decode; echo kubectl port-forward service/ansible-awx-service --address 0.0.0.0 10445:80 Ansible AWX debería estar disponible en el URL http://\u003cIP_SERVIDOR_MINIKUBE\u003e:10445. En este caso ahora implementado el ingreso a la interface Web se muestra en la siguiente captura.\nRepositorio …\n",
-    "description": "Este proyecto es el despliegue de Ansible AWX, que es la edición comunitaria de Red Hat Ansible Tower.",
-    "tags": [
-      "kubernetes",
-      "projects"
-    ],
-    "title": "Ansible - AWX",
-    "uri": "/kubernetes-deployments/ansible-awx/index.html"
-  },
-  {
     "content": " En este proyecto se despliega un cluster Kubernetes basado en k3s.\nURL repositorio: Gitlab/dzamo/kubernetes-cluster-k3s\nTecnologías usadas Alma Linux 9 K3s Ansible - roles Instalación desatendida del sistema operativo KVM. Reserva y creación del recurso vía CLI - virt-install ",
     "description": "Cluster kubernetes con k3s. 1 nodo master (control-plane) + 'N' nodos worker",
     "tags": null,
@@ -39,6 +29,16 @@ var relearn_search_index = [
     "tags": null,
     "title": "Kubernetes - notas",
     "uri": "/kubernetes-notes/index.html"
+  },
+  {
+    "content": "Este proyecto es el despliegue de Ansible AWX, que es la edición comunitaria de Red Hat Ansible Tower.\nEn la siguiente representación se muestra un diagrama del despliegue. El cual es realizado sobre un host motor de kubernetes con minikube con libvirt como runtime (driver kvm).\nTecnologías utilizadas Contenedores: kubernetes / minikube Dist. Linux: AlmaLinux 9 Sesión de instalación/configuración kubectl get pods -A git clone https://github.com/ansible/awx-operator.git cd awx-operator/ git branch # Revisar en https://github.com/ansible/awx-operator.git la última versión git checkout 2.2.1 git branch export NAMESPACE=ansible-awx ## source /etc/profile.d/snap.sh make deploy kubectl get pods -n $NAMESPACE kubectl get pods -A kubectl get pods -n $NAMESPACE cp awx-demo.yml ansible-awx.yml vi ansible-awx.yml kubectl config set-context --current --namespace=$NAMESPACE kubectl apply -f ansible-awx.yml ## Con el siguiente comando se puede ver el estado de la instalación kubectl logs -f deployments/awx-operator-controller-manager -c awx-manager kubectl get pods -n $NAMESPACE kubectl get pods -l \"app.kubernetes.io/managed-by=awx-operator\" kubectl get service -l \"app.kubernetes.io/managed-by=awx-operator\" minikube service ansible-awx-service --url -n ansible-awx # Con el siguiente comando tengo el password para el usuario \"admin\" kubectl get secret ansible-awx-admin-password -o jsonpath=\"{.data.password}\" | base64 --decode; echo kubectl port-forward service/ansible-awx-service --address 0.0.0.0 10445:80 Ansible AWX debería estar disponible en el URL http://\u003cIP_SERVIDOR_MINIKUBE\u003e:10445. En este caso ahora implementado el ingreso a la interface Web se muestra en la siguiente captura.\nRepositorio …\n",
+    "description": "Este proyecto es el despliegue de Ansible AWX, que es la edición comunitaria de Red Hat Ansible Tower.",
+    "tags": [
+      "kubernetes",
+      "projects"
+    ],
+    "title": "Ansible - AWX",
+    "uri": "/kubernetes-deployments/ansible-awx/index.html"
   },
   {
     "content": "Manifiesto mínimo [dzamo@victus my-codes]$ cat kubernetes/01-pod-minimal.yaml apiVersion: v1 kind: Pod metadata: name: nginx spec: containers: - name: nginx image: nginx:alpine Aplicando manifiesto (crear pod) [dzamo@victus my-codes]$ kubectl apply -f kubernetes/01-pod-minimal.yaml ",

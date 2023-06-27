@@ -7,6 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="http://danielzamo.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Pod</title>
+      <link>http://danielzamo.github.io/kubernetes-notes/pod/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/kubernetes-notes/pod/index.html</guid>
+      <description>¿Qué es un pod? Un pod es un set de contenedor/es. Un pod es el componente mas pequeño/atómico de Kubernetes. Un pod puede tener múltiples/varios contenedores, aunque normalmente solo contendrá 1. Creación de un pod desde el CLI El siguiente comando crea un pod, como un deployment. Para esto por ejemplo se puede ejecutar:
+kubectl create deployment deployment-pod-nginx-01 --image=nginx Algunos comandos Matando el pod Para matar el anterior pod se puede ejecutar:</description>
+    </item>
+    <item>
       <title>Ansible - AWX</title>
       <link>http://danielzamo.github.io/kubernetes-deployments/ansible-awx/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -14,14 +22,6 @@
       <description>Este proyecto es el despliegue de Ansible AWX, que es la edición comunitaria de Red Hat Ansible Tower.
 En la siguiente representación se muestra un diagrama del despliegue. El cual es realizado sobre un host motor de kubernetes con minikube con libvirt como runtime (driver kvm).
 Tecnologías utilizadas Contenedores: kubernetes / minikube Dist. Linux: AlmaLinux 9 Sesión de instalación/configuración kubectl get pods -A git clone https://github.com/ansible/awx-operator.git cd awx-operator/ git branch # Revisar en https://github.</description>
-    </item>
-    <item>
-      <title>Pod</title>
-      <link>http://danielzamo.github.io/kubernetes-notes/pod/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/kubernetes-notes/pod/index.html</guid>
-      <description>¿Qué es un pod? Un pod es un set de contenedor/es. Un pod es el componente mas pequeño/atómico de Kubernetes. Un pod puede tener múltiples/varios contenedores, aunque normalmente solo contendrá 1. Creación de un pod desde el CLI El siguiente comando crea un pod, como un deployment. Para esto por ejemplo se puede ejecutar:
-kubectl create deployment deployment-pod-nginx-01 --image=nginx Algunos comandos Matando el pod Para matar el anterior pod se puede ejecutar:</description>
     </item>
     <item>
       <title>Definición pod mediante manifiesto</title>
