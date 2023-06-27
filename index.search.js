@@ -95,7 +95,7 @@ var relearn_search_index = [
     "uri": "/tags/documentation/index.html"
   },
   {
-    "content": "En este sitio comparto algunos artículos, implementaciones y/o proyectos que utilizo como referencias de estudio o lectura.\nEste sitio esta generado con Hugo y utiliza inicialmente el theme Hugo Relearn Theme.\n",
+    "content": "En este sitio comparto algunos artículos, implementaciones y/o proyectos implementados.\nEste sitio esta generado con Hugo y utiliza inicialmente el theme Hugo Relearn Theme.\nAlgunos de los artículos compartidos aquí son:\nCluster k3s ",
     "description": "",
     "tags": null,
     "title": "Inicio sitio",
