@@ -95,7 +95,7 @@ var relearn_search_index = [
     "uri": "/tags/documentation/index.html"
   },
   {
-    "content": "En este sitio comparto algunos artículos, implementaciones y/o proyectos implementados.\nEste sitio esta generado con Hugo y utiliza inicialmente el theme Hugo Relearn Theme.\nAlgunos de los artículos y/o proyectos compartidos aquí son:\nCluster k3s . Este es el despliegue de un cluster kubernetes con k3s. El mismo consiste de 1 nodo control-pane y 1 nodo worker. La configuración es llevada a cabo mediantes roles Ansibles y el código queda preparado para configurar 1 nodo master y N nodos workers. ",
+    "content": "En este sitio comparto algunos artículos, implementaciones y/o proyectos implementados.\nEste sitio esta generado con Hugo y utiliza inicialmente el theme Hugo Relearn Theme.\nAlgunos de los artículos y/o proyectos compartidos aquí son:\nEl Cluster k3s es el despliegue de un cluster kubernetes con k3s. La configuración es llevada a cabo mediantes role Ansible y el código queda preparado para configurar 1 nodo master y N nodos workers. ",
     "description": "",
     "tags": null,
     "title": "Inicio sitio",
