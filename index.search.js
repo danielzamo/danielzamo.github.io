@@ -1,7 +1,7 @@
 var relearn_search_index = [
   {
     "content": "Este proyecto es el despliegue de Ansible AWX, que es la edición comunitaria de Red Hat Ansible Tower.\nEn la siguiente representación se muestra un diagrama del despliegue. El cual es realizado sobre un host motor de kubernetes con minikube con libvirt como runtime (driver kvm).\nTecnologías utilizadas Contenedores: kubernetes / minikube Dist. Linux: AlmaLinux 9 Sesión de instalación/configuración kubectl get pods -A git clone https://github.com/ansible/awx-operator.git cd awx-operator/ git branch # Revisar en https://github.com/ansible/awx-operator.git la última versión git checkout 2.2.1 git branch export NAMESPACE=ansible-awx ## source /etc/profile.d/snap.sh make deploy kubectl get pods -n $NAMESPACE kubectl get pods -A kubectl get pods -n $NAMESPACE cp awx-demo.yml ansible-awx.yml vi ansible-awx.yml kubectl config set-context --current --namespace=$NAMESPACE kubectl apply -f ansible-awx.yml ## Con el siguiente comando se puede ver el estado de la instalación kubectl logs -f deployments/awx-operator-controller-manager -c awx-manager kubectl get pods -n $NAMESPACE kubectl get pods -l \"app.kubernetes.io/managed-by=awx-operator\" kubectl get service -l \"app.kubernetes.io/managed-by=awx-operator\" minikube service ansible-awx-service --url -n ansible-awx # Con el siguiente comando tengo el password para el usuario \"admin\" kubectl get secret ansible-awx-admin-password -o jsonpath=\"{.data.password}\" | base64 --decode; echo kubectl port-forward service/ansible-awx-service --address 0.0.0.0 10445:80 Ansible AWX debería estar disponible en el URL http://\u003cIP_SERVIDOR_MINIKUBE\u003e:10445. En este caso ahora implementado el ingreso a la interface Web se muestra en la siguiente captura.\nRepositorio …\n",
-    "description": "",
+    "description": "Este proyecto es el despliegue de ___Ansible AWX___, que es la edición comunitaria de ___Red Hat Ansible Tower___.",
     "tags": [
       "kubernetes",
       "projects"
@@ -17,8 +17,8 @@ var relearn_search_index = [
     "uri": "/kubernetes-cluster-k3s/index.html"
   },
   {
-    "content": " Entradas relacionadas a despliegues de implementaciones realizados.\nTodo el código implementado en estos proyectos poseen repositorios en el cloud, se intentará aquí agregar el URL donde se encuentra el código fuente o especificación de la implementación realizada.\n",
-    "description": "",
+    "content": " Entradas relacionadas a despliegues de implementaciones realizados.\nTodo el código implementado en estos proyectos poseen repositorios en el cloud, se intentará aquí agregar el URL donde se encuentra el código fuente o especificación de la implementación realizada.\nAlgunos de las aplicaciones y/o servicios desplegados/implementados para kubernetes son:\nAnsible - AWXEste proyecto es el despliegue de ___Ansible AWX___, que es la edición comunitaria de ___Red Hat Ansible Tower___.\n",
+    "description": "Aplicaciones y/o servicios de Kubernetes",
     "tags": null,
     "title": "Kubernetes - despliegues",
     "uri": "/kubernetes-deployments/index.html"
@@ -95,7 +95,7 @@ var relearn_search_index = [
     "uri": "/tags/documentation/index.html"
   },
   {
-    "content": "En este sitio comparto algunos artículos, implementaciones y/o proyectos implementados.\nEste sitio esta generado con Hugo y utiliza inicialmente el theme Hugo Relearn Theme.\nAlgunos de los artículos y/o proyectos compartidos aquí son:\nKubernetes cluster k3sCluster kubernetes con k3s. 1 nodo master (control-plane) + 'N' nodos worker\nKubernetes - desplieguesEntradas relacionadas a despliegues de implementaciones realizados. Todo el código implementado en estos proyectos poseen repositorios en el cloud, se intentará aquí agregar el URL donde se encuentra el código fuente o especificación de la implementación realizada.\nKubernetes - notasEntradas relacionadas a Kubernetes. Todo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.\n",
+    "content": "En este sitio comparto algunos artículos, implementaciones y/o proyectos implementados.\nEste sitio esta generado con Hugo y utiliza inicialmente el theme Hugo Relearn Theme.\nAlgunos de los artículos y/o proyectos compartidos aquí son:\nKubernetes cluster k3sCluster kubernetes con k3s. 1 nodo master (control-plane) + 'N' nodos worker\nKubernetes - desplieguesAplicaciones y/o servicios de Kubernetes\nKubernetes - notasEntradas relacionadas a Kubernetes. Todo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.\n",
     "description": "",
     "tags": null,
     "title": "Inicio sitio",
