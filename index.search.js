@@ -11,7 +11,7 @@ var relearn_search_index = [
   },
   {
     "content": " En este proyecto se despliega un cluster Kubernetes basado en k3s.\nURL repositorio: Gitlab/dzamo/kubernetes-cluster-k3s\nTecnologías usadas Alma Linux 9 K3s Ansible - roles Instalación desatendida del sistema operativo KVM. Reserva y creación del recurso vía CLI - virt-install ",
-    "description": "",
+    "description": "Cluster kubernetes con k3s. 1 nodo master (control-plane) + 'N' nodos worker",
     "tags": null,
     "title": "Kubernetes cluster k3s",
     "uri": "/kubernetes-cluster-k3s/index.html"
@@ -95,7 +95,7 @@ var relearn_search_index = [
     "uri": "/tags/documentation/index.html"
   },
   {
-    "content": "En este sitio comparto algunos artículos, implementaciones y/o proyectos implementados.\nEste sitio esta generado con Hugo y utiliza inicialmente el theme Hugo Relearn Theme.\nAlgunos de los artículos y/o proyectos compartidos aquí son:\nEl Cluster k3s es el despliegue de un cluster kubernetes con k3s. La configuración es llevada a cabo mediantes role Ansible y el código queda preparado para configurar 1 nodo master y N nodos workers. Kubernetes cluster k3s En este proyecto se despliega un cluster Kubernetes basado en k3s. URL repositorio: Gitlab/dzamo/kubernetes-cluster-k3s Tecnologías usadas Alma Linux 9 K3s Ansible - roles Instalación desatendida del sistema operativo KVM. Reserva y creación del recurso vía CLI - virt-install Kubernetes - desplieguesEntradas relacionadas a despliegues de implementaciones realizados. Todo el código implementado en estos proyectos poseen repositorios en el cloud, se intentará aquí agregar el URL donde se encuentra el código fuente o especificación de la implementación realizada.\nKubernetes - notasEntradas relacionadas a Kubernetes. Todo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.\nKubernetes cluster k3s Kubernetes - despliegues Kubernetes - notas ",
+    "content": "En este sitio comparto algunos artículos, implementaciones y/o proyectos implementados.\nEste sitio esta generado con Hugo y utiliza inicialmente el theme Hugo Relearn Theme.\nAlgunos de los artículos y/o proyectos compartidos aquí son:\nEl Cluster k3s es el despliegue de un cluster kubernetes con k3s. La configuración es llevada a cabo mediantes role Ansible y el código queda preparado para configurar 1 nodo master y N nodos workers. Kubernetes cluster k3sCluster kubernetes con k3s. 1 nodo master (control-plane) + 'N' nodos worker\nKubernetes - desplieguesEntradas relacionadas a despliegues de implementaciones realizados. Todo el código implementado en estos proyectos poseen repositorios en el cloud, se intentará aquí agregar el URL donde se encuentra el código fuente o especificación de la implementación realizada.\nKubernetes - notasEntradas relacionadas a Kubernetes. Todo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.\nKubernetes cluster k3s Kubernetes - despliegues Kubernetes - notas ",
     "description": "",
     "tags": null,
     "title": "Inicio sitio",
