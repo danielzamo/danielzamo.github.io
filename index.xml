@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://danielzamo.github.io/kubernetes-cluster-k3s/index.html</guid>
       <description> En este proyecto se despliega un cluster Kubernetes basado en k3s.
-URL repositorio: Gitlab/dzamo/kubernetes-cluster-k3s
+URL repositorio: Gitlab/dzamo/k8s-k3s-various-clusters
 Tecnologías usadas Alma Linux 9 K3s Ansible - roles Instalación desatendida del sistema operativo KVM. Reserva y creación del recurso vía CLI - virt-install </description>
     </item>
     <item>
