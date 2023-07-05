@@ -7,6 +7,13 @@ var relearn_search_index = [
     "uri": "/kubernetes-cluster-k3s/index.html"
   },
   {
+    "content": " En esta sección se comparten configurtaciones de servicios y/o configuración de servidores basados en Ubuntu server LTS.\nURL repositorio: PENDIENTE\nTecnologías usadas Ubuntu server LTS - 22.04.. ",
+    "description": "Ubuntu server LTS",
+    "tags": null,
+    "title": "Ubuntu server LTS",
+    "uri": "/ubuntu-lts-server/index.html"
+  },
+  {
     "content": " Entradas relacionadas a despliegues de implementaciones realizados.\nTodo el código implementado en estos proyectos poseen repositorios en el cloud, se intentará aquí agregar el URL donde se encuentra el código fuente o especificación de la implementación realizada.\nAlgunos de las aplicaciones y/o servicios desplegados/implementados para kubernetes son:\nAnsible - AWXEste proyecto es el despliegue de Ansible AWX, edición comunitaria de Red Hat Ansible Tower.\n",
     "description": "Aplicaciones y/o servicios de Kubernetes",
     "tags": null,
@@ -95,7 +102,7 @@ var relearn_search_index = [
     "uri": "/tags/documentation/index.html"
   },
   {
-    "content": "En este sitio comparto algunos artículos, implementaciones y/o proyectos implementados.\nEste sitio esta generado con Hugo y utiliza inicialmente el theme Hugo Relearn Theme.\nAlgunos de los artículos y/o proyectos compartidos aquí son:\nKubernetes cluster k3sCluster kubernetes con k3s. 1 nodo master (control-plane) + 'N' nodos worker\nKubernetes - desplieguesAplicaciones y/o servicios de Kubernetes\nKubernetes - notasEntradas relacionadas a Kubernetes. Todo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.\n",
+    "content": "En este sitio comparto algunos artículos, implementaciones y/o proyectos implementados.\nEste sitio esta generado con Hugo y utiliza inicialmente el theme Hugo Relearn Theme.\nAlgunos de los artículos y/o proyectos compartidos aquí son:\nKubernetes cluster k3sCluster kubernetes con k3s. 1 nodo master (control-plane) + 'N' nodos worker\nUbuntu server LTSUbuntu server LTS\nKubernetes - desplieguesAplicaciones y/o servicios de Kubernetes\nKubernetes - notasEntradas relacionadas a Kubernetes. Todo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.\n",
     "description": "",
     "tags": null,
     "title": "Inicio sitio",
