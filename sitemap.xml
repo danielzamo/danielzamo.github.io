@@ -4,9 +4,6 @@
     <loc>http://danielzamo.github.io/kubernetes-cluster-k3s/index.html</loc>
   </url>
   <url>
-    <loc>http://danielzamo.github.io/ubuntu-lts-server/index.html</loc>
-  </url>
-  <url>
     <loc>http://danielzamo.github.io/kubernetes-deployments/index.html</loc>
   </url>
   <url>
@@ -14,6 +11,9 @@
   </url>
   <url>
     <loc>http://danielzamo.github.io/kubernetes-notes/index.html</loc>
+  </url>
+  <url>
+    <loc>http://danielzamo.github.io/ubuntu-lts-server/index.html</loc>
   </url>
   <url>
     <loc>http://danielzamo.github.io/kubernetes-deployments/ansible-awx/index.html</loc>

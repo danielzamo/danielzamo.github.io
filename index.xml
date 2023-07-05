@@ -16,15 +16,6 @@ URL repositorio: Gitlab/dzamo/k8s-k3s-various-clusters
 Tecnologías usadas Alma Linux 9 K3s Ansible - roles Instalación desatendida del sistema operativo KVM. Reserva y creación del recurso vía CLI - virt-install </description>
     </item>
     <item>
-      <title>Ubuntu server LTS</title>
-      <link>http://danielzamo.github.io/ubuntu-lts-server/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/ubuntu-lts-server/index.html</guid>
-      <description> En esta sección se comparten configurtaciones de servicios y/o configuración de servidores basados en Ubuntu server LTS.
-URL repositorio: PENDIENTE
-Tecnologías usadas Ubuntu server LTS - 22.04.. </description>
-    </item>
-    <item>
       <title>Kubernetes - despliegues</title>
       <link>http://danielzamo.github.io/kubernetes-deployments/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -41,6 +32,15 @@ Ansible - AWXEste proyecto es el despliegue de Ansible AWX, edición comunitaria
       <guid>http://danielzamo.github.io/kubernetes-notes/index.html</guid>
       <description>Entradas relacionadas a Kubernetes.
 Todo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.</description>
+    </item>
+    <item>
+      <title>Ubuntu server LTS</title>
+      <link>http://danielzamo.github.io/ubuntu-lts-server/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/ubuntu-lts-server/index.html</guid>
+      <description> En esta sección se comparten configurtaciones de servicios y/o configuración de servidores basados en Ubuntu server LTS.
+URL repositorio: PENDIENTE
+Tecnologías usadas Ubuntu server LTS - 22.04.. </description>
     </item>
   </channel>
 </rss>
