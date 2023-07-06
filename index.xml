@@ -40,7 +40,7 @@ Todo el código implementado y los casos de uso probados se encuentran disponibl
       <guid>http://danielzamo.github.io/ubuntu-lts-server/index.html</guid>
       <description>En esta sección se comparten configuraciones de servicios y/o configuración de servidores basados en Ubuntu server LTS.
 URL repositorio: PENDIENTE. Por el momento hasta que finalize el proyecto, el contanido solo es compartido aquí, en este sitio web estático
-Tecnologías usadas Distribución Linux principal usada: Ubuntu server LTS - 22.04.. Contenido actual despliegues/artículos compartidos Ubuntu LTS - KVMUbuntu server LTS, host anfitrión virtualización KVM</description>
+Tecnologías usadas Distribución Linux principal usada: Ubuntu server LTS - 22.04.. Despliegues/artículos actuales compartidos aquí Anfitrión KVMUbuntu server LTS, host anfitrión virtualización KVM</description>
     </item>
   </channel>
 </rss>
