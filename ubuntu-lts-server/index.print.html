@@ -10,21 +10,21 @@
     <title>Ubuntu server LTS :: Site</title>
     <link href="http://danielzamo.github.io/ubuntu-lts-server/index.html" rel="canonical" type="text/html" title="Ubuntu server LTS :: Site">
     <link href="/ubuntu-lts-server/index.xml" rel="alternate" type="application/rss+xml" title="Ubuntu server LTS :: Site">
-    <link href="/images/logo.svg?1688601874" rel="icon" type="image/svg+xml">
+    <link href="/images/logo.svg?1688602298" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1688601874" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1688601874" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1688601874" rel="stylesheet">
-    <link href="/css/auto-complete.css?1688601874" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1688601874" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1688601874" rel="stylesheet">
-    <link href="/css/fonts.css?1688601874" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1688601874" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1688601874" rel="stylesheet">
-    <link href="/css/theme-relearn-dark.css?1688601874" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1688601874" rel="stylesheet">
-    <link href="/css/print.css?1688601874" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1688601874" rel="stylesheet">
-    <link href="/css/ie.css?1688601874" rel="stylesheet">
-    <script src="/js/url.js?1688601874"></script>
-    <script src="/js/variant.js?1688601874"></script>
+    <link href="/css/fontawesome-all.min.css?1688602298" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1688602298" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1688602298" rel="stylesheet">
+    <link href="/css/auto-complete.css?1688602298" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1688602298" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1688602298" rel="stylesheet">
+    <link href="/css/fonts.css?1688602298" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1688602298" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1688602298" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1688602298" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1688602298" rel="stylesheet">
+    <link href="/css/print.css?1688602298" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1688602298" rel="stylesheet">
+    <link href="/css/ie.css?1688602298" rel="stylesheet">
+    <script src="/js/url.js?1688602298"></script>
+    <script src="/js/variant.js?1688602298"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -107,6 +107,33 @@
             </header>
 <h1 id="ubuntu-lts---kvm">Ubuntu LTS - KVM</h1>
 
+<blockquote>
+<p>Despliegue de servidor host anfitrión host virtualización KVM.</p>
+</blockquote>
+<h2 id="especificación-inicial">Especificación inicial</h2>
+<ul>
+<li>1 x bridge</li>
+<li>1 x ethernet</li>
+</ul>
+<p><em>IP</em></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">IP</th>
+<th style="text-align:left">gateway</th>
+<th style="text-align:left">network</th>
+<th style="text-align:left">DNS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>192.168.123.35</code></td>
+<td style="text-align:left"><code>192.168.123.1</code></td>
+<td style="text-align:left"><code>192.168.123.0/24</code></td>
+<td style="text-align:left"><code>192.168.123.1,8.8.8.8,1.1.1.1</code></td>
+</tr>
+</tbody>
+</table>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Install KVM in Ubuntu</span>
 </span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt upgrade
 </span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo apt -y install qemu-kvm libvirt-dev bridge-utils libvirt-daemon-system libvirt-daemon virtinst bridge-utils libosinfo-bin libguestfs-tools virt-top
@@ -157,8 +184,8 @@
         </div>
       </main>
     </div>
-    <script src="/js/clipboard.min.js?1688601874" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1688601874" defer></script>
-    <script src="/js/theme.js?1688601874" defer></script>
+    <script src="/js/clipboard.min.js?1688602298" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1688602298" defer></script>
+    <script src="/js/theme.js?1688602298" defer></script>
   </body>
 </html>
