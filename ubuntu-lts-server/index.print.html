@@ -10,21 +10,21 @@
     <title>Ubuntu server LTS :: Site</title>
     <link href="http://danielzamo.github.io/ubuntu-lts-server/index.html" rel="canonical" type="text/html" title="Ubuntu server LTS :: Site">
     <link href="/ubuntu-lts-server/index.xml" rel="alternate" type="application/rss+xml" title="Ubuntu server LTS :: Site">
-    <link href="/images/logo.svg?1688624065" rel="icon" type="image/svg+xml">
+    <link href="/images/logo.svg?1688624402" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1688624065" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1688624065" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1688624065" rel="stylesheet">
-    <link href="/css/auto-complete.css?1688624065" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1688624065" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1688624065" rel="stylesheet">
-    <link href="/css/fonts.css?1688624065" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1688624065" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1688624065" rel="stylesheet">
-    <link href="/css/theme-relearn-dark.css?1688624065" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1688624065" rel="stylesheet">
-    <link href="/css/print.css?1688624065" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1688624065" rel="stylesheet">
-    <link href="/css/ie.css?1688624065" rel="stylesheet">
-    <script src="/js/url.js?1688624065"></script>
-    <script src="/js/variant.js?1688624065"></script>
+    <link href="/css/fontawesome-all.min.css?1688624402" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1688624402" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1688624402" rel="stylesheet">
+    <link href="/css/auto-complete.css?1688624402" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1688624402" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1688624402" rel="stylesheet">
+    <link href="/css/fonts.css?1688624402" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1688624402" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1688624402" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1688624402" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1688624402" rel="stylesheet">
+    <link href="/css/print.css?1688624402" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1688624402" rel="stylesheet">
+    <link href="/css/ie.css?1688624402" rel="stylesheet">
+    <script src="/js/url.js?1688624402"></script>
+    <script src="/js/variant.js?1688624402"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -81,10 +81,10 @@
 <p>En la figura se representa el servidor con distribución <a href="https://ubuntu.com" target="_blank">Ubuntu LTS server 20.04&hellip;</a> inicial desplegado en este apartado. Esta configuración base inicial es utilizado para desplegar los servicios con esta distribución.</p>
 <p>
 		
-<a href="#image-059cb7c0866b3c02632ec7a4d2db622b" class="lightbox-link">
+<a href="#image-46f6635bf3f187c9b61a0294f96099e8" class="lightbox-link">
 <img src="/ubuntu-lts-server/ubuntu-k8s.png?width=60pc&amp;classes=shadow" alt="Ubuntu LTS server" class="shadow" style="height: auto; width: 60pc;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-059cb7c0866b3c02632ec7a4d2db622b">
+<a href="javascript:history.back();" class="lightbox" id="image-46f6635bf3f187c9b61a0294f96099e8">
 <img src="/ubuntu-lts-server/ubuntu-k8s.png?width=60pc&amp;classes=shadow" alt="Ubuntu LTS server" class="lightbox-image" loading="lazy">
 </a></p>
 <p><del><em><strong>URL repositorio:</strong></em> <a href="https://gitlab.com/dzamo/" target="_blank">PENDIENTE</a>. <em>Por el momento hasta que finalize el proyecto, el contanido solo es compartido aquí, en este sitio web estático</em>.</del></p>
@@ -126,26 +126,35 @@
 <ul>
 <li>1 x bridge</li>
 <li>1 x ethernet</li>
-</ul>
-<p><em>IP</em></p>
+<li>Configuración IP:
 <table>
 <thead>
 <tr>
-<th style="text-align:left">IP</th>
-<th style="text-align:left">gateway</th>
-<th style="text-align:left">network</th>
-<th style="text-align:left">DNS</th>
+<th style="text-align:right">Especificación</th>
+<th style="text-align:left">asignación (fija)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td style="text-align:right"><em>IP</em></td>
 <td style="text-align:left"><code>192.168.123.35</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><em>gateway</em></td>
 <td style="text-align:left"><code>192.168.123.1</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><em>red</em></td>
 <td style="text-align:left"><code>192.168.123.0/24</code></td>
+</tr>
+<tr>
+<td style="text-align:right"><em>DNS1-3</em></td>
 <td style="text-align:left"><code>192.168.123.1,8.8.8.8,1.1.1.1</code></td>
 </tr>
 </tbody>
 </table>
+</li>
+</ul>
 <h2 id="actualización-sistema-instalando-paquetes-opcionales">Actualización sistema, instalando paquetes (opcionales)</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo apt -y update <span style="color:#f92672">&amp;&amp;</span> sudo apt -y upgrade
 </span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo apt install -y neovim tmux vim vim-scripts exuberant-ctags python-greenlet-dev
@@ -244,8 +253,8 @@
         </div>
       </main>
     </div>
-    <script src="/js/clipboard.min.js?1688624065" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1688624065" defer></script>
-    <script src="/js/theme.js?1688624065" defer></script>
+    <script src="/js/clipboard.min.js?1688624402" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1688624402" defer></script>
+    <script src="/js/theme.js?1688624402" defer></script>
   </body>
 </html>
