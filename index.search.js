@@ -31,7 +31,7 @@ var relearn_search_index = [
     "uri": "/kubernetes-notes/index.html"
   },
   {
-    "content": " En esta sección se comparten configuraciones de servicios y/o configuración de servidores basados en Ubuntu server LTS.\nURL repositorio: PENDIENTE\nTecnologías usadas Distribución Linux principal usada: Ubuntu server LTS - 22.04.. Contenido actual despliegues/artículos compartidos Ubuntu LTS - KVMUbuntu server LTS, host anfitrión virtualización KVM\n",
+    "content": " En esta sección se comparten configuraciones de servicios y/o configuración de servidores basados en Ubuntu server LTS.\nURL repositorio: PENDIENTE. Por el momento hasta que finalize el proyecto, el contanido solo es compartido aquí, en este sitio web estático\nTecnologías usadas Distribución Linux principal usada: Ubuntu server LTS - 22.04.. Contenido actual despliegues/artículos compartidos Ubuntu LTS - KVMUbuntu server LTS, host anfitrión virtualización KVM\n",
     "description": "Ubuntu server LTS",
     "tags": null,
     "title": "Ubuntu server LTS",
