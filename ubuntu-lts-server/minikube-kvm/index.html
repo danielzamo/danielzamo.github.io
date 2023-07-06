@@ -5,11 +5,11 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.101.0">
     <meta name="generator" content="Relearn 5.16.2+tip">
-    <meta name="description" content="Documentation theme based Hugo Relearn Theme">
+    <meta name="description" content="Ubuntu server LTS, cluster k8s minikube (driver kvm)">
     <meta name="author" content="Daniel Oscar Zamo">
-    <title>Sección env :: Site</title>
-    <link href="/kubernetes-notes/pod/env/index.xml" rel="alternate" type="application/rss+xml" title="Sección env :: Site">
-    <link href="/kubernetes-notes/pod/env/index.print.html" rel="alternate" type="text/html" title="Sección env :: Site">
+    <title>Minikube driver kvm :: Site</title>
+    <link href="/ubuntu-lts-server/minikube-kvm/index.xml" rel="alternate" type="application/rss+xml" title="Minikube driver kvm :: Site">
+    <link href="/ubuntu-lts-server/minikube-kvm/index.print.html" rel="alternate" type="text/html" title="Minikube driver kvm :: Site">
     <link href="/images/logo.svg?1688606229" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/css/fontawesome-all.min.css?1688606229" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1688606229" rel="stylesheet"></noscript>
@@ -47,20 +47,20 @@
       }
     </style>
   </head>
-  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/kubernetes-notes/pod/env/index.html">
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/ubuntu-lts-server/minikube-kvm/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
       <nav id="topbar" class="highlightable">
         <div>
           <div class="navigation">
-            <a class="nav nav-next topbar-link" href="/kubernetes-notes/pod/resources/index.html" title="Sección resources (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+            <span class="nav nav-next topbar-link"><i class="fa fa-chevron-right fa-fw"></i></span>
           </div>
           <div class="navigation">
-            <a class="nav nav-prev topbar-link" href="/kubernetes-notes/pod/pod-minimal/index.html" title="Definición pod mediante manifiesto (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+            <a class="nav nav-prev topbar-link" href="/ubuntu-lts-server/kvm/index.html" title="Anfitrión KVM (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
           </div>
           <div id="top-print-link">
-            <a class="print-link topbar-link" title='Print whole chapter (CTRL+ALT+p)' href="/kubernetes-notes/pod/env/index.print.html">
+            <a class="print-link topbar-link" title='Print whole chapter (CTRL+ALT+p)' href="/ubuntu-lts-server/minikube-kvm/index.print.html">
               <i class="fas fa-print fa-fw"></i>
             </a>
           </div>
@@ -71,22 +71,23 @@
             <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Inicio sitio</span></a><meta itemprop="position" content="1"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/kubernetes-notes/index.html"><span itemprop="name">Kubernetes - notas</span></a><meta itemprop="position" content="2"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/kubernetes-notes/pod/index.html"><span itemprop="name">Pod</span></a><meta itemprop="position" content="3"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Sección env</span><meta itemprop="position" content="4"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/ubuntu-lts-server/index.html"><span itemprop="name">Ubuntu server LTS</span></a><meta itemprop="position" content="2"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Minikube driver kvm</span><meta itemprop="position" content="3"></li>
             </ol>
           </div>
           <div class="default-animation progress">
             <div class="toc-wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#relevantes-en-esta-nota">Relevantes en esta nota</a></li>
-    <li><a href="#manifiesto">Manifiesto</a>
+    <li><a href="#tecnologías-utilizadas">Tecnologías utilizadas</a></li>
+    <li><a href="#especificación-inicial">Especificación inicial</a>
       <ul>
-        <li><a href="#env">env</a></li>
+        <li><a href="#dependecias-cumplida">Dependecias cumplida</a></li>
       </ul>
     </li>
-    <li><a href="#sesión-comandos">Sesión comandos</a></li>
+    <li><a href="#actualización-sistema-instalando-paquetes-opcionales">Actualización sistema, instalando paquetes (opcionales)</a></li>
+    <li><a href="#instalaciónconfiguración-de-minikube">Instalación/configuración de minikube</a></li>
+    <li><a href="#instalación-de-kubectl">Instalación de kubectl</a></li>
   </ul>
 </nav>
             </div>
@@ -99,73 +100,47 @@
           <article class="default">
             <header class="headline">
 <div class="tags">
-  <a class="tag-link" href="/tags/documentation/index.html">documentation</a>
+  <a class="tag-link" href="/tags/container/index.html">container</a>
   <a class="tag-link" href="/tags/kubernetes/index.html">kubernetes</a>
+  <a class="tag-link" href="/tags/kvm/index.html">KVM</a>
+  <a class="tag-link" href="/tags/minikube/index.html">minikube</a>
+  <a class="tag-link" href="/tags/projects/index.html">projects</a>
+  <a class="tag-link" href="/tags/ubuntults/index.html">UbuntuLTS</a>
+  <a class="tag-link" href="/tags/virtualization/index.html">virtualization</a>
 </div>
             </header>
-<h1 id="sección-env">Sección env</h1>
+<h1 id="minikube-driver-kvm">Minikube driver kvm</h1>
 
-<h2 id="relevantes-en-esta-nota">Relevantes en esta nota</h2>
+<blockquote>
+<p>Despliegue de servidor host anfitrión host virtualización KVM. Despliegue de cluster Ubuntu server LTS k8s minikube (driver kvm).</p>
+</blockquote>
+<h2 id="tecnologías-utilizadas">Tecnologías utilizadas</h2>
 <ul>
-<li>Sección variables de entorno, definición <code>env</code> en manifiesto.</li>
-<li>Utilización de variables recuperadas desde <a href="https://kubernetes.io/docs/concepts/workloads/pods/downward-api/" target="_blank">kubernetes Downward API</a></li>
+<li>minikube</li>
+<li>KVM</li>
+<li>Ubuntu LTS 22.04..</li>
 </ul>
-<h2 id="manifiesto">Manifiesto</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>apiVersion: v1
-</span></span><span style="display:flex;"><span>kind: Pod
-</span></span><span style="display:flex;"><span>metadata:
-</span></span><span style="display:flex;"><span>  name: nginx
-</span></span><span style="display:flex;"><span>spec:
-</span></span><span style="display:flex;"><span>  containers:
-</span></span><span style="display:flex;"><span>  - name: nginx
-</span></span><span style="display:flex;"><span>    image: nginx:alpine
-</span></span><span style="display:flex;"><span>    env:
-</span></span><span style="display:flex;"><span>    - name: var_1
-</span></span><span style="display:flex;"><span>      value: <span style="color:#e6db74">&#34;value_val_1&#34;</span>
-</span></span><span style="display:flex;"><span>    - name: var_2
-</span></span><span style="display:flex;"><span>      value: <span style="color:#e6db74">&#34;value_val_2&#34;</span>
-</span></span><span style="display:flex;"><span>    - name: DD_AGENT_HOST
-</span></span><span style="display:flex;"><span>      valueFrom:
-</span></span><span style="display:flex;"><span>        fieldRef:
-</span></span><span style="display:flex;"><span>          fieldPath: status.hostIP
-</span></span></code></pre></div><h3 id="env">env</h3>
-<p>En la sección <code>env</code> se pueden definir/pasar variables de entornos. En lo anterior es:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    env:                          <span style="color:#75715e"># Variables de entorno</span>
-</span></span><span style="display:flex;"><span>    - name: var_1                 <span style="color:#75715e">## &#39;Nombre 1&#39;</span>
-</span></span><span style="display:flex;"><span>      value: <span style="color:#e6db74">&#34;value_val_1&#34;</span>        <span style="color:#75715e">## Valor variable &#39;Nombre 1&#39;</span>
-</span></span><span style="display:flex;"><span>    - name: var_2                 <span style="color:#75715e">## &#39;Nombre 2&#39;</span>
-</span></span><span style="display:flex;"><span>      value: <span style="color:#e6db74">&#34;value_val_2&#34;</span>        <span style="color:#75715e">## Valor variable &#39;Nombre 2&#39;</span>
-</span></span><span style="display:flex;"><span>    - name: dd_agent_host         <span style="color:#75715e">## Variable definida desde el &#34;Downward API&#34; (son variables/valores que se pueden consultar)</span>
-</span></span><span style="display:flex;"><span>      valueFrom:
-</span></span><span style="display:flex;"><span>        fieldRef:
-</span></span><span style="display:flex;"><span>          fieldPath: status.hostIP <span style="color:#75715e">## Se asigna el valor de hostIP (su valor se recupera desde la &#34;Downward API&#34; de kubernetes) donde esta corriendo el pod, en este caso.</span>
-</span></span></code></pre></div><h2 id="sesión-comandos">Sesión comandos</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ kubectl apply -f 03-pod-w-env.yaml
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ kubectl get pod
-</span></span><span style="display:flex;"><span>NAME          READY   STATUS    RESTARTS   AGE
-</span></span><span style="display:flex;"><span>nginx-w-env   1/1     Running   <span style="color:#ae81ff">0</span>          18s
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ kubectl exec nginx-w-env -- env
-</span></span><span style="display:flex;"><span>PATH<span style="color:#f92672">=</span>/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-</span></span><span style="display:flex;"><span>HOSTNAME<span style="color:#f92672">=</span>nginx-w-env
-</span></span><span style="display:flex;"><span>NGINX_VERSION<span style="color:#f92672">=</span>1.25.1
-</span></span><span style="display:flex;"><span>PKG_RELEASE<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>NJS_VERSION<span style="color:#f92672">=</span>0.7.12
-</span></span><span style="display:flex;"><span>dd_agent_host<span style="color:#f92672">=</span>10.0.0.84
-</span></span><span style="display:flex;"><span>var_1<span style="color:#f92672">=</span>value_var_1
-</span></span><span style="display:flex;"><span>var_2<span style="color:#f92672">=</span>value_var_2
-</span></span><span style="display:flex;"><span>KUBERNETES_PORT<span style="color:#f92672">=</span>tcp://10.43.0.1:443
-</span></span><span style="display:flex;"><span>KUBERNETES_PORT_443_TCP<span style="color:#f92672">=</span>tcp://10.43.0.1:443
-</span></span><span style="display:flex;"><span>KUBERNETES_PORT_443_TCP_PROTO<span style="color:#f92672">=</span>tcp
-</span></span><span style="display:flex;"><span>KUBERNETES_PORT_443_TCP_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">443</span>
-</span></span><span style="display:flex;"><span>KUBERNETES_PORT_443_TCP_ADDR<span style="color:#f92672">=</span>10.43.0.1
-</span></span><span style="display:flex;"><span>KUBERNETES_SERVICE_HOST<span style="color:#f92672">=</span>10.43.0.1
-</span></span><span style="display:flex;"><span>KUBERNETES_SERVICE_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">443</span>
-</span></span><span style="display:flex;"><span>KUBERNETES_SERVICE_PORT_HTTPS<span style="color:#f92672">=</span><span style="color:#ae81ff">443</span>
-</span></span><span style="display:flex;"><span>HOME<span style="color:#f92672">=</span>/root
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ kubectl exec -it nginx-w-env -- sh
-</span></span><span style="display:flex;"><span>/ <span style="color:#75715e"># hostname</span>
-</span></span><span style="display:flex;"><span>nginx-w-env
-</span></span><span style="display:flex;"><span>/ <span style="color:#75715e"># exit</span>
+<h2 id="especificación-inicial">Especificación inicial</h2>
+<p>&hellip;</p>
+<h3 id="dependecias-cumplida">Dependecias cumplida</h3>
+<ul>
+<li>&hellip;</li>
+<li>&hellip;</li>
+</ul>
+<h2 id="actualización-sistema-instalando-paquetes-opcionales">Actualización sistema, instalando paquetes (opcionales)</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo apt -y update <span style="color:#f92672">&amp;&amp;</span> sudo apt -y upgrade
+</span></span></code></pre></div><h2 id="instalaciónconfiguración-de-minikube">Instalación/configuración de minikube</h2>
+<p>En este apartado se instala y configura un cluster minikube con driver kvm (REF LINK).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Instalacion minikube</span>
+</span></span><span style="display:flex;"><span>wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+</span></span><span style="display:flex;"><span>sudo install minikube-linux-amd64 /usr/local/bin/minikube
+</span></span><span style="display:flex;"><span>minikube version
+</span></span></code></pre></div><h2 id="instalación-de-kubectl">Instalación de kubectl</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo curl -LO https://storage.googleapis.com/kubernetes-release/release/<span style="color:#e6db74">`</span>curl <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -s https://storage.googleapis.com/kubernetes-release/release/stable.txt<span style="color:#e6db74">`</span>/bin/linux/amd64/kubectl
+</span></span><span style="display:flex;"><span>sudo chmod <span style="color:#ae81ff">755</span> ./kubectl
+</span></span><span style="display:flex;"><span>sudo mv kubectl /usr/local/bin/
+</span></span><span style="display:flex;"><span>kubectl version -o json  --client
 </span></span></code></pre></div>
             <footer class="footline">
 
@@ -265,15 +240,15 @@
           <li data-nav-id="/kubernetes-cluster-k3s/index.html" class=""><a class="padding" href="/kubernetes-cluster-k3s/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">1.</b> Kubernetes cluster k3s<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/kubernetes-deployments/index.html" class=""><input type="checkbox" id="section-8ab3651a2ec4764fa8f1f50af6e7094d" aria-controls="subsections-8ab3651a2ec4764fa8f1f50af6e7094d"><label for="section-8ab3651a2ec4764fa8f1f50af6e7094d"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Kubernetes - despliegues</span></label><a class="padding" href="/kubernetes-deployments/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">2.</b> Kubernetes - despliegues<i class="fas fa-check read-icon"></i></a><ul id="subsections-8ab3651a2ec4764fa8f1f50af6e7094d" class="morespace collapsible-menu">
           <li data-nav-id="/kubernetes-deployments/ansible-awx/index.html" class=""><a class="padding" href="/kubernetes-deployments/ansible-awx/index.html">Ansible - AWX<i class="fas fa-check read-icon"></i></a></li></ul></li>
-          <li data-nav-id="/kubernetes-notes/index.html" class="parent "><input type="checkbox" id="section-effcf26ac8361c0051846c35bf515993" aria-controls="subsections-effcf26ac8361c0051846c35bf515993" checked><label for="section-effcf26ac8361c0051846c35bf515993"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Kubernetes - notas</span></label><a class="padding" href="/kubernetes-notes/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">4.</b> Kubernetes - notas<i class="fas fa-check read-icon"></i></a><ul id="subsections-effcf26ac8361c0051846c35bf515993" class="morespace collapsible-menu">
-          <li data-nav-id="/kubernetes-notes/pod/index.html" class="parent alwaysopen"><input type="checkbox" id="section-8bf56febec1abf95d4a1a03236e88aa7" aria-controls="subsections-8bf56febec1abf95d4a1a03236e88aa7" checked><label for="section-8bf56febec1abf95d4a1a03236e88aa7"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Pod</span></label><a class="padding" href="/kubernetes-notes/pod/index.html">Pod<i class="fas fa-check read-icon"></i></a><ul id="subsections-8bf56febec1abf95d4a1a03236e88aa7" class="morespace collapsible-menu">
+          <li data-nav-id="/kubernetes-notes/index.html" class=""><input type="checkbox" id="section-effcf26ac8361c0051846c35bf515993" aria-controls="subsections-effcf26ac8361c0051846c35bf515993"><label for="section-effcf26ac8361c0051846c35bf515993"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Kubernetes - notas</span></label><a class="padding" href="/kubernetes-notes/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">4.</b> Kubernetes - notas<i class="fas fa-check read-icon"></i></a><ul id="subsections-effcf26ac8361c0051846c35bf515993" class="morespace collapsible-menu">
+          <li data-nav-id="/kubernetes-notes/pod/index.html" class="alwaysopen"><input type="checkbox" id="section-8bf56febec1abf95d4a1a03236e88aa7" aria-controls="subsections-8bf56febec1abf95d4a1a03236e88aa7" checked><label for="section-8bf56febec1abf95d4a1a03236e88aa7"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Pod</span></label><a class="padding" href="/kubernetes-notes/pod/index.html">Pod<i class="fas fa-check read-icon"></i></a><ul id="subsections-8bf56febec1abf95d4a1a03236e88aa7" class="morespace collapsible-menu">
           <li data-nav-id="/kubernetes-notes/pod/pod-minimal/index.html" class=""><a class="padding" href="/kubernetes-notes/pod/pod-minimal/index.html">Definición pod mediante manifiesto<i class="fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/kubernetes-notes/pod/env/index.html" class="active"><a class="padding" href="/kubernetes-notes/pod/env/index.html">Sección env<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/kubernetes-notes/pod/env/index.html" class=""><a class="padding" href="/kubernetes-notes/pod/env/index.html">Sección env<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/kubernetes-notes/pod/resources/index.html" class=""><a class="padding" href="/kubernetes-notes/pod/resources/index.html">Sección resources<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/kubernetes-notes/pod/daemonset/index.html" class=""><a class="padding" href="/kubernetes-notes/pod/daemonset/index.html">Daemonset<i class="fas fa-check read-icon"></i></a></li></ul></li></ul></li>
-          <li data-nav-id="/ubuntu-lts-server/index.html" class=""><input type="checkbox" id="section-4fc9b185a94fd1ee26d248db0cd0f57c" aria-controls="subsections-4fc9b185a94fd1ee26d248db0cd0f57c"><label for="section-4fc9b185a94fd1ee26d248db0cd0f57c"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Ubuntu server LTS</span></label><a class="padding" href="/ubuntu-lts-server/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">5.</b> Ubuntu server LTS<i class="fas fa-check read-icon"></i></a><ul id="subsections-4fc9b185a94fd1ee26d248db0cd0f57c" class="morespace collapsible-menu">
+          <li data-nav-id="/ubuntu-lts-server/index.html" class="parent "><input type="checkbox" id="section-4fc9b185a94fd1ee26d248db0cd0f57c" aria-controls="subsections-4fc9b185a94fd1ee26d248db0cd0f57c" checked><label for="section-4fc9b185a94fd1ee26d248db0cd0f57c"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Ubuntu server LTS</span></label><a class="padding" href="/ubuntu-lts-server/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">5.</b> Ubuntu server LTS<i class="fas fa-check read-icon"></i></a><ul id="subsections-4fc9b185a94fd1ee26d248db0cd0f57c" class="morespace collapsible-menu">
           <li data-nav-id="/ubuntu-lts-server/kvm/index.html" class=""><a class="padding" href="/ubuntu-lts-server/kvm/index.html">Anfitrión KVM<i class="fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/ubuntu-lts-server/minikube-kvm/index.html" class=""><a class="padding" href="/ubuntu-lts-server/minikube-kvm/index.html">Minikube driver kvm<i class="fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/ubuntu-lts-server/minikube-kvm/index.html" class="active"><a class="padding" href="/ubuntu-lts-server/minikube-kvm/index.html">Minikube driver kvm<i class="fas fa-check read-icon"></i></a></li></ul></li>
         </ul>
         <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter"></div>
         <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter">

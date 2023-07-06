@@ -24,5 +24,15 @@ IP gateway network DNS 192.168.123.35 192.168.123.1 192.168.123.0/24 192.168.123
 En la siguiente representación se muestra un diagrama del despliegue. El cual es realizado sobre un host motor de kubernetes con minikube con libvirt como runtime (driver kvm).
 Tecnologías utilizadas Contenedores: kubernetes / k3s or minikube Dist. Linux: AlmaLinux 9 Sesión de instalación/configuración La sesión siguiente fue realizada tanto sobre un cluster de minikube como en uno con k3s.</description>
     </item>
+    <item>
+      <title>Minikube driver kvm</title>
+      <link>http://danielzamo.github.io/ubuntu-lts-server/minikube-kvm/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/ubuntu-lts-server/minikube-kvm/index.html</guid>
+      <description>Despliegue de servidor host anfitrión host virtualización KVM. Despliegue de cluster Ubuntu server LTS k8s minikube (driver kvm).
+Tecnologías utilizadas minikube KVM Ubuntu LTS 22.04.. Especificación inicial &amp;hellip;
+Dependecias cumplida &amp;hellip; &amp;hellip; Actualización sistema, instalando paquetes (opcionales) dzamo@ubuntu-k8s:~$ sudo apt -y update &amp;amp;&amp;amp; sudo apt -y upgrade Instalación/configuración de minikube En este apartado se instala y configura un cluster minikube con driver kvm (REF LINK).
+# Instalacion minikube wget https://storage.</description>
+    </item>
   </channel>
 </rss>

@@ -5,11 +5,11 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.101.0">
     <meta name="generator" content="Relearn 5.16.2+tip">
-    <meta name="description" content="Documentation theme based Hugo Relearn Theme">
+    <meta name="description" content="Ubuntu server LTS, cluster k8s minikube (driver kvm)">
     <meta name="author" content="Daniel Oscar Zamo">
-    <title>Definición pod mediante manifiesto :: Site</title>
-    <link href="http://danielzamo.github.io/kubernetes-notes/pod/pod-minimal/index.html" rel="canonical" type="text/html" title="Definición pod mediante manifiesto :: Site">
-    <link href="/kubernetes-notes/pod/pod-minimal/index.xml" rel="alternate" type="application/rss+xml" title="Definición pod mediante manifiesto :: Site">
+    <title>Minikube driver kvm :: Site</title>
+    <link href="http://danielzamo.github.io/ubuntu-lts-server/minikube-kvm/index.html" rel="canonical" type="text/html" title="Minikube driver kvm :: Site">
+    <link href="/ubuntu-lts-server/minikube-kvm/index.xml" rel="alternate" type="application/rss+xml" title="Minikube driver kvm :: Site">
     <link href="/images/logo.svg?1688606229" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/css/fontawesome-all.min.css?1688606229" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1688606229" rel="stylesheet"></noscript>
@@ -48,7 +48,7 @@
       }
     </style>
   </head>
-  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/kubernetes-notes/pod/pod-minimal/index.html">
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/ubuntu-lts-server/minikube-kvm/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
@@ -60,9 +60,8 @@
 </span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Inicio sitio</span></a><meta itemprop="position" content="1"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/kubernetes-notes/index.html"><span itemprop="name">Kubernetes - notas</span></a><meta itemprop="position" content="2"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/kubernetes-notes/pod/index.html"><span itemprop="name">Pod</span></a><meta itemprop="position" content="3"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Definición pod mediante manifiesto</span><meta itemprop="position" content="4"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/ubuntu-lts-server/index.html"><span itemprop="name">Ubuntu server LTS</span></a><meta itemprop="position" content="2"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Minikube driver kvm</span><meta itemprop="position" content="3"></li>
             </ol>
           </div>
         </div>
@@ -73,24 +72,47 @@
           <article class="default">
             <header class="headline">
 <div class="tags">
-  <a class="tag-link" href="/tags/documentation/index.html">documentation</a>
+  <a class="tag-link" href="/tags/container/index.html">container</a>
   <a class="tag-link" href="/tags/kubernetes/index.html">kubernetes</a>
+  <a class="tag-link" href="/tags/kvm/index.html">KVM</a>
+  <a class="tag-link" href="/tags/minikube/index.html">minikube</a>
+  <a class="tag-link" href="/tags/projects/index.html">projects</a>
+  <a class="tag-link" href="/tags/ubuntults/index.html">UbuntuLTS</a>
+  <a class="tag-link" href="/tags/virtualization/index.html">virtualization</a>
 </div>
             </header>
-<h1 id="definición-pod-mediante-manifiesto">Definición pod mediante manifiesto</h1>
+<h1 id="minikube-driver-kvm">Minikube driver kvm</h1>
 
-<h2 id="manifiesto-mínimo">Manifiesto mínimo</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus my-codes<span style="color:#f92672">]</span>$ cat kubernetes/01-pod-minimal.yaml
-</span></span><span style="display:flex;"><span>apiVersion: v1
-</span></span><span style="display:flex;"><span>kind: Pod
-</span></span><span style="display:flex;"><span>metadata:
-</span></span><span style="display:flex;"><span>  name: nginx
-</span></span><span style="display:flex;"><span>spec:
-</span></span><span style="display:flex;"><span>  containers:
-</span></span><span style="display:flex;"><span>  - name: nginx
-</span></span><span style="display:flex;"><span>    image: nginx:alpine
-</span></span></code></pre></div><h2 id="aplicando-manifiesto-crear-pod">Aplicando manifiesto (crear pod)</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus my-codes<span style="color:#f92672">]</span>$ kubectl apply -f kubernetes/01-pod-minimal.yaml
+<blockquote>
+<p>Despliegue de servidor host anfitrión host virtualización KVM. Despliegue de cluster Ubuntu server LTS k8s minikube (driver kvm).</p>
+</blockquote>
+<h2 id="tecnologías-utilizadas">Tecnologías utilizadas</h2>
+<ul>
+<li>minikube</li>
+<li>KVM</li>
+<li>Ubuntu LTS 22.04..</li>
+</ul>
+<h2 id="especificación-inicial">Especificación inicial</h2>
+<p>&hellip;</p>
+<h3 id="dependecias-cumplida">Dependecias cumplida</h3>
+<ul>
+<li>&hellip;</li>
+<li>&hellip;</li>
+</ul>
+<h2 id="actualización-sistema-instalando-paquetes-opcionales">Actualización sistema, instalando paquetes (opcionales)</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo apt -y update <span style="color:#f92672">&amp;&amp;</span> sudo apt -y upgrade
+</span></span></code></pre></div><h2 id="instalaciónconfiguración-de-minikube">Instalación/configuración de minikube</h2>
+<p>En este apartado se instala y configura un cluster minikube con driver kvm (REF LINK).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Instalacion minikube</span>
+</span></span><span style="display:flex;"><span>wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+</span></span><span style="display:flex;"><span>sudo install minikube-linux-amd64 /usr/local/bin/minikube
+</span></span><span style="display:flex;"><span>minikube version
+</span></span></code></pre></div><h2 id="instalación-de-kubectl">Instalación de kubectl</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo curl -LO https://storage.googleapis.com/kubernetes-release/release/<span style="color:#e6db74">`</span>curl <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -s https://storage.googleapis.com/kubernetes-release/release/stable.txt<span style="color:#e6db74">`</span>/bin/linux/amd64/kubectl
+</span></span><span style="display:flex;"><span>sudo chmod <span style="color:#ae81ff">755</span> ./kubectl
+</span></span><span style="display:flex;"><span>sudo mv kubectl /usr/local/bin/
+</span></span><span style="display:flex;"><span>kubectl version -o json  --client
 </span></span></code></pre></div>
             <footer class="footline">
 
