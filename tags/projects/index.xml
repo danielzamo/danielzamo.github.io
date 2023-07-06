@@ -30,7 +30,7 @@ Tecnologías utilizadas Contenedores: kubernetes / k3s or minikube Dist. Linux: 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://danielzamo.github.io/ubuntu-lts-server/minikube-kvm/index.html</guid>
       <description>Despliegue de cluster Ubuntu server LTS k8s minikube (driver kvm), en un simple host.
-Tecnologías utilizadas minikube KVM Ubuntu LTS 22.04.. Especificación inicial &amp;hellip;
+Tecnologías utilizadas Minikube KVM Ubuntu LTS 22.04.. Especificación inicial &amp;hellip;
 Dependecias cumplida En este depliegue se implementa un cluster minikube sobre un simple host. El driver usado es kvm. Se da por supuesto que se ha instalado el host anfitrión KVM. Si necesita ayuda puede consultar instalar anfitrión KVM en Ubuntu LTS, en este mismo sitio.</description>
     </item>
   </channel>
