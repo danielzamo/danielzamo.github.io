@@ -40,7 +40,7 @@ Todo el código implementado y los casos de uso probados se encuentran disponibl
       <guid>http://danielzamo.github.io/ubuntu-lts-server/index.html</guid>
       <description>En esta sección se comparten configuraciones de servicios y/o configuración de servidores basados en Ubuntu server LTS.
 URL repositorio: PENDIENTE
-Tecnologías usadas Distribución Linux principal usada: Ubuntu server LTS - 22.04.. Contenido actual despliegues/artículos compartidos Ansible - AWXEste proyecto es el despliegue de Ansible AWX, edición comunitaria de Red Hat Ansible Tower.</description>
+Tecnologías usadas Distribución Linux principal usada: Ubuntu server LTS - 22.04.. Contenido actual despliegues/artículos compartidos Ubuntu LTS - KVMUbuntu server LTS, host anfitrión virtualización KVM</description>
     </item>
   </channel>
 </rss>

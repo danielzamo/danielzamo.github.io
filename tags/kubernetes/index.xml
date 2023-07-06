@@ -24,15 +24,6 @@ En la siguiente representación se muestra un diagrama del despliegue. El cual e
 Tecnologías utilizadas Contenedores: kubernetes / k3s or minikube Dist. Linux: AlmaLinux 9 Sesión de instalación/configuración La sesión siguiente fue realizada tanto sobre un cluster de minikube como en uno con k3s.</description>
     </item>
     <item>
-      <title>Ansible - AWX</title>
-      <link>http://danielzamo.github.io/ubuntu-lts-server/kvm/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/ubuntu-lts-server/kvm/index.html</guid>
-      <description>Este proyecto es el despliegue de Ansible AWX, edición comunitaria de Red Hat Ansible Tower.
-En la siguiente representación se muestra un diagrama del despliegue. El cual es realizado sobre un host motor de kubernetes con minikube con libvirt como runtime (driver kvm).
-Tecnologías utilizadas Contenedores: kubernetes / k3s or minikube Dist. Linux: AlmaLinux 9 Sesión de instalación/configuración La sesión siguiente fue realizada tanto sobre un cluster de minikube como en uno con k3s.</description>
-    </item>
-    <item>
       <title>Definición pod mediante manifiesto</title>
       <link>http://danielzamo.github.io/kubernetes-notes/pod/pod-minimal/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

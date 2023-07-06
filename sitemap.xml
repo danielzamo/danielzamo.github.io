@@ -19,10 +19,10 @@
     <loc>http://danielzamo.github.io/kubernetes-deployments/ansible-awx/index.html</loc>
   </url>
   <url>
-    <loc>http://danielzamo.github.io/ubuntu-lts-server/kvm/index.html</loc>
+    <loc>http://danielzamo.github.io/kubernetes-notes/pod/pod-minimal/index.html</loc>
   </url>
   <url>
-    <loc>http://danielzamo.github.io/kubernetes-notes/pod/pod-minimal/index.html</loc>
+    <loc>http://danielzamo.github.io/ubuntu-lts-server/kvm/index.html</loc>
   </url>
   <url>
     <loc>http://danielzamo.github.io/kubernetes-notes/pod/env/index.html</loc>
@@ -46,9 +46,18 @@
     <loc>http://danielzamo.github.io/tags/kubernetes/index.html</loc>
   </url>
   <url>
+    <loc>http://danielzamo.github.io/tags/kvm/index.html</loc>
+  </url>
+  <url>
     <loc>http://danielzamo.github.io/tags/projects/index.html</loc>
   </url>
   <url>
     <loc>http://danielzamo.github.io/tags/index.html</loc>
+  </url>
+  <url>
+    <loc>http://danielzamo.github.io/tags/ubuntults/index.html</loc>
+  </url>
+  <url>
+    <loc>http://danielzamo.github.io/tags/virtualization/index.html</loc>
   </url>
 </urlset>

@@ -16,13 +16,11 @@ En la siguiente representación se muestra un diagrama del despliegue. El cual e
 Tecnologías utilizadas Contenedores: kubernetes / k3s or minikube Dist. Linux: AlmaLinux 9 Sesión de instalación/configuración La sesión siguiente fue realizada tanto sobre un cluster de minikube como en uno con k3s.</description>
     </item>
     <item>
-      <title>Ansible - AWX</title>
+      <title>Ubuntu LTS - KVM</title>
       <link>http://danielzamo.github.io/ubuntu-lts-server/kvm/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://danielzamo.github.io/ubuntu-lts-server/kvm/index.html</guid>
-      <description>Este proyecto es el despliegue de Ansible AWX, edición comunitaria de Red Hat Ansible Tower.
-En la siguiente representación se muestra un diagrama del despliegue. El cual es realizado sobre un host motor de kubernetes con minikube con libvirt como runtime (driver kvm).
-Tecnologías utilizadas Contenedores: kubernetes / k3s or minikube Dist. Linux: AlmaLinux 9 Sesión de instalación/configuración La sesión siguiente fue realizada tanto sobre un cluster de minikube como en uno con k3s.</description>
+      <description># Install KVM in Ubuntu dzamo@ubuntu-k8s:~$ sudo apt update &amp;amp;&amp;amp; sudo apt upgrade dzamo@ubuntu-k8s:~$ sudo apt -y install qemu-kvm libvirt-dev bridge-utils libvirt-daemon-system libvirt-daemon virtinst bridge-utils libosinfo-bin libguestfs-tools virt-top dzamo@ubuntu-k8s:~$ ls dzamo@ubuntu-k8s:~$ sudo usermod -a $USER -G libvirt,libvirt-qemu,libvirt-dnsmasq,kvm dzamo@ubuntu-k8s:~$ sudo modprobe vhost_net dzamo@ubuntu-k8s:~$ sudo lsmod | grep vhost dzamo@ubuntu-k8s:~$ echo &amp;#34;vhost_net&amp;#34; | sudo tee -a /etc/modules dzamo@ubuntu-k8s:~$ sudo vim /etc/netplan/00-installer-config.yaml dzamo@ubuntu-k8s:~$ sudo apt install neovim tmux vim vim-scripts exuberant-ctags python-greenlet-dev dzamo@ubuntu-k8s:~$ cat /etc/netplan/00-installer-config.</description>
     </item>
   </channel>
 </rss>
