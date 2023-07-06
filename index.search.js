@@ -24,18 +24,18 @@ var relearn_search_index = [
     "uri": "/kubernetes-notes/pod/index.html"
   },
   {
-    "content": "Entradas relacionadas a Kubernetes.\nTodo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.\n",
-    "description": "",
-    "tags": null,
-    "title": "Kubernetes - notas",
-    "uri": "/kubernetes-notes/index.html"
-  },
-  {
     "content": " En esta sección se comparten configuraciones de servicios y/o configuración de servidores basados en Ubuntu server LTS.\nURL repositorio: PENDIENTE. Por el momento hasta que finalize el proyecto, el contanido solo es compartido aquí, en este sitio web estático\nTecnologías usadas Distribución Linux principal usada: Ubuntu server LTS - 22.04.. Despliegues/artículos actuales compartidos aquí Anfitrión KVMUbuntu server LTS, host anfitrión virtualización KVM\nMinikube (driver kvm)Ubuntu server LTS, cluster k8s minikube (driver kvm)\n",
     "description": "Ubuntu server LTS",
     "tags": null,
     "title": "Ubuntu server LTS",
     "uri": "/ubuntu-lts-server/index.html"
+  },
+  {
+    "content": "Entradas relacionadas a Kubernetes.\nTodo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.\n",
+    "description": "",
+    "tags": null,
+    "title": "Kubernetes - notas",
+    "uri": "/kubernetes-notes/index.html"
   },
   {
     "content": " Despliegue de servidor host anfitrión host virtualización KVM.\nEspecificación inicial 1 x bridge 1 x ethernet IP\nIP gateway network DNS 192.168.123.35 192.168.123.1 192.168.123.0/24 192.168.123.1,8.8.8.8,1.1.1.1 Actualización sistema, instalando paquetes (opcionales) dzamo@ubuntu-k8s:~$ sudo apt -y update \u0026\u0026 sudo apt -y upgrade dzamo@ubuntu-k8s:~$ sudo apt install -y neovim tmux vim vim-scripts exuberant-ctags python-greenlet-dev Instalación/configuración de KVM # Install KVM in Ubuntu dzamo@ubuntu-k8s:~$ sudo apt -y install qemu-kvm libvirt-dev bridge-utils libvirt-daemon-system libvirt-daemon virtinst bridge-utils libosinfo-bin libguestfs-tools virt-top dzamo@ubuntu-k8s:~$ sudo usermod -a $USER -G libvirt,libvirt-qemu,libvirt-dnsmasq,kvm dzamo@ubuntu-k8s:~$ sudo modprobe vhost_net dzamo@ubuntu-k8s:~$ sudo lsmod | grep vhost dzamo@ubuntu-k8s:~$ echo \"vhost_net\" | sudo tee -a /etc/modules dzamo@ubuntu-k8s:~$ sudo vim /etc/netplan/00-installer-config.yaml Configuración bridge e interface eth dzamo@ubuntu-k8s:~$ cat /etc/netplan/00-installer-config.yaml network: ethernets: enp1s0: dhcp4: false dhcp6: false bridges: br0: interfaces: [enp1s0] dhcp4: false addresses: [192.168.123.35/24] macaddress: 52:54:00:e8:a8:08 routes: - to: default via: 192.168.123.1 metric: 100 nameservers: addresses: [192.168.123.1,1.1.1.1,8.8.8.8] search: [my.net] parameters: stp: false dhcp6: false version: 2 dzamo@ubuntu-k8s:~$ sudo netplan apply dzamo@ubuntu-k8s:~$ ip a dzamo@ubuntu-k8s:~$ wget www.google.com dzamo@ubuntu-k8s:~$ rm index.html dzamo@ubuntu-k8s:~$ ip a dzamo@ubuntu-k8s:~$ sudo reboot ",
@@ -136,7 +136,7 @@ var relearn_search_index = [
     "uri": "/tags/documentation/index.html"
   },
   {
-    "content": "En este sitio comparto algunos artículos, implementaciones y/o proyectos implementados.\nEste sitio esta generado con Hugo y utiliza inicialmente el theme Hugo Relearn Theme.\nAlgunos de los artículos y/o proyectos compartidos aquí son:\nKubernetes cluster k3sCluster kubernetes con k3s. 1 nodo master (control-plane) + 'N' nodos worker\nKubernetes - desplieguesAplicaciones y/o servicios de Kubernetes\nKubernetes - notasEntradas relacionadas a Kubernetes. Todo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.\nUbuntu server LTSUbuntu server LTS\n",
+    "content": "En este sitio comparto algunos artículos, implementaciones y/o proyectos implementados.\nEste sitio esta generado con Hugo y utiliza inicialmente el theme Hugo Relearn Theme.\nAlgunos de los artículos y/o proyectos compartidos aquí son:\nKubernetes cluster k3sCluster kubernetes con k3s. 1 nodo master (control-plane) + 'N' nodos worker\nKubernetes - desplieguesAplicaciones y/o servicios de Kubernetes\nUbuntu server LTSUbuntu server LTS\nKubernetes - notasEntradas relacionadas a Kubernetes. Todo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.\n",
     "description": "",
     "tags": null,
     "title": "Inicio sitio",
