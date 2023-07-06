@@ -41,7 +41,7 @@ Todo el código implementado y los casos de uso probados se encuentran disponibl
       <description>En esta sección se comparten configuraciones de servicios y/o configuración de servidores basados en Ubuntu server LTS.
 URL repositorio: PENDIENTE. Por el momento hasta que finalize el proyecto, el contanido solo es compartido aquí, en este sitio web estático
 Tecnologías usadas Distribución Linux principal usada: Ubuntu server LTS - 22.04.. Despliegues/artículos actuales compartidos aquí Anfitrión KVMUbuntu server LTS, host anfitrión virtualización KVM
-Minikube driver kvmUbuntu server LTS, cluster k8s minikube (driver kvm)</description>
+Minikube (driver kvm)Ubuntu server LTS, cluster k8s minikube (driver kvm)</description>
     </item>
   </channel>
 </rss>

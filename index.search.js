@@ -31,7 +31,7 @@ var relearn_search_index = [
     "uri": "/kubernetes-notes/index.html"
   },
   {
-    "content": " En esta sección se comparten configuraciones de servicios y/o configuración de servidores basados en Ubuntu server LTS.\nURL repositorio: PENDIENTE. Por el momento hasta que finalize el proyecto, el contanido solo es compartido aquí, en este sitio web estático\nTecnologías usadas Distribución Linux principal usada: Ubuntu server LTS - 22.04.. Despliegues/artículos actuales compartidos aquí Anfitrión KVMUbuntu server LTS, host anfitrión virtualización KVM\nMinikube driver kvmUbuntu server LTS, cluster k8s minikube (driver kvm)\n",
+    "content": " En esta sección se comparten configuraciones de servicios y/o configuración de servidores basados en Ubuntu server LTS.\nURL repositorio: PENDIENTE. Por el momento hasta que finalize el proyecto, el contanido solo es compartido aquí, en este sitio web estático\nTecnologías usadas Distribución Linux principal usada: Ubuntu server LTS - 22.04.. Despliegues/artículos actuales compartidos aquí Anfitrión KVMUbuntu server LTS, host anfitrión virtualización KVM\nMinikube (driver kvm)Ubuntu server LTS, cluster k8s minikube (driver kvm)\n",
     "description": "Ubuntu server LTS",
     "tags": null,
     "title": "Ubuntu server LTS",
@@ -81,7 +81,7 @@ var relearn_search_index = [
       "container",
       "virtualization"
     ],
-    "title": "Minikube driver kvm",
+    "title": "Minikube (driver kvm)",
     "uri": "/ubuntu-lts-server/minikube-kvm/index.html"
   },
   {
