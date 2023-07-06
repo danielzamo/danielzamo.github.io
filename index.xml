@@ -31,10 +31,9 @@ Ansible - AWXEste proyecto es el despliegue de Ansible AWX, edición comunitaria
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://danielzamo.github.io/ubuntu-lts-server/index.html</guid>
       <description>En esta sección se comparten configuraciones de servicios y/o configuración de servidores basados en Ubuntu server LTS.
-Representación despliegue En la figura se representa el servidor con distribución Ubuntu LTS server 20.04&amp;hellip; inicial desplegado en este apartado. Esta configuración base inicial es utilizado para desplegar los servicios con esta distribución.
-El nombre hostname: ubuntu-k8s
-Especificación hardware:
-cpu: 4 - ALU RAM: 10Gb HHDD: 20Gb 1 x eth: enp1s0 URL repositorio: PENDIENTE.</description>
+Especificación hardware Especificación hardware:
+cpu: 4 - ALU RAM: 10Gb HHDD: 20Gb 1 x eth: enp1s0 En la figura se representa el servidor con distribución Ubuntu LTS server 20.04&amp;hellip; inicial desplegado en este apartado. Esta configuración inicial es utilizada como base para desplegar los servicios cuyo contenido es compartido aquí.
+El nombre hostname: ubuntu-k8s</description>
     </item>
     <item>
       <title>Kubernetes - notas</title>
