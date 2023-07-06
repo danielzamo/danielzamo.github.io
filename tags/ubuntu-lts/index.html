@@ -7,9 +7,8 @@
     <meta name="generator" content="Relearn 5.16.2+tip">
     <meta name="description" content="Documentation theme based Hugo Relearn Theme">
     <meta name="author" content="Daniel Oscar Zamo">
-    <title>Daemonset :: Site</title>
-    <link href="/kubernetes-notes/pod/daemonset/index.xml" rel="alternate" type="application/rss+xml" title="Daemonset :: Site">
-    <link href="/kubernetes-notes/pod/daemonset/index.print.html" rel="alternate" type="text/html" title="Daemonset :: Site">
+    <title>Ubuntu LTS :: Tag :: Site</title>
+    <link href="/tags/ubuntu-lts/index.xml" rel="alternate" type="application/rss+xml" title="Ubuntu LTS :: Tag :: Site">
     <link href="/images/logo.svg?1688612349" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/css/fontawesome-all.min.css?1688612349" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1688612349" rel="stylesheet"></noscript>
@@ -47,7 +46,7 @@
       }
     </style>
   </head>
-  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/kubernetes-notes/pod/daemonset/index.html">
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/tags/ubuntu-lts/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
@@ -57,90 +56,34 @@
             <span class="nav nav-next topbar-link"><i class="fa fa-chevron-right fa-fw"></i></span>
           </div>
           <div class="navigation">
-            <a class="nav nav-prev topbar-link" href="/kubernetes-notes/pod/resources/index.html" title="Sección resources (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
-          </div>
-          <div id="top-print-link">
-            <a class="print-link topbar-link" title='Print whole chapter (CTRL+ALT+p)' href="/kubernetes-notes/pod/daemonset/index.print.html">
-              <i class="fas fa-print fa-fw"></i>
-            </a>
+            <a class="nav nav-prev topbar-link" href="/index.html" title="Inicio sitio (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
           </div>
           <div id="breadcrumbs">
             <span id="sidebar-toggle-span">
               <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
 </span>
-            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Inicio sitio</span></a><meta itemprop="position" content="1"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/kubernetes-notes/index.html"><span itemprop="name">Kubernetes - notas</span></a><meta itemprop="position" content="2"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/kubernetes-notes/pod/index.html"><span itemprop="name">Pod</span></a><meta itemprop="position" content="3"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Daemonset</span><meta itemprop="position" content="4"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/tags/index.html"><span itemprop="name">Tags</span></a><meta itemprop="position" content="2"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Tag :: Ubuntu LTS</span><meta itemprop="position" content="3"></li>
             </ol>
-          </div>
-          <div class="default-animation progress">
-            <div class="toc-wrapper">
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#definición-mediante-manifiesto">Definición mediante manifiesto</a>
-      <ul>
-        <li><a href="#aplicar-el-manifiesto">Aplicar el manifiesto</a></li>
-        <li><a href="#otros-comandos">Otros comandos</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-            </div>
           </div>
         </div>
       </nav>
       <main id="body-inner" class="highlightable default" tabindex="-1">
         <div class="flex-block-wrapper">
 
-          <article class="default">
+          <article>
             <header class="headline">
-<div class="tags">
-  <a class="tag-link" href="/tags/documentation/index.html">documentation</a>
-  <a class="tag-link" href="/tags/kubernetes/index.html">kubernetes</a>
-</div>
             </header>
-<h1 id="daemonset">Daemonset</h1>
-
-<ul>
-<li>En <em>Kubernetes</em> definir/crear un <em>daemonset</em> hace que el pod/contenedor/es se ejecute en todos los nodos del cluster. Este tipo componente puede utilizarse, por ejemplo para aplicaciones que esten encargas de monitorizar los nodos del cluster kubernetes.</li>
+<h1 id="tag--ubuntu-lts">Tag :: Ubuntu LTS</h1>
+<ul class="columnize">
+  <li><a href="/ubuntu-lts-server/minikube-kvm/index.html">Minikube (driver kvm)</a></li>
 </ul>
-<h2 id="definición-mediante-manifiesto">Definición mediante manifiesto</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus my-codes<span style="color:#f92672">]</span>$ cat kubernetes/03-daemonset.yaml
-</span></span><span style="display:flex;"><span>apiVersion: apps/v1
-</span></span><span style="display:flex;"><span>kind: DaemonSet
-</span></span><span style="display:flex;"><span>metadata:
-</span></span><span style="display:flex;"><span>  name: nginx-deployment
-</span></span><span style="display:flex;"><span>spec:
-</span></span><span style="display:flex;"><span>  selector:
-</span></span><span style="display:flex;"><span>    matchLabels:
-</span></span><span style="display:flex;"><span>      app: nginx
-</span></span><span style="display:flex;"><span>  template:
-</span></span><span style="display:flex;"><span>    metadata:
-</span></span><span style="display:flex;"><span>      labels:
-</span></span><span style="display:flex;"><span>        app: nginx
-</span></span><span style="display:flex;"><span>    spec:
-</span></span><span style="display:flex;"><span>      containers:
-</span></span><span style="display:flex;"><span>      - name: nginx
-</span></span><span style="display:flex;"><span>        image: nginx:alpine
-</span></span><span style="display:flex;"><span>        ports:
-</span></span><span style="display:flex;"><span>        - containerPort: <span style="color:#ae81ff">80</span>
-</span></span></code></pre></div><h3 id="aplicar-el-manifiesto">Aplicar el manifiesto</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus my-codes<span style="color:#f92672">]</span>$ kubectl apply -f kubernetes/03-daemonset.yaml
-</span></span></code></pre></div><h3 id="otros-comandos">Otros comandos</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ kubectl apply -f codes-cli/03-daemonset.yaml 
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ kubectl get daemonset
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ k get pods
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># El siguiente comando elimina el daemonset (de todos los nodos, y mediante el manifiesto.</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ kubectl delete -f codes-cli/03-daemonset.yaml
-</span></span></code></pre></div>
-            <footer class="footline">
 
+            <footer class="footline">
             </footer>
-          </article>
-        </div>
+          </article>        </div>
       </main>
     </div>
     <aside id="sidebar" class="default-animation showVisitedLinks">
@@ -237,12 +180,12 @@
           <li data-nav-id="/ubuntu-lts-server/index.html" class=""><input type="checkbox" id="section-4fc9b185a94fd1ee26d248db0cd0f57c" aria-controls="subsections-4fc9b185a94fd1ee26d248db0cd0f57c"><label for="section-4fc9b185a94fd1ee26d248db0cd0f57c"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Ubuntu server LTS</span></label><a class="padding" href="/ubuntu-lts-server/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">4.</b> Ubuntu server LTS<i class="fas fa-check read-icon"></i></a><ul id="subsections-4fc9b185a94fd1ee26d248db0cd0f57c" class="morespace collapsible-menu">
           <li data-nav-id="/ubuntu-lts-server/kvm/index.html" class=""><a class="padding" href="/ubuntu-lts-server/kvm/index.html">Anfitrión KVM<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/ubuntu-lts-server/minikube-kvm/index.html" class=""><a class="padding" href="/ubuntu-lts-server/minikube-kvm/index.html">Minikube (driver kvm)<i class="fas fa-check read-icon"></i></a></li></ul></li>
-          <li data-nav-id="/kubernetes-notes/index.html" class="parent "><input type="checkbox" id="section-effcf26ac8361c0051846c35bf515993" aria-controls="subsections-effcf26ac8361c0051846c35bf515993" checked><label for="section-effcf26ac8361c0051846c35bf515993"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Kubernetes - notas</span></label><a class="padding" href="/kubernetes-notes/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">5.</b> Kubernetes - notas<i class="fas fa-check read-icon"></i></a><ul id="subsections-effcf26ac8361c0051846c35bf515993" class="morespace collapsible-menu">
-          <li data-nav-id="/kubernetes-notes/pod/index.html" class="parent alwaysopen"><input type="checkbox" id="section-8bf56febec1abf95d4a1a03236e88aa7" aria-controls="subsections-8bf56febec1abf95d4a1a03236e88aa7" checked><label for="section-8bf56febec1abf95d4a1a03236e88aa7"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Pod</span></label><a class="padding" href="/kubernetes-notes/pod/index.html">Pod<i class="fas fa-check read-icon"></i></a><ul id="subsections-8bf56febec1abf95d4a1a03236e88aa7" class="morespace collapsible-menu">
+          <li data-nav-id="/kubernetes-notes/index.html" class=""><input type="checkbox" id="section-effcf26ac8361c0051846c35bf515993" aria-controls="subsections-effcf26ac8361c0051846c35bf515993"><label for="section-effcf26ac8361c0051846c35bf515993"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Kubernetes - notas</span></label><a class="padding" href="/kubernetes-notes/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">5.</b> Kubernetes - notas<i class="fas fa-check read-icon"></i></a><ul id="subsections-effcf26ac8361c0051846c35bf515993" class="morespace collapsible-menu">
+          <li data-nav-id="/kubernetes-notes/pod/index.html" class="alwaysopen"><input type="checkbox" id="section-8bf56febec1abf95d4a1a03236e88aa7" aria-controls="subsections-8bf56febec1abf95d4a1a03236e88aa7" checked><label for="section-8bf56febec1abf95d4a1a03236e88aa7"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Pod</span></label><a class="padding" href="/kubernetes-notes/pod/index.html">Pod<i class="fas fa-check read-icon"></i></a><ul id="subsections-8bf56febec1abf95d4a1a03236e88aa7" class="morespace collapsible-menu">
           <li data-nav-id="/kubernetes-notes/pod/pod-minimal/index.html" class=""><a class="padding" href="/kubernetes-notes/pod/pod-minimal/index.html">Definición pod mediante manifiesto<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/kubernetes-notes/pod/env/index.html" class=""><a class="padding" href="/kubernetes-notes/pod/env/index.html">Sección env<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/kubernetes-notes/pod/resources/index.html" class=""><a class="padding" href="/kubernetes-notes/pod/resources/index.html">Sección resources<i class="fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/kubernetes-notes/pod/daemonset/index.html" class="active"><a class="padding" href="/kubernetes-notes/pod/daemonset/index.html">Daemonset<i class="fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+          <li data-nav-id="/kubernetes-notes/pod/daemonset/index.html" class=""><a class="padding" href="/kubernetes-notes/pod/daemonset/index.html">Daemonset<i class="fas fa-check read-icon"></i></a></li></ul></li></ul></li>
         </ul>
         <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter"></div>
         <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter">

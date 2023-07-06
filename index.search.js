@@ -74,9 +74,8 @@ var relearn_search_index = [
     "description": "Ubuntu server LTS, cluster k8s minikube (driver kvm)",
     "tags": [
       "kubernetes",
-      "projects",
       "KVM",
-      "UbuntuLTS",
+      "Ubuntu LTS",
       "minikube",
       "container",
       "virtualization"
@@ -176,6 +175,13 @@ var relearn_search_index = [
     "tags": null,
     "title": "Tags",
     "uri": "/tags/index.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "Tag :: Ubuntu LTS",
+    "uri": "/tags/ubuntu-lts/index.html"
   },
   {
     "content": "",
