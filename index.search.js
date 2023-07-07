@@ -24,13 +24,6 @@ var relearn_search_index = [
     "uri": "/kubernetes-notes/pod/index.html"
   },
   {
-    "content": " En esta sección se comparten artículos de KVM (Kernel Virtual Machine), virtualización completa para Linux en hardware x86.\nPor el momento, en esta sección se publican los siguientes casos de uso (despliegues/implementaciones):\nComando virshAdministración de máquinas virtuales invitadas KVM/libvirt\n",
-    "description": "Kernel Virtual Machine - KVM",
-    "tags": null,
-    "title": "KVM",
-    "uri": "/kvm/index.html"
-  },
-  {
     "content": " En esta sección se comparten configuraciones de servicios y/o configuración de servidores basados en Ubuntu server LTS.\nEspecificación hardware Especificación hardware:\ncpu: 4 - ALU RAM: 10Gb HHDD: 20Gb 1 x eth: enp1s0 En la figura se representa el servidor con distribución Ubuntu LTS server 20.04… inicial desplegado en este apartado. Esta configuración inicial es utilizada como base para desplegar los servicios cuyo contenido es compartido aquí.\nEl nombre hostname: ubuntu-k8s\nURL repositorio: PENDIENTE. Por el momento hasta que finalize el proyecto, el contanido solo es compartido aquí, en este sitio web estático.\nTecnologías usadas Distribución Linux principal usada: Ubuntu server LTS - 22.04... Despliegues/artículos actuales compartidos aquí Por el momento, en esta sección se publican los siguientes casos de uso (despliegues/implementaciones):\nAnfitrión KVMUbuntu server LTS, host anfitrión virtualización KVM\nMinikube (driver kvm)Ubuntu server LTS, cluster k8s minikube (driver kvm)\n",
     "description": "Ubuntu server LTS",
     "tags": null,
@@ -133,6 +126,13 @@ var relearn_search_index = [
     "uri": "/kubernetes-notes/pod/daemonset/index.html"
   },
   {
+    "content": " En esta sección se comparten artículos de KVM (Kernel Virtual Machine), virtualización completa para Linux en hardware x86.\nPor el momento, en esta sección se publican los siguientes casos de uso (despliegues/implementaciones):\nComando virshAdministración de máquinas virtuales invitadas KVM/libvirt\n",
+    "description": "Kernel Virtual Machine - KVM",
+    "tags": null,
+    "title": "KVM",
+    "uri": "/kvm/index.html"
+  },
+  {
     "content": "",
     "description": "",
     "tags": null,
@@ -161,7 +161,7 @@ var relearn_search_index = [
     "uri": "/tags/documentation/index.html"
   },
   {
-    "content": "En este sitio comparto algunos artículos, implementaciones y/o proyectos implementados.\nEste sitio esta generado con Hugo y utiliza inicialmente el theme Hugo Relearn Theme.\nAlgunos de los artículos y/o proyectos compartidos aquí son:\nKubernetes cluster k3sCluster kubernetes con k3s. 1 nodo master (control-plane) + 'N' nodos worker\nKubernetes - desplieguesAplicaciones y/o servicios de Kubernetes\nKVMKernel Virtual Machine - KVM\nUbuntu server LTSUbuntu server LTS\nKubernetes - notasEntradas relacionadas a Kubernetes. Todo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.\n",
+    "content": "En este sitio comparto algunos artículos, implementaciones y/o proyectos implementados.\nEste sitio esta generado con Hugo y utiliza inicialmente el theme Hugo Relearn Theme.\nAlgunos de los artículos y/o proyectos compartidos aquí son:\nKubernetes cluster k3sCluster kubernetes con k3s. 1 nodo master (control-plane) + 'N' nodos worker\nKubernetes - desplieguesAplicaciones y/o servicios de Kubernetes\nUbuntu server LTSUbuntu server LTS\nKubernetes - notasEntradas relacionadas a Kubernetes. Todo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.\nKVMKernel Virtual Machine - KVM\n",
     "description": "",
     "tags": null,
     "title": "Inicio sitio",
