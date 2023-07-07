@@ -32,7 +32,7 @@ Ansible - AWXEste proyecto es el despliegue de Ansible AWX, edición comunitaria
       <guid>http://danielzamo.github.io/kvm/index.html</guid>
       <description>En esta sección se comparten artículos de KVM (Kernel Virtual Machine), virtualización completa para Linux en hardware x86.
 Por el momento, en esta sección se publican los siguientes casos de uso (despliegues/implementaciones):
-Comando virshComando virsh (KVM, libvirtd)</description>
+Comando virshAdministración de máquinas virtuales invitadas KVM/libvirt</description>
     </item>
     <item>
       <title>Ubuntu server LTS</title>

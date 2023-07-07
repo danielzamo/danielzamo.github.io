@@ -24,7 +24,7 @@ var relearn_search_index = [
     "uri": "/kubernetes-notes/pod/index.html"
   },
   {
-    "content": " En esta sección se comparten artículos de KVM (Kernel Virtual Machine), virtualización completa para Linux en hardware x86.\nPor el momento, en esta sección se publican los siguientes casos de uso (despliegues/implementaciones):\nComando virshComando virsh (KVM, libvirtd)\n",
+    "content": " En esta sección se comparten artículos de KVM (Kernel Virtual Machine), virtualización completa para Linux en hardware x86.\nPor el momento, en esta sección se publican los siguientes casos de uso (despliegues/implementaciones):\nComando virshAdministración de máquinas virtuales invitadas KVM/libvirt\n",
     "description": "Kernel Virtual Machine - KVM",
     "tags": null,
     "title": "KVM",
@@ -68,7 +68,7 @@ var relearn_search_index = [
   },
   {
     "content": " En este artículo es una hoja de referencia parcial de los comandos de virsh\nQué virsh? virsh es una interfaz de usuario de administración para dominios invitados (guest, o m’aquinas virtuales) de libvirt. Con virsh se puede crear, pausar, reiniciar, cerrar dominios y realizar diferentes tareas de sobre los guest (VM) actuales disponibles en una plataforma de hipervisor de virtualización KVM/libvirt.\nReferencias Virsh commands cheatsheet to manage KVM guest virtual machines. ",
-    "description": "Comando virsh (KVM, libvirtd)",
+    "description": "Administración de máquinas virtuales invitadas KVM/libvirt",
     "tags": [
       "virtualization",
       "KVM",
