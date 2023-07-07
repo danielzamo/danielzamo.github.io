@@ -10,21 +10,21 @@
     <title>Kubernetes - despliegues :: Site</title>
     <link href="http://danielzamo.github.io/kubernetes-deployments/index.html" rel="canonical" type="text/html" title="Kubernetes - despliegues :: Site">
     <link href="/kubernetes-deployments/index.xml" rel="alternate" type="application/rss+xml" title="Kubernetes - despliegues :: Site">
-    <link href="/images/logo.svg?1688757480" rel="icon" type="image/svg+xml">
+    <link href="/images/logo.svg?1688757486" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1688757480" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1688757480" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1688757480" rel="stylesheet">
-    <link href="/css/auto-complete.css?1688757480" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1688757480" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1688757480" rel="stylesheet">
-    <link href="/css/fonts.css?1688757480" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1688757480" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1688757480" rel="stylesheet">
-    <link href="/css/theme-relearn-dark.css?1688757480" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1688757480" rel="stylesheet">
-    <link href="/css/print.css?1688757480" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1688757480" rel="stylesheet">
-    <link href="/css/ie.css?1688757480" rel="stylesheet">
-    <script src="/js/url.js?1688757480"></script>
-    <script src="/js/variant.js?1688757480"></script>
+    <link href="/css/fontawesome-all.min.css?1688757486" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1688757486" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1688757486" rel="stylesheet">
+    <link href="/css/auto-complete.css?1688757486" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1688757486" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1688757486" rel="stylesheet">
+    <link href="/css/fonts.css?1688757486" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1688757486" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1688757486" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1688757486" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1688757486" rel="stylesheet">
+    <link href="/css/print.css?1688757486" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1688757486" rel="stylesheet">
+    <link href="/css/ie.css?1688757486" rel="stylesheet">
+    <script src="/js/url.js?1688757486"></script>
+    <script src="/js/variant.js?1688757486"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -105,10 +105,10 @@
 <p>Este proyecto es el despliegue de <em><strong>Ansible AWX</strong></em>, edición comunitaria de <em><strong>Red Hat Ansible Tower</strong></em>.</p>
 <p>En la siguiente representación se muestra un diagrama del despliegue. El cual es realizado sobre un <em>host motor</em> de <em>kubernetes</em> con <em>minikube</em> con <em>libvirt</em> como runtime (driver <em>kvm</em>).</p>
 <p>
-<a href="#image-66e72cc0e90e1e5ba1a76087e90dc0bb" class="lightbox-link">
+<a href="#image-9f3753b361341d30630168f9ed093b24" class="lightbox-link">
 <img src="/kubernetes-deployments/ansible-awx/ansible-server-awx.png" alt="Representación del servicio Ansible AWX desplegado" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-66e72cc0e90e1e5ba1a76087e90dc0bb">
+<a href="javascript:history.back();" class="lightbox" id="image-9f3753b361341d30630168f9ed093b24">
 <img src="/kubernetes-deployments/ansible-awx/ansible-server-awx.png" alt="Representación del servicio Ansible AWX desplegado" class="lightbox-image" loading="lazy">
 </a></p>
 <h2 id="tecnologías-utilizadas">Tecnologías utilizadas</h2>
@@ -141,10 +141,10 @@
 </span></span><span style="display:flex;"><span>kubectl port-forward service/ansible-awx-service --address 0.0.0.0 10445:80 &amp;
 </span></span></code></pre></div><p>Ansible AWX debería estar disponible en el URL <code>http://&lt;IP_SERVIDOR_KUBERNETES&gt;:10445</code>. En este caso ahora implementado el ingreso a la interface Web se muestra en la siguiente captura.</p>
 <p>
-<a href="#image-5513d1b41d1913693c84edb267cacf06" class="lightbox-link">
+<a href="#image-33835c5a01e73bd79c1edebf40fa10a4" class="lightbox-link">
 <img src="/kubernetes-deployments/ansible-awx/ansible-awx-gui-welcome.png" alt="Ingreso a la interface Web de Ansible AWX desplegado" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-5513d1b41d1913693c84edb267cacf06">
+<a href="javascript:history.back();" class="lightbox" id="image-33835c5a01e73bd79c1edebf40fa10a4">
 <img src="/kubernetes-deployments/ansible-awx/ansible-awx-gui-welcome.png" alt="Ingreso a la interface Web de Ansible AWX desplegado" class="lightbox-image" loading="lazy">
 </a></p>
 <h2 id="repositorio">Repositorio</h2>
@@ -159,8 +159,8 @@
         </div>
       </main>
     </div>
-    <script src="/js/clipboard.min.js?1688757481" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1688757481" defer></script>
-    <script src="/js/theme.js?1688757481" defer></script>
+    <script src="/js/clipboard.min.js?1688757486" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1688757486" defer></script>
+    <script src="/js/theme.js?1688757486" defer></script>
   </body>
 </html>
