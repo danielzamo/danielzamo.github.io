@@ -19,7 +19,7 @@ Especificación inicial 1 x bridge: br0 1 x ethernet: enp1s0 Configuración IP: 
       <link>http://danielzamo.github.io/kvm/virsh/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://danielzamo.github.io/kvm/virsh/index.html</guid>
-      <description>En este artículo es una hoja de referencia parcial de los comandos de virsh
+      <description>En este artículo es una hoja de referencia parcial de los comandos de virsh.
 Qué virsh? virsh es una interfaz de usuario de administración para dominios invitados (guest, o m&amp;rsquo;aquinas virtuales) de libvirt. Con virsh se puede crear, pausar, reiniciar, cerrar dominios y realizar diferentes tareas de sobre los guest (VM) actuales disponibles en una plataforma de hipervisor de virtualización KVM/libvirt.
 Referencias Virsh commands cheatsheet to manage KVM guest virtual machines.</description>
     </item>
