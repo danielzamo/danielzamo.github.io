@@ -67,7 +67,7 @@ var relearn_search_index = [
     "uri": "/kubernetes-deployments/ansible-awx/index.html"
   },
   {
-    "content": " En este artículo es una hoja de referencia parcial de los comandos de virsh.\nQué virsh? virsh es una interfaz de usuario de administración para dominios invitados (guest, o m’aquinas virtuales) de libvirt. Con virsh se puede crear, pausar, reiniciar, cerrar dominios y realizar diferentes tareas de sobre los guest (VM) actuales disponibles en una plataforma de hipervisor de virtualización KVM/libvirt.\nReferencias Virsh commands cheatsheet to manage KVM guest virtual machines. ",
+    "content": " En este artículo es una hoja de referencia parcial de los comandos de virsh.\nQué virsh? virsh es una interfaz de usuario de administración para dominios invitados (guest, o m’aquinas virtuales) de libvirt. Con virsh se puede crear, pausar, reiniciar, cerrar dominios y realizar diferentes tareas de sobre los guest (VM) actuales disponibles en una plataforma de hipervisor de virtualización KVM/libvirt.\nReferencias Virsh commands cheatsheet to manage KVM guest virtual machines. How to create snapshot in Linux KVM VM/Domain. ",
     "description": "Administración de máquinas virtuales invitadas KVM/libvirt",
     "tags": [
       "virtualization",
