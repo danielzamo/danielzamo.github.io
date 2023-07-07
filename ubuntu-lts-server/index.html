@@ -10,20 +10,20 @@
     <title>Ubuntu server LTS :: Site</title>
     <link href="/ubuntu-lts-server/index.xml" rel="alternate" type="application/rss+xml" title="Ubuntu server LTS :: Site">
     <link href="/ubuntu-lts-server/index.print.html" rel="alternate" type="text/html" title="Ubuntu server LTS :: Site">
-    <link href="/images/logo.svg?1688754651" rel="icon" type="image/svg+xml">
+    <link href="/images/logo.svg?1688755498" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1688754651" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1688754651" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1688754651" rel="stylesheet">
-    <link href="/css/auto-complete.css?1688754651" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1688754651" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1688754651" rel="stylesheet">
-    <link href="/css/fonts.css?1688754651" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1688754651" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1688754651" rel="stylesheet">
-    <link href="/css/theme-relearn-dark.css?1688754651" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1688754651" rel="stylesheet">
-    <link href="/css/print.css?1688754651" rel="stylesheet" media="print">
-    <link href="/css/ie.css?1688754651" rel="stylesheet">
-    <script src="/js/url.js?1688754651"></script>
-    <script src="/js/variant.js?1688754651"></script>
+    <link href="/css/fontawesome-all.min.css?1688755498" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1688755498" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1688755498" rel="stylesheet">
+    <link href="/css/auto-complete.css?1688755498" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1688755498" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1688755498" rel="stylesheet">
+    <link href="/css/fonts.css?1688755498" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1688755498" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1688755498" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1688755498" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1688755498" rel="stylesheet">
+    <link href="/css/print.css?1688755498" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1688755498" rel="stylesheet">
+    <script src="/js/url.js?1688755498"></script>
+    <script src="/js/variant.js?1688755498"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -57,7 +57,7 @@
             <a class="nav nav-next topbar-link" href="/ubuntu-lts-server/kvm/index.html" title="Anfitrión KVM (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
           </div>
           <div class="navigation">
-            <a class="nav nav-prev topbar-link" href="/kubernetes-deployments/ansible-awx/index.html" title="Ansible - AWX (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+            <a class="nav nav-prev topbar-link" href="/kvm/virsh/index.html" title="Comando virsh (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
           </div>
           <div id="top-print-link">
             <a class="print-link topbar-link" title='Print whole chapter (CTRL+ALT+p)' href="/ubuntu-lts-server/index.print.html">
@@ -109,10 +109,10 @@
 </ul>
 <p>En la figura se representa el servidor con distribución <a href="https://ubuntu.com" target="_blank">Ubuntu LTS server 20.04&hellip;</a> inicial desplegado en este apartado. Esta configuración inicial es utilizada como base para desplegar los servicios cuyo contenido es compartido aquí.</p>
 <p>
-<a href="#image-a607f92132ca92d3f8b9c226129ba459" class="lightbox-link">
+<a href="#image-5e69c4c90029de259b07022e2e5b69de" class="lightbox-link">
 <img src="ubuntu-k8s.png" alt="Ubuntu LTS server" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-a607f92132ca92d3f8b9c226129ba459">
+<a href="javascript:history.back();" class="lightbox" id="image-5e69c4c90029de259b07022e2e5b69de">
 <img src="ubuntu-k8s.png" alt="Ubuntu LTS server" class="lightbox-image" loading="lazy">
 </a></p>
 <p>El nombre hostname: <code>ubuntu-k8s</code></p>
@@ -216,18 +216,20 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1688754651" defer></script>
-        <script src="/js/lunr/lunr.min.js?1688754651" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1688754651" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1688754651" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1688754651" defer></script>
-        <script src="/js/search.js?1688754651" defer></script>
+        <script src="/js/auto-complete.js?1688755498" defer></script>
+        <script src="/js/lunr/lunr.min.js?1688755498" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1688755498" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1688755498" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1688755498" defer></script>
+        <script src="/js/search.js?1688755498" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics enlarge morespace collapsible-menu">
           <li data-nav-id="/kubernetes-cluster-k3s/index.html" class=""><a class="padding" href="/kubernetes-cluster-k3s/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">1.</b> Kubernetes cluster k3s<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/kubernetes-deployments/index.html" class=""><input type="checkbox" id="section-8ab3651a2ec4764fa8f1f50af6e7094d" aria-controls="subsections-8ab3651a2ec4764fa8f1f50af6e7094d"><label for="section-8ab3651a2ec4764fa8f1f50af6e7094d"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Kubernetes - despliegues</span></label><a class="padding" href="/kubernetes-deployments/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">2.</b> Kubernetes - despliegues<i class="fas fa-check read-icon"></i></a><ul id="subsections-8ab3651a2ec4764fa8f1f50af6e7094d" class="morespace collapsible-menu">
           <li data-nav-id="/kubernetes-deployments/ansible-awx/index.html" class=""><a class="padding" href="/kubernetes-deployments/ansible-awx/index.html">Ansible - AWX<i class="fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/kvm/index.html" class=""><input type="checkbox" id="section-30380cba3049f509579543813d6a6ac8" aria-controls="subsections-30380cba3049f509579543813d6a6ac8"><label for="section-30380cba3049f509579543813d6a6ac8"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu KVM</span></label><a class="padding" href="/kvm/index.html">KVM<i class="fas fa-check read-icon"></i></a><ul id="subsections-30380cba3049f509579543813d6a6ac8" class="morespace collapsible-menu">
+          <li data-nav-id="/kvm/virsh/index.html" class=""><a class="padding" href="/kvm/virsh/index.html">Comando virsh<i class="fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/ubuntu-lts-server/index.html" class="active parent "><input type="checkbox" id="section-4fc9b185a94fd1ee26d248db0cd0f57c" aria-controls="subsections-4fc9b185a94fd1ee26d248db0cd0f57c" checked><label for="section-4fc9b185a94fd1ee26d248db0cd0f57c"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Ubuntu server LTS</span></label><a class="padding" href="/ubuntu-lts-server/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">4.</b> Ubuntu server LTS<i class="fas fa-check read-icon"></i></a><ul id="subsections-4fc9b185a94fd1ee26d248db0cd0f57c" class="morespace collapsible-menu">
           <li data-nav-id="/ubuntu-lts-server/kvm/index.html" class=""><a class="padding" href="/ubuntu-lts-server/kvm/index.html">Anfitrión KVM<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/ubuntu-lts-server/minikube-kvm/index.html" class=""><a class="padding" href="/ubuntu-lts-server/minikube-kvm/index.html">Minikube (driver kvm)<i class="fas fa-check read-icon"></i></a></li></ul></li>
@@ -237,9 +239,6 @@
           <li data-nav-id="/kubernetes-notes/pod/env/index.html" class=""><a class="padding" href="/kubernetes-notes/pod/env/index.html">Sección env<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/kubernetes-notes/pod/resources/index.html" class=""><a class="padding" href="/kubernetes-notes/pod/resources/index.html">Sección resources<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/kubernetes-notes/pod/daemonset/index.html" class=""><a class="padding" href="/kubernetes-notes/pod/daemonset/index.html">Daemonset<i class="fas fa-check read-icon"></i></a></li></ul></li></ul></li>
-          <li data-nav-id="/kvm/index.html" class=""><input type="checkbox" id="section-30380cba3049f509579543813d6a6ac8" aria-controls="subsections-30380cba3049f509579543813d6a6ac8"><label for="section-30380cba3049f509579543813d6a6ac8"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu KVM</span></label><a class="padding" href="/kvm/index.html">KVM<i class="fas fa-check read-icon"></i></a><ul id="subsections-30380cba3049f509579543813d6a6ac8" class="morespace collapsible-menu">
-          <li data-nav-id="/kvm/virsh/index.html" class=""><a class="padding" href="/kvm/virsh/index.html">Anfitrión KVM<i class="fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/kvm/virt-install/index.html" class=""><a class="padding" href="/kvm/virt-install/index.html">Minikube (driver kvm)<i class="fas fa-check read-icon"></i></a></li></ul></li>
         </ul>
         <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter"></div>
         <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter">
@@ -294,12 +293,12 @@
           <a class="github-button" href="https://github.com/McShelby/hugo-theme-relearn" data-icon="octicon-star" data-show-count="true" aria-label="Star McShelby/hugo-theme-relearn on GitHub">Star</a>
           <a class="github-button" href="https://github.com/McShelby/hugo-theme-relearn/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork McShelby/hugo-theme-relearn on GitHub">Fork</a>
           <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
-          <script async src="/js/buttons.js?1688754651"></script>
+          <script async src="/js/buttons.js?1688755498"></script>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1688754651" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1688754651" defer></script>
-    <script src="/js/theme.js?1688754651" defer></script>
+    <script src="/js/clipboard.min.js?1688755498" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1688755498" defer></script>
+    <script src="/js/theme.js?1688755498" defer></script>
   </body>
 </html>

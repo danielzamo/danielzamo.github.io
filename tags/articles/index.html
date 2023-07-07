@@ -5,11 +5,10 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.101.0">
     <meta name="generator" content="Relearn 5.16.2+tip">
-    <meta name="description" content="Ubuntu server LTS, cluster k8s minikube (driver kvm)">
+    <meta name="description" content="Documentation theme based Hugo Relearn Theme">
     <meta name="author" content="Daniel Oscar Zamo">
-    <title>Minikube (driver kvm) :: Site</title>
-    <link href="/ubuntu-lts-server/minikube-kvm/index.xml" rel="alternate" type="application/rss+xml" title="Minikube (driver kvm) :: Site">
-    <link href="/ubuntu-lts-server/minikube-kvm/index.print.html" rel="alternate" type="text/html" title="Minikube (driver kvm) :: Site">
+    <title>Articles :: Tag :: Site</title>
+    <link href="/tags/articles/index.xml" rel="alternate" type="application/rss+xml" title="Articles :: Tag :: Site">
     <link href="/images/logo.svg?1688755498" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/css/fontawesome-all.min.css?1688755498" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1688755498" rel="stylesheet"></noscript>
@@ -47,102 +46,44 @@
       }
     </style>
   </head>
-  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/ubuntu-lts-server/minikube-kvm/index.html">
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/tags/articles/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
       <nav id="topbar" class="highlightable">
         <div>
           <div class="navigation">
-            <a class="nav nav-next topbar-link" href="/kubernetes-notes/index.html" title="Kubernetes - notas (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+            <span class="nav nav-next topbar-link"><i class="fa fa-chevron-right fa-fw"></i></span>
           </div>
           <div class="navigation">
-            <a class="nav nav-prev topbar-link" href="/ubuntu-lts-server/kvm/index.html" title="Anfitrión KVM (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
-          </div>
-          <div id="top-print-link">
-            <a class="print-link topbar-link" title='Print whole chapter (CTRL+ALT+p)' href="/ubuntu-lts-server/minikube-kvm/index.print.html">
-              <i class="fas fa-print fa-fw"></i>
-            </a>
+            <a class="nav nav-prev topbar-link" href="/index.html" title="Inicio sitio (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
           </div>
           <div id="breadcrumbs">
             <span id="sidebar-toggle-span">
               <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
 </span>
-            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Inicio sitio</span></a><meta itemprop="position" content="1"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/ubuntu-lts-server/index.html"><span itemprop="name">Ubuntu server LTS</span></a><meta itemprop="position" content="2"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Minikube (driver kvm)</span><meta itemprop="position" content="3"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/tags/index.html"><span itemprop="name">Tags</span></a><meta itemprop="position" content="2"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Tag :: Articles</span><meta itemprop="position" content="3"></li>
             </ol>
-          </div>
-          <div class="default-animation progress">
-            <div class="toc-wrapper">
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#tecnologías-utilizadas">Tecnologías utilizadas</a></li>
-    <li><a href="#especificación-inicial">Especificación inicial</a>
-      <ul>
-        <li><a href="#dependecias-cumplida">Dependecias cumplida</a></li>
-      </ul>
-    </li>
-    <li><a href="#actualización-sistema-instalando-paquetes-opcionales">Actualización sistema, instalando paquetes (opcionales)</a></li>
-    <li><a href="#instalaciónconfiguración-de-minikube">Instalación/configuración de minikube</a></li>
-    <li><a href="#instalación-de-kubectl">Instalación de kubectl</a></li>
-  </ul>
-</nav>
-            </div>
           </div>
         </div>
       </nav>
       <main id="body-inner" class="highlightable default" tabindex="-1">
         <div class="flex-block-wrapper">
 
-          <article class="default">
+          <article>
             <header class="headline">
-<div class="tags">
-  <a class="tag-link" href="/tags/container/index.html">container</a>
-  <a class="tag-link" href="/tags/kubernetes/index.html">kubernetes</a>
-  <a class="tag-link" href="/tags/kvm/index.html">KVM</a>
-  <a class="tag-link" href="/tags/minikube/index.html">minikube</a>
-  <a class="tag-link" href="/tags/ubuntu-lts/index.html">Ubuntu LTS</a>
-  <a class="tag-link" href="/tags/virtualization/index.html">virtualization</a>
-</div>
             </header>
-<h1 id="minikube-driver-kvm">Minikube (driver kvm)</h1>
-
-<blockquote>
-<p>Despliegue de cluster Ubuntu server LTS k8s minikube (driver kvm), en un simple host.</p>
-</blockquote>
-<h2 id="tecnologías-utilizadas">Tecnologías utilizadas</h2>
-<ul>
-<li><a href="https://minikube.sigs.k8s.io/docs/start/" target="_blank">Minikube</a></li>
-<li><a href="https://www.linux-kvm.org/page/Main_Page" target="_blank">KVM</a></li>
-<li><a href="https://ubuntu.com/" target="_blank">Ubuntu LTS 22.04..</a></li>
+<h1 id="tag--articles">Tag :: Articles</h1>
+<ul class="columnize">
+  <li><a href="/kvm/virsh/index.html">Comando virsh</a></li>
 </ul>
-<h2 id="especificación-inicial">Especificación inicial</h2>
-<p>&hellip;</p>
-<h3 id="dependecias-cumplida">Dependecias cumplida</h3>
-<p>En este depliegue se implementa un cluster minikube sobre un simple host. El driver usado es <em>kvm</em>. Se da por supuesto que se ha instalado el host anfitrión KVM. Si necesita ayuda puede consultar <a href="http://danielzamo.github.io/ubuntu-lts-server/kvm/" title="Anfitrión KVM">instalar anfitrión KVM</a> en Ubuntu LTS, en este mismo sitio.</p>
-<h2 id="actualización-sistema-instalando-paquetes-opcionales">Actualización sistema, instalando paquetes (opcionales)</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo apt -y update <span style="color:#f92672">&amp;&amp;</span> sudo apt -y upgrade
-</span></span></code></pre></div><h2 id="instalaciónconfiguración-de-minikube">Instalación/configuración de minikube</h2>
-<p>En este apartado se instala y configura un cluster minikube con driver kvm (REF LINK).</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ <span style="color:#75715e"># Instalacion minikube</span>
-</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo install minikube-linux-amd64 /usr/local/bin/minikube
-</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ minikube version
-</span></span></code></pre></div><h2 id="instalación-de-kubectl">Instalación de kubectl</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo curl -LO https://storage.googleapis.com/kubernetes-release/release/<span style="color:#e6db74">`</span>curl <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -s https://storage.googleapis.com/kubernetes-release/release/stable.txt<span style="color:#e6db74">`</span>/bin/linux/amd64/kubectl
-</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo chmod <span style="color:#ae81ff">755</span> ./kubectl
-</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo mv kubectl /usr/local/bin/
-</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ kubectl version -o json  --client
-</span></span></code></pre></div>
-            <footer class="footline">
 
+            <footer class="footline">
             </footer>
-          </article>
-        </div>
+          </article>        </div>
       </main>
     </div>
     <aside id="sidebar" class="default-animation showVisitedLinks">
@@ -238,9 +179,9 @@
           <li data-nav-id="/kubernetes-deployments/ansible-awx/index.html" class=""><a class="padding" href="/kubernetes-deployments/ansible-awx/index.html">Ansible - AWX<i class="fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/kvm/index.html" class=""><input type="checkbox" id="section-30380cba3049f509579543813d6a6ac8" aria-controls="subsections-30380cba3049f509579543813d6a6ac8"><label for="section-30380cba3049f509579543813d6a6ac8"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu KVM</span></label><a class="padding" href="/kvm/index.html">KVM<i class="fas fa-check read-icon"></i></a><ul id="subsections-30380cba3049f509579543813d6a6ac8" class="morespace collapsible-menu">
           <li data-nav-id="/kvm/virsh/index.html" class=""><a class="padding" href="/kvm/virsh/index.html">Comando virsh<i class="fas fa-check read-icon"></i></a></li></ul></li>
-          <li data-nav-id="/ubuntu-lts-server/index.html" class="parent "><input type="checkbox" id="section-4fc9b185a94fd1ee26d248db0cd0f57c" aria-controls="subsections-4fc9b185a94fd1ee26d248db0cd0f57c" checked><label for="section-4fc9b185a94fd1ee26d248db0cd0f57c"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Ubuntu server LTS</span></label><a class="padding" href="/ubuntu-lts-server/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">4.</b> Ubuntu server LTS<i class="fas fa-check read-icon"></i></a><ul id="subsections-4fc9b185a94fd1ee26d248db0cd0f57c" class="morespace collapsible-menu">
+          <li data-nav-id="/ubuntu-lts-server/index.html" class=""><input type="checkbox" id="section-4fc9b185a94fd1ee26d248db0cd0f57c" aria-controls="subsections-4fc9b185a94fd1ee26d248db0cd0f57c"><label for="section-4fc9b185a94fd1ee26d248db0cd0f57c"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Ubuntu server LTS</span></label><a class="padding" href="/ubuntu-lts-server/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">4.</b> Ubuntu server LTS<i class="fas fa-check read-icon"></i></a><ul id="subsections-4fc9b185a94fd1ee26d248db0cd0f57c" class="morespace collapsible-menu">
           <li data-nav-id="/ubuntu-lts-server/kvm/index.html" class=""><a class="padding" href="/ubuntu-lts-server/kvm/index.html">Anfitrión KVM<i class="fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/ubuntu-lts-server/minikube-kvm/index.html" class="active"><a class="padding" href="/ubuntu-lts-server/minikube-kvm/index.html">Minikube (driver kvm)<i class="fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/ubuntu-lts-server/minikube-kvm/index.html" class=""><a class="padding" href="/ubuntu-lts-server/minikube-kvm/index.html">Minikube (driver kvm)<i class="fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/kubernetes-notes/index.html" class=""><input type="checkbox" id="section-effcf26ac8361c0051846c35bf515993" aria-controls="subsections-effcf26ac8361c0051846c35bf515993"><label for="section-effcf26ac8361c0051846c35bf515993"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Kubernetes - notas</span></label><a class="padding" href="/kubernetes-notes/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">5.</b> Kubernetes - notas<i class="fas fa-check read-icon"></i></a><ul id="subsections-effcf26ac8361c0051846c35bf515993" class="morespace collapsible-menu">
           <li data-nav-id="/kubernetes-notes/pod/index.html" class="alwaysopen"><input type="checkbox" id="section-8bf56febec1abf95d4a1a03236e88aa7" aria-controls="subsections-8bf56febec1abf95d4a1a03236e88aa7" checked><label for="section-8bf56febec1abf95d4a1a03236e88aa7"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Pod</span></label><a class="padding" href="/kubernetes-notes/pod/index.html">Pod<i class="fas fa-check read-icon"></i></a><ul id="subsections-8bf56febec1abf95d4a1a03236e88aa7" class="morespace collapsible-menu">
           <li data-nav-id="/kubernetes-notes/pod/pod-minimal/index.html" class=""><a class="padding" href="/kubernetes-notes/pod/pod-minimal/index.html">Definición pod mediante manifiesto<i class="fas fa-check read-icon"></i></a></li>

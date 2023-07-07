@@ -5,25 +5,25 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.101.0">
     <meta name="generator" content="Relearn 5.16.2+tip">
-    <meta name="description" content="Ubuntu server LTS, host anfitrión virtualización KVM">
+    <meta name="description" content="Comando virsh (KVM, libvirtd)">
     <meta name="author" content="Daniel Oscar Zamo">
-    <title>Anfitrión KVM :: Site</title>
-    <link href="/kvm/virsh/index.xml" rel="alternate" type="application/rss+xml" title="Anfitrión KVM :: Site">
-    <link href="/kvm/virsh/index.print.html" rel="alternate" type="text/html" title="Anfitrión KVM :: Site">
-    <link href="/images/logo.svg?1688754651" rel="icon" type="image/svg+xml">
+    <title>Comando virsh :: Site</title>
+    <link href="/kvm/virsh/index.xml" rel="alternate" type="application/rss+xml" title="Comando virsh :: Site">
+    <link href="/kvm/virsh/index.print.html" rel="alternate" type="text/html" title="Comando virsh :: Site">
+    <link href="/images/logo.svg?1688755498" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1688754651" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1688754651" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1688754651" rel="stylesheet">
-    <link href="/css/auto-complete.css?1688754651" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1688754651" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1688754651" rel="stylesheet">
-    <link href="/css/fonts.css?1688754651" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1688754651" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1688754651" rel="stylesheet">
-    <link href="/css/theme-relearn-dark.css?1688754651" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1688754651" rel="stylesheet">
-    <link href="/css/print.css?1688754651" rel="stylesheet" media="print">
-    <link href="/css/ie.css?1688754651" rel="stylesheet">
-    <script src="/js/url.js?1688754651"></script>
-    <script src="/js/variant.js?1688754651"></script>
+    <link href="/css/fontawesome-all.min.css?1688755498" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1688755498" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1688755498" rel="stylesheet">
+    <link href="/css/auto-complete.css?1688755498" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1688755498" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1688755498" rel="stylesheet">
+    <link href="/css/fonts.css?1688755498" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1688755498" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1688755498" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1688755498" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1688755498" rel="stylesheet">
+    <link href="/css/print.css?1688755498" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1688755498" rel="stylesheet">
+    <script src="/js/url.js?1688755498"></script>
+    <script src="/js/variant.js?1688755498"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -54,7 +54,7 @@
       <nav id="topbar" class="highlightable">
         <div>
           <div class="navigation">
-            <a class="nav nav-next topbar-link" href="/kvm/virt-install/index.html" title="Minikube (driver kvm) (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+            <a class="nav nav-next topbar-link" href="/ubuntu-lts-server/index.html" title="Ubuntu server LTS (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
           </div>
           <div class="navigation">
             <a class="nav nav-prev topbar-link" href="/kvm/index.html" title="KVM (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
@@ -72,20 +72,15 @@
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Inicio sitio</span></a><meta itemprop="position" content="1"> &gt; </li>
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/kvm/index.html"><span itemprop="name">KVM</span></a><meta itemprop="position" content="2"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Anfitrión KVM</span><meta itemprop="position" content="3"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Comando virsh</span><meta itemprop="position" content="3"></li>
             </ol>
           </div>
           <div class="default-animation progress">
             <div class="toc-wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#especificación-inicial">Especificación inicial</a></li>
-    <li><a href="#actualización-sistema-instalando-paquetes-opcionales">Actualización sistema, instalando paquetes (opcionales)</a></li>
-    <li><a href="#instalaciónconfiguración-de-kvm">Instalación/configuración de KVM</a>
-      <ul>
-        <li><a href="#configuración-bridge-e-interface-eth">Configuración bridge e interface eth</a></li>
-      </ul>
-    </li>
+    <li><a href="#qué-virsh">Qué virsh?</a></li>
+    <li><a href="#referencias">Referencias</a></li>
   </ul>
 </nav>
             </div>
@@ -98,93 +93,24 @@
           <article class="default">
             <header class="headline">
 <div class="tags">
+  <a class="tag-link" href="/tags/articles/index.html">Articles</a>
   <a class="tag-link" href="/tags/kvm/index.html">KVM</a>
-  <a class="tag-link" href="/tags/projects/index.html">projects</a>
-  <a class="tag-link" href="/tags/ubuntults/index.html">UbuntuLTS</a>
+  <a class="tag-link" href="/tags/libvirtd/index.html">libvirtd</a>
   <a class="tag-link" href="/tags/virtualization/index.html">virtualization</a>
 </div>
             </header>
-<h1 id="anfitrión-kvm">Anfitrión KVM</h1>
+<h1 id="comando-virsh">Comando virsh</h1>
 
 <blockquote>
-<p>Despliegue de servidor host anfitrión host virtualización KVM.</p>
+<p>En este artículo es una hoja de referencia parcial de los comandos de virsh</p>
 </blockquote>
-<h2 id="especificación-inicial">Especificación inicial</h2>
+<h2 id="qué-virsh">Qué virsh?</h2>
+<p><code>virsh</code> es una interfaz de usuario de administración para dominios invitados (guest, o m&rsquo;aquinas virtuales) de libvirt. Con <code>virsh</code> se puede crear, pausar, reiniciar, cerrar dominios y realizar diferentes tareas de sobre los guest (VM) actuales disponibles en una plataforma de hipervisor de virtualización <em><strong>KVM</strong></em>/<em><strong>libvirt</strong></em>.</p>
+<h2 id="referencias">Referencias</h2>
 <ul>
-<li>1 x bridge: <code>br0</code></li>
-<li>1 x ethernet: <code>enp1s0</code></li>
-<li>Configuración IP:
-<table>
-<thead>
-<tr>
-<th style="text-align:right">Especificación</th>
-<th style="text-align:left">asignación (fija)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right"><em>IP</em></td>
-<td style="text-align:left"><code>192.168.123.35</code></td>
-</tr>
-<tr>
-<td style="text-align:right"><em>gateway</em></td>
-<td style="text-align:left"><code>192.168.123.1</code></td>
-</tr>
-<tr>
-<td style="text-align:right"><em>red</em></td>
-<td style="text-align:left"><code>192.168.123.0/24</code></td>
-</tr>
-<tr>
-<td style="text-align:right"><em>DNS1-3</em></td>
-<td style="text-align:left"><code>192.168.123.1,8.8.8.8,1.1.1.1</code></td>
-</tr>
-</tbody>
-</table>
-</li>
+<li><a href="https://computingforgeeks.com/virsh-commands-cheatsheet/" target="_blank">Virsh commands cheatsheet to manage KVM guest virtual machines</a>.</li>
 </ul>
-<h2 id="actualización-sistema-instalando-paquetes-opcionales">Actualización sistema, instalando paquetes (opcionales)</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo apt -y update <span style="color:#f92672">&amp;&amp;</span> sudo apt -y upgrade
-</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo apt install -y neovim tmux vim vim-scripts exuberant-ctags python-greenlet-dev
-</span></span></code></pre></div><h2 id="instalaciónconfiguración-de-kvm">Instalación/configuración de KVM</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Install KVM in Ubuntu</span>
-</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo apt -y install qemu-kvm libvirt-dev bridge-utils libvirt-daemon-system libvirt-daemon virtinst bridge-utils libosinfo-bin libguestfs-tools virt-top
-</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo usermod -a $USER -G libvirt,libvirt-qemu,libvirt-dnsmasq,kvm
-</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo modprobe vhost_net
-</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo lsmod | grep vhost
-</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ echo <span style="color:#e6db74">&#34;vhost_net&#34;</span> | sudo tee -a /etc/modules
-</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo vim /etc/netplan/00-installer-config.yaml
-</span></span></code></pre></div><h3 id="configuración-bridge-e-interface-eth">Configuración bridge e interface eth</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ cat /etc/netplan/00-installer-config.yaml 
-</span></span><span style="display:flex;"><span>network:
-</span></span><span style="display:flex;"><span>  ethernets:
-</span></span><span style="display:flex;"><span>    enp1s0:
-</span></span><span style="display:flex;"><span>      dhcp4: false
-</span></span><span style="display:flex;"><span>      dhcp6: false
-</span></span><span style="display:flex;"><span>  bridges:
-</span></span><span style="display:flex;"><span>    br0:
-</span></span><span style="display:flex;"><span>      interfaces: <span style="color:#f92672">[</span>enp1s0<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>      dhcp4: false
-</span></span><span style="display:flex;"><span>      addresses: <span style="color:#f92672">[</span>192.168.123.35/24<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>      macaddress: 52:54:00:e8:a8:08
-</span></span><span style="display:flex;"><span>      routes:
-</span></span><span style="display:flex;"><span>        - to: default
-</span></span><span style="display:flex;"><span>          via: 192.168.123.1 
-</span></span><span style="display:flex;"><span>          metric: <span style="color:#ae81ff">100</span>
-</span></span><span style="display:flex;"><span>      nameservers:
-</span></span><span style="display:flex;"><span>        addresses: <span style="color:#f92672">[</span>192.168.123.1,1.1.1.1,8.8.8.8<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>        search: <span style="color:#f92672">[</span>my.net<span style="color:#f92672">]</span>   
-</span></span><span style="display:flex;"><span>      parameters:
-</span></span><span style="display:flex;"><span>        stp: false
-</span></span><span style="display:flex;"><span>      dhcp6: false
-</span></span><span style="display:flex;"><span>  version: <span style="color:#ae81ff">2</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo netplan apply
-</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ ip a
-</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ wget www.google.com
-</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ rm index.html 
-</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ ip a
-</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo reboot
-</span></span></code></pre></div>
+
             <footer class="footline">
 
             </footer>
@@ -271,18 +197,20 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1688754651" defer></script>
-        <script src="/js/lunr/lunr.min.js?1688754651" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1688754651" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1688754651" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1688754651" defer></script>
-        <script src="/js/search.js?1688754651" defer></script>
+        <script src="/js/auto-complete.js?1688755498" defer></script>
+        <script src="/js/lunr/lunr.min.js?1688755498" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1688755498" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1688755498" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1688755498" defer></script>
+        <script src="/js/search.js?1688755498" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics enlarge morespace collapsible-menu">
           <li data-nav-id="/kubernetes-cluster-k3s/index.html" class=""><a class="padding" href="/kubernetes-cluster-k3s/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">1.</b> Kubernetes cluster k3s<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/kubernetes-deployments/index.html" class=""><input type="checkbox" id="section-8ab3651a2ec4764fa8f1f50af6e7094d" aria-controls="subsections-8ab3651a2ec4764fa8f1f50af6e7094d"><label for="section-8ab3651a2ec4764fa8f1f50af6e7094d"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Kubernetes - despliegues</span></label><a class="padding" href="/kubernetes-deployments/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">2.</b> Kubernetes - despliegues<i class="fas fa-check read-icon"></i></a><ul id="subsections-8ab3651a2ec4764fa8f1f50af6e7094d" class="morespace collapsible-menu">
           <li data-nav-id="/kubernetes-deployments/ansible-awx/index.html" class=""><a class="padding" href="/kubernetes-deployments/ansible-awx/index.html">Ansible - AWX<i class="fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/kvm/index.html" class="parent "><input type="checkbox" id="section-30380cba3049f509579543813d6a6ac8" aria-controls="subsections-30380cba3049f509579543813d6a6ac8" checked><label for="section-30380cba3049f509579543813d6a6ac8"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu KVM</span></label><a class="padding" href="/kvm/index.html">KVM<i class="fas fa-check read-icon"></i></a><ul id="subsections-30380cba3049f509579543813d6a6ac8" class="morespace collapsible-menu">
+          <li data-nav-id="/kvm/virsh/index.html" class="active"><a class="padding" href="/kvm/virsh/index.html">Comando virsh<i class="fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/ubuntu-lts-server/index.html" class=""><input type="checkbox" id="section-4fc9b185a94fd1ee26d248db0cd0f57c" aria-controls="subsections-4fc9b185a94fd1ee26d248db0cd0f57c"><label for="section-4fc9b185a94fd1ee26d248db0cd0f57c"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Ubuntu server LTS</span></label><a class="padding" href="/ubuntu-lts-server/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">4.</b> Ubuntu server LTS<i class="fas fa-check read-icon"></i></a><ul id="subsections-4fc9b185a94fd1ee26d248db0cd0f57c" class="morespace collapsible-menu">
           <li data-nav-id="/ubuntu-lts-server/kvm/index.html" class=""><a class="padding" href="/ubuntu-lts-server/kvm/index.html">Anfitrión KVM<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/ubuntu-lts-server/minikube-kvm/index.html" class=""><a class="padding" href="/ubuntu-lts-server/minikube-kvm/index.html">Minikube (driver kvm)<i class="fas fa-check read-icon"></i></a></li></ul></li>
@@ -292,9 +220,6 @@
           <li data-nav-id="/kubernetes-notes/pod/env/index.html" class=""><a class="padding" href="/kubernetes-notes/pod/env/index.html">Sección env<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/kubernetes-notes/pod/resources/index.html" class=""><a class="padding" href="/kubernetes-notes/pod/resources/index.html">Sección resources<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/kubernetes-notes/pod/daemonset/index.html" class=""><a class="padding" href="/kubernetes-notes/pod/daemonset/index.html">Daemonset<i class="fas fa-check read-icon"></i></a></li></ul></li></ul></li>
-          <li data-nav-id="/kvm/index.html" class="parent "><input type="checkbox" id="section-30380cba3049f509579543813d6a6ac8" aria-controls="subsections-30380cba3049f509579543813d6a6ac8" checked><label for="section-30380cba3049f509579543813d6a6ac8"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu KVM</span></label><a class="padding" href="/kvm/index.html">KVM<i class="fas fa-check read-icon"></i></a><ul id="subsections-30380cba3049f509579543813d6a6ac8" class="morespace collapsible-menu">
-          <li data-nav-id="/kvm/virsh/index.html" class="active"><a class="padding" href="/kvm/virsh/index.html">Anfitrión KVM<i class="fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/kvm/virt-install/index.html" class=""><a class="padding" href="/kvm/virt-install/index.html">Minikube (driver kvm)<i class="fas fa-check read-icon"></i></a></li></ul></li>
         </ul>
         <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter"></div>
         <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter">
@@ -349,12 +274,12 @@
           <a class="github-button" href="https://github.com/McShelby/hugo-theme-relearn" data-icon="octicon-star" data-show-count="true" aria-label="Star McShelby/hugo-theme-relearn on GitHub">Star</a>
           <a class="github-button" href="https://github.com/McShelby/hugo-theme-relearn/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork McShelby/hugo-theme-relearn on GitHub">Fork</a>
           <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
-          <script async src="/js/buttons.js?1688754651"></script>
+          <script async src="/js/buttons.js?1688755498"></script>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1688754651" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1688754651" defer></script>
-    <script src="/js/theme.js?1688754651" defer></script>
+    <script src="/js/clipboard.min.js?1688755498" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1688755498" defer></script>
+    <script src="/js/theme.js?1688755498" defer></script>
   </body>
 </html>
