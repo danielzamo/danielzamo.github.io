@@ -10,20 +10,20 @@
     <title>Ansible - AWX :: Site</title>
     <link href="/kubernetes-deployments/ansible-awx/index.xml" rel="alternate" type="application/rss+xml" title="Ansible - AWX :: Site">
     <link href="/kubernetes-deployments/ansible-awx/index.print.html" rel="alternate" type="text/html" title="Ansible - AWX :: Site">
-    <link href="/images/logo.svg?1688757067" rel="icon" type="image/svg+xml">
+    <link href="/images/logo.svg?1688757072" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1688757067" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1688757067" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1688757067" rel="stylesheet">
-    <link href="/css/auto-complete.css?1688757067" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1688757067" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1688757067" rel="stylesheet">
-    <link href="/css/fonts.css?1688757067" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1688757067" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1688757067" rel="stylesheet">
-    <link href="/css/theme-relearn-dark.css?1688757067" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1688757067" rel="stylesheet">
-    <link href="/css/print.css?1688757067" rel="stylesheet" media="print">
-    <link href="/css/ie.css?1688757067" rel="stylesheet">
-    <script src="/js/url.js?1688757067"></script>
-    <script src="/js/variant.js?1688757067"></script>
+    <link href="/css/fontawesome-all.min.css?1688757072" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1688757072" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1688757072" rel="stylesheet">
+    <link href="/css/auto-complete.css?1688757072" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1688757072" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1688757072" rel="stylesheet">
+    <link href="/css/fonts.css?1688757072" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1688757072" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1688757072" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1688757072" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1688757072" rel="stylesheet">
+    <link href="/css/print.css?1688757072" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1688757072" rel="stylesheet">
+    <script src="/js/url.js?1688757072"></script>
+    <script src="/js/variant.js?1688757072"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -103,10 +103,10 @@
 <p>Este proyecto es el despliegue de <em><strong>Ansible AWX</strong></em>, edición comunitaria de <em><strong>Red Hat Ansible Tower</strong></em>.</p>
 <p>En la siguiente representación se muestra un diagrama del despliegue. El cual es realizado sobre un <em>host motor</em> de <em>kubernetes</em> con <em>minikube</em> con <em>libvirt</em> como runtime (driver <em>kvm</em>).</p>
 <p>
-<a href="#image-c933a3186948564515d886057c20235b" class="lightbox-link">
+<a href="#image-89d92f4ed373d3168d8f171cac6d5595" class="lightbox-link">
 <img src="/kubernetes-deployments/ansible-awx/ansible-server-awx.png" alt="Representación del servicio Ansible AWX desplegado" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-c933a3186948564515d886057c20235b">
+<a href="javascript:history.back();" class="lightbox" id="image-89d92f4ed373d3168d8f171cac6d5595">
 <img src="/kubernetes-deployments/ansible-awx/ansible-server-awx.png" alt="Representación del servicio Ansible AWX desplegado" class="lightbox-image" loading="lazy">
 </a></p>
 <h2 id="tecnologías-utilizadas">Tecnologías utilizadas</h2>
@@ -139,10 +139,10 @@
 </span></span><span style="display:flex;"><span>kubectl port-forward service/ansible-awx-service --address 0.0.0.0 10445:80 &amp;
 </span></span></code></pre></div><p>Ansible AWX debería estar disponible en el URL <code>http://&lt;IP_SERVIDOR_KUBERNETES&gt;:10445</code>. En este caso ahora implementado el ingreso a la interface Web se muestra en la siguiente captura.</p>
 <p>
-<a href="#image-985ad2ded228b5adab6c4eae684ba39d" class="lightbox-link">
+<a href="#image-abb5776ab0678f9c166cf5d6af7b78e1" class="lightbox-link">
 <img src="/kubernetes-deployments/ansible-awx/ansible-awx-gui-welcome.png" alt="Ingreso a la interface Web de Ansible AWX desplegado" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-985ad2ded228b5adab6c4eae684ba39d">
+<a href="javascript:history.back();" class="lightbox" id="image-abb5776ab0678f9c166cf5d6af7b78e1">
 <img src="/kubernetes-deployments/ansible-awx/ansible-awx-gui-welcome.png" alt="Ingreso a la interface Web de Ansible AWX desplegado" class="lightbox-image" loading="lazy">
 </a></p>
 <h2 id="repositorio">Repositorio</h2>
@@ -234,12 +234,12 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1688757067" defer></script>
-        <script src="/js/lunr/lunr.min.js?1688757067" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1688757067" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1688757067" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1688757067" defer></script>
-        <script src="/js/search.js?1688757067" defer></script>
+        <script src="/js/auto-complete.js?1688757072" defer></script>
+        <script src="/js/lunr/lunr.min.js?1688757072" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1688757072" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1688757072" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1688757072" defer></script>
+        <script src="/js/search.js?1688757072" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics enlarge morespace collapsible-menu">
@@ -311,12 +311,12 @@
           <a class="github-button" href="https://github.com/McShelby/hugo-theme-relearn" data-icon="octicon-star" data-show-count="true" aria-label="Star McShelby/hugo-theme-relearn on GitHub">Star</a>
           <a class="github-button" href="https://github.com/McShelby/hugo-theme-relearn/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork McShelby/hugo-theme-relearn on GitHub">Fork</a>
           <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
-          <script async src="/js/buttons.js?1688757067"></script>
+          <script async src="/js/buttons.js?1688757072"></script>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1688757067" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1688757067" defer></script>
-    <script src="/js/theme.js?1688757067" defer></script>
+    <script src="/js/clipboard.min.js?1688757072" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1688757072" defer></script>
+    <script src="/js/theme.js?1688757072" defer></script>
   </body>
 </html>
