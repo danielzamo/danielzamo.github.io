@@ -24,7 +24,7 @@ var relearn_search_index = [
     "uri": "/kubernetes-notes/pod/index.html"
   },
   {
-    "content": " En esta sección se comparten configuraciones de servicios y/o configuración de programas de servidores y/o estaciones de trabajo (con desktop o ambiente gráfico) basados en Ubuntu LTS ultima estable 22.04, de modo de tener disponible un servidor o una estación desktop para ser usada como PC de uso diario o desarrollo. ( Varias de las entradas serán tareas realizadas desde el CLI bash que dispone el sistema una vez recien instalado. En los artículos presentados aquí donde están orientados a desplegar una estación con ambiente gráfico, se ha preferido utilizar un desktop basado en Kde Plasma 5,24 o superior.\nEspecificación hardware Especificación hardware:\ncpu: 4 - ALU RAM: 10Gb HHDD: 20Gb 1 x eth: enp1s0 En la figura se representa el servidor con distribución Ubuntu LTS server 20.04… inicial desplegado en este apartado. Esta configuración inicial es utilizada como base para desplegar los servicios cuyo contenido es compartido aquí.\nEl nombre hostname: ubuntu-k8s\nURL repositorio: PENDIENTE. Por el momento hasta que finalize el proyecto, el contanido solo es compartido aquí, en este sitio web estático.\nTecnologías usadas Distribución Linux principal usada: Ubuntu server LTS - 22.04... Despliegues/artículos actuales compartidos aquí Por el momento, en esta sección se publican los siguientes casos de uso (despliegues/implementaciones):\nConfiguración mínima inicialConfiguración mínima inicial sugerida\nInstalación de PythonInstalación y configuración de Python sobre Ubuntu 22.04 LTS\nAnfitrión KVMUbuntu server LTS, host anfitrión virtualización KVM\nMinikube (driver kvm)Ubuntu server LTS, cluster k8s minikube (driver kvm)\n",
+    "content": " En esta sección se comparten configuraciones de servicios y/o configuración de programas de servidores y/o estaciones de trabajo (con desktop o ambiente gráfico) basados en Ubuntu LTS ultima estable 22.04, de modo de tener disponible un servidor o una estación desktop para ser usada como PC de uso diario o desarrollo. ( Varias de las entradas serán tareas realizadas desde el CLI bash que dispone el sistema una vez recien instalado. En los artículos presentados aquí donde están orientados a desplegar una estación con ambiente gráfico, se ha preferido utilizar un desktop basado en Kde Plasma 5,24 o superior.\nEspecificación hardware Especificación hardware:\ncpu: 4 - ALU RAM: 10Gb HHDD: 20Gb 1 x eth: enp1s0 En la figura se representa el servidor con distribución Ubuntu LTS server 20.04… inicial desplegado en este apartado. Esta configuración inicial es utilizada como base para desplegar los servicios cuyo contenido es compartido aquí.\nEl nombre hostname: ubuntu-k8s\nURL repositorio: PENDIENTE. Por el momento hasta que finalize el proyecto, el contanido solo es compartido aquí, en este sitio web estático.\nTecnologías usadas Distribución Linux principal usada: Ubuntu server LTS - 22.04... Despliegues/artículos actuales compartidos aquí Por el momento, en esta sección se publican los siguientes casos de uso (despliegues/implementaciones):\nUbuntu: configuración inicialConfiguración mínima inicial sugerida\nUbuntu: instalar PythonInstalación y configuración de Python sobre Ubuntu 22.04 LTS\nAnfitrión KVMUbuntu server LTS, host anfitrión virtualización KVM\nMinikube (driver kvm)Ubuntu server LTS, cluster k8s minikube (driver kvm)\n",
     "description": "Ubuntu server LTS",
     "tags": null,
     "title": "Ubuntu",
@@ -45,7 +45,7 @@ var relearn_search_index = [
       "UbuntuLTS",
       "Linux"
     ],
-    "title": "Configuración mínima inicial",
+    "title": "Ubuntu: configuración inicial",
     "uri": "/ubuntu/initial.settings/index.html"
   },
   {
@@ -58,7 +58,7 @@ var relearn_search_index = [
       "Python",
       "WSL Ubuntu 22.04"
     ],
-    "title": "Instalación de Python",
+    "title": "Ubuntu: instalar Python",
     "uri": "/ubuntu/ubuntu.add.python/index.html"
   },
   {
