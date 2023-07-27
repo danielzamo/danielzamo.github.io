@@ -5,11 +5,11 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.101.0">
     <meta name="generator" content="Relearn 5.16.2+tip">
-    <meta name="description" content="Administración de máquinas virtuales invitadas KVM/libvirt">
+    <meta name="description" content="Instalación y configuración de Python sobre Ubuntu 22.04 LTS">
     <meta name="author" content="Daniel Oscar Zamo">
-    <title>Comando virsh :: Site</title>
-    <link href="http://danielzamo.github.io/kvm/virsh/index.html" rel="canonical" type="text/html" title="Comando virsh :: Site">
-    <link href="/kvm/virsh/index.xml" rel="alternate" type="application/rss+xml" title="Comando virsh :: Site">
+    <title>Ubuntu instalar Python :: Site</title>
+    <link href="http://danielzamo.github.io/ubuntu/ubuntu.add.python/index.html" rel="canonical" type="text/html" title="Ubuntu instalar Python :: Site">
+    <link href="/ubuntu/ubuntu.add.python/index.xml" rel="alternate" type="application/rss+xml" title="Ubuntu instalar Python :: Site">
     <link href="/images/logo.svg?1690494509" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/css/fontawesome-all.min.css?1690494509" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1690494509" rel="stylesheet"></noscript>
@@ -48,7 +48,7 @@
       }
     </style>
   </head>
-  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/kvm/virsh/index.html">
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/ubuntu/ubuntu.add.python/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
@@ -60,8 +60,8 @@
 </span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Inicio sitio</span></a><meta itemprop="position" content="1"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/kvm/index.html"><span itemprop="name">KVM</span></a><meta itemprop="position" content="2"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Comando virsh</span><meta itemprop="position" content="3"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/ubuntu/index.html"><span itemprop="name">Ubuntu</span></a><meta itemprop="position" content="2"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Ubuntu instalar Python</span><meta itemprop="position" content="3"></li>
             </ol>
           </div>
         </div>
@@ -72,30 +72,30 @@
           <article class="default">
             <header class="headline">
 <div class="tags">
-  <a class="tag-link" href="/tags/articles/index.html">Articles</a>
-  <a class="tag-link" href="/tags/kvm/index.html">KVM</a>
-  <a class="tag-link" href="/tags/libvirtd/index.html">libvirtd</a>
-  <a class="tag-link" href="/tags/virtualization/index.html">virtualization</a>
+  <a class="tag-link" href="/tags/desktop/index.html">desktop</a>
+  <a class="tag-link" href="/tags/linux/index.html">Linux</a>
+  <a class="tag-link" href="/tags/python/index.html">Python</a>
+  <a class="tag-link" href="/tags/ubuntults/index.html">UbuntuLTS</a>
 </div>
             </header>
-<h1 id="comando-virsh">Comando virsh</h1>
+<h1 id="ubuntu-instalar-python">Ubuntu instalar Python</h1>
 
 <blockquote>
-<p>En este artículo es una hoja de referencia parcial de los comandos de virsh.</p>
+<p>A continuación se muestra como instalar y configurar Python en una distribución Linux basada en Ubuntu 22.04 LTS. La configuración realizada básicamente aquí es identica a realizarlo sobre un sistema basado en la distribución Ubuntu 22.04 LTS (o derivadas).</p>
 </blockquote>
-<h2 id="qué-virsh">Qué virsh?</h2>
-<p><code>virsh</code> es una interfaz de usuario de administración para dominios invitados (guest, o m&rsquo;aquinas virtuales) de libvirt. Con <code>virsh</code> se puede crear, pausar, reiniciar, cerrar dominios y realizar diferentes tareas de sobre los guest (VM) actuales disponibles en una plataforma de hipervisor de virtualización <em><strong><a href="https://www.linux-kvm.org/page/Main_Page" target="_blank">KVM</a></strong></em>/<em><strong><a href="https://libvirt.org/" target="_blank">libvirt</a></strong></em>.</p>
-<h2 id="listar-todos-los-dominios-guest-máquinas-virtuales-del-host-kvm">Listar todos los dominios guest (máquinas virtuales) del host KVM</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>virsh list --all
-</span></span></code></pre></div><h2 id="crear-snapshot-de-vmdominio-de-kvmlibvirt">Crear snapshot de VM/dominio de KVM/libvirt</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>virsh snapshot-create-as --domain <span style="color:#f92672">{</span>VM-NAME<span style="color:#f92672">}</span> --name <span style="color:#e6db74">&#34;{SNAPSHOT-NAME}&#34;</span>
-</span></span></code></pre></div><h2 id="referencias">Referencias</h2>
-<ul>
-<li><a href="https://computingforgeeks.com/virsh-commands-cheatsheet/" target="_blank">Virsh commands cheatsheet to manage KVM guest virtual machines</a>.</li>
-<li><a href="https://www.cyberciti.biz/faq/how-to-create-create-snapshot-in-linux-kvm-vmdomain/" target="_blank">How to create snapshot in Linux KVM VM/Domain</a>.</li>
-<li><a href="https://lzone.de/cheat-sheet/KVM" target="_blank">KVM Cheat Sheet </a>.</li>
-</ul>
-
+<h2 id="instalación-python">Instalación Python</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>sudo apt -y install python3.10 python3.10-venv python3-pip
+</span></span></code></pre></div><h2 id="configurar-comando-python-que-ejecute-la-versión-deseada">Configurar comando python que ejecute la versión deseada</h2>
+<p>En el siguiente ejemplo se configura que la versión por defecto a ejecutar con el comando <code>python</code> sea la <em>3.10</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>which python3
+</span></span><span style="display:flex;"><span>ls /usr/bin/python3*
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># configurar el interprete python por defecto (y/u orden)</span>
+</span></span><span style="display:flex;"><span>sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.10 <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>ls /usr/bin/python
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Verificando el comando &#34;python&#34; y que versión ejecuta</span>
+</span></span><span style="display:flex;"><span>python -V
+</span></span></code></pre></div>
             <footer class="footline">
 
             </footer>
