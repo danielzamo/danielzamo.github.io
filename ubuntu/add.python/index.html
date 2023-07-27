@@ -5,11 +5,11 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.101.0">
     <meta name="generator" content="Relearn 5.16.2+tip">
-    <meta name="description" content="Documentation theme based Hugo Relearn Theme">
+    <meta name="description" content="Instalación y configuración de Python sobre Ubuntu 22.04 LTS">
     <meta name="author" content="Daniel Oscar Zamo">
-    <title>Sección resources :: Site</title>
-    <link href="/kubernetes-notes/pod/resources/index.xml" rel="alternate" type="application/rss+xml" title="Sección resources :: Site">
-    <link href="/kubernetes-notes/pod/resources/index.print.html" rel="alternate" type="text/html" title="Sección resources :: Site">
+    <title>Ubuntu instalar Python :: Site</title>
+    <link href="/ubuntu/add.python/index.xml" rel="alternate" type="application/rss+xml" title="Ubuntu instalar Python :: Site">
+    <link href="/ubuntu/add.python/index.print.html" rel="alternate" type="text/html" title="Ubuntu instalar Python :: Site">
     <link href="/images/logo.svg?1690494311" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/css/fontawesome-all.min.css?1690494311" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1690494311" rel="stylesheet"></noscript>
@@ -47,20 +47,20 @@
       }
     </style>
   </head>
-  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/kubernetes-notes/pod/resources/index.html">
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/ubuntu/add.python/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
       <nav id="topbar" class="highlightable">
         <div>
           <div class="navigation">
-            <a class="nav nav-next topbar-link" href="/kubernetes-notes/pod/daemonset/index.html" title="Daemonset (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+            <a class="nav nav-next topbar-link" href="/ubuntu/kvm/index.html" title="Anfitrión KVM (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
           </div>
           <div class="navigation">
-            <a class="nav nav-prev topbar-link" href="/kubernetes-notes/pod/env/index.html" title="Sección env (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+            <a class="nav nav-prev topbar-link" href="/ubuntu/initial.settings/index.html" title="Configuración mínima inicial (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
           </div>
           <div id="top-print-link">
-            <a class="print-link topbar-link" title='Print whole chapter (CTRL+ALT+p)' href="/kubernetes-notes/pod/resources/index.print.html">
+            <a class="print-link topbar-link" title='Print whole chapter (CTRL+ALT+p)' href="/ubuntu/add.python/index.print.html">
               <i class="fas fa-print fa-fw"></i>
             </a>
           </div>
@@ -71,23 +71,16 @@
             <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Inicio sitio</span></a><meta itemprop="position" content="1"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/kubernetes-notes/index.html"><span itemprop="name">Kubernetes - notas</span></a><meta itemprop="position" content="2"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/kubernetes-notes/pod/index.html"><span itemprop="name">Pod</span></a><meta itemprop="position" content="3"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Sección resources</span><meta itemprop="position" content="4"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/ubuntu/index.html"><span itemprop="name">Ubuntu</span></a><meta itemprop="position" content="2"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Ubuntu instalar Python</span><meta itemprop="position" content="3"></li>
             </ol>
           </div>
           <div class="default-animation progress">
             <div class="toc-wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#relevantes-en-esta-nota">Relevantes en esta nota</a></li>
-    <li><a href="#manifiesto">Manifiesto</a></li>
-    <li><a href="#tipos-de-resources">Tipos de resources</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-    <li><a href="#sesión-comandos">Sesión comandos</a></li>
+    <li><a href="#instalación-python">Instalación Python</a></li>
+    <li><a href="#configurar-comando-python-que-ejecute-la-versión-deseada">Configurar comando python que ejecute la versión deseada</a></li>
   </ul>
 </nav>
             </div>
@@ -100,64 +93,29 @@
           <article class="default">
             <header class="headline">
 <div class="tags">
-  <a class="tag-link" href="/tags/documentation/index.html">documentation</a>
-  <a class="tag-link" href="/tags/kubernetes/index.html">kubernetes</a>
+  <a class="tag-link" href="/tags/desktop/index.html">desktop</a>
+  <a class="tag-link" href="/tags/linux/index.html">Linux</a>
+  <a class="tag-link" href="/tags/python/index.html">Python</a>
+  <a class="tag-link" href="/tags/ubuntults/index.html">UbuntuLTS</a>
 </div>
             </header>
-<h1 id="sección-resources">Sección resources</h1>
+<h1 id="ubuntu-instalar-python">Ubuntu instalar Python</h1>
 
-<h2 id="relevantes-en-esta-nota">Relevantes en esta nota</h2>
-<ul>
-<li>Por medio de los <code>resources</code> es que se pueden asignan diferentes recursos a nuestros objetos.</li>
-<li>Dichos recursos pueden ser asignados a diferentes contenedores (no solo a los pod).</li>
-<li>Tipos de resources?
-<ul>
-<li>Existen al menos 2 tipos de resources que se pueden asignar. Los tipos <em><strong>requests</strong></em> y los <em><strong>limits</strong></em>.</li>
-</ul>
-</li>
-<li>La documentación mas completa se encuentra publicada en <a href="https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/" target="_blank">Resource Management for Pods and Containers</a>.</li>
-</ul>
-<h2 id="manifiesto">Manifiesto</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>apiVersion: v1
-</span></span><span style="display:flex;"><span>kind: Pod
-</span></span><span style="display:flex;"><span>metadata:
-</span></span><span style="display:flex;"><span>  name: nginx
-</span></span><span style="display:flex;"><span>spec:
-</span></span><span style="display:flex;"><span>  containers:
-</span></span><span style="display:flex;"><span>  - name: nginx
-</span></span><span style="display:flex;"><span>    image: nginx:alpine
-</span></span><span style="display:flex;"><span>    env:
-</span></span><span style="display:flex;"><span>    - name: var_1
-</span></span><span style="display:flex;"><span>      value: <span style="color:#e6db74">&#34;val_var_1&#34;</span>
-</span></span><span style="display:flex;"><span>    - name: dd_agent_host
-</span></span><span style="display:flex;"><span>      valueFrom:
-</span></span><span style="display:flex;"><span>        fieldRef:
-</span></span><span style="display:flex;"><span>          fieldPath: status.hostIP
-</span></span><span style="display:flex;"><span>    resources:
-</span></span><span style="display:flex;"><span>      requests:
-</span></span><span style="display:flex;"><span>        memory: <span style="color:#e6db74">&#34;64Mi&#34;</span>
-</span></span><span style="display:flex;"><span>        cpu: <span style="color:#e6db74">&#34;200m&#34;</span>
-</span></span><span style="display:flex;"><span>      limits:
-</span></span><span style="display:flex;"><span>        memory: <span style="color:#e6db74">&#34;128Mi&#34;</span>
-</span></span><span style="display:flex;"><span>        cpu: <span style="color:#e6db74">&#34;500m&#34;</span>
-</span></span><span style="display:flex;"><span>    ports:
-</span></span><span style="display:flex;"><span>    - containerPort: <span style="color:#ae81ff">80</span>
-</span></span></code></pre></div><h2 id="tipos-de-resources">Tipos de resources</h2>
-<h4 id="resuorces-requests">Resuorces requests</h4>
-<p>Son los recursos que garantizamos que <em><strong>siempre</strong></em> va a tener disponible el objeto. En el ejemplo:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>...
-</span></span><span style="display:flex;"><span>    resources:
-</span></span><span style="display:flex;"><span>      requests:
-</span></span><span style="display:flex;"><span>        memory: <span style="color:#e6db74">&#34;64Mi&#34;</span>
-</span></span><span style="display:flex;"><span>        cpu: <span style="color:#e6db74">&#34;200m&#34;</span>
-</span></span><span style="display:flex;"><span>...
-</span></span></code></pre></div><p><em>Donde:</em></p>
-<ul>
-<li><code>memory: &quot;64Mi&quot;</code>: es la cantidad de memoria garantizada que tendrá disponible el objeto (pod o contenedor), en el ejemplo <code>&quot;64Mi&quot;</code> son 64 Megas bytes (la M esta en mayuscula).</li>
-<li><code>cpu: &quot;200m&quot;</code>: es la cantidad de <em>mili cores</em> que debe estar garantizado. A su vez <code>1000 mili core</code> es equivalente a <code>1 core de CPU</code>. De modo que si en el nodo/host se tiene un total de <code>10 core CPU</code> la asignación <em><strong>requests</strong></em> de <code>cpu: &quot;200m&quot;</code> es que <em>2 core</em> serán garantizados de disponible para el objeto.</li>
-</ul>
-<h2 id="sesión-comandos">Sesión comandos</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>...
+<blockquote>
+<p>A continuación se muestra como instalar y configurar Python en una distribución Linux basada en Ubuntu 22.04 LTS. La configuración realizada básicamente aquí es identica a realizarlo sobre un sistema basado en la distribución Ubuntu 22.04 LTS (o derivadas).</p>
+</blockquote>
+<h2 id="instalación-python">Instalación Python</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>sudo apt -y install python3.10 python3.10-venv python3-pip
+</span></span></code></pre></div><h2 id="configurar-comando-python-que-ejecute-la-versión-deseada">Configurar comando python que ejecute la versión deseada</h2>
+<p>En el siguiente ejemplo se configura que la versión por defecto a ejecutar con el comando <code>python</code> sea la <em>3.10</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>which python3
+</span></span><span style="display:flex;"><span>ls /usr/bin/python3*
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># configurar el interprete python por defecto (y/u orden)</span>
+</span></span><span style="display:flex;"><span>sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.10 <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>ls /usr/bin/python
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Verificando el comando &#34;python&#34; y que versión ejecuta</span>
+</span></span><span style="display:flex;"><span>python -V
 </span></span></code></pre></div>
             <footer class="footline">
 
@@ -257,16 +215,16 @@
           <li data-nav-id="/kubernetes-cluster-k3s/index.html" class=""><a class="padding" href="/kubernetes-cluster-k3s/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">1.</b> Kubernetes cluster k3s<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/kubernetes-deployments/index.html" class=""><input type="checkbox" id="section-8ab3651a2ec4764fa8f1f50af6e7094d" aria-controls="subsections-8ab3651a2ec4764fa8f1f50af6e7094d"><label for="section-8ab3651a2ec4764fa8f1f50af6e7094d"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Kubernetes - despliegues</span></label><a class="padding" href="/kubernetes-deployments/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">2.</b> Kubernetes - despliegues<i class="fas fa-check read-icon"></i></a><ul id="subsections-8ab3651a2ec4764fa8f1f50af6e7094d" class="morespace collapsible-menu">
           <li data-nav-id="/kubernetes-deployments/ansible-awx/index.html" class=""><a class="padding" href="/kubernetes-deployments/ansible-awx/index.html">Ansible - AWX<i class="fas fa-check read-icon"></i></a></li></ul></li>
-          <li data-nav-id="/ubuntu/index.html" class=""><input type="checkbox" id="section-2e5d9f93e5773a978ed881beb73ff898" aria-controls="subsections-2e5d9f93e5773a978ed881beb73ff898"><label for="section-2e5d9f93e5773a978ed881beb73ff898"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Ubuntu</span></label><a class="padding" href="/ubuntu/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">4.</b> Ubuntu<i class="fas fa-check read-icon"></i></a><ul id="subsections-2e5d9f93e5773a978ed881beb73ff898" class="morespace collapsible-menu">
+          <li data-nav-id="/ubuntu/index.html" class="parent "><input type="checkbox" id="section-2e5d9f93e5773a978ed881beb73ff898" aria-controls="subsections-2e5d9f93e5773a978ed881beb73ff898" checked><label for="section-2e5d9f93e5773a978ed881beb73ff898"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Ubuntu</span></label><a class="padding" href="/ubuntu/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">4.</b> Ubuntu<i class="fas fa-check read-icon"></i></a><ul id="subsections-2e5d9f93e5773a978ed881beb73ff898" class="morespace collapsible-menu">
           <li data-nav-id="/ubuntu/initial.settings/index.html" class=""><a class="padding" href="/ubuntu/initial.settings/index.html">Configuración mínima inicial<i class="fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/ubuntu/add.python/index.html" class=""><a class="padding" href="/ubuntu/add.python/index.html">Ubuntu instalar Python<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/ubuntu/add.python/index.html" class="active"><a class="padding" href="/ubuntu/add.python/index.html">Ubuntu instalar Python<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/ubuntu/kvm/index.html" class=""><a class="padding" href="/ubuntu/kvm/index.html">Anfitrión KVM<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/ubuntu/minikube-kvm/index.html" class=""><a class="padding" href="/ubuntu/minikube-kvm/index.html">Minikube (driver kvm)<i class="fas fa-check read-icon"></i></a></li></ul></li>
-          <li data-nav-id="/kubernetes-notes/index.html" class="parent "><input type="checkbox" id="section-effcf26ac8361c0051846c35bf515993" aria-controls="subsections-effcf26ac8361c0051846c35bf515993" checked><label for="section-effcf26ac8361c0051846c35bf515993"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Kubernetes - notas</span></label><a class="padding" href="/kubernetes-notes/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">5.</b> Kubernetes - notas<i class="fas fa-check read-icon"></i></a><ul id="subsections-effcf26ac8361c0051846c35bf515993" class="morespace collapsible-menu">
-          <li data-nav-id="/kubernetes-notes/pod/index.html" class="parent alwaysopen"><input type="checkbox" id="section-8bf56febec1abf95d4a1a03236e88aa7" aria-controls="subsections-8bf56febec1abf95d4a1a03236e88aa7" checked><label for="section-8bf56febec1abf95d4a1a03236e88aa7"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Pod</span></label><a class="padding" href="/kubernetes-notes/pod/index.html">Pod<i class="fas fa-check read-icon"></i></a><ul id="subsections-8bf56febec1abf95d4a1a03236e88aa7" class="morespace collapsible-menu">
+          <li data-nav-id="/kubernetes-notes/index.html" class=""><input type="checkbox" id="section-effcf26ac8361c0051846c35bf515993" aria-controls="subsections-effcf26ac8361c0051846c35bf515993"><label for="section-effcf26ac8361c0051846c35bf515993"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Kubernetes - notas</span></label><a class="padding" href="/kubernetes-notes/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">5.</b> Kubernetes - notas<i class="fas fa-check read-icon"></i></a><ul id="subsections-effcf26ac8361c0051846c35bf515993" class="morespace collapsible-menu">
+          <li data-nav-id="/kubernetes-notes/pod/index.html" class="alwaysopen"><input type="checkbox" id="section-8bf56febec1abf95d4a1a03236e88aa7" aria-controls="subsections-8bf56febec1abf95d4a1a03236e88aa7" checked><label for="section-8bf56febec1abf95d4a1a03236e88aa7"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Pod</span></label><a class="padding" href="/kubernetes-notes/pod/index.html">Pod<i class="fas fa-check read-icon"></i></a><ul id="subsections-8bf56febec1abf95d4a1a03236e88aa7" class="morespace collapsible-menu">
           <li data-nav-id="/kubernetes-notes/pod/pod-minimal/index.html" class=""><a class="padding" href="/kubernetes-notes/pod/pod-minimal/index.html">Definición pod mediante manifiesto<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/kubernetes-notes/pod/env/index.html" class=""><a class="padding" href="/kubernetes-notes/pod/env/index.html">Sección env<i class="fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/kubernetes-notes/pod/resources/index.html" class="active"><a class="padding" href="/kubernetes-notes/pod/resources/index.html">Sección resources<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/kubernetes-notes/pod/resources/index.html" class=""><a class="padding" href="/kubernetes-notes/pod/resources/index.html">Sección resources<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/kubernetes-notes/pod/daemonset/index.html" class=""><a class="padding" href="/kubernetes-notes/pod/daemonset/index.html">Daemonset<i class="fas fa-check read-icon"></i></a></li></ul></li></ul></li>
           <li data-nav-id="/kvm/index.html" class=""><input type="checkbox" id="section-30380cba3049f509579543813d6a6ac8" aria-controls="subsections-30380cba3049f509579543813d6a6ac8"><label for="section-30380cba3049f509579543813d6a6ac8"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu KVM</span></label><a class="padding" href="/kvm/index.html">KVM<i class="fas fa-check read-icon"></i></a><ul id="subsections-30380cba3049f509579543813d6a6ac8" class="morespace collapsible-menu">
           <li data-nav-id="/kvm/virsh/index.html" class=""><a class="padding" href="/kvm/virsh/index.html">Comando virsh<i class="fas fa-check read-icon"></i></a></li></ul></li>
