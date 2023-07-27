@@ -10,13 +10,16 @@
     <loc>http://danielzamo.github.io/kubernetes-notes/pod/index.html</loc>
   </url>
   <url>
-    <loc>http://danielzamo.github.io/ubuntu-lts-server/index.html</loc>
+    <loc>http://danielzamo.github.io/ubuntu/index.html</loc>
   </url>
   <url>
     <loc>http://danielzamo.github.io/kubernetes-notes/index.html</loc>
   </url>
   <url>
-    <loc>http://danielzamo.github.io/ubuntu-lts-server/kvm/index.html</loc>
+    <loc>http://danielzamo.github.io/ubuntu/initial.settings/index.html</loc>
+  </url>
+  <url>
+    <loc>http://danielzamo.github.io/ubuntu/kvm/index.html</loc>
   </url>
   <url>
     <loc>http://danielzamo.github.io/kubernetes-deployments/ansible-awx/index.html</loc>
@@ -28,7 +31,7 @@
     <loc>http://danielzamo.github.io/kubernetes-notes/pod/pod-minimal/index.html</loc>
   </url>
   <url>
-    <loc>http://danielzamo.github.io/ubuntu-lts-server/minikube-kvm/index.html</loc>
+    <loc>http://danielzamo.github.io/ubuntu/minikube-kvm/index.html</loc>
   </url>
   <url>
     <loc>http://danielzamo.github.io/kubernetes-notes/pod/env/index.html</loc>
@@ -52,6 +55,9 @@
     <loc>http://danielzamo.github.io/tags/container/index.html</loc>
   </url>
   <url>
+    <loc>http://danielzamo.github.io/tags/desktop/index.html</loc>
+  </url>
+  <url>
     <loc>http://danielzamo.github.io/tags/documentation/index.html</loc>
   </url>
   <url>
@@ -65,6 +71,9 @@
   </url>
   <url>
     <loc>http://danielzamo.github.io/tags/libvirtd/index.html</loc>
+  </url>
+  <url>
+    <loc>http://danielzamo.github.io/tags/linux/index.html</loc>
   </url>
   <url>
     <loc>http://danielzamo.github.io/tags/minikube/index.html</loc>

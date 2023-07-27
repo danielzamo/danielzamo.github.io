@@ -24,11 +24,11 @@ var relearn_search_index = [
     "uri": "/kubernetes-notes/pod/index.html"
   },
   {
-    "content": " En esta sección se comparten configuraciones de servicios y/o configuración de servidores basados en Ubuntu server LTS.\nEspecificación hardware Especificación hardware:\ncpu: 4 - ALU RAM: 10Gb HHDD: 20Gb 1 x eth: enp1s0 En la figura se representa el servidor con distribución Ubuntu LTS server 20.04… inicial desplegado en este apartado. Esta configuración inicial es utilizada como base para desplegar los servicios cuyo contenido es compartido aquí.\nEl nombre hostname: ubuntu-k8s\nURL repositorio: PENDIENTE. Por el momento hasta que finalize el proyecto, el contanido solo es compartido aquí, en este sitio web estático.\nTecnologías usadas Distribución Linux principal usada: Ubuntu server LTS - 22.04... Despliegues/artículos actuales compartidos aquí Por el momento, en esta sección se publican los siguientes casos de uso (despliegues/implementaciones):\nAnfitrión KVMUbuntu server LTS, host anfitrión virtualización KVM\nMinikube (driver kvm)Ubuntu server LTS, cluster k8s minikube (driver kvm)\n",
+    "content": " En esta sección se comparten configuraciones de servicios y/o configuración de programas de servidores y/o estaciones de trabajo (con desktop o ambiente gráfico) basados en Ubuntu LTS ultima estable 22.04, de modo de tener disponible un servidor o una estación desktop para ser usada como PC de uso diario o desarrollo. ( Varias de las entradas serán tareas realizadas desde el CLI bash que dispone el sistema una vez recien instalado. En los artículos presentados aquí donde están orientados a desplegar una estación con ambiente gráfico, se ha preferido utilizar un desktop basado en Kde Plasma 5,24 o superior.\nEspecificación hardware Especificación hardware:\ncpu: 4 - ALU RAM: 10Gb HHDD: 20Gb 1 x eth: enp1s0 En la figura se representa el servidor con distribución Ubuntu LTS server 20.04… inicial desplegado en este apartado. Esta configuración inicial es utilizada como base para desplegar los servicios cuyo contenido es compartido aquí.\nEl nombre hostname: ubuntu-k8s\nURL repositorio: PENDIENTE. Por el momento hasta que finalize el proyecto, el contanido solo es compartido aquí, en este sitio web estático.\nTecnologías usadas Distribución Linux principal usada: Ubuntu server LTS - 22.04... Despliegues/artículos actuales compartidos aquí Por el momento, en esta sección se publican los siguientes casos de uso (despliegues/implementaciones):\nConfiguración mínima inicialConfiguración mínima inicial sugerida\nAnfitrión KVMUbuntu server LTS, host anfitrión virtualización KVM\nMinikube (driver kvm)Ubuntu server LTS, cluster k8s minikube (driver kvm)\n",
     "description": "Ubuntu server LTS",
     "tags": null,
-    "title": "Ubuntu server LTS",
-    "uri": "/ubuntu-lts-server/index.html"
+    "title": "Ubuntu",
+    "uri": "/ubuntu/index.html"
   },
   {
     "content": "Entradas relacionadas a Kubernetes.\nTodo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.\n",
@@ -36,6 +36,17 @@ var relearn_search_index = [
     "tags": null,
     "title": "Kubernetes - notas",
     "uri": "/kubernetes-notes/index.html"
+  },
+  {
+    "content": " En esta entrada se comparte las primeras tareas mínimas iniciales, sugeridas de realizar sobre un Linux Ubuntu LTS 22,04 recien instalado.\nNota del autor: las tareas reportadas aquí, son realizadas sobre un sistema que ya tiene instalado y disponible Linux basado en Ubuntu LTS 22.04. De modo que las tareas de instalación se dan por supuestas cumplidas.\nEl autor comparte como configura un sistema operativo basado en Ubuntu, que a posterior puede ser la base de un sistema Linux de utilizar, sea este como servidor o como estación de trabajo diario (con ambiente gráfico disponible), cuando la distribución utilizada es un derivado de Ubuntu, en particular en la versión 22.04 LTS. Salvo que se indique expresamente, las tareas realizadas en esta entrada han sido realizadas desde el CLI del sistema operativo mínimo disponible. Y las mismas son realizadas por un usuario normal del sistema con permiso inicial de poder escalar a superuser mediante el comando sudo.\nConfiguración inicial sudo apt update # fix key (segun que sabor o Desktop se instale, puede ocurrir que las claves esten mal, se corrige ejecutando lo siguiente) sudo mv /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d/trusted-org.gpg sudo apt update \u0026\u0026 sudo apt-get -y upgrade # Setting users sudo users echo \"$USER ALL=NOPASSWD:ALL\" |sudo tee /etc/sudoers.d/$USER # Configuration users to group su sudo sed -i.org \"s/^# auth.*required.*pam_wheel.so$/\u0026\\nauth required pam_wheel.so group=adm/\" \\ /etc/pam.d/su # Disable snap (kde neon trae por defecto activado snap. El autor de este artículo prefiere desactivarlo) systemctl -t service |grep snapd for s in $(systemctl -t service |grep snapd|awk '{print $1}'); do sudo systemctl disable --now ${s}; done sudo systemctl disable --now snapd.socket # Instalar vim y algunos de sus paquetes extras sudo apt install vim vim-scripts exuberant-ctags libtemplate-perl # Instalar servidor ssh y paquetes extras sudo apt install -y rsync openssh-client openssh-server tmux # Instalar algunos paquetes extras sudo apt install -y byobu git po-debconf screen ",
+    "description": "Configuración mínima inicial sugerida",
+    "tags": [
+      "desktop",
+      "UbuntuLTS",
+      "Linux"
+    ],
+    "title": "Configuración mínima inicial",
+    "uri": "/ubuntu/initial.settings/index.html"
   },
   {
     "content": " Despliegue de servidor host anfitrión host virtualización KVM.\nEspecificación inicial 1 x bridge: br0 1 x ethernet: enp1s0 Configuración IP: Especificación asignación (fija) IP 192.168.123.35 gateway 192.168.123.1 red 192.168.123.0/24 DNS1-3 192.168.123.1,8.8.8.8,1.1.1.1 Actualización sistema, instalando paquetes (opcionales) dzamo@ubuntu-k8s:~$ sudo apt -y update \u0026\u0026 sudo apt -y upgrade dzamo@ubuntu-k8s:~$ sudo apt install -y neovim tmux vim vim-scripts exuberant-ctags python-greenlet-dev Instalación/configuración de KVM # Install KVM in Ubuntu dzamo@ubuntu-k8s:~$ sudo apt -y install qemu-kvm libvirt-dev bridge-utils libvirt-daemon-system libvirt-daemon virtinst bridge-utils libosinfo-bin libguestfs-tools virt-top dzamo@ubuntu-k8s:~$ sudo usermod -a $USER -G libvirt,libvirt-qemu,libvirt-dnsmasq,kvm dzamo@ubuntu-k8s:~$ sudo modprobe vhost_net dzamo@ubuntu-k8s:~$ sudo lsmod | grep vhost dzamo@ubuntu-k8s:~$ echo \"vhost_net\" | sudo tee -a /etc/modules dzamo@ubuntu-k8s:~$ sudo vim /etc/netplan/00-installer-config.yaml Configuración bridge e interface eth dzamo@ubuntu-k8s:~$ cat /etc/netplan/00-installer-config.yaml network: ethernets: enp1s0: dhcp4: false dhcp6: false bridges: br0: interfaces: [enp1s0] dhcp4: false addresses: [192.168.123.35/24] macaddress: 52:54:00:e8:a8:08 routes: - to: default via: 192.168.123.1 metric: 100 nameservers: addresses: [192.168.123.1,1.1.1.1,8.8.8.8] search: [my.net] parameters: stp: false dhcp6: false version: 2 dzamo@ubuntu-k8s:~$ sudo netplan apply dzamo@ubuntu-k8s:~$ ip a dzamo@ubuntu-k8s:~$ wget www.google.com dzamo@ubuntu-k8s:~$ rm index.html dzamo@ubuntu-k8s:~$ ip a dzamo@ubuntu-k8s:~$ sudo reboot ",
@@ -47,7 +58,7 @@ var relearn_search_index = [
       "UbuntuLTS"
     ],
     "title": "Anfitrión KVM",
-    "uri": "/ubuntu-lts-server/kvm/index.html"
+    "uri": "/ubuntu/kvm/index.html"
   },
   {
     "content": "Este proyecto es el despliegue de Ansible AWX, edición comunitaria de Red Hat Ansible Tower.\nEn la siguiente representación se muestra un diagrama del despliegue. El cual es realizado sobre un host motor de kubernetes con minikube con libvirt como runtime (driver kvm).\nTecnologías utilizadas Contenedores: kubernetes / k3s or minikube Dist. Linux: AlmaLinux 9 Sesión de instalación/configuración La sesión siguiente fue realizada tanto sobre un cluster de minikube como en uno con k3s. Aquí se comparte el despligue realizado con k3s.\n# Ansible AWX in kubernetes k3s git clone https://github.com/ansible/awx-operator.git cd awx-operator/ git checkout 2.2.1 git branch export NAMESPACE=ansible-awx make deploy kubectl get pods -n $NAMESPACE cp awx-demo.yml ansible-awx.yml # Modifico el nombre del namespace a crear sed -i 's/name: awx-demo/name: ansible-awx/g' ansible-awx.yml sudo /usr/local/bin/kubectl config set-context --current --namespace=$NAMESPACE kubectl apply -f ansible-awx.yml # Reviso el estado del despliegue, para luego continuar kubectl logs -f deployments/awx-operator-controller-manager -c awx-manager kubectl get pods -l \"app.kubernetes.io/managed-by=awx-operator\" kubectl get service -l \"app.kubernetes.io/managed-by=awx-operator\" # Genero una primera contraseña para el usuario admin pueda ingresar a la interface web kubectl get secret ansible-awx-admin-password -o jsonpath=\"{.data.password}\" | base64 --decode; echo # Forward al servicio para acceder externamente kubectl port-forward service/ansible-awx-service --address 0.0.0.0 10445:80 \u0026 Ansible AWX debería estar disponible en el URL http://\u003cIP_SERVIDOR_KUBERNETES\u003e:10445. En este caso ahora implementado el ingreso a la interface Web se muestra en la siguiente captura.\nRepositorio …\n",
@@ -60,7 +71,7 @@ var relearn_search_index = [
     "uri": "/kubernetes-deployments/ansible-awx/index.html"
   },
   {
-    "content": " En este artículo es una hoja de referencia parcial de los comandos de virsh.\nQué virsh? virsh es una interfaz de usuario de administración para dominios invitados (guest, o m’aquinas virtuales) de libvirt. Con virsh se puede crear, pausar, reiniciar, cerrar dominios y realizar diferentes tareas de sobre los guest (VM) actuales disponibles en una plataforma de hipervisor de virtualización KVM/libvirt.\nListar todos los dominios guest (máquinas virtuales) del host KVM virsh list --all Sintaxis para crear snapshot en de VM en Linux virsh snapshot-create-as --domain {VM-NAME} --name \"{SNAPSHOT-NAME}\" Referencias Virsh commands cheatsheet to manage KVM guest virtual machines. How to create snapshot in Linux KVM VM/Domain. KVM Cheat Sheet . ",
+    "content": " En este artículo es una hoja de referencia parcial de los comandos de virsh.\nQué virsh? virsh es una interfaz de usuario de administración para dominios invitados (guest, o m’aquinas virtuales) de libvirt. Con virsh se puede crear, pausar, reiniciar, cerrar dominios y realizar diferentes tareas de sobre los guest (VM) actuales disponibles en una plataforma de hipervisor de virtualización KVM/libvirt.\nListar todos los dominios guest (máquinas virtuales) del host KVM virsh list --all Crear snapshot de VM/dominio de KVM/libvirt virsh snapshot-create-as --domain {VM-NAME} --name \"{SNAPSHOT-NAME}\" Referencias Virsh commands cheatsheet to manage KVM guest virtual machines. How to create snapshot in Linux KVM VM/Domain. KVM Cheat Sheet . ",
     "description": "Administración de máquinas virtuales invitadas KVM/libvirt",
     "tags": [
       "virtualization",
@@ -93,7 +104,7 @@ var relearn_search_index = [
       "virtualization"
     ],
     "title": "Minikube (driver kvm)",
-    "uri": "/ubuntu-lts-server/minikube-kvm/index.html"
+    "uri": "/ubuntu/minikube-kvm/index.html"
   },
   {
     "content": "Relevantes en esta nota Sección variables de entorno, definición env en manifiesto. Utilización de variables recuperadas desde kubernetes Downward API Manifiesto apiVersion: v1 kind: Pod metadata: name: nginx spec: containers: - name: nginx image: nginx:alpine env: - name: var_1 value: \"value_val_1\" - name: var_2 value: \"value_val_2\" - name: DD_AGENT_HOST valueFrom: fieldRef: fieldPath: status.hostIP env En la sección env se pueden definir/pasar variables de entornos. En lo anterior es:\nenv: # Variables de entorno - name: var_1 ## 'Nombre 1' value: \"value_val_1\" ## Valor variable 'Nombre 1' - name: var_2 ## 'Nombre 2' value: \"value_val_2\" ## Valor variable 'Nombre 2' - name: dd_agent_host ## Variable definida desde el \"Downward API\" (son variables/valores que se pueden consultar) valueFrom: fieldRef: fieldPath: status.hostIP ## Se asigna el valor de hostIP (su valor se recupera desde la \"Downward API\" de kubernetes) donde esta corriendo el pod, en este caso. Sesión comandos [dzamo@victus kubernetes]$ kubectl apply -f 03-pod-w-env.yaml [dzamo@victus kubernetes]$ kubectl get pod NAME READY STATUS RESTARTS AGE nginx-w-env 1/1 Running 0 18s [dzamo@victus kubernetes]$ kubectl exec nginx-w-env -- env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin HOSTNAME=nginx-w-env NGINX_VERSION=1.25.1 PKG_RELEASE=1 NJS_VERSION=0.7.12 dd_agent_host=10.0.0.84 var_1=value_var_1 var_2=value_var_2 KUBERNETES_PORT=tcp://10.43.0.1:443 KUBERNETES_PORT_443_TCP=tcp://10.43.0.1:443 KUBERNETES_PORT_443_TCP_PROTO=tcp KUBERNETES_PORT_443_TCP_PORT=443 KUBERNETES_PORT_443_TCP_ADDR=10.43.0.1 KUBERNETES_SERVICE_HOST=10.43.0.1 KUBERNETES_SERVICE_PORT=443 KUBERNETES_SERVICE_PORT_HTTPS=443 HOME=/root [dzamo@victus kubernetes]$ kubectl exec -it nginx-w-env -- sh / # hostname nginx-w-env / # exit ",
@@ -157,11 +168,18 @@ var relearn_search_index = [
     "content": "",
     "description": "",
     "tags": null,
+    "title": "Tag :: desktop",
+    "uri": "/tags/desktop/index.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
     "title": "Tag :: documentation",
     "uri": "/tags/documentation/index.html"
   },
   {
-    "content": "En este sitio comparto algunos artículos, implementaciones y/o proyectos implementados.\nEste sitio esta generado con Hugo y utiliza inicialmente el theme Hugo Relearn Theme.\nAlgunos de los artículos y/o proyectos compartidos aquí son:\nKubernetes cluster k3sCluster kubernetes con k3s. 1 nodo master (control-plane) + 'N' nodos worker\nKubernetes - desplieguesAplicaciones y/o servicios de Kubernetes\nUbuntu server LTSUbuntu server LTS\nKubernetes - notasEntradas relacionadas a Kubernetes. Todo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.\nKVMKernel Virtual Machine - KVM\n",
+    "content": "En este sitio comparto algunos artículos, implementaciones y/o proyectos implementados.\nEste sitio esta generado con Hugo y utiliza inicialmente el theme Hugo Relearn Theme.\nAlgunos de los artículos y/o proyectos compartidos aquí son:\nKubernetes cluster k3sCluster kubernetes con k3s. 1 nodo master (control-plane) + 'N' nodos worker\nKubernetes - desplieguesAplicaciones y/o servicios de Kubernetes\nUbuntuUbuntu server LTS\nKubernetes - notasEntradas relacionadas a Kubernetes. Todo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.\nKVMKernel Virtual Machine - KVM\n",
     "description": "",
     "tags": null,
     "title": "Inicio sitio",
@@ -187,6 +205,13 @@ var relearn_search_index = [
     "tags": null,
     "title": "Tag :: libvirtd",
     "uri": "/tags/libvirtd/index.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "Tag :: Linux",
+    "uri": "/tags/linux/index.html"
   },
   {
     "content": "",

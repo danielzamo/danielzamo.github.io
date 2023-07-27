@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.101.0">
+    <meta name="generator" content="Relearn 5.16.2+tip">
+    <meta name="description" content="Ubuntu server LTS, cluster k8s minikube (driver kvm)">
+    <meta name="author" content="Daniel Oscar Zamo">
+    <title>Minikube (driver kvm) :: Site</title>
+    <link href="http://danielzamo.github.io/ubuntu/minikube-kvm/index.html" rel="canonical" type="text/html" title="Minikube (driver kvm) :: Site">
+    <link href="/ubuntu/minikube-kvm/index.xml" rel="alternate" type="application/rss+xml" title="Minikube (driver kvm) :: Site">
+    <link href="/images/logo.svg?1690493648" rel="icon" type="image/svg+xml">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1690493648" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1690493648" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1690493648" rel="stylesheet">
+    <link href="/css/auto-complete.css?1690493648" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1690493648" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1690493648" rel="stylesheet">
+    <link href="/css/fonts.css?1690493648" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1690493648" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1690493648" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1690493648" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1690493648" rel="stylesheet">
+    <link href="/css/print.css?1690493648" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1690493648" rel="stylesheet">
+    <link href="/css/ie.css?1690493648" rel="stylesheet">
+    <script src="/js/url.js?1690493648"></script>
+    <script src="/js/variant.js?1690493648"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='http:\/\/danielzamo.github.io/';
+      window.variants && variants.init( [ 'relearn-dark' ] );
+    </script>
+    <style>
+      #body img.bg-white {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="/ubuntu/minikube-kvm/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+</span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Inicio sitio</span></a><meta itemprop="position" content="1"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/ubuntu/index.html"><span itemprop="name">Ubuntu</span></a><meta itemprop="position" content="2"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Minikube (driver kvm)</span><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+
+          <article class="default">
+            <header class="headline">
+<div class="tags">
+  <a class="tag-link" href="/tags/container/index.html">container</a>
+  <a class="tag-link" href="/tags/kubernetes/index.html">kubernetes</a>
+  <a class="tag-link" href="/tags/kvm/index.html">KVM</a>
+  <a class="tag-link" href="/tags/minikube/index.html">minikube</a>
+  <a class="tag-link" href="/tags/ubuntu-lts/index.html">Ubuntu LTS</a>
+  <a class="tag-link" href="/tags/virtualization/index.html">virtualization</a>
+</div>
+            </header>
+<h1 id="minikube-driver-kvm">Minikube (driver kvm)</h1>
+
+<blockquote>
+<p>Despliegue de cluster Ubuntu server LTS k8s minikube (driver kvm), en un simple host.</p>
+</blockquote>
+<h2 id="tecnologías-utilizadas">Tecnologías utilizadas</h2>
+<ul>
+<li><a href="https://minikube.sigs.k8s.io/docs/start/" target="_blank">Minikube</a></li>
+<li><a href="https://www.linux-kvm.org/page/Main_Page" target="_blank">KVM</a></li>
+<li><a href="https://ubuntu.com/" target="_blank">Ubuntu LTS 22.04..</a></li>
+</ul>
+<h2 id="especificación-inicial">Especificación inicial</h2>
+<p>&hellip;</p>
+<h3 id="dependecias-cumplida">Dependecias cumplida</h3>
+<p>En este depliegue se implementa un cluster minikube sobre un simple host. El driver usado es <em>kvm</em>. Se da por supuesto que se ha instalado el host anfitrión KVM. Si necesita ayuda puede consultar <a href="http://danielzamo.github.io/ubuntu/kvm/" title="Anfitrión KVM">instalar anfitrión KVM</a> en Ubuntu LTS, en este mismo sitio.</p>
+<h2 id="actualización-sistema-instalando-paquetes-opcionales">Actualización sistema, instalando paquetes (opcionales)</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo apt -y update <span style="color:#f92672">&amp;&amp;</span> sudo apt -y upgrade
+</span></span></code></pre></div><h2 id="instalaciónconfiguración-de-minikube">Instalación/configuración de minikube</h2>
+<p>En este apartado se instala y configura un cluster minikube con driver kvm (REF LINK).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ <span style="color:#75715e"># Instalacion minikube</span>
+</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo install minikube-linux-amd64 /usr/local/bin/minikube
+</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ minikube version
+</span></span></code></pre></div><h2 id="instalación-de-kubectl">Instalación de kubectl</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo curl -LO https://storage.googleapis.com/kubernetes-release/release/<span style="color:#e6db74">`</span>curl <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -s https://storage.googleapis.com/kubernetes-release/release/stable.txt<span style="color:#e6db74">`</span>/bin/linux/amd64/kubectl
+</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo chmod <span style="color:#ae81ff">755</span> ./kubectl
+</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo mv kubectl /usr/local/bin/
+</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ kubectl version -o json  --client
+</span></span></code></pre></div>
+            <footer class="footline">
+
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="/js/clipboard.min.js?1690493648" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1690493648" defer></script>
+    <script src="/js/theme.js?1690493648" defer></script>
+  </body>
+</html>

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="http://danielzamo.github.io/tags/ubuntults/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Anfitrión KVM</title>
-      <link>http://danielzamo.github.io/ubuntu-lts-server/kvm/index.html</link>
+      <title>Configuración mínima inicial</title>
+      <link>http://danielzamo.github.io/ubuntu/initial.settings/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/ubuntu-lts-server/kvm/index.html</guid>
+      <guid>http://danielzamo.github.io/ubuntu/initial.settings/index.html</guid>
+      <description>En esta entrada se comparte las primeras tareas mínimas iniciales, sugeridas de realizar sobre un Linux Ubuntu LTS 22,04 recien instalado.
+Nota del autor: las tareas reportadas aquí, son realizadas sobre un sistema que ya tiene instalado y disponible Linux basado en Ubuntu LTS 22.04. De modo que las tareas de instalación se dan por supuestas cumplidas.
+El autor comparte como configura un sistema operativo basado en Ubuntu, que a posterior puede ser la base de un sistema Linux de utilizar, sea este como servidor o como estación de trabajo diario (con ambiente gráfico disponible), cuando la distribución utilizada es un derivado de Ubuntu, en particular en la versión 22.</description>
+    </item>
+    <item>
+      <title>Anfitrión KVM</title>
+      <link>http://danielzamo.github.io/ubuntu/kvm/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/ubuntu/kvm/index.html</guid>
       <description>Despliegue de servidor host anfitrión host virtualización KVM.
 Especificación inicial 1 x bridge: br0 1 x ethernet: enp1s0 Configuración IP: Especificación asignación (fija) IP 192.168.123.35 gateway 192.168.123.1 red 192.168.123.0/24 DNS1-3 192.168.123.1,8.8.8.8,1.1.1.1 Actualización sistema, instalando paquetes (opcionales) dzamo@ubuntu-k8s:~$ sudo apt -y update &amp;amp;&amp;amp; sudo apt -y upgrade dzamo@ubuntu-k8s:~$ sudo apt install -y neovim tmux vim vim-scripts exuberant-ctags python-greenlet-dev Instalación/configuración de KVM # Install KVM in Ubuntu dzamo@ubuntu-k8s:~$ sudo apt -y install qemu-kvm libvirt-dev bridge-utils libvirt-daemon-system libvirt-daemon virtinst bridge-utils libosinfo-bin libguestfs-tools virt-top dzamo@ubuntu-k8s:~$ sudo usermod -a $USER -G libvirt,libvirt-qemu,libvirt-dnsmasq,kvm dzamo@ubuntu-k8s:~$ sudo modprobe vhost_net dzamo@ubuntu-k8s:~$ sudo lsmod | grep vhost dzamo@ubuntu-k8s:~$ echo &amp;#34;vhost_net&amp;#34; | sudo tee -a /etc/modules dzamo@ubuntu-k8s:~$ sudo vim /etc/netplan/00-installer-config.</description>
     </item>

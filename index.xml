@@ -26,14 +26,11 @@ Algunos de las aplicaciones y/o servicios desplegados/implementados para kuberne
 Ansible - AWXEste proyecto es el despliegue de Ansible AWX, edición comunitaria de Red Hat Ansible Tower.</description>
     </item>
     <item>
-      <title>Ubuntu server LTS</title>
-      <link>http://danielzamo.github.io/ubuntu-lts-server/index.html</link>
+      <title>Ubuntu</title>
+      <link>http://danielzamo.github.io/ubuntu/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/ubuntu-lts-server/index.html</guid>
-      <description>En esta sección se comparten configuraciones de servicios y/o configuración de servidores basados en Ubuntu server LTS.
-Especificación hardware Especificación hardware:
-cpu: 4 - ALU RAM: 10Gb HHDD: 20Gb 1 x eth: enp1s0 En la figura se representa el servidor con distribución Ubuntu LTS server 20.04&amp;hellip; inicial desplegado en este apartado. Esta configuración inicial es utilizada como base para desplegar los servicios cuyo contenido es compartido aquí.
-El nombre hostname: ubuntu-k8s</description>
+      <guid>http://danielzamo.github.io/ubuntu/index.html</guid>
+      <description>En esta sección se comparten configuraciones de servicios y/o configuración de programas de servidores y/o estaciones de trabajo (con desktop o ambiente gráfico) basados en Ubuntu LTS ultima estable 22.04, de modo de tener disponible un servidor o una estación desktop para ser usada como PC de uso diario o desarrollo. ( Varias de las entradas serán tareas realizadas desde el CLI bash que dispone el sistema una vez recien instalado.</description>
     </item>
     <item>
       <title>Kubernetes - notas</title>

@@ -8,9 +8,9 @@
     <language>en-us</language><atom:link href="http://danielzamo.github.io/tags/ubuntu-lts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Minikube (driver kvm)</title>
-      <link>http://danielzamo.github.io/ubuntu-lts-server/minikube-kvm/index.html</link>
+      <link>http://danielzamo.github.io/ubuntu/minikube-kvm/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/ubuntu-lts-server/minikube-kvm/index.html</guid>
+      <guid>http://danielzamo.github.io/ubuntu/minikube-kvm/index.html</guid>
       <description>Despliegue de cluster Ubuntu server LTS k8s minikube (driver kvm), en un simple host.
 Tecnologías utilizadas Minikube KVM Ubuntu LTS 22.04.. Especificación inicial &amp;hellip;
 Dependecias cumplida En este depliegue se implementa un cluster minikube sobre un simple host. El driver usado es kvm. Se da por supuesto que se ha instalado el host anfitrión KVM. Si necesita ayuda puede consultar instalar anfitrión KVM en Ubuntu LTS, en este mismo sitio.</description>
