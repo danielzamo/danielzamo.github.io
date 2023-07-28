@@ -42,6 +42,14 @@ Varias de las entradas serán tareas realizadas desde el CLI bash que dispone el
 Todo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.</description>
     </item>
     <item>
+      <title>Fedora 38</title>
+      <link>http://danielzamo.github.io/fedora38/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/fedora38/index.html</guid>
+      <description>En esta sección se comparten configuraciones de servicios y/o de programas, para despliegues de servidores y/o estaciones de trabajo (con desktop/ambiente gráfico) basados en Fedora 38, derivados o equivalentes.
+Varias de las entradas serán tareas realizadas desde el CLI bash que dispone el sistema una vez recien instalado. En los artículos presentados aquí donde están orientados a desplegar una estación con ambiente gráfico, se ha preferido utilizar un desktop basado en Kde Plasma 5,24 o superior.</description>
+    </item>
+    <item>
       <title>KVM</title>
       <link>http://danielzamo.github.io/kvm/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -49,14 +57,6 @@ Todo el código implementado y los casos de uso probados se encuentran disponibl
       <description>En esta sección se comparten artículos de KVM (Kernel Virtual Machine), virtualización completa para Linux en hardware x86.
 Por el momento, en esta sección se publican los siguientes casos de uso (despliegues/implementaciones):
 Comando virshAdministración de máquinas virtuales invitadas KVM/libvirt</description>
-    </item>
-    <item>
-      <title>Fedora 38 - Pandoc</title>
-      <link>http://danielzamo.github.io/fedora38.pandoc/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/fedora38.pandoc/index.html</guid>
-      <description>En esta entrada se instala y configura el conversor de documentos Pandoc sobre Fedora 38. También se instala Latex, para soportar mas funcionalidad.
-Instalación de Latex sudo dnf update &amp;amp;&amp;amp; sudo dnf -y upgrade # Instalar Latex/texlive esquema básico sudo dnf -y install texlive # Instalar Latex/texlive esquema full (advertencia: esta instalación ocupa mas de 4Gb una vez instalado) sudo dnf -y install texlive-scheme-full Instalación de Pandoc sudo dnf -y install pandoc Utilizando Pandoc # Creando fichero markdown echo -e &amp;#34;# H1\n\nEste es un texto&amp;#34; &amp;gt; text.</description>
     </item>
   </channel>
 </rss>

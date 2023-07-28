@@ -5,10 +5,11 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.101.0">
     <meta name="generator" content="Relearn 5.16.2+tip">
-    <meta name="description" content="Documentation theme based Hugo Relearn Theme">
+    <meta name="description" content="Fedora 38">
     <meta name="author" content="Daniel Oscar Zamo">
-    <title>Ubuntu LTS :: Tag :: Site</title>
-    <link href="/tags/ubuntu-lts/index.xml" rel="alternate" type="application/rss+xml" title="Ubuntu LTS :: Tag :: Site">
+    <title>Fedora 38 :: Site</title>
+    <link href="/fedora38/index.xml" rel="alternate" type="application/rss+xml" title="Fedora 38 :: Site">
+    <link href="/fedora38/index.print.html" rel="alternate" type="text/html" title="Fedora 38 :: Site">
     <link href="/images/logo.svg?1690583846" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/css/fontawesome-all.min.css?1690583846" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1690583846" rel="stylesheet"></noscript>
@@ -46,44 +47,84 @@
       }
     </style>
   </head>
-  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/tags/ubuntu-lts/index.html">
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/fedora38/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
       <nav id="topbar" class="highlightable">
         <div>
           <div class="navigation">
-            <span class="nav nav-next topbar-link"><i class="fa fa-chevron-right fa-fw"></i></span>
+            <a class="nav nav-next topbar-link" href="/fedora38/fedora38.pandoc/index.html" title="Fedora 38 - Pandoc (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
           </div>
           <div class="navigation">
-            <a class="nav nav-prev topbar-link" href="/index.html" title="Inicio sitio (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+            <a class="nav nav-prev topbar-link" href="/kubernetes-notes/pod/daemonset/index.html" title="Daemonset (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="top-print-link">
+            <a class="print-link topbar-link" title='Print whole chapter (CTRL+ALT+p)' href="/fedora38/index.print.html">
+              <i class="fas fa-print fa-fw"></i>
+            </a>
           </div>
           <div id="breadcrumbs">
             <span id="sidebar-toggle-span">
               <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
 </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Inicio sitio</span></a><meta itemprop="position" content="1"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/tags/index.html"><span itemprop="name">Tags</span></a><meta itemprop="position" content="2"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Tag :: Ubuntu LTS</span><meta itemprop="position" content="3"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Fedora 38</span><meta itemprop="position" content="2"></li>
             </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#especificación-hardware">Especificación hardware</a></li>
+    <li><a href="#tecnologías-usadas">Tecnologías usadas</a></li>
+    <li><a href="#desplieguesartículos-actuales-compartidos-aquí">Despliegues/artículos actuales compartidos aquí</a></li>
+  </ul>
+</nav>
+            </div>
           </div>
         </div>
       </nav>
-      <main id="body-inner" class="highlightable default" tabindex="-1">
+      <main id="body-inner" class="highlightable chapter narrow" tabindex="-1">
         <div class="flex-block-wrapper">
 
-          <article>
+          <article class="chapter">
             <header class="headline">
             </header>
-<h1 id="tag--ubuntu-lts">Tag :: Ubuntu LTS</h1>
-<ul class="columnize">
-  <li><a href="/ubuntu/minikube-kvm/index.html">Minikube (driver kvm)</a></li>
+<div class="article-subheading">Chapter 6</div>
+<h1 id="fedora-38">Fedora 38</h1>
+
+<blockquote>
+<p>En esta sección se comparten configuraciones de servicios y/o de programas, para despliegues de servidores y/o estaciones de trabajo (con desktop/ambiente gráfico) basados en Fedora 38, derivados o equivalentes.</p>
+<p>Varias de las entradas serán tareas realizadas desde el CLI bash que dispone el sistema una vez recien instalado. En los artículos presentados aquí donde están orientados a desplegar una estación con ambiente gráfico, se ha preferido utilizar un desktop basado en Kde Plasma 5,24 o superior.</p>
+</blockquote>
+<h2 id="especificación-hardware">Especificación hardware</h2>
+<p><em>Especificación hardware:</em></p>
+<ul>
+<li>cpu: <code>4 - ALU</code></li>
+<li>RAM: <code>10Gb</code></li>
+<li>HHDD: <code>20Gb</code></li>
+<li>1 x eth: <code>eno1</code></li>
+</ul>
+<h2 id="tecnologías-usadas">Tecnologías usadas</h2>
+<ul>
+<li>Distribución Linux principal usada: <a href="https://fedoraproject.org" target="_blank">Fedora 38</a>.</li>
+</ul>
+<h2 id="desplieguesartículos-actuales-compartidos-aquí">Despliegues/artículos actuales compartidos aquí</h2>
+<p>Por el momento, en esta sección se publican los siguientes casos de uso (despliegues/implementaciones):</p>
+
+<ul class="children children-li children-sort-">
+	
+<li><a href="/fedora38/fedora38.pandoc/index.html">Fedora 38 - Pandoc</a><p>Instalación y configuración de Pandoc sobre Fedora 38</p></li>
 </ul>
 
             <footer class="footline">
+
             </footer>
-          </article>        </div>
+          </article>
+        </div>
       </main>
     </div>
     <aside id="sidebar" class="default-animation showVisitedLinks">
@@ -188,7 +229,7 @@
           <li data-nav-id="/kubernetes-notes/pod/env/index.html" class=""><a class="padding" href="/kubernetes-notes/pod/env/index.html">Sección env<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/kubernetes-notes/pod/resources/index.html" class=""><a class="padding" href="/kubernetes-notes/pod/resources/index.html">Sección resources<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/kubernetes-notes/pod/daemonset/index.html" class=""><a class="padding" href="/kubernetes-notes/pod/daemonset/index.html">Daemonset<i class="fas fa-check read-icon"></i></a></li></ul></li></ul></li>
-          <li data-nav-id="/fedora38/index.html" class=""><input type="checkbox" id="section-e702f8caaf4986c9077c655128dfc5e5" aria-controls="subsections-e702f8caaf4986c9077c655128dfc5e5"><label for="section-e702f8caaf4986c9077c655128dfc5e5"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Fedora 38</span></label><a class="padding" href="/fedora38/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">6.</b> Fedora 38<i class="fas fa-check read-icon"></i></a><ul id="subsections-e702f8caaf4986c9077c655128dfc5e5" class="morespace collapsible-menu">
+          <li data-nav-id="/fedora38/index.html" class="active parent "><input type="checkbox" id="section-e702f8caaf4986c9077c655128dfc5e5" aria-controls="subsections-e702f8caaf4986c9077c655128dfc5e5" checked><label for="section-e702f8caaf4986c9077c655128dfc5e5"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Fedora 38</span></label><a class="padding" href="/fedora38/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">6.</b> Fedora 38<i class="fas fa-check read-icon"></i></a><ul id="subsections-e702f8caaf4986c9077c655128dfc5e5" class="morespace collapsible-menu">
           <li data-nav-id="/fedora38/fedora38.pandoc/index.html" class=""><a class="padding" href="/fedora38/fedora38.pandoc/index.html">Fedora 38 - Pandoc<i class="fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/kvm/index.html" class=""><input type="checkbox" id="section-30380cba3049f509579543813d6a6ac8" aria-controls="subsections-30380cba3049f509579543813d6a6ac8"><label for="section-30380cba3049f509579543813d6a6ac8"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu KVM</span></label><a class="padding" href="/kvm/index.html">KVM<i class="fas fa-check read-icon"></i></a><ul id="subsections-30380cba3049f509579543813d6a6ac8" class="morespace collapsible-menu">
           <li data-nav-id="/kvm/virsh/index.html" class=""><a class="padding" href="/kvm/virsh/index.html">Comando virsh<i class="fas fa-check read-icon"></i></a></li></ul></li>

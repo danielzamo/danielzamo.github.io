@@ -5,10 +5,11 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.101.0">
     <meta name="generator" content="Relearn 5.16.2+tip">
-    <meta name="description" content="Documentation theme based Hugo Relearn Theme">
+    <meta name="description" content="Instalación y configuración de Pandoc sobre Fedora 38">
     <meta name="author" content="Daniel Oscar Zamo">
-    <title>Ubuntu LTS :: Tag :: Site</title>
-    <link href="/tags/ubuntu-lts/index.xml" rel="alternate" type="application/rss+xml" title="Ubuntu LTS :: Tag :: Site">
+    <title>Fedora 38 - Pandoc :: Site</title>
+    <link href="/fedora38/fedora38.pandoc/index.xml" rel="alternate" type="application/rss+xml" title="Fedora 38 - Pandoc :: Site">
+    <link href="/fedora38/fedora38.pandoc/index.print.html" rel="alternate" type="text/html" title="Fedora 38 - Pandoc :: Site">
     <link href="/images/logo.svg?1690583846" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/css/fontawesome-all.min.css?1690583846" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1690583846" rel="stylesheet"></noscript>
@@ -46,44 +47,90 @@
       }
     </style>
   </head>
-  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/tags/ubuntu-lts/index.html">
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/fedora38/fedora38.pandoc/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
       <nav id="topbar" class="highlightable">
         <div>
           <div class="navigation">
-            <span class="nav nav-next topbar-link"><i class="fa fa-chevron-right fa-fw"></i></span>
+            <a class="nav nav-next topbar-link" href="/kvm/index.html" title="KVM (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
           </div>
           <div class="navigation">
-            <a class="nav nav-prev topbar-link" href="/index.html" title="Inicio sitio (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+            <a class="nav nav-prev topbar-link" href="/fedora38/index.html" title="Fedora 38 (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="top-print-link">
+            <a class="print-link topbar-link" title='Print whole chapter (CTRL+ALT+p)' href="/fedora38/fedora38.pandoc/index.print.html">
+              <i class="fas fa-print fa-fw"></i>
+            </a>
           </div>
           <div id="breadcrumbs">
             <span id="sidebar-toggle-span">
               <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
 </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Inicio sitio</span></a><meta itemprop="position" content="1"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/tags/index.html"><span itemprop="name">Tags</span></a><meta itemprop="position" content="2"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Tag :: Ubuntu LTS</span><meta itemprop="position" content="3"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/fedora38/index.html"><span itemprop="name">Fedora 38</span></a><meta itemprop="position" content="2"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Fedora 38 - Pandoc</span><meta itemprop="position" content="3"></li>
             </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#instalación-de-latex">Instalación de Latex</a></li>
+    <li><a href="#instalación-de-pandoc">Instalación de Pandoc</a></li>
+    <li><a href="#utilizando-pandoc">Utilizando Pandoc</a></li>
+  </ul>
+</nav>
+            </div>
           </div>
         </div>
       </nav>
       <main id="body-inner" class="highlightable default" tabindex="-1">
         <div class="flex-block-wrapper">
 
-          <article>
+          <article class="default">
             <header class="headline">
+<div class="tags">
+  <a class="tag-link" href="/tags/fedora/index.html">Fedora</a>
+  <a class="tag-link" href="/tags/latex/index.html">Latex</a>
+  <a class="tag-link" href="/tags/linux/index.html">Linux</a>
+  <a class="tag-link" href="/tags/pandoc/index.html">Pandoc</a>
+</div>
             </header>
-<h1 id="tag--ubuntu-lts">Tag :: Ubuntu LTS</h1>
-<ul class="columnize">
-  <li><a href="/ubuntu/minikube-kvm/index.html">Minikube (driver kvm)</a></li>
-</ul>
+<h1 id="fedora-38---pandoc">Fedora 38 - Pandoc</h1>
 
+<blockquote>
+<p>En esta entrada se instala y configura el conversor de documentos Pandoc sobre Fedora 38. También se instala Latex, para soportar mas funcionalidad.</p>
+</blockquote>
+<h2 id="instalación-de-latex">Instalación de Latex</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo dnf update <span style="color:#f92672">&amp;&amp;</span> sudo dnf -y upgrade
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Instalar Latex/texlive esquema básico</span>
+</span></span><span style="display:flex;"><span>sudo dnf -y install texlive
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Instalar Latex/texlive esquema full (advertencia: esta instalación ocupa mas de 4Gb una vez instalado)</span>
+</span></span><span style="display:flex;"><span>sudo dnf -y install texlive-scheme-full
+</span></span></code></pre></div><h2 id="instalación-de-pandoc">Instalación de Pandoc</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo dnf -y install pandoc
+</span></span></code></pre></div><h2 id="utilizando-pandoc">Utilizando Pandoc</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Creando fichero markdown</span>
+</span></span><span style="display:flex;"><span>echo -e <span style="color:#e6db74">&#34;# H1\n\nEste es un texto&#34;</span> &gt; text.md
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Generar fichero pdf</span>
+</span></span><span style="display:flex;"><span>pandoc text.md -s -o text.pdf
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Generar fichero docx</span>
+</span></span><span style="display:flex;"><span>pandoc text.md -s -o text.docx
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Generar fichero docx, con indice</span>
+</span></span><span style="display:flex;"><span>pandoc text.md --toc -s -o text.docx
+</span></span></code></pre></div>
             <footer class="footline">
+
             </footer>
-          </article>        </div>
+          </article>
+        </div>
       </main>
     </div>
     <aside id="sidebar" class="default-animation showVisitedLinks">
@@ -188,8 +235,8 @@
           <li data-nav-id="/kubernetes-notes/pod/env/index.html" class=""><a class="padding" href="/kubernetes-notes/pod/env/index.html">Sección env<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/kubernetes-notes/pod/resources/index.html" class=""><a class="padding" href="/kubernetes-notes/pod/resources/index.html">Sección resources<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/kubernetes-notes/pod/daemonset/index.html" class=""><a class="padding" href="/kubernetes-notes/pod/daemonset/index.html">Daemonset<i class="fas fa-check read-icon"></i></a></li></ul></li></ul></li>
-          <li data-nav-id="/fedora38/index.html" class=""><input type="checkbox" id="section-e702f8caaf4986c9077c655128dfc5e5" aria-controls="subsections-e702f8caaf4986c9077c655128dfc5e5"><label for="section-e702f8caaf4986c9077c655128dfc5e5"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Fedora 38</span></label><a class="padding" href="/fedora38/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">6.</b> Fedora 38<i class="fas fa-check read-icon"></i></a><ul id="subsections-e702f8caaf4986c9077c655128dfc5e5" class="morespace collapsible-menu">
-          <li data-nav-id="/fedora38/fedora38.pandoc/index.html" class=""><a class="padding" href="/fedora38/fedora38.pandoc/index.html">Fedora 38 - Pandoc<i class="fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/fedora38/index.html" class="parent "><input type="checkbox" id="section-e702f8caaf4986c9077c655128dfc5e5" aria-controls="subsections-e702f8caaf4986c9077c655128dfc5e5" checked><label for="section-e702f8caaf4986c9077c655128dfc5e5"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Fedora 38</span></label><a class="padding" href="/fedora38/index.html"><b style="display: inline-block; font-weight: 200; padding-left: .3rem; text-align: left; width: 1.1rem;">6.</b> Fedora 38<i class="fas fa-check read-icon"></i></a><ul id="subsections-e702f8caaf4986c9077c655128dfc5e5" class="morespace collapsible-menu">
+          <li data-nav-id="/fedora38/fedora38.pandoc/index.html" class="active"><a class="padding" href="/fedora38/fedora38.pandoc/index.html">Fedora 38 - Pandoc<i class="fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/kvm/index.html" class=""><input type="checkbox" id="section-30380cba3049f509579543813d6a6ac8" aria-controls="subsections-30380cba3049f509579543813d6a6ac8"><label for="section-30380cba3049f509579543813d6a6ac8"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu KVM</span></label><a class="padding" href="/kvm/index.html">KVM<i class="fas fa-check read-icon"></i></a><ul id="subsections-30380cba3049f509579543813d6a6ac8" class="morespace collapsible-menu">
           <li data-nav-id="/kvm/virsh/index.html" class=""><a class="padding" href="/kvm/virsh/index.html">Comando virsh<i class="fas fa-check read-icon"></i></a></li></ul></li>
         </ul>

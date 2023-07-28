@@ -8,9 +8,9 @@
     <language>en-us</language><atom:link href="http://danielzamo.github.io/tags/fedora/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fedora 38 - Pandoc</title>
-      <link>http://danielzamo.github.io/fedora38.pandoc/index.html</link>
+      <link>http://danielzamo.github.io/fedora38/fedora38.pandoc/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/fedora38.pandoc/index.html</guid>
+      <guid>http://danielzamo.github.io/fedora38/fedora38.pandoc/index.html</guid>
       <description>En esta entrada se instala y configura el conversor de documentos Pandoc sobre Fedora 38. También se instala Latex, para soportar mas funcionalidad.
 Instalación de Latex sudo dnf update &amp;amp;&amp;amp; sudo dnf -y upgrade # Instalar Latex/texlive esquema básico sudo dnf -y install texlive # Instalar Latex/texlive esquema full (advertencia: esta instalación ocupa mas de 4Gb una vez instalado) sudo dnf -y install texlive-scheme-full Instalación de Pandoc sudo dnf -y install pandoc Utilizando Pandoc # Creando fichero markdown echo -e &amp;#34;# H1\n\nEste es un texto&amp;#34; &amp;gt; text.</description>
     </item>

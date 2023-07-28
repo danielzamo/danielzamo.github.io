@@ -16,6 +16,9 @@
     <loc>http://danielzamo.github.io/kubernetes-notes/index.html</loc>
   </url>
   <url>
+    <loc>http://danielzamo.github.io/fedora38/index.html</loc>
+  </url>
+  <url>
     <loc>http://danielzamo.github.io/ubuntu/initial.settings/index.html</loc>
   </url>
   <url>
@@ -43,7 +46,7 @@
     <loc>http://danielzamo.github.io/kubernetes-notes/pod/env/index.html</loc>
   </url>
   <url>
-    <loc>http://danielzamo.github.io/fedora38.pandoc/index.html</loc>
+    <loc>http://danielzamo.github.io/fedora38/fedora38.pandoc/index.html</loc>
   </url>
   <url>
     <loc>http://danielzamo.github.io/kubernetes-notes/pod/resources/index.html</loc>

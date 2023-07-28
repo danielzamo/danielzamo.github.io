@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pandoc on Site</title>
-    <link>http://danielzamo.github.io/tags/pandoc/index.html</link>
-    <description>Recent content in Pandoc on Site</description>
+    <title>Fedora 38 on Site</title>
+    <link>http://danielzamo.github.io/fedora38/index.html</link>
+    <description>Recent content in Fedora 38 on Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://danielzamo.github.io/tags/pandoc/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://danielzamo.github.io/fedora38/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fedora 38 - Pandoc</title>
       <link>http://danielzamo.github.io/fedora38/fedora38.pandoc/index.html</link>
