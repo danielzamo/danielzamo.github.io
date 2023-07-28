@@ -40,7 +40,10 @@ var relearn_search_index = [
   {
     "content": " En esta sección se comparten configuraciones de servicios y/o de programas, para despliegues de servidores y/o estaciones de trabajo (con desktop/ambiente gráfico) basados en Fedora 38, derivados o equivalentes.\nVarias de las entradas serán tareas realizadas desde el CLI bash que dispone el sistema una vez recien instalado. En los artículos presentados aquí donde están orientados a desplegar una estación con ambiente gráfico, se ha preferido utilizar un desktop basado en Kde Plasma 5,24 o superior.\nEspecificación hardware Especificación hardware:\ncpu: 4 - ALU RAM: 10Gb HHDD: 20Gb 1 x eth: eno1 Tecnologías usadas Distribución Linux principal usada: Fedora 38. Despliegues/artículos actuales compartidos aquí Por el momento, en esta sección se publican los siguientes casos de uso (despliegues/implementaciones):\nFedora 38 - PandocInstalación y configuración de Pandoc sobre Fedora 38\n",
     "description": "Fedora 38",
-    "tags": null,
+    "tags": [
+      "Fedora",
+      "Linux"
+    ],
     "title": "Fedora 38",
     "uri": "/fedora38/index.html"
   },
