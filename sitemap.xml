@@ -10,10 +10,10 @@
     <loc>http://danielzamo.github.io/kubernetes-notes/pod/index.html</loc>
   </url>
   <url>
-    <loc>http://danielzamo.github.io/ubuntu/index.html</loc>
+    <loc>http://danielzamo.github.io/kubernetes-notes/index.html</loc>
   </url>
   <url>
-    <loc>http://danielzamo.github.io/kubernetes-notes/index.html</loc>
+    <loc>http://danielzamo.github.io/ubuntu/index.html</loc>
   </url>
   <url>
     <loc>http://danielzamo.github.io/fedora38/index.html</loc>
@@ -64,6 +64,9 @@
     <loc>http://danielzamo.github.io/tags/container/index.html</loc>
   </url>
   <url>
+    <loc>http://danielzamo.github.io/tags/debian/index.html</loc>
+  </url>
+  <url>
     <loc>http://danielzamo.github.io/tags/desktop/index.html</loc>
   </url>
   <url>
@@ -104,6 +107,9 @@
   </url>
   <url>
     <loc>http://danielzamo.github.io/tags/index.html</loc>
+  </url>
+  <url>
+    <loc>http://danielzamo.github.io/tags/ubuntu/index.html</loc>
   </url>
   <url>
     <loc>http://danielzamo.github.io/tags/ubuntu-lts/index.html</loc>

@@ -24,18 +24,22 @@ var relearn_search_index = [
     "uri": "/kubernetes-notes/pod/index.html"
   },
   {
-    "content": " En esta sección se comparten configuraciones de servicios y/o de programas, para despliegues de servidores y/o estaciones de trabajo (con desktop o ambiente gráfico) basados en Ubuntu LTS ultima estable 22.04, de modo de tener disponible un servidor o una estación desktop para ser usada como PC de uso diario o desarrollo.\nVarias de las entradas serán tareas realizadas desde el CLI bash que dispone el sistema una vez recien instalado. En los artículos presentados aquí donde están orientados a desplegar una estación con ambiente gráfico, se ha preferido utilizar un desktop basado en Kde Plasma 5,24 o superior.\nEspecificación hardware Especificación hardware:\ncpu: 4 - ALU RAM: 10Gb HHDD: 20Gb 1 x eth: enp1s0 En la figura se representa el servidor con distribución Ubuntu LTS server 20.04… inicial desplegado en este apartado. Esta configuración inicial es utilizada como base para desplegar los servicios cuyo contenido es compartido aquí.\nEl nombre hostname: ubuntu-k8s\nURL repositorio: PENDIENTE. Por el momento hasta que finalize el proyecto, el contanido solo es compartido aquí, en este sitio web estático.\nTecnologías usadas Distribución Linux principal usada: Ubuntu server LTS - 22.04... Despliegues/artículos actuales compartidos aquí Por el momento, en esta sección se publican los siguientes casos de uso (despliegues/implementaciones):\nUbuntu: configuración inicialConfiguración mínima inicial sugerida\nUbuntu: instalar PythonInstalación y configuración de Python sobre Ubuntu 22.04 LTS\nAnfitrión KVMUbuntu server LTS, host anfitrión virtualización KVM\nMinikube (driver kvm)Ubuntu server LTS, cluster k8s minikube (driver kvm)\n",
-    "description": "Ubuntu server LTS",
-    "tags": null,
-    "title": "Ubuntu",
-    "uri": "/ubuntu/index.html"
-  },
-  {
     "content": "Entradas relacionadas a Kubernetes.\nTodo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.\n",
     "description": "",
     "tags": null,
     "title": "Kubernetes - notas",
     "uri": "/kubernetes-notes/index.html"
+  },
+  {
+    "content": " En esta sección se comparten configuraciones de servicios y/o de programas, para despliegues de servidores y/o estaciones de trabajo (con desktop o ambiente gráfico) basados en Ubuntu LTS ultima estable 22.04, de modo de tener disponible un servidor o una estación desktop para ser usada como PC de uso diario o desarrollo.\nVarias de las entradas serán tareas realizadas desde el CLI bash que dispone el sistema una vez recien instalado. En los artículos presentados aquí donde están orientados a desplegar una estación con ambiente gráfico, se ha preferido utilizar un desktop basado en Kde Plasma 5,24 o superior.\nEspecificación hardware Especificación hardware:\ncpu: 4 - ALU RAM: 10Gb HHDD: 20Gb 1 x eth: enp1s0 En la figura se representa el servidor con distribución Ubuntu LTS server 20.04… inicial desplegado en este apartado. Esta configuración inicial es utilizada como base para desplegar los servicios cuyo contenido es compartido aquí.\nEl nombre hostname: ubuntu-k8s\nURL repositorio: PENDIENTE. Por el momento hasta que finalize el proyecto, el contanido solo es compartido aquí, en este sitio web estático.\nTecnologías usadas Distribución Linux principal usada: Ubuntu server LTS - 22.04... Despliegues/artículos actuales compartidos aquí Por el momento, en esta sección se publican los siguientes casos de uso (despliegues/implementaciones):\nUbuntu: configuración inicialConfiguración mínima inicial sugerida\nUbuntu: instalar PythonInstalación y configuración de Python sobre Ubuntu 22.04 LTS\nAnfitrión KVMUbuntu server LTS, host anfitrión virtualización KVM\nMinikube (driver kvm)Ubuntu server LTS, cluster k8s minikube (driver kvm)\n",
+    "description": "Ubuntu 22.04 LTS",
+    "tags": [
+      "Ubuntu",
+      "Debian",
+      "Linux"
+    ],
+    "title": "Ubuntu 22.04 LTS",
+    "uri": "/ubuntu/index.html"
   },
   {
     "content": " En esta sección se comparten configuraciones de servicios y/o de programas, para despliegues de servidores y/o estaciones de trabajo (con desktop/ambiente gráfico) basados en Fedora 38, derivados o equivalentes.\nVarias de las entradas serán tareas realizadas desde el CLI bash que dispone el sistema una vez recien instalado. En los artículos presentados aquí donde están orientados a desplegar una estación con ambiente gráfico, se ha preferido utilizar un desktop basado en Kde Plasma 5,24 o superior.\nEspecificación hardware Especificación hardware:\ncpu: 4 - ALU RAM: 10Gb HHDD: 20Gb 1 x eth: eno1 Tecnologías usadas Distribución Linux principal usada: Fedora 38. Despliegues/artículos actuales compartidos aquí Por el momento, en esta sección se publican los siguientes casos de uso (despliegues/implementaciones):\nFedora 38 - PandocInstalación y configuración de Pandoc sobre Fedora 38\n",
@@ -203,6 +207,13 @@ var relearn_search_index = [
     "content": "",
     "description": "",
     "tags": null,
+    "title": "Tag :: Debian",
+    "uri": "/tags/debian/index.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
     "title": "Tag :: desktop",
     "uri": "/tags/desktop/index.html"
   },
@@ -221,7 +232,7 @@ var relearn_search_index = [
     "uri": "/tags/fedora/index.html"
   },
   {
-    "content": "En este sitio comparto algunos artículos, implementaciones y/o proyectos implementados.\nEste sitio esta generado con Hugo y utiliza inicialmente el theme Hugo Relearn Theme.\nAlgunos de los artículos y/o proyectos compartidos aquí son:\nKubernetes cluster k3sCluster kubernetes con k3s. 1 nodo master (control-plane) + 'N' nodos worker\nKubernetes - desplieguesAplicaciones y/o servicios de Kubernetes\nUbuntuUbuntu server LTS\nKubernetes - notasEntradas relacionadas a Kubernetes. Todo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.\nFedora 38Fedora 38\nKVMKernel Virtual Machine - KVM\n",
+    "content": "En este sitio comparto algunos artículos, implementaciones y/o proyectos implementados.\nEste sitio esta generado con Hugo y utiliza inicialmente el theme Hugo Relearn Theme.\nAlgunos de los artículos y/o proyectos compartidos aquí son:\nKubernetes cluster k3sCluster kubernetes con k3s. 1 nodo master (control-plane) + 'N' nodos worker\nKubernetes - desplieguesAplicaciones y/o servicios de Kubernetes\nKubernetes - notasEntradas relacionadas a Kubernetes. Todo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.\nUbuntu 22.04 LTSUbuntu 22.04 LTS\nFedora 38Fedora 38\nKVMKernel Virtual Machine - KVM\n",
     "description": "",
     "tags": null,
     "title": "Inicio sitio",
@@ -296,6 +307,13 @@ var relearn_search_index = [
     "tags": null,
     "title": "Tags",
     "uri": "/tags/index.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "Tag :: Ubuntu",
+    "uri": "/tags/ubuntu/index.html"
   },
   {
     "content": "",
