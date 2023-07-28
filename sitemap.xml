@@ -34,6 +34,9 @@
     <loc>http://danielzamo.github.io/kubernetes-notes/pod/pod-minimal/index.html</loc>
   </url>
   <url>
+    <loc>http://danielzamo.github.io/kvm/index.html</loc>
+  </url>
+  <url>
     <loc>http://danielzamo.github.io/ubuntu/minikube-kvm/index.html</loc>
   </url>
   <url>
@@ -47,9 +50,6 @@
   </url>
   <url>
     <loc>http://danielzamo.github.io/kubernetes-notes/pod/daemonset/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/kvm/index.html</loc>
   </url>
   <url>
     <loc>http://danielzamo.github.io/tags/articles/index.html</loc>
