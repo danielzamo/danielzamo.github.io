@@ -138,7 +138,7 @@ var relearn_search_index = [
       "Linux",
       "Pandoc"
     ],
-    "title": "Instalar Pandoc sobre Fedora 38",
+    "title": "Fedora 38 - Pandoc",
     "uri": "/fedora38.pandoc/index.html"
   },
   {
@@ -211,7 +211,7 @@ var relearn_search_index = [
     "uri": "/tags/fedora/index.html"
   },
   {
-    "content": "En este sitio comparto algunos artículos, implementaciones y/o proyectos implementados.\nEste sitio esta generado con Hugo y utiliza inicialmente el theme Hugo Relearn Theme.\nAlgunos de los artículos y/o proyectos compartidos aquí son:\nKubernetes cluster k3sCluster kubernetes con k3s. 1 nodo master (control-plane) + 'N' nodos worker\nKubernetes - desplieguesAplicaciones y/o servicios de Kubernetes\nUbuntuUbuntu server LTS\nKubernetes - notasEntradas relacionadas a Kubernetes. Todo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.\nInstalar Pandoc sobre Fedora 38Instalación y configuración de Pandoc sobre Fedora 38\nKVMKernel Virtual Machine - KVM\n",
+    "content": "En este sitio comparto algunos artículos, implementaciones y/o proyectos implementados.\nEste sitio esta generado con Hugo y utiliza inicialmente el theme Hugo Relearn Theme.\nAlgunos de los artículos y/o proyectos compartidos aquí son:\nKubernetes cluster k3sCluster kubernetes con k3s. 1 nodo master (control-plane) + 'N' nodos worker\nKubernetes - desplieguesAplicaciones y/o servicios de Kubernetes\nUbuntuUbuntu server LTS\nKubernetes - notasEntradas relacionadas a Kubernetes. Todo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.\nFedora 38 - PandocInstalación y configuración de Pandoc sobre Fedora 38\nKVMKernel Virtual Machine - KVM\n",
     "description": "",
     "tags": null,
     "title": "Inicio sitio",
