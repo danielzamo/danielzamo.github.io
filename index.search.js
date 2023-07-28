@@ -137,7 +137,7 @@ var relearn_search_index = [
     "uri": "/kubernetes-notes/pod/env/index.html"
   },
   {
-    "content": " En esta entrada se instala y configura el conversor de documentos Pandoc sobre Fedora 38. También se instala Latex, para soportar mas funcionalidad.\nInstalación de Latex sudo dnf update \u0026\u0026 sudo dnf -y upgrade # Instalar Latex/texlive esquema básico sudo dnf -y install texlive # Instalar Latex/texlive esquema full (advertencia: esta instalación ocupa mas de 4Gb una vez instalado) sudo dnf -y install texlive-scheme-full Instalación de Pandoc sudo dnf -y install pandoc Utilizando Pandoc # Creando fichero markdown echo -e \"# H1\\n\\nEste es un texto\" \u003e text.md # Generar fichero pdf pandoc text.md -s -o text.pdf # Generar fichero docx pandoc text.md -s -o text.docx ",
+    "content": " En esta entrada se instala y configura el conversor de documentos Pandoc sobre Fedora 38. También se instala Latex, para soportar mas funcionalidad.\nInstalación de Latex sudo dnf update \u0026\u0026 sudo dnf -y upgrade # Instalar Latex/texlive esquema básico sudo dnf -y install texlive # Instalar Latex/texlive esquema full (advertencia: esta instalación ocupa mas de 4Gb una vez instalado) sudo dnf -y install texlive-scheme-full Instalación de Pandoc sudo dnf -y install pandoc Utilizando Pandoc # Creando fichero markdown echo -e \"# H1\\n\\nEste es un texto\" \u003e text.md # Generar fichero pdf pandoc text.md -s -o text.pdf # Generar fichero docx pandoc text.md -s -o text.docx # Generar fichero docx, con indice pandoc text.md --toc -s -o text.docx ",
     "description": "Instalación y configuración de Pandoc sobre Fedora 38",
     "tags": [
       "Latex",
