@@ -16,14 +16,6 @@ Nota del autor: las tareas reportadas aquí, son realizadas sobre un sistema que
 El autor comparte como configura un sistema operativo basado en Ubuntu, que a posterior puede ser la base de un sistema Linux de utilizar, sea este como servidor o como estación de trabajo diario (con ambiente gráfico disponible), cuando la distribución utilizada es un derivado de Ubuntu, en particular en la versión 22.</description>
     </item>
     <item>
-      <title>Ubuntu: instalar Python</title>
-      <link>http://danielzamo.github.io/ubuntu/ubuntu.add.python/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/ubuntu/ubuntu.add.python/index.html</guid>
-      <description>A continuación se muestra como instalar y configurar Python en una distribución Linux basada en Ubuntu 22.04 LTS. La configuración realizada básicamente aquí es identica a realizarlo sobre un sistema basado en la distribución Ubuntu 22.04 LTS (o derivadas).
-Instalación Python sudo apt update &amp;amp;&amp;amp; \ sudo apt -y install python3.10 python3.10-venv python3-pip Configurar comando python que ejecute la versión deseada En el siguiente ejemplo se configura que la versión por defecto a ejecutar con el comando python sea la 3.</description>
-    </item>
-    <item>
       <title>Anfitrión KVM</title>
       <link>http://danielzamo.github.io/ubuntu/kvm/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -39,6 +31,14 @@ Especificación inicial 1 x bridge: br0 1 x ethernet: enp1s0 Configuración IP: 
       <description>Despliegue de cluster Ubuntu server LTS k8s minikube (driver kvm), en un simple host.
 Tecnologías utilizadas Minikube KVM Ubuntu LTS 22.04.. Especificación inicial &amp;hellip;
 Dependecias cumplida En este depliegue se implementa un cluster minikube sobre un simple host. El driver usado es kvm. Se da por supuesto que se ha instalado el host anfitrión KVM. Si necesita ayuda puede consultar instalar anfitrión KVM en Ubuntu LTS, en este mismo sitio.</description>
+    </item>
+    <item>
+      <title>Ubuntu: instalar Python</title>
+      <link>http://danielzamo.github.io/ubuntu/ubuntu.add.python/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/ubuntu/ubuntu.add.python/index.html</guid>
+      <description>A continuación se muestra como instalar y configurar Python en una distribución Linux basada en Ubuntu 22.04 LTS. La configuración realizada básicamente aquí es identica a realizarlo sobre un sistema basado en la distribución Ubuntu 22.04 LTS (o derivadas).
+Instalación Python sudo apt update &amp;amp;&amp;amp; \ sudo apt -y install python3.10 python3.10-venv python3-pip Configurar comando python que ejecute la versión deseada En el siguiente ejemplo se configura que la versión por defecto a ejecutar con el comando python sea la 3.</description>
     </item>
   </channel>
 </rss>

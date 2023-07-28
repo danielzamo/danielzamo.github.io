@@ -31,15 +31,6 @@ Tecnologías utilizadas Contenedores: kubernetes / k3s or minikube Dist. Linux: 
       <description>Manifiesto mínimo [dzamo@victus my-codes]$ cat kubernetes/01-pod-minimal.yaml apiVersion: v1 kind: Pod metadata: name: nginx spec: containers: - name: nginx image: nginx:alpine Aplicando manifiesto (crear pod) [dzamo@victus my-codes]$ kubectl apply -f kubernetes/01-pod-minimal.yaml </description>
     </item>
     <item>
-      <title>Minikube (driver kvm)</title>
-      <link>http://danielzamo.github.io/ubuntu/minikube-kvm/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/ubuntu/minikube-kvm/index.html</guid>
-      <description>Despliegue de cluster Ubuntu server LTS k8s minikube (driver kvm), en un simple host.
-Tecnologías utilizadas Minikube KVM Ubuntu LTS 22.04.. Especificación inicial &amp;hellip;
-Dependecias cumplida En este depliegue se implementa un cluster minikube sobre un simple host. El driver usado es kvm. Se da por supuesto que se ha instalado el host anfitrión KVM. Si necesita ayuda puede consultar instalar anfitrión KVM en Ubuntu LTS, en este mismo sitio.</description>
-    </item>
-    <item>
       <title>Sección env</title>
       <link>http://danielzamo.github.io/kubernetes-notes/pod/env/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -60,6 +51,15 @@ env: # Variables de entorno - name: var_1 ## &amp;#39;Nombre 1&amp;#39; value: &
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://danielzamo.github.io/kubernetes-notes/pod/daemonset/index.html</guid>
       <description>En Kubernetes definir/crear un daemonset hace que el pod/contenedor/es se ejecute en todos los nodos del cluster. Este tipo componente puede utilizarse, por ejemplo para aplicaciones que esten encargas de monitorizar los nodos del cluster kubernetes. Definición mediante manifiesto [dzamo@victus my-codes]$ cat kubernetes/03-daemonset.yaml apiVersion: apps/v1 kind: DaemonSet metadata: name: nginx-deployment spec: selector: matchLabels: app: nginx template: metadata: labels: app: nginx spec: containers: - name: nginx image: nginx:alpine ports: - containerPort: 80 Aplicar el manifiesto [dzamo@victus my-codes]$ kubectl apply -f kubernetes/03-daemonset.</description>
+    </item>
+    <item>
+      <title>Minikube (driver kvm)</title>
+      <link>http://danielzamo.github.io/ubuntu/minikube-kvm/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/ubuntu/minikube-kvm/index.html</guid>
+      <description>Despliegue de cluster Ubuntu server LTS k8s minikube (driver kvm), en un simple host.
+Tecnologías utilizadas Minikube KVM Ubuntu LTS 22.04.. Especificación inicial &amp;hellip;
+Dependecias cumplida En este depliegue se implementa un cluster minikube sobre un simple host. El driver usado es kvm. Se da por supuesto que se ha instalado el host anfitrión KVM. Si necesita ayuda puede consultar instalar anfitrión KVM en Ubuntu LTS, en este mismo sitio.</description>
     </item>
   </channel>
 </rss>
