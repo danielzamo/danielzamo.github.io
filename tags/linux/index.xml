@@ -23,5 +23,13 @@ El autor comparte como configura un sistema operativo basado en Ubuntu, que a po
       <description>A continuación se muestra como instalar y configurar Python en una distribución Linux basada en Ubuntu 22.04 LTS. La configuración realizada básicamente aquí es identica a realizarlo sobre un sistema basado en la distribución Ubuntu 22.04 LTS (o derivadas).
 Instalación Python sudo apt update &amp;amp;&amp;amp; \ sudo apt -y install python3.10 python3.10-venv python3-pip Configurar comando python que ejecute la versión deseada En el siguiente ejemplo se configura que la versión por defecto a ejecutar con el comando python sea la 3.</description>
     </item>
+    <item>
+      <title>Instalar Pandoc sobre Fedora 38</title>
+      <link>http://danielzamo.github.io/fedora38.pandoc/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/fedora38.pandoc/index.html</guid>
+      <description> En esta entrada se instala y configura Pandoc sobre Fedora 38. También se instala Latex, para soportar mas funcionalidad.
+Instalación de Latex sudo dnf update &amp;amp;&amp;amp; sudo dnf -y upgrade # Instalar Latex/texlive esquema básico sudo dnf -y install texlive # Instalar Latex/texlive esquema full (advertencia: esta instalación ocupa mas de 4Gb una vez instalado) sudo dnf -y install texlive-scheme-full Instalación de Pandoc sudo dnf -y install pandoc </description>
+    </item>
   </channel>
 </rss>

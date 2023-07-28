@@ -130,6 +130,18 @@ var relearn_search_index = [
     "uri": "/kubernetes-notes/pod/env/index.html"
   },
   {
+    "content": " En esta entrada se instala y configura Pandoc sobre Fedora 38. También se instala Latex, para soportar mas funcionalidad.\nInstalación de Latex sudo dnf update \u0026\u0026 sudo dnf -y upgrade # Instalar Latex/texlive esquema básico sudo dnf -y install texlive # Instalar Latex/texlive esquema full (advertencia: esta instalación ocupa mas de 4Gb una vez instalado) sudo dnf -y install texlive-scheme-full Instalación de Pandoc sudo dnf -y install pandoc ",
+    "description": "Instalación y configuración de Pandoc sobre Fedora 38",
+    "tags": [
+      "Latex",
+      "Fedora",
+      "Linux",
+      "Pandoc"
+    ],
+    "title": "Instalar Pandoc sobre Fedora 38",
+    "uri": "/fedora38.pandoc/index.html"
+  },
+  {
     "content": "Relevantes en esta nota Por medio de los resources es que se pueden asignan diferentes recursos a nuestros objetos. Dichos recursos pueden ser asignados a diferentes contenedores (no solo a los pod). Tipos de resources? Existen al menos 2 tipos de resources que se pueden asignar. Los tipos requests y los limits. La documentación mas completa se encuentra publicada en Resource Management for Pods and Containers. Manifiesto apiVersion: v1 kind: Pod metadata: name: nginx spec: containers: - name: nginx image: nginx:alpine env: - name: var_1 value: \"val_var_1\" - name: dd_agent_host valueFrom: fieldRef: fieldPath: status.hostIP resources: requests: memory: \"64Mi\" cpu: \"200m\" limits: memory: \"128Mi\" cpu: \"500m\" ports: - containerPort: 80 Tipos de resources Resuorces requests Son los recursos que garantizamos que siempre va a tener disponible el objeto. En el ejemplo:\n... resources: requests: memory: \"64Mi\" cpu: \"200m\" ... Donde:\nmemory: \"64Mi\": es la cantidad de memoria garantizada que tendrá disponible el objeto (pod o contenedor), en el ejemplo \"64Mi\" son 64 Megas bytes (la M esta en mayuscula). cpu: \"200m\": es la cantidad de mili cores que debe estar garantizado. A su vez 1000 mili core es equivalente a 1 core de CPU. De modo que si en el nodo/host se tiene un total de 10 core CPU la asignación requests de cpu: \"200m\" es que 2 core serán garantizados de disponible para el objeto. Sesión comandos ... ",
     "description": "",
     "tags": [
@@ -192,7 +204,14 @@ var relearn_search_index = [
     "uri": "/tags/documentation/index.html"
   },
   {
-    "content": "En este sitio comparto algunos artículos, implementaciones y/o proyectos implementados.\nEste sitio esta generado con Hugo y utiliza inicialmente el theme Hugo Relearn Theme.\nAlgunos de los artículos y/o proyectos compartidos aquí son:\nKubernetes cluster k3sCluster kubernetes con k3s. 1 nodo master (control-plane) + 'N' nodos worker\nKubernetes - desplieguesAplicaciones y/o servicios de Kubernetes\nUbuntuUbuntu server LTS\nKubernetes - notasEntradas relacionadas a Kubernetes. Todo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.\nKVMKernel Virtual Machine - KVM\n",
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "Tag :: Fedora",
+    "uri": "/tags/fedora/index.html"
+  },
+  {
+    "content": "En este sitio comparto algunos artículos, implementaciones y/o proyectos implementados.\nEste sitio esta generado con Hugo y utiliza inicialmente el theme Hugo Relearn Theme.\nAlgunos de los artículos y/o proyectos compartidos aquí son:\nKubernetes cluster k3sCluster kubernetes con k3s. 1 nodo master (control-plane) + 'N' nodos worker\nKubernetes - desplieguesAplicaciones y/o servicios de Kubernetes\nUbuntuUbuntu server LTS\nKubernetes - notasEntradas relacionadas a Kubernetes. Todo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.\nInstalar Pandoc sobre Fedora 38Instalación y configuración de Pandoc sobre Fedora 38\nKVMKernel Virtual Machine - KVM\n",
     "description": "",
     "tags": null,
     "title": "Inicio sitio",
@@ -216,6 +235,13 @@ var relearn_search_index = [
     "content": "",
     "description": "",
     "tags": null,
+    "title": "Tag :: Latex",
+    "uri": "/tags/latex/index.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
     "title": "Tag :: libvirtd",
     "uri": "/tags/libvirtd/index.html"
   },
@@ -232,6 +258,13 @@ var relearn_search_index = [
     "tags": null,
     "title": "Tag :: minikube",
     "uri": "/tags/minikube/index.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "Tag :: Pandoc",
+    "uri": "/tags/pandoc/index.html"
   },
   {
     "content": "",

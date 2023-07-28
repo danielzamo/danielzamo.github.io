@@ -35,6 +35,13 @@
       <description></description>
     </item>
     <item>
+      <title>Fedora</title>
+      <link>http://danielzamo.github.io/tags/fedora/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/tags/fedora/index.html</guid>
+      <description></description>
+    </item>
+    <item>
       <title>kubernetes</title>
       <link>http://danielzamo.github.io/tags/kubernetes/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -46,6 +53,13 @@
       <link>http://danielzamo.github.io/tags/kvm/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://danielzamo.github.io/tags/kvm/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Latex</title>
+      <link>http://danielzamo.github.io/tags/latex/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/tags/latex/index.html</guid>
       <description></description>
     </item>
     <item>
@@ -67,6 +81,13 @@
       <link>http://danielzamo.github.io/tags/minikube/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://danielzamo.github.io/tags/minikube/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pandoc</title>
+      <link>http://danielzamo.github.io/tags/pandoc/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/tags/pandoc/index.html</guid>
       <description></description>
     </item>
     <item>
