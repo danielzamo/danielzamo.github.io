@@ -22,19 +22,19 @@
     <title>Kubernetes - despliegues :: Site</title>
     <link href="http://danielzamo.github.io/kubernetes-deployments/index.html" rel="canonical" type="text/html" title="Kubernetes - despliegues :: Site">
     <link href="/kubernetes-deployments/index.xml" rel="alternate" type="application/rss+xml" title="Kubernetes - despliegues :: Site">
-    <link href="/images/logo.svg?1725917725" rel="icon" type="image/svg+xml">
-    <link href="/css/fontawesome-all.min.css?1725917725" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1725917725" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1725917725" rel="stylesheet">
-    <link href="/css/auto-complete.css?1725917725" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1725917725" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1725917725" rel="stylesheet">
-    <link href="/css/fonts.css?1725917725" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1725917725" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1725917725" rel="stylesheet">
-    <link href="/css/theme-relearn-dark.css?1725917725" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-relearn-dark.css?1725917725" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1725917725" rel="stylesheet">
-    <link href="/css/print.css?1725917725" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1725917725" rel="stylesheet">
-    <script src="/js/variant.js?1725917725"></script>
+    <link href="/images/logo.svg?1725917971" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1725917971" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1725917971" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1725917971" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725917971" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1725917971" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1725917971" rel="stylesheet">
+    <link href="/css/fonts.css?1725917971" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1725917971" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1725917971" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1725917971" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1725917971" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1725917971" rel="stylesheet">
+    <link href="/css/print.css?1725917971" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1725917971" rel="stylesheet">
+    <script src="/js/variant.js?1725917971"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..';
@@ -42,7 +42,7 @@
       window.relearn.absBaseUri='http:\/\/danielzamo.github.io';
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
-      window.index_js_url="/index.search.js?1725917725";
+      window.index_js_url="/index.search.js?1725917971";
       // variant stuff
       window.variants && variants.init( [ 'relearn-dark' ] );
       // translations
@@ -123,8 +123,8 @@
 
 <p>Este proyecto es el despliegue de <em><strong>Ansible AWX</strong></em>, edición comunitaria de <em><strong>Red Hat Ansible Tower</strong></em>.</p>
 <p>En la siguiente representación se muestra un diagrama del despliegue. El cual es realizado sobre un <em>host motor</em> de <em>kubernetes</em> con <em>minikube</em> con <em>libvirt</em> como runtime (driver <em>kvm</em>).</p>
-<p><a href="#R-image-d19fa435ea089fe776c4f7d4cc762cc5" class="lightbox-link"><img alt="Representación del servicio Ansible AWX desplegado" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/kubernetes-deployments/ansible-awx/ansible-server-awx.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d19fa435ea089fe776c4f7d4cc762cc5"><img alt="Representación del servicio Ansible AWX desplegado" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/kubernetes-deployments/ansible-awx/ansible-server-awx.png"></a></p>
+<p><a href="#R-image-649bf0fc86fa9dd47103a701c79595cb" class="lightbox-link"><img alt="Representación del servicio Ansible AWX desplegado" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/kubernetes-deployments/ansible-awx/ansible-server-awx.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-649bf0fc86fa9dd47103a701c79595cb"><img alt="Representación del servicio Ansible AWX desplegado" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/kubernetes-deployments/ansible-awx/ansible-server-awx.png"></a></p>
 <h2 id="tecnologías-utilizadas">Tecnologías utilizadas</h2>
 <ul>
 <li>Contenedores: kubernetes / k3s or minikube</li>
@@ -154,8 +154,8 @@
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Forward al servicio para acceder externamente</span>
 </span></span><span style="display:flex;"><span>kubectl port-forward service/ansible-awx-service --address 0.0.0.0 10445:80 &amp;</span></span></code></pre></div>
 <p>Ansible AWX debería estar disponible en el URL <code>http://&lt;IP_SERVIDOR_KUBERNETES&gt;:10445</code>. En este caso ahora implementado el ingreso a la interface Web se muestra en la siguiente captura.</p>
-<p><a href="#R-image-1cd7f31526325e1c4b1b15a679bb3b54" class="lightbox-link"><img alt="Ingreso a la interface Web de Ansible AWX desplegado" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/kubernetes-deployments/ansible-awx/ansible-awx-gui-welcome.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1cd7f31526325e1c4b1b15a679bb3b54"><img alt="Ingreso a la interface Web de Ansible AWX desplegado" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/kubernetes-deployments/ansible-awx/ansible-awx-gui-welcome.png"></a></p>
+<p><a href="#R-image-65148fac933e428ebe668710257ed0d1" class="lightbox-link"><img alt="Ingreso a la interface Web de Ansible AWX desplegado" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/kubernetes-deployments/ansible-awx/ansible-awx-gui-welcome.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-65148fac933e428ebe668710257ed0d1"><img alt="Ingreso a la interface Web de Ansible AWX desplegado" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/kubernetes-deployments/ansible-awx/ansible-awx-gui-welcome.png"></a></p>
 <h2 id="repositorio">Repositorio</h2>
 <p>&hellip;</p>
 
@@ -167,8 +167,8 @@
         </div>
       </main>
     </div>
-    <script src="/js/clipboard.min.js?1725917725" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1725917725" defer></script>
-    <script src="/js/theme.js?1725917725" defer></script>
+    <script src="/js/clipboard.min.js?1725917971" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1725917971" defer></script>
+    <script src="/js/theme.js?1725917971" defer></script>
   </body>
 </html>
