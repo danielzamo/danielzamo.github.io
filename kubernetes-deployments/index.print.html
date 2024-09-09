@@ -1,46 +1,59 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.101.0">
-    <meta name="generator" content="Relearn 5.16.2+tip">
+    <meta name="generator" content="Hugo 0.121.2">
+    <meta name="generator" content="Relearn 6.3.0+tip">
     <meta name="description" content="Aplicaciones y/o servicios de Kubernetes">
     <meta name="author" content="Daniel Oscar Zamo">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Kubernetes - despliegues :: Site">
+    <meta name="twitter:description" content="Aplicaciones y/o servicios de Kubernetes">
+    <meta property="og:url" content="http://danielzamo.github.io/kubernetes-deployments/index.html">
+    <meta property="og:site_name" content="Site">
+    <meta property="og:title" content="Kubernetes - despliegues :: Site">
+    <meta property="og:description" content="Aplicaciones y/o servicios de Kubernetes">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Kubernetes - despliegues :: Site">
+    <meta itemprop="description" content="Aplicaciones y/o servicios de Kubernetes">
+    <meta itemprop="wordCount" content="64">
     <title>Kubernetes - despliegues :: Site</title>
     <link href="http://danielzamo.github.io/kubernetes-deployments/index.html" rel="canonical" type="text/html" title="Kubernetes - despliegues :: Site">
     <link href="/kubernetes-deployments/index.xml" rel="alternate" type="application/rss+xml" title="Kubernetes - despliegues :: Site">
-    <link href="/images/logo.svg?1690584877" rel="icon" type="image/svg+xml">
-    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1690584877" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1690584877" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1690584877" rel="stylesheet">
-    <link href="/css/auto-complete.css?1690584877" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1690584877" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1690584877" rel="stylesheet">
-    <link href="/css/fonts.css?1690584877" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1690584877" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1690584877" rel="stylesheet">
-    <link href="/css/theme-relearn-dark.css?1690584877" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1690584877" rel="stylesheet">
-    <link href="/css/print.css?1690584877" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1690584877" rel="stylesheet">
-    <link href="/css/ie.css?1690584877" rel="stylesheet">
-    <script src="/js/url.js?1690584877"></script>
-    <script src="/js/variant.js?1690584877"></script>
+    <link href="/images/logo.svg?1725917725" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1725917725" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1725917725" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1725917725" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725917725" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1725917725" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1725917725" rel="stylesheet">
+    <link href="/css/fonts.css?1725917725" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1725917725" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1725917725" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1725917725" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1725917725" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1725917725" rel="stylesheet">
+    <link href="/css/print.css?1725917725" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1725917725" rel="stylesheet">
+    <script src="/js/variant.js?1725917725"></script>
     <script>
-      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
-      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
-      window.index_js_url="/index.search.js";
-      var root_url="/";
-      var baseUri=root_url.replace(/\/$/, '');
-      // translations
-      window.T_Copy_to_clipboard = 'Copy to clipboard';
-      window.T_Copied_to_clipboard = 'Copied to clipboard!';
-      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
-      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
-      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
-      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
-      // some further base stuff
-      var baseUriFull='http:\/\/danielzamo.github.io/';
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..';
+      window.relearn.absBaseUri='http:\/\/danielzamo.github.io';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.index_js_url="/index.search.js?1725917725";
+      // variant stuff
       window.variants && variants.init( [ 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
     <style>
       #body img.bg-white {
@@ -49,29 +62,35 @@
     </style>
   </head>
   <body class="mobile-support print disableInlineCopyToClipboard" data-url="/kubernetes-deployments/index.html">
-    <div id="body" class="default-animation">
-      <div id="sidebar-overlay"></div>
-      <div id="toc-overlay"></div>
-      <nav id="topbar" class="highlightable">
-        <div>
-          <div id="breadcrumbs">
-            <span id="sidebar-toggle-span">
-              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
-</span>
-            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Inicio sitio</span></a><meta itemprop="position" content="1"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Kubernetes - despliegues</span><meta itemprop="position" content="2"></li>
-            </ol>
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Inicio sitio</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Kubernetes - despliegues</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/kubernetes-cluster-k3s/index.html" title="Kubernetes cluster k3s (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/kubernetes-deployments/ansible-awx/index.html" title="Ansible - AWX (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
           </div>
         </div>
       </nav>
-      <main id="body-inner" class="highlightable chapter narrow" tabindex="-1">
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable chapter narrow" tabindex="-1">
         <div class="flex-block-wrapper">
-
           <article class="chapter">
             <header class="headline">
             </header>
 <div class="article-subheading">Chapter 2</div>
+
 <h1 id="kubernetes---despliegues">Kubernetes - despliegues</h1>
 
 <blockquote>
@@ -79,15 +98,12 @@
 </blockquote>
 <p>Todo el código implementado en estos proyectos poseen repositorios en el cloud, se intentará aquí agregar el URL donde se encuentra el código fuente o especificación de la implementación realizada.</p>
 <p>Algunos de las aplicaciones y/o servicios desplegados/implementados para kubernetes son:</p>
-
 <ul class="children children-li children-sort-">
-	
-<li><a href="/kubernetes-deployments/ansible-awx/index.html">Ansible - AWX</a><p>Este proyecto es el despliegue de Ansible AWX, edición comunitaria de Red Hat Ansible Tower.</p></li>
+  <li><a href="/kubernetes-deployments/ansible-awx/index.html">Ansible - AWX</a><p>Este proyecto es el despliegue de Ansible AWX, edición comunitaria de Red Hat Ansible Tower.</p></li>
 </ul>
 <hr>
 
             <footer class="footline">
-
             </footer>
           </article>
 
@@ -95,22 +111,20 @@
             <h1 class="a11y-only">Subsections of Kubernetes - despliegues</h1>
           <article class="default">
             <header class="headline">
-<div class="tags">
-  <a class="tag-link" href="/tags/kubernetes/index.html">kubernetes</a>
-  <a class="tag-link" href="/tags/projects/index.html">projects</a>
+<div class=" taxonomy-tags term-list cstyle  tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="/tags/kubernetes/index.html">kubernetes</a></li>
+    <li><a class="term-link" href="/tags/projects/index.html">projects</a></li>
+  </ul>
 </div>
             </header>
+
 <h1 id="ansible---awx">Ansible - AWX</h1>
 
 <p>Este proyecto es el despliegue de <em><strong>Ansible AWX</strong></em>, edición comunitaria de <em><strong>Red Hat Ansible Tower</strong></em>.</p>
 <p>En la siguiente representación se muestra un diagrama del despliegue. El cual es realizado sobre un <em>host motor</em> de <em>kubernetes</em> con <em>minikube</em> con <em>libvirt</em> como runtime (driver <em>kvm</em>).</p>
-<p>
-<a href="#image-af4909a7cdd4da2bcd94bde269bfb084" class="lightbox-link">
-<img src="/kubernetes-deployments/ansible-awx/ansible-server-awx.png" alt="Representación del servicio Ansible AWX desplegado" style="height: auto; width: auto;" loading="lazy">
-</a>
-<a href="javascript:history.back();" class="lightbox" id="image-af4909a7cdd4da2bcd94bde269bfb084">
-<img src="/kubernetes-deployments/ansible-awx/ansible-server-awx.png" alt="Representación del servicio Ansible AWX desplegado" class="lightbox-image" loading="lazy">
-</a></p>
+<p><a href="#R-image-d19fa435ea089fe776c4f7d4cc762cc5" class="lightbox-link"><img alt="Representación del servicio Ansible AWX desplegado" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/kubernetes-deployments/ansible-awx/ansible-server-awx.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d19fa435ea089fe776c4f7d4cc762cc5"><img alt="Representación del servicio Ansible AWX desplegado" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/kubernetes-deployments/ansible-awx/ansible-server-awx.png"></a></p>
 <h2 id="tecnologías-utilizadas">Tecnologías utilizadas</h2>
 <ul>
 <li>Contenedores: kubernetes / k3s or minikube</li>
@@ -118,7 +132,7 @@
 </ul>
 <h2 id="sesión-de-instalaciónconfiguración">Sesión de instalación/configuración</h2>
 <p>La sesión siguiente fue realizada tanto sobre un cluster de minikube como en uno con k3s. Aquí se comparte el despligue realizado con k3s.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Ansible AWX in kubernetes k3s </span>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Ansible AWX in kubernetes k3s </span>
 </span></span><span style="display:flex;"><span>git clone https://github.com/ansible/awx-operator.git 
 </span></span><span style="display:flex;"><span>cd awx-operator/
 </span></span><span style="display:flex;"><span>git checkout 2.2.1
@@ -138,20 +152,14 @@
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Genero una primera contraseña para el usuario admin pueda ingresar a la interface web</span>
 </span></span><span style="display:flex;"><span>kubectl get secret ansible-awx-admin-password -o jsonpath<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{.data.password}&#34;</span> | base64 --decode; echo
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Forward al servicio para acceder externamente</span>
-</span></span><span style="display:flex;"><span>kubectl port-forward service/ansible-awx-service --address 0.0.0.0 10445:80 &amp;
-</span></span></code></pre></div><p>Ansible AWX debería estar disponible en el URL <code>http://&lt;IP_SERVIDOR_KUBERNETES&gt;:10445</code>. En este caso ahora implementado el ingreso a la interface Web se muestra en la siguiente captura.</p>
-<p>
-<a href="#image-d73bc800bac2eb3e23b41eb7a98db47d" class="lightbox-link">
-<img src="/kubernetes-deployments/ansible-awx/ansible-awx-gui-welcome.png" alt="Ingreso a la interface Web de Ansible AWX desplegado" style="height: auto; width: auto;" loading="lazy">
-</a>
-<a href="javascript:history.back();" class="lightbox" id="image-d73bc800bac2eb3e23b41eb7a98db47d">
-<img src="/kubernetes-deployments/ansible-awx/ansible-awx-gui-welcome.png" alt="Ingreso a la interface Web de Ansible AWX desplegado" class="lightbox-image" loading="lazy">
-</a></p>
+</span></span><span style="display:flex;"><span>kubectl port-forward service/ansible-awx-service --address 0.0.0.0 10445:80 &amp;</span></span></code></pre></div>
+<p>Ansible AWX debería estar disponible en el URL <code>http://&lt;IP_SERVIDOR_KUBERNETES&gt;:10445</code>. En este caso ahora implementado el ingreso a la interface Web se muestra en la siguiente captura.</p>
+<p><a href="#R-image-1cd7f31526325e1c4b1b15a679bb3b54" class="lightbox-link"><img alt="Ingreso a la interface Web de Ansible AWX desplegado" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/kubernetes-deployments/ansible-awx/ansible-awx-gui-welcome.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1cd7f31526325e1c4b1b15a679bb3b54"><img alt="Ingreso a la interface Web de Ansible AWX desplegado" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/kubernetes-deployments/ansible-awx/ansible-awx-gui-welcome.png"></a></p>
 <h2 id="repositorio">Repositorio</h2>
 <p>&hellip;</p>
 
             <footer class="footline">
-
             </footer>
           </article>
 
@@ -159,8 +167,8 @@
         </div>
       </main>
     </div>
-    <script src="/js/clipboard.min.js?1690584877" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1690584877" defer></script>
-    <script src="/js/theme.js?1690584877" defer></script>
+    <script src="/js/clipboard.min.js?1725917725" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1725917725" defer></script>
+    <script src="/js/theme.js?1725917725" defer></script>
   </body>
 </html>

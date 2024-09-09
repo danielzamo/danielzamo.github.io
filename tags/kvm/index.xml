@@ -1,36 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>KVM on Site</title>
+    <title>KVM :: Tag :: Site</title>
     <link>http://danielzamo.github.io/tags/kvm/index.html</link>
-    <description>Recent content in KVM on Site</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://danielzamo.github.io/tags/kvm/index.xml" rel="self" type="application/rss+xml" />
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://danielzamo.github.io/tags/kvm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Anfitrión KVM</title>
-      <link>http://danielzamo.github.io/ubuntu/kvm/index.html</link>
+      <link>http://danielzamo.github.io/ubuntu-lts-server/kvm/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/ubuntu/kvm/index.html</guid>
-      <description>Despliegue de servidor host anfitrión host virtualización KVM.
-Especificación inicial 1 x bridge: br0 1 x ethernet: enp1s0 Configuración IP: Especificación asignación (fija) IP 192.168.123.35 gateway 192.168.123.1 red 192.168.123.0/24 DNS1-3 192.168.123.1,8.8.8.8,1.1.1.1 Actualización sistema, instalando paquetes (opcionales) dzamo@ubuntu-k8s:~$ sudo apt -y update &amp;amp;&amp;amp; sudo apt -y upgrade dzamo@ubuntu-k8s:~$ sudo apt install -y neovim tmux vim vim-scripts exuberant-ctags python-greenlet-dev Instalación/configuración de KVM # Install KVM in Ubuntu dzamo@ubuntu-k8s:~$ sudo apt -y install qemu-kvm libvirt-dev bridge-utils libvirt-daemon-system libvirt-daemon virtinst bridge-utils libosinfo-bin libguestfs-tools virt-top dzamo@ubuntu-k8s:~$ sudo usermod -a $USER -G libvirt,libvirt-qemu,libvirt-dnsmasq,kvm dzamo@ubuntu-k8s:~$ sudo modprobe vhost_net dzamo@ubuntu-k8s:~$ sudo lsmod | grep vhost dzamo@ubuntu-k8s:~$ echo &amp;#34;vhost_net&amp;#34; | sudo tee -a /etc/modules dzamo@ubuntu-k8s:~$ sudo vim /etc/netplan/00-installer-config.</description>
-    </item>
-    <item>
-      <title>Minikube (driver kvm)</title>
-      <link>http://danielzamo.github.io/ubuntu/minikube-kvm/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/ubuntu/minikube-kvm/index.html</guid>
-      <description>Despliegue de cluster Ubuntu server LTS k8s minikube (driver kvm), en un simple host.
-Tecnologías utilizadas Minikube KVM Ubuntu LTS 22.04.. Especificación inicial &amp;hellip;
-Dependecias cumplida En este depliegue se implementa un cluster minikube sobre un simple host. El driver usado es kvm. Se da por supuesto que se ha instalado el host anfitrión KVM. Si necesita ayuda puede consultar instalar anfitrión KVM en Ubuntu LTS, en este mismo sitio.</description>
+      <guid>http://danielzamo.github.io/ubuntu-lts-server/kvm/index.html</guid>
+      <description>Ubuntu server LTS, host anfitrión virtualización KVM</description>
     </item>
     <item>
       <title>Comando virsh</title>
       <link>http://danielzamo.github.io/kvm/virsh/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://danielzamo.github.io/kvm/virsh/index.html</guid>
-      <description>En este artículo es una hoja de referencia parcial de los comandos de virsh.
-Qué virsh? virsh es una interfaz de usuario de administración para dominios invitados (guest, o m&amp;rsquo;aquinas virtuales) de libvirt. Con virsh se puede crear, pausar, reiniciar, cerrar dominios y realizar diferentes tareas de sobre los guest (VM) actuales disponibles en una plataforma de hipervisor de virtualización KVM/libvirt.
-Listar todos los dominios guest (máquinas virtuales) del host KVM virsh list --all Crear snapshot de VM/dominio de KVM/libvirt virsh snapshot-create-as --domain {VM-NAME} --name &amp;#34;{SNAPSHOT-NAME}&amp;#34; Referencias Virsh commands cheatsheet to manage KVM guest virtual machines.</description>
+      <description>Administración de máquinas virtuales invitadas KVM/libvirt</description>
+    </item>
+    <item>
+      <title>Minikube (driver kvm)</title>
+      <link>http://danielzamo.github.io/ubuntu-lts-server/minikube-kvm/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/ubuntu-lts-server/minikube-kvm/index.html</guid>
+      <description>Ubuntu server LTS, cluster k8s minikube (driver kvm)</description>
     </item>
   </channel>
 </rss>

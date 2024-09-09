@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sección env on Site</title>
+    <title>Sección env :: Site</title>
     <link>http://danielzamo.github.io/kubernetes-notes/pod/env/index.html</link>
-    <description>Recent content in Sección env on Site</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://danielzamo.github.io/kubernetes-notes/pod/env/index.xml" rel="self" type="application/rss+xml" />
+    <description>Relevantes en esta nota Sección variables de entorno, definición env en manifiesto. Utilización de variables recuperadas desde kubernetes Downward API Manifiesto apiVersion: v1 kind: Pod metadata: name: nginx spec: containers: - name: nginx image: nginx:alpine env: - name: var_1 value: &#34;value_val_1&#34; - name: var_2 value: &#34;value_val_2&#34; - name: DD_AGENT_HOST valueFrom: fieldRef: fieldPath: status.hostIP env En la sección env se pueden definir/pasar variables de entornos. En lo anterior es:&#xA;env: # Variables de entorno - name: var_1 ## &#39;Nombre 1&#39; value: &#34;value_val_1&#34; ## Valor variable &#39;Nombre 1&#39; - name: var_2 ## &#39;Nombre 2&#39; value: &#34;value_val_2&#34; ## Valor variable &#39;Nombre 2&#39; - name: dd_agent_host ## Variable definida desde el &#34;Downward API&#34; (son variables/valores que se pueden consultar) valueFrom: fieldRef: fieldPath: status.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://danielzamo.github.io/kubernetes-notes/pod/env/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

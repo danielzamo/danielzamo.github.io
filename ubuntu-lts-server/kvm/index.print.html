@@ -1,46 +1,60 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.101.0">
-    <meta name="generator" content="Relearn 5.16.2+tip">
+    <meta name="generator" content="Hugo 0.121.2">
+    <meta name="generator" content="Relearn 6.3.0+tip">
     <meta name="description" content="Ubuntu server LTS, host anfitrión virtualización KVM">
     <meta name="author" content="Daniel Oscar Zamo">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Anfitrión KVM :: Site">
+    <meta name="twitter:description" content="Ubuntu server LTS, host anfitrión virtualización KVM">
+    <meta property="og:url" content="http://danielzamo.github.io/ubuntu-lts-server/kvm/index.html">
+    <meta property="og:site_name" content="Site">
+    <meta property="og:title" content="Anfitrión KVM :: Site">
+    <meta property="og:description" content="Ubuntu server LTS, host anfitrión virtualización KVM">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Anfitrión KVM :: Site">
+    <meta itemprop="description" content="Ubuntu server LTS, host anfitrión virtualización KVM">
+    <meta itemprop="wordCount" content="173">
+    <meta itemprop="keywords" content="virtualization,projects,KVM,UbuntuLTS">
     <title>Anfitrión KVM :: Site</title>
     <link href="http://danielzamo.github.io/ubuntu-lts-server/kvm/index.html" rel="canonical" type="text/html" title="Anfitrión KVM :: Site">
     <link href="/ubuntu-lts-server/kvm/index.xml" rel="alternate" type="application/rss+xml" title="Anfitrión KVM :: Site">
-    <link href="/images/logo.svg?1688758864" rel="icon" type="image/svg+xml">
-    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1688758864" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1688758864" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1688758864" rel="stylesheet">
-    <link href="/css/auto-complete.css?1688758864" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1688758864" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1688758864" rel="stylesheet">
-    <link href="/css/fonts.css?1688758864" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1688758864" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1688758864" rel="stylesheet">
-    <link href="/css/theme-relearn-dark.css?1688758864" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1688758864" rel="stylesheet">
-    <link href="/css/print.css?1688758864" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1688758864" rel="stylesheet">
-    <link href="/css/ie.css?1688758864" rel="stylesheet">
-    <script src="/js/url.js?1688758864"></script>
-    <script src="/js/variant.js?1688758864"></script>
+    <link href="/images/logo.svg?1725917725" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1725917725" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1725917725" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1725917725" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725917725" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1725917725" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1725917725" rel="stylesheet">
+    <link href="/css/fonts.css?1725917725" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1725917725" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1725917725" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1725917725" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1725917725" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1725917725" rel="stylesheet">
+    <link href="/css/print.css?1725917725" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1725917725" rel="stylesheet">
+    <script src="/js/variant.js?1725917725"></script>
     <script>
-      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
-      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
-      window.index_js_url="/index.search.js";
-      var root_url="/";
-      var baseUri=root_url.replace(/\/$/, '');
-      // translations
-      window.T_Copy_to_clipboard = 'Copy to clipboard';
-      window.T_Copied_to_clipboard = 'Copied to clipboard!';
-      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
-      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
-      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
-      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
-      // some further base stuff
-      var baseUriFull='http:\/\/danielzamo.github.io/';
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/danielzamo.github.io';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.index_js_url="/index.search.js?1725917725";
+      // variant stuff
       window.variants && variants.init( [ 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
     <style>
       #body img.bg-white {
@@ -49,35 +63,43 @@
     </style>
   </head>
   <body class="mobile-support print disableInlineCopyToClipboard" data-url="/ubuntu-lts-server/kvm/index.html">
-    <div id="body" class="default-animation">
-      <div id="sidebar-overlay"></div>
-      <div id="toc-overlay"></div>
-      <nav id="topbar" class="highlightable">
-        <div>
-          <div id="breadcrumbs">
-            <span id="sidebar-toggle-span">
-              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
-</span>
-            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Inicio sitio</span></a><meta itemprop="position" content="1"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/ubuntu-lts-server/index.html"><span itemprop="name">Ubuntu server LTS</span></a><meta itemprop="position" content="2"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Anfitrión KVM</span><meta itemprop="position" content="3"></li>
-            </ol>
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Inicio sitio</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/ubuntu-lts-server/index.html"><span itemprop="name">Ubuntu server LTS</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Anfitrión KVM</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/ubuntu-lts-server/index.html" title="Ubuntu server LTS (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/ubuntu-lts-server/minikube-kvm/index.html" title="Minikube (driver kvm) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
           </div>
         </div>
       </nav>
-      <main id="body-inner" class="highlightable default" tabindex="-1">
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
         <div class="flex-block-wrapper">
-
           <article class="default">
             <header class="headline">
-<div class="tags">
-  <a class="tag-link" href="/tags/kvm/index.html">KVM</a>
-  <a class="tag-link" href="/tags/projects/index.html">projects</a>
-  <a class="tag-link" href="/tags/ubuntults/index.html">UbuntuLTS</a>
-  <a class="tag-link" href="/tags/virtualization/index.html">virtualization</a>
+<div class=" taxonomy-tags term-list cstyle  tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="/tags/kvm/index.html">KVM</a></li>
+    <li><a class="term-link" href="/tags/projects/index.html">projects</a></li>
+    <li><a class="term-link" href="/tags/ubuntults/index.html">UbuntuLTS</a></li>
+    <li><a class="term-link" href="/tags/virtualization/index.html">virtualization</a></li>
+  </ul>
 </div>
             </header>
+
 <h1 id="anfitrión-kvm">Anfitrión KVM</h1>
 
 <blockquote>
@@ -117,18 +139,18 @@
 </li>
 </ul>
 <h2 id="actualización-sistema-instalando-paquetes-opcionales">Actualización sistema, instalando paquetes (opcionales)</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo apt -y update <span style="color:#f92672">&amp;&amp;</span> sudo apt -y upgrade
-</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo apt install -y neovim tmux vim vim-scripts exuberant-ctags python-greenlet-dev
-</span></span></code></pre></div><h2 id="instalaciónconfiguración-de-kvm">Instalación/configuración de KVM</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Install KVM in Ubuntu</span>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo apt -y update <span style="color:#f92672">&amp;&amp;</span> sudo apt -y upgrade
+</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo apt install -y neovim tmux vim vim-scripts exuberant-ctags python-greenlet-dev</span></span></code></pre></div>
+<h2 id="instalaciónconfiguración-de-kvm">Instalación/configuración de KVM</h2>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Install KVM in Ubuntu</span>
 </span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo apt -y install qemu-kvm libvirt-dev bridge-utils libvirt-daemon-system libvirt-daemon virtinst bridge-utils libosinfo-bin libguestfs-tools virt-top
 </span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo usermod -a $USER -G libvirt,libvirt-qemu,libvirt-dnsmasq,kvm
 </span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo modprobe vhost_net
 </span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo lsmod | grep vhost
 </span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ echo <span style="color:#e6db74">&#34;vhost_net&#34;</span> | sudo tee -a /etc/modules
-</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo vim /etc/netplan/00-installer-config.yaml
-</span></span></code></pre></div><h3 id="configuración-bridge-e-interface-eth">Configuración bridge e interface eth</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ cat /etc/netplan/00-installer-config.yaml 
+</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo vim /etc/netplan/00-installer-config.yaml</span></span></code></pre></div>
+<h3 id="configuración-bridge-e-interface-eth">Configuración bridge e interface eth</h3>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ cat /etc/netplan/00-installer-config.yaml 
 </span></span><span style="display:flex;"><span>network:
 </span></span><span style="display:flex;"><span>  ethernets:
 </span></span><span style="display:flex;"><span>    enp1s0:
@@ -157,18 +179,17 @@
 </span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ wget www.google.com
 </span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ rm index.html 
 </span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ ip a
-</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo reboot
-</span></span></code></pre></div>
-            <footer class="footline">
+</span></span><span style="display:flex;"><span>dzamo@ubuntu-k8s:~$ sudo reboot</span></span></code></pre></div>
 
+            <footer class="footline">
             </footer>
           </article>
 
         </div>
       </main>
     </div>
-    <script src="/js/clipboard.min.js?1688758864" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1688758864" defer></script>
-    <script src="/js/theme.js?1688758864" defer></script>
+    <script src="/js/clipboard.min.js?1725917725" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1725917725" defer></script>
+    <script src="/js/theme.js?1725917725" defer></script>
   </body>
 </html>

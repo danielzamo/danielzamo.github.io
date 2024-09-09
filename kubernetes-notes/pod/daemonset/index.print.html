@@ -1,46 +1,60 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.101.0">
-    <meta name="generator" content="Relearn 5.16.2+tip">
-    <meta name="description" content="Documentation theme based Hugo Relearn Theme">
+    <meta name="generator" content="Hugo 0.121.2">
+    <meta name="generator" content="Relearn 6.3.0+tip">
+    <meta name="description" content="En Kubernetes definir/crear un daemonset hace que el pod/contenedor/es se ejecute en todos los nodos del cluster. Este tipo componente puede utilizarse, por ejemplo para aplicaciones que esten encargas de monitorizar los nodos del cluster kubernetes. Definición mediante manifiesto [dzamo@victus my-codes]$ cat kubernetes/03-daemonset.yaml apiVersion: apps/v1 kind: DaemonSet metadata: name: nginx-deployment spec: selector: matchLabels: app: nginx template: metadata: labels: app: nginx spec: containers: - name: nginx image: nginx:alpine ports: - containerPort: 80 Aplicar el manifiesto [dzamo@victus my-codes]$ kubectl apply -f kubernetes/03-daemonset.">
     <meta name="author" content="Daniel Oscar Zamo">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Daemonset :: Site">
+    <meta name="twitter:description" content="En Kubernetes definir/crear un daemonset hace que el pod/contenedor/es se ejecute en todos los nodos del cluster. Este tipo componente puede utilizarse, por ejemplo para aplicaciones que esten encargas de monitorizar los nodos del cluster kubernetes. Definición mediante manifiesto [dzamo@victus my-codes]$ cat kubernetes/03-daemonset.yaml apiVersion: apps/v1 kind: DaemonSet metadata: name: nginx-deployment spec: selector: matchLabels: app: nginx template: metadata: labels: app: nginx spec: containers: - name: nginx image: nginx:alpine ports: - containerPort: 80 Aplicar el manifiesto [dzamo@victus my-codes]$ kubectl apply -f kubernetes/03-daemonset.">
+    <meta property="og:url" content="http://danielzamo.github.io/kubernetes-notes/pod/daemonset/index.html">
+    <meta property="og:site_name" content="Site">
+    <meta property="og:title" content="Daemonset :: Site">
+    <meta property="og:description" content="En Kubernetes definir/crear un daemonset hace que el pod/contenedor/es se ejecute en todos los nodos del cluster. Este tipo componente puede utilizarse, por ejemplo para aplicaciones que esten encargas de monitorizar los nodos del cluster kubernetes. Definición mediante manifiesto [dzamo@victus my-codes]$ cat kubernetes/03-daemonset.yaml apiVersion: apps/v1 kind: DaemonSet metadata: name: nginx-deployment spec: selector: matchLabels: app: nginx template: metadata: labels: app: nginx spec: containers: - name: nginx image: nginx:alpine ports: - containerPort: 80 Aplicar el manifiesto [dzamo@victus my-codes]$ kubectl apply -f kubernetes/03-daemonset.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Daemonset :: Site">
+    <meta itemprop="description" content="En Kubernetes definir/crear un daemonset hace que el pod/contenedor/es se ejecute en todos los nodos del cluster. Este tipo componente puede utilizarse, por ejemplo para aplicaciones que esten encargas de monitorizar los nodos del cluster kubernetes. Definición mediante manifiesto [dzamo@victus my-codes]$ cat kubernetes/03-daemonset.yaml apiVersion: apps/v1 kind: DaemonSet metadata: name: nginx-deployment spec: selector: matchLabels: app: nginx template: metadata: labels: app: nginx spec: containers: - name: nginx image: nginx:alpine ports: - containerPort: 80 Aplicar el manifiesto [dzamo@victus my-codes]$ kubectl apply -f kubernetes/03-daemonset.">
+    <meta itemprop="wordCount" content="119">
+    <meta itemprop="keywords" content="documentation,kubernetes">
     <title>Daemonset :: Site</title>
     <link href="http://danielzamo.github.io/kubernetes-notes/pod/daemonset/index.html" rel="canonical" type="text/html" title="Daemonset :: Site">
     <link href="/kubernetes-notes/pod/daemonset/index.xml" rel="alternate" type="application/rss+xml" title="Daemonset :: Site">
-    <link href="/images/logo.svg?1690584877" rel="icon" type="image/svg+xml">
-    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1690584877" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1690584877" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1690584877" rel="stylesheet">
-    <link href="/css/auto-complete.css?1690584877" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1690584877" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1690584877" rel="stylesheet">
-    <link href="/css/fonts.css?1690584877" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1690584877" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1690584877" rel="stylesheet">
-    <link href="/css/theme-relearn-dark.css?1690584877" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1690584877" rel="stylesheet">
-    <link href="/css/print.css?1690584877" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1690584877" rel="stylesheet">
-    <link href="/css/ie.css?1690584877" rel="stylesheet">
-    <script src="/js/url.js?1690584877"></script>
-    <script src="/js/variant.js?1690584877"></script>
+    <link href="/images/logo.svg?1725917725" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1725917725" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1725917725" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1725917725" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725917725" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1725917725" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1725917725" rel="stylesheet">
+    <link href="/css/fonts.css?1725917725" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1725917725" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1725917725" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1725917725" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1725917725" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1725917725" rel="stylesheet">
+    <link href="/css/print.css?1725917725" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1725917725" rel="stylesheet">
+    <script src="/js/variant.js?1725917725"></script>
     <script>
-      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
-      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
-      window.index_js_url="/index.search.js";
-      var root_url="/";
-      var baseUri=root_url.replace(/\/$/, '');
-      // translations
-      window.T_Copy_to_clipboard = 'Copy to clipboard';
-      window.T_Copied_to_clipboard = 'Copied to clipboard!';
-      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
-      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
-      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
-      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
-      // some further base stuff
-      var baseUriFull='http:\/\/danielzamo.github.io/';
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/danielzamo.github.io';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.index_js_url="/index.search.js?1725917725";
+      // variant stuff
       window.variants && variants.init( [ 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
     <style>
       #body img.bg-white {
@@ -49,41 +63,49 @@
     </style>
   </head>
   <body class="mobile-support print disableInlineCopyToClipboard" data-url="/kubernetes-notes/pod/daemonset/index.html">
-    <div id="body" class="default-animation">
-      <div id="sidebar-overlay"></div>
-      <div id="toc-overlay"></div>
-      <nav id="topbar" class="highlightable">
-        <div>
-          <div id="breadcrumbs">
-            <span id="sidebar-toggle-span">
-              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
-</span>
-            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Inicio sitio</span></a><meta itemprop="position" content="1"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/kubernetes-notes/index.html"><span itemprop="name">Kubernetes - notas</span></a><meta itemprop="position" content="2"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/kubernetes-notes/pod/index.html"><span itemprop="name">Pod</span></a><meta itemprop="position" content="3"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Daemonset</span><meta itemprop="position" content="4"></li>
-            </ol>
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Inicio sitio</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/kubernetes-notes/index.html"><span itemprop="name">Kubernetes - notas</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/kubernetes-notes/pod/index.html"><span itemprop="name">Pod</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Daemonset</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/kubernetes-notes/pod/resources/index.html" title="Sección resources (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/kvm/index.html" title="KVM (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
           </div>
         </div>
       </nav>
-      <main id="body-inner" class="highlightable default" tabindex="-1">
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
         <div class="flex-block-wrapper">
-
           <article class="default">
             <header class="headline">
-<div class="tags">
-  <a class="tag-link" href="/tags/documentation/index.html">documentation</a>
-  <a class="tag-link" href="/tags/kubernetes/index.html">kubernetes</a>
+<div class=" taxonomy-tags term-list cstyle  tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="/tags/documentation/index.html">documentation</a></li>
+    <li><a class="term-link" href="/tags/kubernetes/index.html">kubernetes</a></li>
+  </ul>
 </div>
             </header>
+
 <h1 id="daemonset">Daemonset</h1>
 
 <ul>
 <li>En <em>Kubernetes</em> definir/crear un <em>daemonset</em> hace que el pod/contenedor/es se ejecute en todos los nodos del cluster. Este tipo componente puede utilizarse, por ejemplo para aplicaciones que esten encargas de monitorizar los nodos del cluster kubernetes.</li>
 </ul>
 <h2 id="definición-mediante-manifiesto">Definición mediante manifiesto</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus my-codes<span style="color:#f92672">]</span>$ cat kubernetes/03-daemonset.yaml
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus my-codes<span style="color:#f92672">]</span>$ cat kubernetes/03-daemonset.yaml
 </span></span><span style="display:flex;"><span>apiVersion: apps/v1
 </span></span><span style="display:flex;"><span>kind: DaemonSet
 </span></span><span style="display:flex;"><span>metadata:
@@ -101,26 +123,25 @@
 </span></span><span style="display:flex;"><span>      - name: nginx
 </span></span><span style="display:flex;"><span>        image: nginx:alpine
 </span></span><span style="display:flex;"><span>        ports:
-</span></span><span style="display:flex;"><span>        - containerPort: <span style="color:#ae81ff">80</span>
-</span></span></code></pre></div><h3 id="aplicar-el-manifiesto">Aplicar el manifiesto</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus my-codes<span style="color:#f92672">]</span>$ kubectl apply -f kubernetes/03-daemonset.yaml
-</span></span></code></pre></div><h3 id="otros-comandos">Otros comandos</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ kubectl apply -f codes-cli/03-daemonset.yaml 
+</span></span><span style="display:flex;"><span>        - containerPort: <span style="color:#ae81ff">80</span></span></span></code></pre></div>
+<h3 id="aplicar-el-manifiesto">Aplicar el manifiesto</h3>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus my-codes<span style="color:#f92672">]</span>$ kubectl apply -f kubernetes/03-daemonset.yaml</span></span></code></pre></div>
+<h3 id="otros-comandos">Otros comandos</h3>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ kubectl apply -f codes-cli/03-daemonset.yaml 
 </span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ kubectl get daemonset
 </span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ k get pods
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># El siguiente comando elimina el daemonset (de todos los nodos, y mediante el manifiesto.</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ kubectl delete -f codes-cli/03-daemonset.yaml
-</span></span></code></pre></div>
-            <footer class="footline">
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dzamo@victus kubernetes<span style="color:#f92672">]</span>$ kubectl delete -f codes-cli/03-daemonset.yaml</span></span></code></pre></div>
 
+            <footer class="footline">
             </footer>
           </article>
 
         </div>
       </main>
     </div>
-    <script src="/js/clipboard.min.js?1690584877" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1690584877" defer></script>
-    <script src="/js/theme.js?1690584877" defer></script>
+    <script src="/js/clipboard.min.js?1725917725" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1725917725" defer></script>
+    <script src="/js/theme.js?1725917725" defer></script>
   </body>
 </html>

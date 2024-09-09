@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Kubernetes - despliegues on Site</title>
+    <title>Kubernetes - despliegues :: Site</title>
     <link>http://danielzamo.github.io/kubernetes-deployments/index.html</link>
-    <description>Recent content in Kubernetes - despliegues on Site</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://danielzamo.github.io/kubernetes-deployments/index.xml" rel="self" type="application/rss+xml" />
+    <description>Aplicaciones y/o servicios de Kubernetes</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://danielzamo.github.io/kubernetes-deployments/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ansible - AWX</title>
       <link>http://danielzamo.github.io/kubernetes-deployments/ansible-awx/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://danielzamo.github.io/kubernetes-deployments/ansible-awx/index.html</guid>
-      <description>Este proyecto es el despliegue de Ansible AWX, edición comunitaria de Red Hat Ansible Tower.
-En la siguiente representación se muestra un diagrama del despliegue. El cual es realizado sobre un host motor de kubernetes con minikube con libvirt como runtime (driver kvm).
-Tecnologías utilizadas Contenedores: kubernetes / k3s or minikube Dist. Linux: AlmaLinux 9 Sesión de instalación/configuración La sesión siguiente fue realizada tanto sobre un cluster de minikube como en uno con k3s.</description>
+      <description>Este proyecto es el despliegue de Ansible AWX, edición comunitaria de Red Hat Ansible Tower.</description>
     </item>
   </channel>
 </rss>

@@ -1,46 +1,60 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.101.0">
-    <meta name="generator" content="Relearn 5.16.2+tip">
+    <meta name="generator" content="Hugo 0.121.2">
+    <meta name="generator" content="Relearn 6.3.0+tip">
     <meta name="description" content="Administración de máquinas virtuales invitadas KVM/libvirt">
     <meta name="author" content="Daniel Oscar Zamo">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Comando virsh :: Site">
+    <meta name="twitter:description" content="Administración de máquinas virtuales invitadas KVM/libvirt">
+    <meta property="og:url" content="http://danielzamo.github.io/kvm/virsh/index.html">
+    <meta property="og:site_name" content="Site">
+    <meta property="og:title" content="Comando virsh :: Site">
+    <meta property="og:description" content="Administración de máquinas virtuales invitadas KVM/libvirt">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Comando virsh :: Site">
+    <meta itemprop="description" content="Administración de máquinas virtuales invitadas KVM/libvirt">
+    <meta itemprop="wordCount" content="111">
+    <meta itemprop="keywords" content="virtualization,KVM,Articles,libvirtd">
     <title>Comando virsh :: Site</title>
     <link href="http://danielzamo.github.io/kvm/virsh/index.html" rel="canonical" type="text/html" title="Comando virsh :: Site">
     <link href="/kvm/virsh/index.xml" rel="alternate" type="application/rss+xml" title="Comando virsh :: Site">
-    <link href="/images/logo.svg?1690584877" rel="icon" type="image/svg+xml">
-    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1690584877" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1690584877" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1690584877" rel="stylesheet">
-    <link href="/css/auto-complete.css?1690584877" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1690584877" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1690584877" rel="stylesheet">
-    <link href="/css/fonts.css?1690584877" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1690584877" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1690584877" rel="stylesheet">
-    <link href="/css/theme-relearn-dark.css?1690584877" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1690584877" rel="stylesheet">
-    <link href="/css/print.css?1690584877" rel="stylesheet" media="print">
-    <link href="/css/format-print.css?1690584877" rel="stylesheet">
-    <link href="/css/ie.css?1690584877" rel="stylesheet">
-    <script src="/js/url.js?1690584877"></script>
-    <script src="/js/variant.js?1690584877"></script>
+    <link href="/images/logo.svg?1725917725" rel="icon" type="image/svg+xml">
+    <link href="/css/fontawesome-all.min.css?1725917725" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1725917725" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1725917725" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725917725" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1725917725" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1725917725" rel="stylesheet">
+    <link href="/css/fonts.css?1725917725" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1725917725" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1725917725" rel="stylesheet">
+    <link href="/css/theme-relearn-dark.css?1725917725" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-relearn-dark.css?1725917725" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1725917725" rel="stylesheet">
+    <link href="/css/print.css?1725917725" rel="stylesheet" media="print">
+    <link href="/css/format-print.css?1725917725" rel="stylesheet">
+    <script src="/js/variant.js?1725917725"></script>
     <script>
-      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
-      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
-      window.index_js_url="/index.search.js";
-      var root_url="/";
-      var baseUri=root_url.replace(/\/$/, '');
-      // translations
-      window.T_Copy_to_clipboard = 'Copy to clipboard';
-      window.T_Copied_to_clipboard = 'Copied to clipboard!';
-      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
-      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
-      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
-      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
-      // some further base stuff
-      var baseUriFull='http:\/\/danielzamo.github.io/';
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/danielzamo.github.io';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.index_js_url="/index.search.js?1725917725";
+      // variant stuff
       window.variants && variants.init( [ 'relearn-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
     <style>
       #body img.bg-white {
@@ -49,63 +63,70 @@
     </style>
   </head>
   <body class="mobile-support print disableInlineCopyToClipboard" data-url="/kvm/virsh/index.html">
-    <div id="body" class="default-animation">
-      <div id="sidebar-overlay"></div>
-      <div id="toc-overlay"></div>
-      <nav id="topbar" class="highlightable">
-        <div>
-          <div id="breadcrumbs">
-            <span id="sidebar-toggle-span">
-              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
-</span>
-            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Inicio sitio</span></a><meta itemprop="position" content="1"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/kvm/index.html"><span itemprop="name">KVM</span></a><meta itemprop="position" content="2"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Comando virsh</span><meta itemprop="position" content="3"></li>
-            </ol>
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Inicio sitio</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/kvm/index.html"><span itemprop="name">KVM</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Comando virsh</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/kvm/index.html" title="KVM (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-right"></i></span>
+            </div>
           </div>
         </div>
       </nav>
-      <main id="body-inner" class="highlightable default" tabindex="-1">
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
         <div class="flex-block-wrapper">
-
           <article class="default">
             <header class="headline">
-<div class="tags">
-  <a class="tag-link" href="/tags/articles/index.html">Articles</a>
-  <a class="tag-link" href="/tags/kvm/index.html">KVM</a>
-  <a class="tag-link" href="/tags/libvirtd/index.html">libvirtd</a>
-  <a class="tag-link" href="/tags/virtualization/index.html">virtualization</a>
+<div class=" taxonomy-tags term-list cstyle  tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="/tags/articles/index.html">Articles</a></li>
+    <li><a class="term-link" href="/tags/kvm/index.html">KVM</a></li>
+    <li><a class="term-link" href="/tags/libvirtd/index.html">libvirtd</a></li>
+    <li><a class="term-link" href="/tags/virtualization/index.html">virtualization</a></li>
+  </ul>
 </div>
             </header>
+
 <h1 id="comando-virsh">Comando virsh</h1>
 
 <blockquote>
 <p>En este artículo es una hoja de referencia parcial de los comandos de virsh.</p>
 </blockquote>
 <h2 id="qué-virsh">Qué virsh?</h2>
-<p><code>virsh</code> es una interfaz de usuario de administración para dominios invitados (guest, o m&rsquo;aquinas virtuales) de libvirt. Con <code>virsh</code> se puede crear, pausar, reiniciar, cerrar dominios y realizar diferentes tareas de sobre los guest (VM) actuales disponibles en una plataforma de hipervisor de virtualización <em><strong><a href="https://www.linux-kvm.org/page/Main_Page" target="_blank">KVM</a></strong></em>/<em><strong><a href="https://libvirt.org/" target="_blank">libvirt</a></strong></em>.</p>
+<p><code>virsh</code> es una interfaz de usuario de administración para dominios invitados (guest, o m&rsquo;aquinas virtuales) de libvirt. Con <code>virsh</code> se puede crear, pausar, reiniciar, cerrar dominios y realizar diferentes tareas de sobre los guest (VM) actuales disponibles en una plataforma de hipervisor de virtualización <em><strong><a href="https://www.linux-kvm.org/page/Main_Page" rel="external" target="_blank">KVM</a></strong></em>/<em><strong><a href="https://libvirt.org/" rel="external" target="_blank">libvirt</a></strong></em>.</p>
 <h2 id="listar-todos-los-dominios-guest-máquinas-virtuales-del-host-kvm">Listar todos los dominios guest (máquinas virtuales) del host KVM</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>virsh list --all
-</span></span></code></pre></div><h2 id="crear-snapshot-de-vmdominio-de-kvmlibvirt">Crear snapshot de VM/dominio de KVM/libvirt</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>virsh snapshot-create-as --domain <span style="color:#f92672">{</span>VM-NAME<span style="color:#f92672">}</span> --name <span style="color:#e6db74">&#34;{SNAPSHOT-NAME}&#34;</span>
-</span></span></code></pre></div><h2 id="referencias">Referencias</h2>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>virsh list --all</span></span></code></pre></div>
+<h2 id="sintaxis-para-crear-snapshot-en-de-vm-en-linux">Sintaxis para crear snapshot en de VM en Linux</h2>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>virsh snapshot-create-as --domain <span style="color:#f92672">{</span>VM-NAME<span style="color:#f92672">}</span> --name <span style="color:#e6db74">&#34;{SNAPSHOT-NAME}&#34;</span></span></span></code></pre></div>
+<h2 id="referencias">Referencias</h2>
 <ul>
-<li><a href="https://computingforgeeks.com/virsh-commands-cheatsheet/" target="_blank">Virsh commands cheatsheet to manage KVM guest virtual machines</a>.</li>
-<li><a href="https://www.cyberciti.biz/faq/how-to-create-create-snapshot-in-linux-kvm-vmdomain/" target="_blank">How to create snapshot in Linux KVM VM/Domain</a>.</li>
-<li><a href="https://lzone.de/cheat-sheet/KVM" target="_blank">KVM Cheat Sheet </a>.</li>
+<li><a href="https://computingforgeeks.com/virsh-commands-cheatsheet/" rel="external" target="_blank">Virsh commands cheatsheet to manage KVM guest virtual machines</a>.</li>
+<li><a href="https://www.cyberciti.biz/faq/how-to-create-create-snapshot-in-linux-kvm-vmdomain/" rel="external" target="_blank">How to create snapshot in Linux KVM VM/Domain</a>.</li>
+<li><a href="https://lzone.de/cheat-sheet/KVM" rel="external" target="_blank">KVM Cheat Sheet </a>.</li>
 </ul>
 
             <footer class="footline">
-
             </footer>
           </article>
 
         </div>
       </main>
     </div>
-    <script src="/js/clipboard.min.js?1690584877" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1690584877" defer></script>
-    <script src="/js/theme.js?1690584877" defer></script>
+    <script src="/js/clipboard.min.js?1725917725" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1725917725" defer></script>
+    <script src="/js/theme.js?1725917725" defer></script>
   </body>
 </html>

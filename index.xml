@@ -1,62 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Inicio sitio on Site</title>
+    <title>Inicio sitio :: Site</title>
     <link>http://danielzamo.github.io/index.html</link>
-    <description>Recent content in Inicio sitio on Site</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://danielzamo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <description>En este sitio comparto algunos artículos, implementaciones y/o proyectos implementados.&#xA;Este sitio esta generado con Hugo y utiliza inicialmente el theme Hugo Relearn Theme.&#xA;Algunos de los artículos y/o proyectos compartidos aquí son:&#xA;Kubernetes cluster k3sCluster kubernetes con k3s. 1 nodo master (control-plane) + &#39;N&#39; nodos worker&#xA;Kubernetes - desplieguesAplicaciones y/o servicios de Kubernetes&#xA;Ubuntu server LTSUbuntu server LTS&#xA;Kubernetes - notasEntradas relacionadas a Kubernetes. Todo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://danielzamo.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kubernetes cluster k3s</title>
       <link>http://danielzamo.github.io/kubernetes-cluster-k3s/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://danielzamo.github.io/kubernetes-cluster-k3s/index.html</guid>
-      <description> En este proyecto se despliega un cluster Kubernetes basado en k3s.
-URL repositorio: Gitlab/dzamo/k8s-k3s-various-clusters
-Tecnologías usadas Alma Linux 9 K3s Ansible - roles Instalación desatendida del sistema operativo KVM. Reserva y creación del recurso vía CLI - virt-install </description>
+      <description>Cluster kubernetes con k3s. 1 nodo master (control-plane) + &#39;N&#39; nodos worker</description>
     </item>
     <item>
       <title>Kubernetes - despliegues</title>
       <link>http://danielzamo.github.io/kubernetes-deployments/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://danielzamo.github.io/kubernetes-deployments/index.html</guid>
-      <description>Entradas relacionadas a despliegues de implementaciones realizados.
-Todo el código implementado en estos proyectos poseen repositorios en el cloud, se intentará aquí agregar el URL donde se encuentra el código fuente o especificación de la implementación realizada.
-Algunos de las aplicaciones y/o servicios desplegados/implementados para kubernetes son:
-Ansible - AWXEste proyecto es el despliegue de Ansible AWX, edición comunitaria de Red Hat Ansible Tower.</description>
+      <description>Aplicaciones y/o servicios de Kubernetes</description>
+    </item>
+    <item>
+      <title>Ubuntu server LTS</title>
+      <link>http://danielzamo.github.io/ubuntu-lts-server/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/ubuntu-lts-server/index.html</guid>
+      <description>Ubuntu server LTS</description>
     </item>
     <item>
       <title>Kubernetes - notas</title>
       <link>http://danielzamo.github.io/kubernetes-notes/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://danielzamo.github.io/kubernetes-notes/index.html</guid>
-      <description>Entradas relacionadas a Kubernetes.
-Todo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.</description>
-    </item>
-    <item>
-      <title>Ubuntu 22.04 LTS</title>
-      <link>http://danielzamo.github.io/ubuntu/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/ubuntu/index.html</guid>
-      <description>En esta sección se comparten configuraciones de servicios y/o de programas, para despliegues de servidores y/o estaciones de trabajo (con desktop o ambiente gráfico) basados en Ubuntu LTS ultima estable 22.04, de modo de tener disponible un servidor o una estación desktop para ser usada como PC de uso diario o desarrollo.
-Varias de las entradas serán tareas realizadas desde el CLI bash que dispone el sistema una vez recien instalado.</description>
-    </item>
-    <item>
-      <title>Fedora 38</title>
-      <link>http://danielzamo.github.io/fedora38/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/fedora38/index.html</guid>
-      <description>En esta sección se comparten configuraciones de servicios y/o de programas, para despliegues de servidores y/o estaciones de trabajo (con desktop/ambiente gráfico) basados en Fedora 38, derivados o equivalentes.
-Varias de las entradas serán tareas realizadas desde el CLI bash que dispone el sistema una vez recien instalado. En los artículos presentados aquí donde están orientados a desplegar una estación con ambiente gráfico, se ha preferido utilizar un desktop basado en Kde Plasma 5,24 o superior.</description>
+      <description>Entradas relacionadas a Kubernetes.&#xA;Todo el código implementado y los casos de uso probados se encuentran disponible en el repositorio my-code del sitio de Gitlab.</description>
     </item>
     <item>
       <title>KVM</title>
       <link>http://danielzamo.github.io/kvm/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://danielzamo.github.io/kvm/index.html</guid>
-      <description>En esta sección se comparten artículos de KVM (Kernel Virtual Machine), virtualización completa para Linux en hardware x86.
-Por el momento, en esta sección se publican los siguientes casos de uso (despliegues/implementaciones):
-Comando virshAdministración de máquinas virtuales invitadas KVM/libvirt</description>
+      <description>Kernel Virtual Machine - KVM</description>
     </item>
   </channel>
 </rss>

@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Articles on Site</title>
+    <title>Articles :: Tag :: Site</title>
     <link>http://danielzamo.github.io/tags/articles/index.html</link>
-    <description>Recent content in Articles on Site</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://danielzamo.github.io/tags/articles/index.xml" rel="self" type="application/rss+xml" />
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://danielzamo.github.io/tags/articles/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Comando virsh</title>
       <link>http://danielzamo.github.io/kvm/virsh/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://danielzamo.github.io/kvm/virsh/index.html</guid>
-      <description>En este artículo es una hoja de referencia parcial de los comandos de virsh.
-Qué virsh? virsh es una interfaz de usuario de administración para dominios invitados (guest, o m&amp;rsquo;aquinas virtuales) de libvirt. Con virsh se puede crear, pausar, reiniciar, cerrar dominios y realizar diferentes tareas de sobre los guest (VM) actuales disponibles en una plataforma de hipervisor de virtualización KVM/libvirt.
-Listar todos los dominios guest (máquinas virtuales) del host KVM virsh list --all Crear snapshot de VM/dominio de KVM/libvirt virsh snapshot-create-as --domain {VM-NAME} --name &amp;#34;{SNAPSHOT-NAME}&amp;#34; Referencias Virsh commands cheatsheet to manage KVM guest virtual machines.</description>
+      <description>Administración de máquinas virtuales invitadas KVM/libvirt</description>
     </item>
   </channel>
 </rss>

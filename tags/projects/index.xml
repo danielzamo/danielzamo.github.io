@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>projects on Site</title>
+    <title>projects :: Tag :: Site</title>
     <link>http://danielzamo.github.io/tags/projects/index.html</link>
-    <description>Recent content in projects on Site</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://danielzamo.github.io/tags/projects/index.xml" rel="self" type="application/rss+xml" />
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://danielzamo.github.io/tags/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anfitrión KVM</title>
+      <link>http://danielzamo.github.io/ubuntu-lts-server/kvm/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://danielzamo.github.io/ubuntu-lts-server/kvm/index.html</guid>
+      <description>Ubuntu server LTS, host anfitrión virtualización KVM</description>
+    </item>
     <item>
       <title>Ansible - AWX</title>
       <link>http://danielzamo.github.io/kubernetes-deployments/ansible-awx/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://danielzamo.github.io/kubernetes-deployments/ansible-awx/index.html</guid>
-      <description>Este proyecto es el despliegue de Ansible AWX, edición comunitaria de Red Hat Ansible Tower.
-En la siguiente representación se muestra un diagrama del despliegue. El cual es realizado sobre un host motor de kubernetes con minikube con libvirt como runtime (driver kvm).
-Tecnologías utilizadas Contenedores: kubernetes / k3s or minikube Dist. Linux: AlmaLinux 9 Sesión de instalación/configuración La sesión siguiente fue realizada tanto sobre un cluster de minikube como en uno con k3s.</description>
-    </item>
-    <item>
-      <title>Anfitrión KVM</title>
-      <link>http://danielzamo.github.io/ubuntu/kvm/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/ubuntu/kvm/index.html</guid>
-      <description>Despliegue de servidor host anfitrión host virtualización KVM.
-Especificación inicial 1 x bridge: br0 1 x ethernet: enp1s0 Configuración IP: Especificación asignación (fija) IP 192.168.123.35 gateway 192.168.123.1 red 192.168.123.0/24 DNS1-3 192.168.123.1,8.8.8.8,1.1.1.1 Actualización sistema, instalando paquetes (opcionales) dzamo@ubuntu-k8s:~$ sudo apt -y update &amp;amp;&amp;amp; sudo apt -y upgrade dzamo@ubuntu-k8s:~$ sudo apt install -y neovim tmux vim vim-scripts exuberant-ctags python-greenlet-dev Instalación/configuración de KVM # Install KVM in Ubuntu dzamo@ubuntu-k8s:~$ sudo apt -y install qemu-kvm libvirt-dev bridge-utils libvirt-daemon-system libvirt-daemon virtinst bridge-utils libosinfo-bin libguestfs-tools virt-top dzamo@ubuntu-k8s:~$ sudo usermod -a $USER -G libvirt,libvirt-qemu,libvirt-dnsmasq,kvm dzamo@ubuntu-k8s:~$ sudo modprobe vhost_net dzamo@ubuntu-k8s:~$ sudo lsmod | grep vhost dzamo@ubuntu-k8s:~$ echo &amp;#34;vhost_net&amp;#34; | sudo tee -a /etc/modules dzamo@ubuntu-k8s:~$ sudo vim /etc/netplan/00-installer-config.</description>
+      <description>Este proyecto es el despliegue de Ansible AWX, edición comunitaria de Red Hat Ansible Tower.</description>
     </item>
   </channel>
 </rss>

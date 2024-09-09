@@ -7,15 +7,12 @@
   width: device-width; }
 @-moz-viewport {
   width: device-width; }
-@-ms-viewport {
-  width: device-width; }
 @-o-viewport {
   width: device-width; }
 @viewport {
   width: device-width; }
 html {
   font-size: 16px;
-  -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%; }
 
@@ -54,10 +51,6 @@ template {
 a {
   background: transparent;
   text-decoration: none; }
-
-a:active,
-a:hover {
-  outline: 0; }
 
 abbr[title] {
   border-bottom: 1px dotted; }
@@ -98,7 +91,7 @@ figure {
 hr {
   height: 0; }
 
-pre {
+pre:not(.mermaid) {
   overflow: auto; }
 
 button,
@@ -197,7 +190,7 @@ cite {
   cite:before {
     content: "\2014 \0020"; }
 
-pre {
+pre:not(.mermaid) {
   margin: 1.5rem 0;
   padding: 0.938rem; }
 
@@ -259,6 +252,7 @@ select {
 button,
 input[type="submit"] {
   cursor: pointer;
+  -webkit-user-select: none;
   user-select: none;
   white-space: nowrap;
   border: inherit; }
