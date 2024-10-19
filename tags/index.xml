@@ -1,88 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags :: Site</title>
-    <link>http://danielzamo.github.io/tags/index.html</link>
+    <title>Tags :: My New Hugo Site</title>
+    <link>https://danielzamo.github.io/tags/index.html</link>
     <description></description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://danielzamo.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Tag :: Articles</title>
-      <link>http://danielzamo.github.io/tags/articles/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/tags/articles/index.html</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tag :: container</title>
-      <link>http://danielzamo.github.io/tags/container/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/tags/container/index.html</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tag :: documentation</title>
-      <link>http://danielzamo.github.io/tags/documentation/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/tags/documentation/index.html</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tag :: kubernetes</title>
-      <link>http://danielzamo.github.io/tags/kubernetes/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/tags/kubernetes/index.html</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tag :: KVM</title>
-      <link>http://danielzamo.github.io/tags/kvm/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/tags/kvm/index.html</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tag :: libvirtd</title>
-      <link>http://danielzamo.github.io/tags/libvirtd/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/tags/libvirtd/index.html</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tag :: minikube</title>
-      <link>http://danielzamo.github.io/tags/minikube/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/tags/minikube/index.html</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tag :: projects</title>
-      <link>http://danielzamo.github.io/tags/projects/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/tags/projects/index.html</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tag :: Ubuntu LTS</title>
-      <link>http://danielzamo.github.io/tags/ubuntu-lts/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/tags/ubuntu-lts/index.html</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tag :: UbuntuLTS</title>
-      <link>http://danielzamo.github.io/tags/ubuntults/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/tags/ubuntults/index.html</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tag :: virtualization</title>
-      <link>http://danielzamo.github.io/tags/virtualization/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://danielzamo.github.io/tags/virtualization/index.html</guid>
-      <description></description>
-    </item>
+    <atom:link href="https://danielzamo.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

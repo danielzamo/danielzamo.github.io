@@ -1,87 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://danielzamo.github.io/kubernetes-cluster-k3s/index.html</loc>
+    <loc>https://danielzamo.github.io/first-chapter/index.html</loc>
+    <lastmod>2024-10-19T22:32:10+02:00</lastmod>
   </url>
   <url>
-    <loc>http://danielzamo.github.io/kubernetes-deployments/index.html</loc>
+    <loc>https://danielzamo.github.io/categories/index.html</loc>
   </url>
   <url>
-    <loc>http://danielzamo.github.io/kubernetes-notes/pod/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/ubuntu-lts-server/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/kubernetes-notes/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/ubuntu-lts-server/kvm/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/kubernetes-deployments/ansible-awx/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/kvm/virsh/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/kubernetes-notes/pod/pod-minimal/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/ubuntu-lts-server/minikube-kvm/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/kubernetes-notes/pod/env/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/kubernetes-notes/pod/resources/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/kubernetes-notes/pod/daemonset/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/kvm/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/tags/articles/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/categories/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/tags/container/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/tags/documentation/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/tags/kubernetes/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/tags/kvm/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/tags/libvirtd/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/tags/minikube/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/tags/projects/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/tags/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/tags/ubuntu-lts/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/tags/ubuntults/index.html</loc>
-  </url>
-  <url>
-    <loc>http://danielzamo.github.io/tags/virtualization/index.html</loc>
+    <loc>https://danielzamo.github.io/tags/index.html</loc>
   </url>
 </urlset>
