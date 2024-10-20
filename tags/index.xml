@@ -1,46 +1,60 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags :: Docs en Github</title>
-    <link>https://danielzamo.github.io/tags/index.html</link>
+    <title>Tags :: Hugo Relearn Theme</title>
+    <link>https://example.com/tags/index.html</link>
     <description></description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Sat, 19 Oct 2024 22:32:10 +0200</lastBuildDate>
-    <atom:link href="https://danielzamo.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tag :: Fedora</title>
-      <link>https://danielzamo.github.io/tags/fedora/index.html</link>
+      <link>https://example.com/tags/fedora/index.html</link>
       <pubDate>Sat, 19 Oct 2024 22:32:10 +0200</pubDate>
-      <guid>https://danielzamo.github.io/tags/fedora/index.html</guid>
+      <guid>https://example.com/tags/fedora/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Tag :: Generadores Sitios Estáticos</title>
-      <link>https://danielzamo.github.io/tags/generadores-sitios-est%C3%A1ticos/index.html</link>
+      <link>https://example.com/tags/generadores-sitios-est%C3%A1ticos/index.html</link>
       <pubDate>Sat, 19 Oct 2024 22:32:10 +0200</pubDate>
-      <guid>https://danielzamo.github.io/tags/generadores-sitios-est%C3%A1ticos/index.html</guid>
+      <guid>https://example.com/tags/generadores-sitios-est%C3%A1ticos/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Hugo</title>
+      <link>https://example.com/tags/hugo/index.html</link>
+      <pubDate>Sat, 19 Oct 2024 22:32:10 +0200</pubDate>
+      <guid>https://example.com/tags/hugo/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Tag :: Jekyll</title>
-      <link>https://danielzamo.github.io/tags/jekyll/index.html</link>
+      <link>https://example.com/tags/jekyll/index.html</link>
       <pubDate>Sat, 19 Oct 2024 22:32:10 +0200</pubDate>
-      <guid>https://danielzamo.github.io/tags/jekyll/index.html</guid>
+      <guid>https://example.com/tags/jekyll/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Tag :: Linux</title>
-      <link>https://danielzamo.github.io/tags/linux/index.html</link>
+      <link>https://example.com/tags/linux/index.html</link>
       <pubDate>Sat, 19 Oct 2024 22:32:10 +0200</pubDate>
-      <guid>https://danielzamo.github.io/tags/linux/index.html</guid>
+      <guid>https://example.com/tags/linux/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Tag :: Programación</title>
-      <link>https://danielzamo.github.io/tags/programaci%C3%B3n/index.html</link>
+      <link>https://example.com/tags/programaci%C3%B3n/index.html</link>
       <pubDate>Sat, 19 Oct 2024 22:32:10 +0200</pubDate>
-      <guid>https://danielzamo.github.io/tags/programaci%C3%B3n/index.html</guid>
+      <guid>https://example.com/tags/programaci%C3%B3n/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Tutorial</title>
+      <link>https://example.com/tags/tutorial/index.html</link>
+      <pubDate>Sat, 19 Oct 2024 22:32:10 +0200</pubDate>
+      <guid>https://example.com/tags/tutorial/index.html</guid>
       <description></description>
     </item>
   </channel>

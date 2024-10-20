@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jekyll en Fedora 40 :: Hugo Relearn Theme</title>
+    <link>https://example.com/jekyll-on-linux/jekyll-on-fedora40/index.html</link>
+    <description>Instalación de pre requisitos sudo dnf -y install ruby ruby-devel openssl-devel \ redhat-rpm-config gcc-c++ @development-tools Verificaciones ruby -v; gcc -v; g++ -v; make -v Instalando RubyGems Evitar instalar los paquetes de RubyGems (llamados gemas) como usuario root. En su lugar, configurar un directorio de instalación de gemas para una cuenta de usuario. Los siguientes comandos agregarán variables de entorno al ~/.bashrc para configurar la ruta de instalación de gemas.</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://example.com/jekyll-on-linux/jekyll-on-fedora40/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

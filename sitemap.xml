@@ -1,50 +1,73 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://danielzamo.github.io/jekyll-on-linux/index.html</loc>
+    <loc>https://example.com/jekyll-on-linux/index.html</loc>
     <lastmod>2024-10-19T22:32:10+02:00</lastmod>
   </url>
   <url>
-    <loc>https://danielzamo.github.io/jekyll-on-linux/jekyll-on-fedora40/index.html</loc>
+    <loc>https://example.com/jekyll-on-linux/jekyll-on-fedora40/index.html</loc>
     <lastmod>2024-10-19T22:32:10+02:00</lastmod>
   </url>
   <url>
-    <loc>https://danielzamo.github.io/jekyll-on-linux/quickstart/index.html</loc>
+    <loc>https://example.com/jekyll-on-linux/quickstart/index.html</loc>
     <lastmod>2024-10-19T22:32:10+02:00</lastmod>
   </url>
   <url>
-    <loc>https://danielzamo.github.io/jekyll-on-linux/jekyll-references/index.html</loc>
+    <loc>https://example.com/jekyll-on-linux/jekyll-references/index.html</loc>
     <lastmod>2024-10-19T22:32:10+02:00</lastmod>
   </url>
   <url>
-    <loc>https://danielzamo.github.io/tags/fedora/index.html</loc>
+    <loc>https://example.com/index.html</loc>
     <lastmod>2024-10-19T22:32:10+02:00</lastmod>
   </url>
   <url>
-    <loc>https://danielzamo.github.io/tags/generadores-sitios-est%C3%A1ticos/index.html</loc>
+    <loc>https://example.com/categories/index.html</loc>
     <lastmod>2024-10-19T22:32:10+02:00</lastmod>
   </url>
   <url>
-    <loc>https://danielzamo.github.io/index.html</loc>
+    <loc>https://example.com/tags/fedora/index.html</loc>
     <lastmod>2024-10-19T22:32:10+02:00</lastmod>
   </url>
   <url>
-    <loc>https://danielzamo.github.io/tags/jekyll/index.html</loc>
+    <loc>https://example.com/tags/generadores-sitios-est%C3%A1ticos/index.html</loc>
     <lastmod>2024-10-19T22:32:10+02:00</lastmod>
   </url>
   <url>
-    <loc>https://danielzamo.github.io/tags/linux/index.html</loc>
+    <loc>https://example.com/tags/hugo/index.html</loc>
     <lastmod>2024-10-19T22:32:10+02:00</lastmod>
   </url>
   <url>
-    <loc>https://danielzamo.github.io/tags/programaci%C3%B3n/index.html</loc>
+    <loc>https://example.com/categories/hugo/index.html</loc>
     <lastmod>2024-10-19T22:32:10+02:00</lastmod>
   </url>
   <url>
-    <loc>https://danielzamo.github.io/tags/index.html</loc>
+    <loc>https://example.com/tags/jekyll/index.html</loc>
     <lastmod>2024-10-19T22:32:10+02:00</lastmod>
   </url>
   <url>
-    <loc>https://danielzamo.github.io/categories/index.html</loc>
+    <loc>https://example.com/tags/linux/index.html</loc>
+    <lastmod>2024-10-19T22:32:10+02:00</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/tags/programaci%C3%B3n/index.html</loc>
+    <lastmod>2024-10-19T22:32:10+02:00</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/tags/index.html</loc>
+    <lastmod>2024-10-19T22:32:10+02:00</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/tags/tutorial/index.html</loc>
+    <lastmod>2024-10-19T22:32:10+02:00</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/categories/tutorial/index.html</loc>
+    <lastmod>2024-10-19T22:32:10+02:00</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/frontmatter/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/options/index.html</loc>
   </url>
 </urlset>

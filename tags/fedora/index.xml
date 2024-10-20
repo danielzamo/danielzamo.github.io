@@ -1,40 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Fedora :: Tag :: Docs en Github</title>
-    <link>https://danielzamo.github.io/tags/fedora/index.html</link>
+    <title>Fedora :: Tag :: Hugo Relearn Theme</title>
+    <link>https://example.com/tags/fedora/index.html</link>
     <description></description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Sat, 19 Oct 2024 22:32:10 +0200</lastBuildDate>
-    <atom:link href="https://danielzamo.github.io/tags/fedora/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.com/tags/fedora/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jekyll sobre Linux</title>
-      <link>https://danielzamo.github.io/jekyll-on-linux/index.html</link>
+      <link>https://example.com/jekyll-on-linux/index.html</link>
       <pubDate>Sat, 19 Oct 2024 22:32:10 +0200</pubDate>
-      <guid>https://danielzamo.github.io/jekyll-on-linux/index.html</guid>
-      <description>Jekyll sobre Linux&#xA;Jekyll en Fedora 40 (desktop KDE Plasma 6.2)</description>
+      <guid>https://example.com/jekyll-on-linux/index.html</guid>
+      <description>Jekyll en Linux</description>
     </item>
     <item>
       <title>Jekyll en Fedora 40</title>
-      <link>https://danielzamo.github.io/jekyll-on-linux/jekyll-on-fedora40/index.html</link>
+      <link>https://example.com/jekyll-on-linux/jekyll-on-fedora40/index.html</link>
       <pubDate>Sat, 19 Oct 2024 22:32:10 +0200</pubDate>
-      <guid>https://danielzamo.github.io/jekyll-on-linux/jekyll-on-fedora40/index.html</guid>
+      <guid>https://example.com/jekyll-on-linux/jekyll-on-fedora40/index.html</guid>
       <description>Instalación de pre requisitos sudo dnf -y install ruby ruby-devel openssl-devel \ redhat-rpm-config gcc-c++ @development-tools Verificaciones ruby -v; gcc -v; g++ -v; make -v Instalando RubyGems Evitar instalar los paquetes de RubyGems (llamados gemas) como usuario root. En su lugar, configurar un directorio de instalación de gemas para una cuenta de usuario. Los siguientes comandos agregarán variables de entorno al ~/.bashrc para configurar la ruta de instalación de gemas.</description>
     </item>
     <item>
-      <title>Jekyll - referencias consultadas</title>
-      <link>https://danielzamo.github.io/jekyll-on-linux/jekyll-references/index.html</link>
+      <title>Artículos sobre Jekyll</title>
+      <link>https://example.com/index.html</link>
       <pubDate>Sat, 19 Oct 2024 22:32:10 +0200</pubDate>
-      <guid>https://danielzamo.github.io/jekyll-on-linux/jekyll-references/index.html</guid>
-      <description>En esta entrada se indican algunos de los URL y/o sitios consultados para realizar este trabajo compartido.&#xA;Referencias Installing Ruby. Download RubyGems. Jekyll - Quickstart.</description>
-    </item>
-    <item>
-      <title>Inicio</title>
-      <link>https://danielzamo.github.io/index.html</link>
-      <pubDate>Sat, 19 Oct 2024 22:32:10 +0200</pubDate>
-      <guid>https://danielzamo.github.io/index.html</guid>
-      <description>Artículos tipo capítulos Jekyll sobre Linux</description>
+      <guid>https://example.com/index.html</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Inicio :: Docs en Github</title>
-    <link>https://danielzamo.github.io/index.html</link>
-    <description>Artículos tipo capítulos Jekyll sobre Linux</description>
+    <title>Artículos sobre Jekyll :: Hugo Relearn Theme</title>
+    <link>https://example.com/index.html</link>
+    <description></description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Sat, 19 Oct 2024 22:32:10 +0200</lastBuildDate>
-    <atom:link href="https://danielzamo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jekyll sobre Linux</title>
-      <link>https://danielzamo.github.io/jekyll-on-linux/index.html</link>
+      <link>https://example.com/jekyll-on-linux/index.html</link>
       <pubDate>Sat, 19 Oct 2024 22:32:10 +0200</pubDate>
-      <guid>https://danielzamo.github.io/jekyll-on-linux/index.html</guid>
-      <description>Jekyll sobre Linux&#xA;Jekyll en Fedora 40 (desktop KDE Plasma 6.2)</description>
+      <guid>https://example.com/jekyll-on-linux/index.html</guid>
+      <description>Jekyll en Linux</description>
     </item>
   </channel>
 </rss>
