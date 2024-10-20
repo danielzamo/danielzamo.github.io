@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>First Page :: My New Hugo Site</title>
+    <link>https://danielzamo.github.io/first-chapter/first-page/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://danielzamo.github.io/first-chapter/first-page/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

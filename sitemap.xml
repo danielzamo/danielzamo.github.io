@@ -1,13 +1,50 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://danielzamo.github.io/first-chapter/index.html</loc>
+    <loc>https://danielzamo.github.io/jekyll-on-linux/index.html</loc>
+    <lastmod>2024-10-19T22:32:10+02:00</lastmod>
+  </url>
+  <url>
+    <loc>https://danielzamo.github.io/jekyll-on-linux/jekyll-on-fedora40/index.html</loc>
+    <lastmod>2024-10-19T22:32:10+02:00</lastmod>
+  </url>
+  <url>
+    <loc>https://danielzamo.github.io/jekyll-on-linux/quickstart/index.html</loc>
+    <lastmod>2024-10-19T22:32:10+02:00</lastmod>
+  </url>
+  <url>
+    <loc>https://danielzamo.github.io/jekyll-on-linux/jekyll-references/index.html</loc>
+    <lastmod>2024-10-19T22:32:10+02:00</lastmod>
+  </url>
+  <url>
+    <loc>https://danielzamo.github.io/tags/fedora/index.html</loc>
+    <lastmod>2024-10-19T22:32:10+02:00</lastmod>
+  </url>
+  <url>
+    <loc>https://danielzamo.github.io/tags/generadores-sitios-est%C3%A1ticos/index.html</loc>
+    <lastmod>2024-10-19T22:32:10+02:00</lastmod>
+  </url>
+  <url>
+    <loc>https://danielzamo.github.io/index.html</loc>
+    <lastmod>2024-10-19T22:32:10+02:00</lastmod>
+  </url>
+  <url>
+    <loc>https://danielzamo.github.io/tags/jekyll/index.html</loc>
+    <lastmod>2024-10-19T22:32:10+02:00</lastmod>
+  </url>
+  <url>
+    <loc>https://danielzamo.github.io/tags/linux/index.html</loc>
+    <lastmod>2024-10-19T22:32:10+02:00</lastmod>
+  </url>
+  <url>
+    <loc>https://danielzamo.github.io/tags/programaci%C3%B3n/index.html</loc>
+    <lastmod>2024-10-19T22:32:10+02:00</lastmod>
+  </url>
+  <url>
+    <loc>https://danielzamo.github.io/tags/index.html</loc>
     <lastmod>2024-10-19T22:32:10+02:00</lastmod>
   </url>
   <url>
     <loc>https://danielzamo.github.io/categories/index.html</loc>
-  </url>
-  <url>
-    <loc>https://danielzamo.github.io/tags/index.html</loc>
   </url>
 </urlset>

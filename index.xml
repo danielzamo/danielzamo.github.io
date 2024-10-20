@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>Inicio :: Docs en Github</title>
     <link>https://danielzamo.github.io/index.html</link>
-    <description>This is your new home page.</description>
+    <description>Artículos tipo capítulos Jekyll sobre Linux</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 19 Oct 2024 22:32:10 +0200</lastBuildDate>
     <atom:link href="https://danielzamo.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>First Chapter</title>
-      <link>https://danielzamo.github.io/first-chapter/index.html</link>
+      <title>Jekyll sobre Linux</title>
+      <link>https://danielzamo.github.io/jekyll-on-linux/index.html</link>
       <pubDate>Sat, 19 Oct 2024 22:32:10 +0200</pubDate>
-      <guid>https://danielzamo.github.io/first-chapter/index.html</guid>
-      <description>This is a new chapter.</description>
+      <guid>https://danielzamo.github.io/jekyll-on-linux/index.html</guid>
+      <description>Jekyll sobre Linux&#xA;Jekyll en Fedora 40 (desktop KDE Plasma 6.2)</description>
     </item>
   </channel>
 </rss>

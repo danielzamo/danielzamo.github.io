@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jekyll sobre Fedora 40 :: My New Hugo Site</title>
+    <link>http://localhost:1313/jekyll-on-fedora-40/index.html</link>
+    <description>Jekyll sobre Fedora 40, desktop KDE Plasma 6.2&#xA;Pre requisitos sudo dnf install ruby ruby-devel openssl-devel \ redhat-rpm-config gcc-c++ @development-tools</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 Oct 2024 22:32:10 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/jekyll-on-fedora-40/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Other Page</title>
+      <link>http://localhost:1313/jekyll-on-fedora-40/other-page/index.html</link>
+      <pubDate>Sat, 19 Oct 2024 22:32:10 +0200</pubDate>
+      <guid>http://localhost:1313/jekyll-on-fedora-40/other-page/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Second Page</title>
+      <link>http://localhost:1313/jekyll-on-fedora-40/second-page/index.html</link>
+      <pubDate>Sat, 19 Oct 2024 22:32:03 +0200</pubDate>
+      <guid>http://localhost:1313/jekyll-on-fedora-40/second-page/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>First Page</title>
+      <link>http://localhost:1313/jekyll-on-fedora-40/first-page/index.html</link>
+      <pubDate>Sat, 19 Oct 2024 22:31:56 +0200</pubDate>
+      <guid>http://localhost:1313/jekyll-on-fedora-40/first-page/index.html</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

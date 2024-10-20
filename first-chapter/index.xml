@@ -6,7 +6,28 @@
     <description>This is a new chapter.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Sat, 19 Oct 2024 22:32:10 +0200</lastBuildDate>
     <atom:link href="https://danielzamo.github.io/first-chapter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Other Page</title>
+      <link>https://danielzamo.github.io/first-chapter/other-page/index.html</link>
+      <pubDate>Sat, 19 Oct 2024 22:32:10 +0200</pubDate>
+      <guid>https://danielzamo.github.io/first-chapter/other-page/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Second Page</title>
+      <link>https://danielzamo.github.io/first-chapter/second-page/index.html</link>
+      <pubDate>Sat, 19 Oct 2024 22:32:03 +0200</pubDate>
+      <guid>https://danielzamo.github.io/first-chapter/second-page/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>First Page</title>
+      <link>https://danielzamo.github.io/first-chapter/first-page/index.html</link>
+      <pubDate>Sat, 19 Oct 2024 22:31:56 +0200</pubDate>
+      <guid>https://danielzamo.github.io/first-chapter/first-page/index.html</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
