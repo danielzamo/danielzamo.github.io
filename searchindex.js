@@ -29,8 +29,8 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Inicio \u003e Jekyll sobre Linux",
-    "content": "Inicio rápido Una vez instalado el generador de sitios Jenkyll se puede crear un sitio web estático. Luego este se podra modificar tanto la apariencia, las URL, los datos que se muestran en la página y más.\nLa instalación del generador de sitios estático (SSG) y sus dependencias se pueden consultar en Jekyll - quickstart y/o en este mismo sitio.\nCrear un nuevo sitio Jekyll jekyll new mysite cd mysite Contruir el sitio y desplegarlo en local bundle exec jekyll serve Si todo a ido bien el sitio debería estar disponible en el URL http://localhost:4000.\nEn la captura se muestra el sitio inicial que genera Jekyll.",
-    "description": "Inicio rápido Una vez instalado el generador de sitios Jenkyll se puede crear un sitio web estático. Luego este se podra modificar tanto la apariencia, las URL, los datos que se muestran en la página y más.\nLa instalación del generador de sitios estático (SSG) y sus dependencias se pueden consultar en Jekyll - quickstart y/o en este mismo sitio.",
+    "content": "Inicio rápido Una vez instalado el generador de sitios Jenkyll se puede crear un sitio web estático. Luego este se podra modificar tanto la apariencia, las URL, los datos que se muestran en la página y más.\nLa instalación del generador de sitios estático (SSG) y sus dependencias se pueden consultar en Jekyll y/o en este mismo sitio.\nCrear un nuevo sitio Jekyll jekyll new mysite cd mysite Contruir el sitio y desplegarlo en local bundle exec jekyll serve Si todo a ido bien el sitio debería estar disponible en el URL http://localhost:4000.\nEn la captura se muestra el sitio inicial que genera Jekyll.",
+    "description": "Inicio rápido Una vez instalado el generador de sitios Jenkyll se puede crear un sitio web estático. Luego este se podra modificar tanto la apariencia, las URL, los datos que se muestran en la página y más.\nLa instalación del generador de sitios estático (SSG) y sus dependencias se pueden consultar en Jekyll y/o en este mismo sitio.",
     "tags": [
       "Programación",
       "Generadores Sitios Estáticos",
