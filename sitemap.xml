@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/categories/</loc>
-<lastmod>2024-10-22T01:15:30+02:00</lastmod>
+<loc>https://danielzamo.github.io/categories/</loc>
+<lastmod>2024-10-22T01:24:07+02:00</lastmod>
 </url>
 <url>
-<loc>/tags/</loc>
-<lastmod>2024-10-22T01:15:30+02:00</lastmod>
+<loc>https://danielzamo.github.io/tags/</loc>
+<lastmod>2024-10-22T01:24:07+02:00</lastmod>
 </url>
 <url>
-<loc>/archives/</loc>
-<lastmod>2024-10-22T01:15:30+02:00</lastmod>
+<loc>https://danielzamo.github.io/archives/</loc>
+<lastmod>2024-10-22T01:24:07+02:00</lastmod>
 </url>
 <url>
-<loc>/about/</loc>
-<lastmod>2024-10-22T01:15:30+02:00</lastmod>
+<loc>https://danielzamo.github.io/about/</loc>
+<lastmod>2024-10-22T01:24:07+02:00</lastmod>
 </url>
 <url>
-<loc>/</loc>
+<loc>https://danielzamo.github.io/</loc>
 </url>
 </urlset>

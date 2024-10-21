@@ -1,19 +1,19 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>/</id>
-  <title>Chirpy</title>
-  <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-10-22T01:15:30+02:00</updated>
+  <id>https://danielzamo.github.io/</id>
+  <title>Docs</title>
+  <subtitle>Chirpy un tema de Jekyll minimalista, responsivo y rico en funciones para redacción técnica</subtitle>
+  <updated>2024-10-22T01:24:07+02:00</updated>
   <author>
-    <name>your_full_name</name>
-    <uri>/</uri>
+    <name>Daniel Oscar Zamo</name>
+    <uri>https://danielzamo.github.io/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="https://danielzamo.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
-    href="/"/>
+    href="https://danielzamo.github.io/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator>
-  <rights> © 2024 your_full_name </rights>
+  <rights> © 2024 Daniel Oscar Zamo </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 

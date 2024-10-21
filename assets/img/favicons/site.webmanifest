@@ -1,9 +1,9 @@
 
 
 {
-  "name": "Chirpy",
-  "short_name": "Chirpy",
-  "description": "A minimal, responsive and feature-rich Jekyll theme for technical writing.",
+  "name": "Docs",
+  "short_name": "Docs",
+  "description": "Chirpy un tema de Jekyll minimalista, responsivo y rico en funciones para redacción técnica",
   "icons": [
     {
       "src": "/assets/img/favicons/android-chrome-192x192.png",
