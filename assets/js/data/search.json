@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "Hugo - theme Toha",
+    "url": "/posts/ssg-hugo-theme-toha/",
+    "categories": "SSG, Hugo, Go, Generadores de sitios estáticos",
+    "tags": "writing",
+    "date": "2024-10-08 08:10:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "En esta entrada se resume como desplegar un sitio en el localhost con el generador Hugo, y aplicar el theme Toha.Creando sitio Hugo con theme TohaPre requisitos instalados, supuestos cumplidos  nod...",
+    "content": "En esta entrada se resume como desplegar un sitio en el localhost con el generador Hugo, y aplicar el theme Toha.Creando sitio Hugo con theme TohaPre requisitos instalados, supuestos cumplidos  node.js, npm, go, hugo, git: instalado.  Repositorio con GitHub Page o Gitlab Page (o similar): git@github.com:&lt;username&gt;/&lt;nombre_repo&gt;.io.git.Verificaciones pre requisitosgithub-danielzamo$ hugo version; go version; node -v; npm -vhugo v0.136.2+extended linux/amd64 BuildDate=2024-10-17T14:30:05Z VendorInfo=brewgo version go1.22.7 linux/amd64v20.17.010.9.0Configurando theme TohaNota el autor: en este artículo se configura el theme Toha consultando principalmente este artículo. El desarrollador del propio aquí comparte una guía rápida de como poner a funcionar el tema.github-danielzamo$ mkdir hugo-theme-toha-dzdevelgithub-danielzamo/hugo-theme-toha-dzdevel$ cd hugo-theme-toha-dzdevel/github-danielzamo/hugo-theme-toha-dzdevel$ hugo new site ./ --format=yaml --forcegithub-danielzamo/hugo-theme-toha-dzdevel$ hugo mod init github.com/danielzamo/danielzamo.github.iogithub-danielzamo/hugo-theme-toha-dzdevel$ cp hugo.yaml{,.org}# Agregar el theme (fichero hugo.yaml)github-danielzamo/hugo-theme-toha-dzdevel$ cat hugo.yamlbaseURL: https://danielzamo.github.io/languageCode: en-ustitle: hugo theme toha dzdevelmodule:  imports:  - path: github.com/hugo-toha/toha/v4  mounts:  - source: ./node_modules/flag-icon-css/flags    target: static/flags  - source: ./node_modules/@fontsource/mulish/files    target: static/files  - source: ./node_modules/katex/dist/fonts    target: static/fonts# Ejecutar los comandos para descargar el theme e instalar sus dependenciasgithub-danielzamo/hugo-theme-toha-dzdevel$ hugo mod get -ugithub-danielzamo/hugo-theme-toha-dzdevel$ hugo mod tidygithub-danielzamo/hugo-theme-toha-dzdevel$ hugo mod npm packgithub-danielzamo/hugo-theme-toha-dzdevel$ npm installgithub-danielzamo/hugo-theme-toha-dzdevel$ npm audit fix --force#&gt;github-danielzamo/hugo-theme-toha-dzdevel$ npm auditEjecutar el sitio localmenteSi todo ha ido bien se puede ahora ejecutar el sitio en el localhost. Para lo cual se ejecuta:github-danielzamo/hugo-theme-toha-dzdevel$ hugo server -wEn esta captura se muestra el sitio generado/publicado.Referencia  Theme Toha - quickstart.  Hugo - theme Toha - Prepare Your Site"
+  },
+  
+  {
     "title": "Jekyll tema Chirpy",
     "url": "/posts/jekyll-theme-chirpy/",
     "categories": "SSG, Jekyll, Linux, Jekyll-Chirpy",
