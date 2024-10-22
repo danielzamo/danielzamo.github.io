@@ -1,4 +1,38 @@
 [
   
+  {
+    "title": "Jekyll tema Chirpy",
+    "url": "/posts/jekyll-theme-chirpy/",
+    "categories": "SSG, Jekyll, Linux, Jekyll-Chirpy",
+    "tags": "writing",
+    "date": "2024-08-08 08:10:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "En esta entrada se resume como ha sido desplegado inicialmente este con el SSG Jekyll este sitio web de contenido estático. Y como se aplico el theme Chirpy para luego publicarlo sobre GitHub Page....",
+    "content": "En esta entrada se resume como ha sido desplegado inicialmente este con el SSG Jekyll este sitio web de contenido estático. Y como se aplico el theme Chirpy para luego publicarlo sobre GitHub Page.Instalando/desplegando theme ChirpySupuestos cumplidos  Node: instalado.  Jekyll y Bundle: instalado.  git: instalado.  Sistema Linux disponible: Fedora 40.  Repositorio con Git Page: &lt;username&gt;.github.io.Instalación/despliegue inicialEn este apartado despliego el sitio estático generado con Jekyll y configuro el theme Chirpy.git clone https://github.com/cotes2020/jekyll-theme-chirpy.git theme-chirpy/cd theme-chirpybash tools/init.shbundle#bundle install## Para usar ejecutar el jenkyll servebundle exec jekyll sPublicando sitio en repositorio Github Pageecho \"destination: public\" &gt;&gt;  _config.ymlrm -rf publicgit clone git@github.com:&lt;username&gt;/&lt;username&gt;.github.io.git publicbundle exec jekyll buildcd public/git add .git commit -m \"first commit, sitio estático generador Jekyll, tema Chirpy\"git push"
+  },
+  
+  {
+    "title": "Jekyll - deprecated @import",
+    "url": "/posts/jekyll-change-import/",
+    "categories": "SSG, Jekyll, Linux, Jekyll-Chirpy",
+    "tags": "writing",
+    "date": "2024-08-08 08:10:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "En esta entrada se indica uno de los “cambios radicales” respecto a @import y/o funciones globales del propio preprocesador CSS Sass.Migración del theme ChirpyEn este sitio generado por Jekyll, y d...",
+    "content": "En esta entrada se indica uno de los “cambios radicales” respecto a @import y/o funciones globales del propio preprocesador CSS Sass.Migración del theme ChirpyEn este sitio generado por Jekyll, y donde se aplico el theme Chirpy, se ejecutaron los siguientes comandos para actualizar automáticamente las hojas de estilo y utilizar el nuevo sistema de módulos.Método 1: migración autómaticasudo npm install -g sass-migratorbundle exec jekyll ssass-migrator module --migrate-deps &lt;your-entrypoint.scss&gt;Método 2: Instalar una versión antiguaEn este opción se especifica de instalar una gema con versión más antigua de Sass. Al soportar aun el import (no es lo que recomienda el desarrollador - referencia Sass Breaking Change: @import…) las advertencias no serán mostradas.Esto es, sin hacer aún el cambio inmediato en el código del theme, se puede tratar de mantener la compatibilidad con la versión actual de Sass. Para hacerlo, se utiliza una versión de Sass que aún soporte @import. Esto lo hacemos añadiendo dicha versión compatible de Sass al Gemfile o actualizando en npm.Por ejemplo, especificamos una versión más antigua de Sass en el Gemfile:gem 'sassc', '~&gt; 2.4'  # Versión que aún soporta @importY ejecutamos:bundle installReferenciasLos siguiente URL han sido consultados  Breaking Change: @import and global built-in functions."
+  }
+  
 ]
 

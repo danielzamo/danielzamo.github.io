@@ -4,7 +4,7 @@
   <id>https://danielzamo.github.io/</id>
   <title>Docs</title>
   <subtitle>Chirpy un tema de Jekyll minimalista, responsivo y rico en funciones para redacción técnica</subtitle>
-  <updated>2024-10-22T01:24:07+02:00</updated>
+  <updated>2024-10-22T14:52:16+02:00</updated>
   <author>
     <name>Daniel Oscar Zamo</name>
     <uri>https://danielzamo.github.io/</uri>
@@ -17,6 +17,85 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Jekyll tema Chirpy</title>
+    <link href="https://danielzamo.github.io/posts/jekyll-theme-chirpy/" rel="alternate" type="text/html" title="Jekyll tema Chirpy" />
+    <published>2024-08-08T08:10:00+02:00</published>
+  
+    <updated>2024-08-08T08:10:00+02:00</updated>
+  
+    <id>https://danielzamo.github.io/posts/jekyll-theme-chirpy/</id>
+    <content src="https://danielzamo.github.io/posts/jekyll-theme-chirpy/" />
+    <author>
+      <name>dzamo</name>
+    </author>
+
+  
+    
+    <category term="SSG" />
+    
+    <category term="Jekyll" />
+    
+    <category term="Linux" />
+    
+    <category term="Jekyll-Chirpy" />
+    
+  
+
+  <summary>En esta entrada se resume como ha sido desplegado inicialmente este con el SSG Jekyll este sitio web de contenido estático. Y como se aplico el theme Chirpy para luego publicarlo sobre GitHub Page.
+
+Instalando/desplegando theme Chirpy
+
+Supuestos cumplidos
+
+
+  Node: instalado.
+  Jekyll y Bundle: instalado.
+  git: instalado.
+  Sistema Linux disponible: Fedora 40.
+  Repositorio con Git Page: &amp;amp;lt;u...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Jekyll - deprecated @import</title>
+    <link href="https://danielzamo.github.io/posts/jekyll-change-import/" rel="alternate" type="text/html" title="Jekyll - deprecated @import" />
+    <published>2024-08-08T08:10:00+02:00</published>
+  
+    <updated>2024-08-08T08:10:00+02:00</updated>
+  
+    <id>https://danielzamo.github.io/posts/jekyll-change-import/</id>
+    <content src="https://danielzamo.github.io/posts/jekyll-change-import/" />
+    <author>
+      <name>dzamo</name>
+    </author>
+
+  
+    
+    <category term="SSG" />
+    
+    <category term="Jekyll" />
+    
+    <category term="Linux" />
+    
+    <category term="Jekyll-Chirpy" />
+    
+  
+
+  <summary>En esta entrada se indica uno de los “cambios radicales” respecto a @import y/o funciones globales del propio preprocesador CSS Sass.
+
+Migración del theme Chirpy
+
+En este sitio generado por Jekyll, y donde se aplico el theme Chirpy, se ejecutaron los siguientes comandos para actualizar automáticamente las hojas de estilo y utilizar el nuevo sistema de módulos.
+
+Método 1: migración autómatica
+
+s...</summary>
+
+  </entry>
 
 </feed>
 
