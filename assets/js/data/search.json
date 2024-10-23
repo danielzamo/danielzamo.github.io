@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "Jekyll plugins/complementos",
+    "url": "/posts/jekyll-plugins-add/",
+    "categories": "SSG, Jekyll, Linux",
+    "tags": "writing",
+    "date": "2024-10-10 08:10:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "Los complementos (plugins) de Jekyll permiten crear contenido personalizado y específico para el sitio. Hay muchos complementos disponibles e incluso se puede escribir los propios.En esta entrada s...",
+    "content": "Los complementos (plugins) de Jekyll permiten crear contenido personalizado y específico para el sitio. Hay muchos complementos disponibles e incluso se puede escribir los propios.En esta entrada se indica como agregar tres complementos (plugins) oficiales que son útiles en cualquier sitio de Jekyll. Estos son:  jekyll-sitemap: crea un archivo de mapa del sitio para ayudar a los motores de búsqueda a indexar el contenido.  jekyll-feed: Crea un canal RSS para tus publicaciones.  jekyll-seo-tag: agrega metaetiquetas para ayudar con el SEO.Configuración de los pluginsAgregarlos al GemfilePara utilizar los plugins hay que agregarlos al Gemfile. Si estos son colocados en un grupo jekyll_plugins, Jekyll los requerirá automáticamente. Si el fichero Gemfile ya existe agrega el siguiente contenido:source 'https://rubygems.org'gem \"jekyll\"group :jekyll_plugins do  gem \"jekyll-sitemap\"  gem \"jekyll-feed\"  gem \"jekyll-seo-tag\"endNota: en el caso actual, como Gemfile ya existía se agrego el contenido.Agregando los plugins en _config.ymlLos plugins para ser utilizados deben ser agregados al _config.yml. Esto es agregar el contenido:plugins:  - jekyll-feed  - jekyll-sitemap  - jekyll-seo-tagInstalación de los pluginsPara instalar los plugins basta ejecutar bundle update. Se realiza a continuación.bundle updateConfiguraciones extras  El pluginjekyll-sitemap no necesita ninguna configuración extra, este creará el mapa del sitio durante la compilación.  Para jekyll-feedy jekyll-seo-tag se necesita agregar etiquetas a _layouts/default.html, ajustando según corresponda. Estas etiquetas son {% feed_meta %} y {% seo %}. A continuación se muestra un ejemplo (ajustar según corresponda):&lt;!doctype html&gt;&lt;html&gt;  &lt;head&gt;    &lt;meta charset=\"utf-8\"&gt;    &lt;title&gt;{{ page.title }}&lt;/title&gt;    &lt;link rel=\"stylesheet\" href=\"/assets/css/styles.css\"&gt;    {% feed_meta %}    {% seo %}  &lt;/head&gt;  &lt;body&gt;    {% include navigation.html %}    {{ content }}  &lt;/body&gt;&lt;/html&gt;Luego de la anterior configuración, reiniciar el servidor Jekyll y verificar que las etiquetas se hayan agregado al archivo en el bloque correspondiente &lt;head&gt; del HTML."
+  },
+  
+  {
     "title": "Hugo - theme Toha",
     "url": "/posts/ssg-hugo-theme-toha/",
     "categories": "SSG, Hugo, Go, Generadores de sitios estáticos",
