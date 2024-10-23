@@ -2,9 +2,9 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://danielzamo.github.io/</id>
-  <title>Docs</title>
-  <subtitle>Chirpy un tema de Jekyll minimalista, responsivo y rico en funciones para redacción técnica</subtitle>
-  <updated>2024-10-23T04:09:38+02:00</updated>
+  <title>My blog SSG</title>
+  <subtitle>Sitio con artículos de generadores de sitios estáticos, generado con Jekyll</subtitle>
+  <updated>2024-10-23T04:16:01+02:00</updated>
   <author>
     <name>Daniel Oscar Zamo</name>
     <uri>https://danielzamo.github.io/</uri>

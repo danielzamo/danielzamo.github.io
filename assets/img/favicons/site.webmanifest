@@ -1,9 +1,9 @@
 
 
 {
-  "name": "Docs",
-  "short_name": "Docs",
-  "description": "Chirpy un tema de Jekyll minimalista, responsivo y rico en funciones para redacción técnica",
+  "name": "My blog SSG",
+  "short_name": "My blog SSG",
+  "description": "Sitio con artículos de generadores de sitios estáticos, generado con Jekyll",
   "icons": [
     {
       "src": "/assets/img/favicons/android-chrome-192x192.png",
