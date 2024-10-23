@@ -607,7 +607,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="288 words"
+  title="257 words"
 >
   <em>1 min</em> read</span>
 
@@ -657,13 +657,17 @@ v20.17.0
 5
 6
 7
+8
+9
 </pre></td><td class="rouge-code"><pre>ssg-hugo.dzdevel<span class="nv">$ </span>hugo new site theme-universal
 ssg-hugo.dzdevel<span class="nv">$ </span><span class="nb">cd </span>theme-universal/
 
-theme-universal<span class="nv">$ </span>git clone https://github.com/devcows/hugo-universal-theme themes/hugo-universal-theme
+theme-universal<span class="nv">$ </span>git clone https://github.com/devcows/hugo-universal-theme <span class="se">\</span>
+  themes/hugo-universal-theme
 
 theme-universal<span class="nv">$ </span><span class="nb">mv </span>hugo.toml<span class="o">{</span>,.org<span class="o">}</span>
-theme-universal<span class="nv">$ </span><span class="nb">cp </span>themes/hugo-universal-theme/exampleSite/config.toml ./hugo.toml
+theme-universal<span class="nv">$ </span><span class="nb">cp </span>themes/hugo-universal-theme/exampleSite/config.toml <span class="se">\</span>
+  ./hugo.toml
 </pre></td></tr></tbody></table></code></div></div>
 
 <p>Según corresponda revisar y configurar el <code class="language-plaintext highlighter-rouge">hugo.toml</code>. A continuación se muestran las configuraciones principales ajustadas. Estas son:</p>
@@ -679,19 +683,13 @@ theme-universal<span class="nv">$ </span><span class="nb">cp </span>themes/hugo-
 7
 8
 9
-10
-11
-12
 </pre></td><td class="rouge-code"><pre>theme-universal<span class="nv">$ </span><span class="nb">head </span>hugo.toml
-baseurl <span class="o">=</span> <span class="s2">"https://dzamo.gitlab.io/"</span> <span class="c"># Configure URL. if using gh-pages https://github.com/&lt;username&gt;/hugo-universal-theme URL: https://&lt;username&gt;.github.io/hugo-universal-theme/</span>
+baseurl <span class="o">=</span> <span class="s2">"https://dzamo.gitlab.io/"</span>
 title <span class="o">=</span> <span class="s2">"Blog generado por Hugo"</span>
 theme <span class="o">=</span> <span class="s2">"hugo-universal-theme"</span>
-<span class="c">#themesDir = "../.."</span>
 languageCode <span class="o">=</span> <span class="s2">"en-us"</span>
-<span class="c"># Site language. Available translations in the theme's `/i18n` directory.</span>
 defaultContentLanguage <span class="o">=</span> <span class="s2">"en"</span>
 
-<span class="c"># number of words of summarized post content (default 70)</span>
 summaryLength <span class="o">=</span> 70
 <span class="c"># ... [SE RESUME PARA SIMPLIFICAR]</span>
 </pre></td></tr></tbody></table></code></div></div>
