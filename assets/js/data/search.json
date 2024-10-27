@@ -1,23 +1,6 @@
 [
   
   {
-    "title": "Hugo - theme Clarity",
-    "url": "/posts/ssg-hugo-theme-clarity/",
-    "categories": "SSG, Hugo, Go, Generadores de sitios estáticos",
-    "tags": "writing, Hugo",
-    "date": "2024-10-21 08:10:00 +0200",
-    
-
-
-
-
-
-    
-    "snippet": "En esta entrada se resume como configurar el theme Clarity, sobre el generador de sitios estático Hugo.Configurar theme Clarity sobre HugoLuego de haber intentado utilizar el theme que me gusto de ...",
-    "content": "En esta entrada se resume como configurar el theme Clarity, sobre el generador de sitios estático Hugo.Configurar theme Clarity sobre HugoLuego de haber intentado utilizar el theme que me gusto de nombre Universal, pero no haber logrado hacer funcionar como quería la tabla de contenidos (TOC) en los artículos y como yo pretendía, es que pase a este Theme que por defecto parece tiene la funcionalidad que tengo disponible en los sitios generados con Jekyll con el theme Chirpy, y es la prestación de dejar en una posición fija el TOC.Pre requisitos instalados, supuestos cumplidosEn principio el desarrollador solo refiere de tener como requisito instalado extended version of Hugo 0.91.0 (o mas actual).  go, hugo, git: instalado.  Repositorio con GitHub Page o Gitlab Page (o similar): git@github.com:&lt;username&gt;/&lt;nombre_repo&gt;.io.git.Verificaciones pre requisitosInstalación theme ClaritySegún corresponda revisar y configurar el hugo.toml. A continuación se muestran las configuraciones principales ajustadas. Estas son:Copia ficheros del sitio de ejemploLanzamiento y verificación del sitiohugo serverEn la captura theme universal inicial"
-  },
-  
-  {
     "title": "Hugo - theme Universal",
     "url": "/posts/ssg-hugo-theme-universal/",
     "categories": "SSG, Hugo, Go, Generadores de sitios estáticos",

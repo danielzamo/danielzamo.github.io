@@ -4,7 +4,7 @@
   <id>https://danielzamo.github.io/</id>
   <title>My blog SSG</title>
   <subtitle>Sitio con artículos de generadores de sitios estáticos, generado con Jekyll</subtitle>
-  <updated>2024-10-24T18:52:06+02:00</updated>
+  <updated>2024-10-27T21:38:20+01:00</updated>
   <author>
     <name>Daniel Oscar Zamo</name>
     <uri>https://danielzamo.github.io/</uri>
@@ -17,42 +17,6 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
-
-  
-  <entry>
-    <title>Hugo - theme Clarity</title>
-    <link href="https://danielzamo.github.io/posts/ssg-hugo-theme-clarity/" rel="alternate" type="text/html" title="Hugo - theme Clarity" />
-    <published>2024-10-21T08:10:00+02:00</published>
-  
-    <updated>2024-10-21T08:10:00+02:00</updated>
-  
-    <id>https://danielzamo.github.io/posts/ssg-hugo-theme-clarity/</id>
-    <content src="https://danielzamo.github.io/posts/ssg-hugo-theme-clarity/" />
-    <author>
-      <name>dzamo</name>
-    </author>
-
-  
-    
-    <category term="SSG" />
-    
-    <category term="Hugo" />
-    
-    <category term="Go" />
-    
-    <category term="Generadores de sitios estáticos" />
-    
-  
-
-  <summary>En esta entrada se resume como configurar el theme Clarity, sobre el generador de sitios estático Hugo.
-
-
-
-Configurar theme Clarity sobre Hugo
-
-Luego de haber intentado utilizar el theme que me gusto de nombre Universal, pero no haber logrado hacer funcionar como quería la tabla de contenidos (TOC) en los artículos y como yo pretendía, es que pase a este Theme que por defecto parece tiene la fu...</summary>
-
-  </entry>
 
   
   <entry>
@@ -215,6 +179,44 @@ Supuestos cumplidos
   git: instalado.
   Sistema Linux disponible: Fedora 40.
   Repositorio con Git Page: &amp;amp;lt;u...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Jekyll - deprecated @import</title>
+    <link href="https://danielzamo.github.io/posts/jekyll-change-import/" rel="alternate" type="text/html" title="Jekyll - deprecated @import" />
+    <published>2024-08-08T08:10:00+02:00</published>
+  
+    <updated>2024-08-08T08:10:00+02:00</updated>
+  
+    <id>https://danielzamo.github.io/posts/jekyll-change-import/</id>
+    <content src="https://danielzamo.github.io/posts/jekyll-change-import/" />
+    <author>
+      <name>dzamo</name>
+    </author>
+
+  
+    
+    <category term="SSG" />
+    
+    <category term="Jekyll" />
+    
+    <category term="Linux" />
+    
+    <category term="Jekyll-Chirpy" />
+    
+  
+
+  <summary>En esta entrada se indica uno de los “cambios radicales” respecto a @import y/o funciones globales del propio preprocesador CSS Sass.
+
+Migración del theme Chirpy
+
+En este sitio generado por Jekyll, y donde se aplico el theme Chirpy, se ejecutaron los siguientes comandos para actualizar automáticamente las hojas de estilo y utilizar el nuevo sistema de módulos.
+
+Método 1: migración autómatica
+
+s...</summary>
 
   </entry>
 
