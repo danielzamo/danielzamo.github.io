@@ -1,9 +1,9 @@
 
 
 {
-  "name": "My blog SSG",
-  "short_name": "My blog SSG",
-  "description": "Sitio con artículos de generadores de sitios estáticos, generado con Jekyll",
+  "name": "Desarrollo contenidos en sitios estáticos",
+  "short_name": "Desarrollo contenidos en sitios estáticos",
+  "description": "Sitio desarrollado con Jekyll, usando el theme Chirdy.",
   "icons": [
     {
       "src": "/assets/img/favicons/android-chrome-192x192.png",

@@ -1,6 +1,40 @@
 [
   
   {
+    "title": "Generación imágenes lqip (uso magick, convert y/u otros)",
+    "url": "/posts/lqip-images/",
+    "categories": "SSG, Jekyll, lqip, Imágenes",
+    "tags": "writing",
+    "date": "2024-10-27 07:10:00 +0100",
+    
+
+
+
+
+
+    
+    "snippet": "Las imágenes LQIP (Low-Quality Image Placeholders) se utilizan para mejorar la experiencia del usuario al cargar imágenes en la web. Estas imágenes de baja calidad se muestran mientras se cargan la...",
+    "content": "Las imágenes LQIP (Low-Quality Image Placeholders) se utilizan para mejorar la experiencia del usuario al cargar imágenes en la web. Estas imágenes de baja calidad se muestran mientras se cargan las versiones de alta calidad.En esta entrada se indican algunas formas de generar este tipo de imágenes LQIP en formato Base64.Herramientas y Proceso para Generar LQIPImageMagick (convert y/o magick), ffmpegHerramientas de línea de comandos como ImageMagick o ffmpeg pueden servir para convertir imágenes a un formato de baja calidad y luego a Base64.  Usando convert de ImageMagick: Usando el siguiente comando se crea una versión de baja calidad y luego se convierte Base64, esto es:convert -resize 10% -quality 10 input-image.png - | base64Donde el comando:  Redimensiona la imagen al 10% de su tamaño original.  Establece la calidad de la imagen al 10%.      Convierte la imagen resultante a Base64.    Usando magick de ImageMagick: Se puede utilizar magick (que es mas actual que convert y tambien pertenece a ImageMagick en versiones mas actuales). Con este para generar el LQIP de la imágen se puede ejecutar:magick jekyll-gemfile-theme-chirpy.png -resize 10% -quality 10 - | base64Donde el comando:  magick: Invoca el comando de ImageMagick.  jekyll-gemfile-theme-chirpy.png: Es la imágen de entrada que se desea procesar.  resize 10%: Redimensiona la imagen al 10% de su tamaño original.  quality 10: Establece la calidad de la imagen al 10%.  -: Indica que la salida se enviará a stdout (salida estándar).  | base64: Pasa la salida de la imágen procesada a base64, que codifica la imagen en formato Base64.magick jekyll-gemfile-theme-chirpy.png -resize 10% -quality 10 - | base64 | tr -d '\\n'Diferencias entre convert y magick en ImageMagick:      convert          Uso: convert es un comando de ImageMagick que se utiliza para convertir imágenes de un formato a otro, así como para realizar una variedad de operaciones de manipulación de imágenes (redimensionar, recortar, aplicar efectos, etc.).      Ejecución: Este comando solía ser la forma estándar de manipular imágenes antes de que se introdujera el comando magick.      Desuso: En versiones más recientes de ImageMagick, el comando convert se está quedando obsoleto debido a su uso en otros contextos, como la manipulación de archivos en línea de comandos en Unix/Linux, lo que ha llevado a confusiones.            magick          Uso: magick es un comando más reciente que se introdujo para unificar la interfaz de línea de comandos de ImageMagick. Permite ejecutar todos los comandos de ImageMagick (incluyendo convert, mogrify, identify, etc.) desde un solo comando.      Ventaja: Usar magick proporciona un contexto más claro, ya que puedes usar diferentes subcomandos de ImageMagick bajo el mismo paraguas, lo que mejora la coherencia y la legibilidad de las instrucciones.      Recomendación: Se recomienda usar magick en lugar de convert para asegurarte de que estás utilizando la versión más reciente y evitar conflictos con otros comandos.      ResumenTanto convert y magick pueden realizar funciones similares, magick es el enfoque más moderno y flexible que agrupa todas las funcionalidades de ImageMagick, y su uso es recomendado para asegurar compatibilidad futura y evitar confusiones, principalmente para instalaciones de las nuevas versiones de _ImageMagick.Script de PythonSe puede usar un script simple en Python para realizar la conversión. Con Python y la biblioteca PIL instalada (pip install Pillow). Un script tal como:from PIL import Imageimport base64from io import BytesIOdef generate_lqip(image_path):    # Abrir la imagen    img = Image.open(image_path)        # Redimensionar y reducir calidad    img = img.resize((img.width // 10, img.height // 10))    buffer = BytesIO()    img.save(buffer, format=\"JPEG\", quality=10)  # Cambia a WEBP si prefieres    lqip = base64.b64encode(buffer.getvalue()).decode('utf-8')        return f\"data:image/jpeg;base64,{lqip}\"  # Cambiar a WEBP si se ha usado ese formatolqip_data = generate_lqip(\"ruta/a/tu/imagen.png\")print(lqip_data)Herramientas en líneaSe se prefiere no usar la línea de comandos ni programar, hay varias herramientas en línea que pueden hacer la conversión. En ellas normalmente se sube la imágen y el sitio genera el LQIP en Base64."
+  },
+  
+  {
+    "title": "Jekyll | bundle | modificando Gemfile",
+    "url": "/posts/jekyll-theme-chirpy-agregando-gemas/",
+    "categories": "SSG, Jekyll, Linux, Jekyll-Chirpy, bundle, gemas",
+    "tags": "writing",
+    "date": "2024-10-27 07:10:00 +0100",
+    
+
+
+
+
+
+    
+    "snippet": "En esta entrada se modifica el fichero Gemfile y se instalan las gemas mediante bundler, para el theme Chirpy del generador de sitio Jekyll.Fichero Gemfilecat Gemfile# frozen_string_literal: trueso...",
+    "content": "En esta entrada se modifica el fichero Gemfile y se instalan las gemas mediante bundler, para el theme Chirpy del generador de sitio Jekyll.Fichero Gemfilecat Gemfile# frozen_string_literal: truesource \"https://rubygems.org\"gemspecgem \"html-proofer\", \"~&gt; 5.0\", group: :testplatforms :mingw, :x64_mingw, :mswin, :jruby do  gem \"tzinfo\", \"&gt;= 1\", \"&lt; 3\"  gem \"tzinfo-data\"endgem \"wdm\", \"~&gt; 0.1.1\", :platforms =&gt; [:mingw, :x64_mingw, :mswin]gem 'jekyll'#gem 'jekyll', '~&gt; 4.2.0' # Asegúrate de que la versión de Jekyll que estás usando sea compatible.gem 'sass'# Gemas de Ruby estándar que podrían ser removidas en futuras versionesgem 'logger'gem 'csv'gem 'base64'#//END: Gemas de Ruby estándar que podrían ser removidas en futuras versiones# Instalar las gemasbundle installbundle# Actualizar el sitio (Jekyll)bundle exec jekyll serveNotas adicionales:  Gemas por defecto: Tanto csv como base64 son parte de la biblioteca estándar de Ruby, por lo que no es necesario incluirlas en el Gemfile a menos que necesites una versión específica. Se podrían haber omitido estas dos gemas si solo se necesita las funcionalidades básicas de las mismas.Logger: Esta gema, se utiliza para registrar información, en este caso implementadas en el código de los archivos de Jekyll donde se requieran."
+  },
+  
+  {
     "title": "Hugo - theme Universal",
     "url": "/posts/ssg-hugo-theme-universal/",
     "categories": "SSG, Hugo, Themes, Go, Generadores de sitios estáticos",
@@ -31,7 +65,7 @@
 
     
     "snippet": "Los complementos (plugins) de Jekyll permiten crear contenido personalizado y específico para el sitio. Hay muchos complementos disponibles e incluso se puede escribir los propios.En esta entrada s...",
-    "content": "Los complementos (plugins) de Jekyll permiten crear contenido personalizado y específico para el sitio. Hay muchos complementos disponibles e incluso se puede escribir los propios.En esta entrada se indica como agregar tres complementos (plugins) oficiales que son útiles en cualquier sitio de Jekyll. Estos son:  jekyll-sitemap: crea un archivo de mapa del sitio para ayudar a los motores de búsqueda a indexar el contenido.  jekyll-feed: Crea un canal RSS para tus publicaciones.  jekyll-seo-tag: agrega metaetiquetas para ayudar con el SEO.Configuración de los pluginsAgregarlos al GemfilePara utilizar los plugins hay que agregarlos al Gemfile. Si estos son colocados en un grupo jekyll_plugins, Jekyll los requerirá automáticamente. Si el fichero Gemfile ya existe agrega el siguiente contenido:source 'https://rubygems.org'gem \"jekyll\"group :jekyll_plugins do  gem \"jekyll-sitemap\"  gem \"jekyll-feed\"  gem \"jekyll-seo-tag\"endNota: en el caso actual, como Gemfile ya existía se agrego el contenido.Agregando los plugins en _config.ymlLos plugins para ser utilizados deben ser agregados al _config.yml. Esto es agregar el contenido:plugins:  - jekyll-feed  - jekyll-sitemap  - jekyll-seo-tagInstalación de los pluginsPara instalar los plugins basta ejecutar bundle update. Se realiza a continuación.bundle updateConfiguraciones extras  El pluginjekyll-sitemap no necesita ninguna configuración extra, este creará el mapa del sitio durante la compilación.  Para jekyll-feedy jekyll-seo-tag se necesita agregar etiquetas a _layouts/default.html, ajustando según corresponda. Estas etiquetas son {% feed_meta %} y {% seo %}. A continuación se muestra un ejemplo (ajustar según corresponda):&lt;!doctype html&gt;&lt;html&gt;  &lt;head&gt;    &lt;meta charset=\"utf-8\"&gt;    &lt;title&gt;{{ page.title }}&lt;/title&gt;    &lt;link rel=\"stylesheet\" href=\"/assets/css/styles.css\"&gt;    {% feed_meta %}    {% seo %}  &lt;/head&gt;  &lt;body&gt;    {% include navigation.html %}    {{ content }}  &lt;/body&gt;&lt;/html&gt;Luego de la anterior configuración, reiniciar el servidor Jekyll y verificar que las etiquetas se hayan agregado al archivo en el bloque correspondiente &lt;head&gt; del HTML."
+    "content": "Los complementos (plugins) de Jekyll permiten crear contenido personalizado y específico para el sitio. Hay muchos complementos disponibles e incluso se puede escribir los propios.En esta entrada se indica como agregar tres complementos (plugins) oficiales que son útiles en cualquier sitio de Jekyll. Estos son:  jekyll-sitemap-link: crea un archivo de mapa del sitio para ayudar a los motores de búsqueda a indexar el contenido.  jekyll-feed-link: Crea un canal RSS para tus publicaciones.  jekyll-seo-tag-link: agrega metaetiquetas para ayudar con el SEO.Configuración de los pluginsAgregarlos al GemfilePara utilizar los plugins hay que agregarlos al Gemfile. Si estos son colocados en un grupo jekyll_plugins, Jekyll los requerirá automáticamente. Si el fichero Gemfile ya existe agrega el siguiente contenido:source 'https://rubygems.org'gem \"jekyll\"group :jekyll_plugins do  gem \"jekyll-sitemap\"  gem \"jekyll-feed\"  gem \"jekyll-seo-tag\"endNota: en el caso actual, como Gemfile ya existía se agrego el contenido.Agregando los plugins en _config.ymlLos plugins para ser utilizados deben ser agregados al _config.yml. Esto es agregar el contenido:plugins:  - jekyll-feed  - jekyll-sitemap  - jekyll-seo-tagInstalación de los pluginsPara instalar los plugins basta ejecutar bundle update. Se realiza a continuación.bundle updateConfiguraciones extras  El pluginjekyll-sitemap no necesita ninguna configuración extra, este creará el mapa del sitio durante la compilación.  Para jekyll-feedy jekyll-seo-tag se necesita agregar etiquetas a _layouts/default.html, ajustando según corresponda. Estas etiquetas son {% feed_meta %} y {% seo %}. A continuación se muestra un ejemplo (ajustar según corresponda):&lt;!doctype html&gt;&lt;html&gt;  &lt;head&gt;    &lt;meta charset=\"utf-8\"&gt;    &lt;title&gt;{{ page.title }}&lt;/title&gt;    &lt;link rel=\"stylesheet\" href=\"/assets/css/styles.css\"&gt;    {% feed_meta %}    {% seo %}  &lt;/head&gt;  &lt;body&gt;    {% include navigation.html %}    {{ content }}  &lt;/body&gt;&lt;/html&gt;Luego de la anterior configuración, reiniciar el servidor Jekyll y verificar que las etiquetas se hayan agregado al archivo en el bloque correspondiente &lt;head&gt; del HTML."
   },
   
   {
@@ -83,6 +117,23 @@
     
     "snippet": "En esta entrada se indica uno de los “cambios radicales” respecto a @import y/o funciones globales del propio preprocesador CSS Sass.Migración del theme ChirpyEn este sitio generado por Jekyll, y d...",
     "content": "En esta entrada se indica uno de los “cambios radicales” respecto a @import y/o funciones globales del propio preprocesador CSS Sass.Migración del theme ChirpyEn este sitio generado por Jekyll, y donde se aplico el theme Chirpy, se ejecutaron los siguientes comandos para actualizar automáticamente las hojas de estilo y utilizar el nuevo sistema de módulos.Método 1: migración autómaticasudo npm install -g sass-migratorbundle exec jekyll ssass-migrator module --migrate-deps &lt;your-entrypoint.scss&gt;Método 2: Instalar una versión antiguaEn este opción se especifica de instalar una gema con versión más antigua de Sass. Al soportar aun el import (no es lo que recomienda el desarrollador - referencia Sass Breaking Change: @import…) las advertencias no serán mostradas.Esto es, sin hacer aún el cambio inmediato en el código del theme, se puede tratar de mantener la compatibilidad con la versión actual de Sass. Para hacerlo, se utiliza una versión de Sass que aún soporte @import. Esto lo hacemos añadiendo dicha versión compatible de Sass al Gemfile o actualizando en npm.Por ejemplo, especificamos una versión más antigua de Sass en el Gemfile:gem 'sassc', '~&gt; 2.4'  # Versión que aún soporta @importY ejecutamos:bundle installReferenciasLos siguiente URL han sido consultados  Breaking Change: @import and global built-in functions."
+  },
+  
+  {
+    "title": "Sitio estático en Github Page con Jekyll",
+    "url": "/posts/github-page-site-static-jekyll/",
+    "categories": "SSG, Jekyll, Linux, ThemeChirpy",
+    "tags": "writing",
+    "date": "2024-08-08 08:10:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "En esta entrada comparto como desplegue el sitio danielzamo.github.io, generado con Jekyll y aplicando el theme Chirpy.Tecnologías usadas  Desktop Linux KDE Plasma, basado en Fedora 40.  Repositori...",
+    "content": "En esta entrada comparto como desplegue el sitio danielzamo.github.io, generado con Jekyll y aplicando el theme Chirpy.Tecnologías usadas  Desktop Linux KDE Plasma, basado en Fedora 40.  Repositorio Git.  Publicación web Github Page.  Generador de sitio estático Jekyll.Dependencias necesariasInstalación/configuración theme ChirpyReferenciasLos siguiente URL han sido consultados  Breaking Change: @import and global built-in functions."
   }
   
 ]

@@ -30,24 +30,24 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="Jekyll plugins/complementos" />
+<meta property="og:title" content="Generación imágenes lqip (uso magick, convert y/u otros)" />
 <meta name="author" content="Daniel Oscar Zamo" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Los complementos (plugins) de Jekyll permiten crear contenido personalizado y específico para el sitio. Hay muchos complementos disponibles e incluso se puede escribir los propios." />
-<meta property="og:description" content="Los complementos (plugins) de Jekyll permiten crear contenido personalizado y específico para el sitio. Hay muchos complementos disponibles e incluso se puede escribir los propios." />
-<link rel="canonical" href="https://danielzamo.github.io/posts/jekyll-plugins-add/" />
-<meta property="og:url" content="https://danielzamo.github.io/posts/jekyll-plugins-add/" />
+<meta name="description" content="Las imágenes LQIP (Low-Quality Image Placeholders) se utilizan para mejorar la experiencia del usuario al cargar imágenes en la web. Estas imágenes de baja calidad se muestran mientras se cargan las versiones de alta calidad." />
+<meta property="og:description" content="Las imágenes LQIP (Low-Quality Image Placeholders) se utilizan para mejorar la experiencia del usuario al cargar imágenes en la web. Estas imágenes de baja calidad se muestran mientras se cargan las versiones de alta calidad." />
+<link rel="canonical" href="https://danielzamo.github.io/posts/lqip-images/" />
+<meta property="og:url" content="https://danielzamo.github.io/posts/lqip-images/" />
 <meta property="og:site_name" content="Desarrollo contenidos en sitios estáticos" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-10-10T08:10:00+02:00" />
+<meta property="article:published_time" content="2024-10-27T07:10:00+01:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Jekyll plugins/complementos" />
+<meta property="twitter:title" content="Generación imágenes lqip (uso magick, convert y/u otros)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Daniel Oscar Zamo","url":"https://danielzamo.github.io/"},"dateModified":"2024-10-10T08:10:00+02:00","datePublished":"2024-10-10T08:10:00+02:00","description":"Los complementos (plugins) de Jekyll permiten crear contenido personalizado y específico para el sitio. Hay muchos complementos disponibles e incluso se puede escribir los propios.","headline":"Jekyll plugins/complementos","mainEntityOfPage":{"@type":"WebPage","@id":"https://danielzamo.github.io/posts/jekyll-plugins-add/"},"url":"https://danielzamo.github.io/posts/jekyll-plugins-add/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Daniel Oscar Zamo","url":"https://danielzamo.github.io/"},"dateModified":"2024-10-27T07:10:00+01:00","datePublished":"2024-10-27T07:10:00+01:00","description":"Las imágenes LQIP (Low-Quality Image Placeholders) se utilizan para mejorar la experiencia del usuario al cargar imágenes en la web. Estas imágenes de baja calidad se muestran mientras se cargan las versiones de alta calidad.","headline":"Generación imágenes lqip (uso magick, convert y/u otros)","mainEntityOfPage":{"@type":"WebPage","@id":"https://danielzamo.github.io/posts/lqip-images/"},"url":"https://danielzamo.github.io/posts/lqip-images/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Jekyll plugins/complementos | Desarrollo contenidos en sitios estáticos
+  <title>Generación imágenes lqip (uso magick, convert y/u otros) | Desarrollo contenidos en sitios estáticos
   </title>
 
   <!--
@@ -280,7 +280,7 @@
         
           
             
-              <span>Jekyll plugins/complementos</span>
+              <span>Generación imágenes lqip (uso magick, convert y/u otros)</span>
             
 
           
@@ -463,6 +463,27 @@
   
 
   
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
 
 
 
@@ -474,7 +495,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>Jekyll plugins/complementos</h1>
+    <h1 data-toc-skip>Generación imágenes lqip (uso magick, convert y/u otros)</h1>
     
 
     <div class="post-meta text-muted">
@@ -491,13 +512,13 @@
 
 <time
   
-  data-ts="1728540600"
+  data-ts="1730009400"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Oct 10, 2024
+  Oct 27, 2024
 </time>
 
       </span>
@@ -549,9 +570,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="323 words"
+  title="660 words"
 >
-  <em>1 min</em> read</span>
+  <em>3 min</em> read</span>
 
         </div>
       </div>
@@ -559,81 +580,93 @@
   </header>
 
   <div class="content">
-    <p>Los complementos (plugins) de Jekyll permiten crear contenido personalizado y específico para el sitio. Hay muchos complementos disponibles e incluso se puede escribir los propios.</p>
+    <p>Las imágenes LQIP (Low-Quality Image Placeholders) se utilizan para mejorar la experiencia del usuario al cargar imágenes en la web. Estas imágenes de baja calidad se muestran mientras se cargan las versiones de alta calidad.</p>
 
-<p>En esta entrada se indica como agregar tres complementos (plugins) oficiales que son útiles en cualquier sitio de Jekyll. Estos son:</p>
+<p>En esta entrada se indican algunas formas de generar este tipo de imágenes LQIP en formato Base64.</p>
+
+<h2 id="herramientas-y-proceso-para-generar-lqip"><span class="me-2">Herramientas y Proceso para Generar LQIP</span><a href="#herramientas-y-proceso-para-generar-lqip" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<h3 id="imagemagick-convert-yo-magick-ffmpeg"><span class="me-2">ImageMagick (convert y/o magick), ffmpeg</span><a href="#imagemagick-convert-yo-magick-ffmpeg" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>Herramientas de línea de comandos como <code class="language-plaintext highlighter-rouge">ImageMagick</code> o <code class="language-plaintext highlighter-rouge">ffmpeg</code> pueden servir para convertir imágenes a un formato de baja calidad y luego a Base64.</p>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">jekyll-sitemap-link</code>: crea un archivo de mapa del sitio para ayudar a los motores de búsqueda a indexar el contenido.</li>
-  <li><code class="language-plaintext highlighter-rouge">jekyll-feed-link</code>: Crea un canal RSS para tus publicaciones.</li>
-  <li><code class="language-plaintext highlighter-rouge">jekyll-seo-tag-link</code>: agrega metaetiquetas para ayudar con el SEO.</li>
+  <li>Usando <code class="language-plaintext highlighter-rouge">convert</code> de <em>ImageMagick</em>: Usando el siguiente comando se crea una versión de baja calidad y luego se convierte Base64, esto es:</li>
 </ul>
-
-<h2 id="configuración-de-los-plugins"><span class="me-2">Configuración de los plugins</span><a href="#configuración-de-los-plugins" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<h3 id="agregarlos-al-gemfile"><span class="me-2">Agregarlos al Gemfile</span><a href="#agregarlos-al-gemfile" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-
-<p>Para utilizar los plugins hay que agregarlos al <code class="language-plaintext highlighter-rouge">Gemfile</code>. Si estos son colocados en un grupo <code class="language-plaintext highlighter-rouge">jekyll_plugins</code>, <em>Jekyll</em> los requerirá automáticamente. Si el fichero <code class="language-plaintext highlighter-rouge">Gemfile</code> ya existe agrega el siguiente contenido:</p>
-
-<div class="language-ruby highlighter-rouge"><div class="code-header">
-        <span data-label-text="Ruby"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-</pre></td><td class="rouge-code"><pre><span class="n">source</span> <span class="s1">'https://rubygems.org'</span>
-
-<span class="n">gem</span> <span class="s2">"jekyll"</span>
-
-<span class="n">group</span> <span class="ss">:jekyll_plugins</span> <span class="k">do</span>
-  <span class="n">gem</span> <span class="s2">"jekyll-sitemap"</span>
-  <span class="n">gem</span> <span class="s2">"jekyll-feed"</span>
-  <span class="n">gem</span> <span class="s2">"jekyll-seo-tag"</span>
-<span class="k">end</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<p><em>Nota:</em> en el caso actual, como <code class="language-plaintext highlighter-rouge">Gemfile</code> ya existía se agrego el contenido.</p>
-
-<h3 id="agregando-los-plugins-en-_configyml"><span class="me-2">Agregando los plugins en _config.yml</span><a href="#agregando-los-plugins-en-_configyml" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-
-<p>Los plugins para ser utilizados deben ser agregados al <code class="language-plaintext highlighter-rouge">_config.yml</code>. Esto es agregar el contenido:</p>
-
-<div class="language-yaml highlighter-rouge"><div class="code-header">
-        <span data-label-text="YAML"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-</pre></td><td class="rouge-code"><pre><span class="na">plugins</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="s">jekyll-feed</span>
-  <span class="pi">-</span> <span class="s">jekyll-sitemap</span>
-  <span class="pi">-</span> <span class="s">jekyll-seo-tag</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<h3 id="instalación-de-los-plugins"><span class="me-2">Instalación de los plugins</span><a href="#instalación-de-los-plugins" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-
-<p>Para instalar los plugins basta ejecutar <code class="language-plaintext highlighter-rouge">bundle update</code>. Se realiza a continuación.</p>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>bundle update
+</pre></td><td class="rouge-code"><pre>convert <span class="nt">-resize</span> 10% <span class="nt">-quality</span> 10 input-image.png - | <span class="nb">base64</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<h4 id="configuraciones-extras"><span class="me-2">Configuraciones extras</span><a href="#configuraciones-extras" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p><em>Donde el comando:</em></p>
 
 <ul>
-  <li>El plugin<code class="language-plaintext highlighter-rouge">jekyll-sitemap</code> no necesita ninguna configuración extra, este creará el mapa del sitio durante la compilación.</li>
-  <li>Para <code class="language-plaintext highlighter-rouge">jekyll-feed</code>y <code class="language-plaintext highlighter-rouge">jekyll-seo-tag</code> se necesita agregar etiquetas a <code class="language-plaintext highlighter-rouge">_layouts/default.html</code>, ajustando según corresponda. Estas etiquetas son <code class="language-plaintext highlighter-rouge">{% feed_meta %}</code> y <code class="language-plaintext highlighter-rouge">{% seo %}</code>. A continuación se muestra un ejemplo (ajustar según corresponda):</li>
+  <li>Redimensiona la imagen al 10% de su tamaño original.</li>
+  <li>Establece la calidad de la imagen al 10%.</li>
+  <li>
+    <p>Convierte la imagen resultante a Base64.</p>
+  </li>
+  <li>Usando magick de <em>ImageMagick</em>: Se puede utilizar magick (que es mas actual que <code class="language-plaintext highlighter-rouge">convert</code> y tambien pertenece a <em>ImageMagick</em> en versiones mas actuales). Con este para generar el LQIP de la imágen se puede ejecutar:</li>
 </ul>
 
-<div class="language-markdown highlighter-rouge"><div class="code-header">
-        <span data-label-text="Markdown"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>magick jekyll-gemfile-theme-chirpy.png <span class="nt">-resize</span> 10% <span class="nt">-quality</span> 10 - | <span class="nb">base64</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><em>Donde el comando:</em></p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">magick</code>: Invoca el comando de <em>ImageMagick</em>.</li>
+  <li><code class="language-plaintext highlighter-rouge">jekyll-gemfile-theme-chirpy.png</code>: Es la imágen de entrada que se desea procesar.</li>
+  <li><code class="language-plaintext highlighter-rouge">resize 10%</code>: Redimensiona la imagen al 10% de su tamaño original.</li>
+  <li><code class="language-plaintext highlighter-rouge">quality 10</code>: Establece la calidad de la imagen al 10%.</li>
+  <li><code class="language-plaintext highlighter-rouge">-</code>: Indica que la salida se enviará a <code class="language-plaintext highlighter-rouge">stdout</code> (salida estándar).</li>
+  <li><code class="language-plaintext highlighter-rouge">| base64</code>: Pasa la salida de la imágen procesada a <code class="language-plaintext highlighter-rouge">base64</code>, que codifica la imagen en formato Base64.</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>magick jekyll-gemfile-theme-chirpy.png <span class="nt">-resize</span> 10% <span class="nt">-quality</span> 10 - | <span class="nb">base64</span> | <span class="nb">tr</span> <span class="nt">-d</span> <span class="s1">'\n'</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h4 id="diferencias-entre-convert-y-magick-en-imagemagick"><span class="me-2">Diferencias entre convert y magick en ImageMagick:</span><a href="#diferencias-entre-convert-y-magick-en-imagemagick" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">convert</code></p>
+
+    <ul>
+      <li><em>Uso:</em> <code class="language-plaintext highlighter-rouge">convert</code> es un comando de <em>ImageMagick</em> que se utiliza para convertir imágenes de un formato a otro, así como para realizar una variedad de operaciones de manipulación de imágenes (redimensionar, recortar, aplicar efectos, etc.).</li>
+      <li><em>Ejecución:</em> Este comando solía ser la forma estándar de manipular imágenes antes de que se introdujera el comando <code class="language-plaintext highlighter-rouge">magick</code>.</li>
+      <li><em>Desuso:</em> En versiones más recientes de <em>ImageMagick</em>, el comando <code class="language-plaintext highlighter-rouge">convert</code> se está quedando obsoleto debido a su uso en otros contextos, como la manipulación de archivos en línea de comandos en Unix/Linux, lo que ha llevado a confusiones.</li>
+    </ul>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">magick</code></p>
+
+    <ul>
+      <li><em>Uso:</em> <code class="language-plaintext highlighter-rouge">magick</code> es un comando más reciente que se introdujo para unificar la interfaz de línea de comandos de <em>ImageMagick</em>. Permite ejecutar todos los comandos de <em>ImageMagick</em> (incluyendo convert, mogrify, identify, etc.) desde un solo comando.</li>
+      <li><em>Ventaja:</em> Usar <code class="language-plaintext highlighter-rouge">magick</code> proporciona un contexto más claro, ya que puedes usar diferentes subcomandos de <em>ImageMagick</em> bajo el mismo paraguas, lo que mejora la coherencia y la legibilidad de las instrucciones.</li>
+      <li><em>Recomendación:</em> Se recomienda usar <code class="language-plaintext highlighter-rouge">magick</code> en lugar de <code class="language-plaintext highlighter-rouge">convert</code> para asegurarte de que estás utilizando la versión más reciente y evitar conflictos con otros comandos.</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="resumen"><span class="me-2">Resumen</span><a href="#resumen" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+
+<p>Tanto <code class="language-plaintext highlighter-rouge">convert</code> y <code class="language-plaintext highlighter-rouge">magick</code> pueden realizar funciones similares, <code class="language-plaintext highlighter-rouge">magick</code> es el enfoque más moderno y flexible que agrupa todas las funcionalidades de <em>ImageMagick</em>, y su uso es recomendado para asegurar compatibilidad futura y evitar confusiones, principalmente para instalaciones de las nuevas versiones de _ImageMagick.</p>
+
+<h3 id="script-de-python"><span class="me-2">Script de Python</span><a href="#script-de-python" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>Se puede usar un script simple en <em>Python</em> para realizar la conversión. Con <em>Python</em> y la biblioteca <em>PIL</em> instalada (<code class="language-plaintext highlighter-rouge">pip install Pillow</code>). Un script tal como:</p>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -648,23 +681,34 @@
 12
 13
 14
-</pre></td><td class="rouge-code"><pre><span class="cp">&lt;!doctype html&gt;</span>
-<span class="nt">&lt;html&gt;</span>
-  <span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;title&gt;</span>{{ page.title }}<span class="nt">&lt;/title&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/assets/css/styles.css"</span><span class="nt">&gt;</span>
-    {% feed_meta %}
-    {% seo %}
-  <span class="nt">&lt;/head&gt;</span>
-  <span class="nt">&lt;body&gt;</span>
-    {% include navigation.html %}
-    {{ content }}
-  <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
+15
+16
+17
+18
+</pre></td><td class="rouge-code"><pre><span class="kn">from</span> <span class="n">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">import</span> <span class="n">base64</span>
+<span class="kn">from</span> <span class="n">io</span> <span class="kn">import</span> <span class="n">BytesIO</span>
+
+<span class="k">def</span> <span class="nf">generate_lqip</span><span class="p">(</span><span class="n">image_path</span><span class="p">):</span>
+    <span class="c1"># Abrir la imagen
+</span>    <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="nf">open</span><span class="p">(</span><span class="n">image_path</span><span class="p">)</span>
+    
+    <span class="c1"># Redimensionar y reducir calidad
+</span>    <span class="n">img</span> <span class="o">=</span> <span class="n">img</span><span class="p">.</span><span class="nf">resize</span><span class="p">((</span><span class="n">img</span><span class="p">.</span><span class="n">width</span> <span class="o">//</span> <span class="mi">10</span><span class="p">,</span> <span class="n">img</span><span class="p">.</span><span class="n">height</span> <span class="o">//</span> <span class="mi">10</span><span class="p">))</span>
+    <span class="nb">buffer</span> <span class="o">=</span> <span class="nc">BytesIO</span><span class="p">()</span>
+    <span class="n">img</span><span class="p">.</span><span class="nf">save</span><span class="p">(</span><span class="nb">buffer</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="sh">"</span><span class="s">JPEG</span><span class="sh">"</span><span class="p">,</span> <span class="n">quality</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>  <span class="c1"># Cambia a WEBP si prefieres
+</span>    <span class="n">lqip</span> <span class="o">=</span> <span class="n">base64</span><span class="p">.</span><span class="nf">b64encode</span><span class="p">(</span><span class="nb">buffer</span><span class="p">.</span><span class="nf">getvalue</span><span class="p">()).</span><span class="nf">decode</span><span class="p">(</span><span class="sh">'</span><span class="s">utf-8</span><span class="sh">'</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="sa">f</span><span class="sh">"</span><span class="s">data:image/jpeg;base64,</span><span class="si">{</span><span class="n">lqip</span><span class="si">}</span><span class="sh">"</span>  <span class="c1"># Cambiar a WEBP si se ha usado ese formato
+</span>
+<span class="n">lqip_data</span> <span class="o">=</span> <span class="nf">generate_lqip</span><span class="p">(</span><span class="sh">"</span><span class="s">ruta/a/tu/imagen.png</span><span class="sh">"</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">lqip_data</span><span class="p">)</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>Luego de la anterior configuración, reiniciar el servidor Jekyll y verificar que las etiquetas se hayan agregado al archivo en el bloque correspondiente <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> del HTML.</p>
+<h3 id="herramientas-en-línea"><span class="me-2">Herramientas en línea</span><a href="#herramientas-en-línea" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>Se se prefiere no usar la línea de comandos ni programar, hay varias herramientas en línea que pueden hacer la conversión. En ellas normalmente se sube la imágen y el sitio genera el <em>LQIP</em> en <em>Base64</em>.</p>
+
 
   </div>
 
@@ -676,7 +720,8 @@
         
           <a href="/categories/ssg/">SSG</a>,
           <a href="/categories/jekyll/">Jekyll</a>,
-          <a href="/categories/linux/">Linux</a>
+          <a href="/categories/lqip/">lqip</a>,
+          <a href="/categories/im%C3%A1genes/">Imágenes</a>
       </div>
     
 
@@ -961,43 +1006,43 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
 
 
 
@@ -1038,22 +1083,38 @@
 
 Fichero Gemfile
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16...</p>
+cat Gemfile
+# frozen_string_literal: t...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/jekyll-plugins-add/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1728540600"
+  data-df="ll"
+  
+>
+  Oct 10, 2024
+</time>
+
+              <h4 class="pt-0 my-2">Jekyll plugins/complementos</h4>
+              <div class="text-muted">
+                <p>Los complementos (plugins) de Jekyll permiten crear contenido personalizado y específico para el sitio. Hay muchos complementos disponibles e incluso se puede escribir los propios.
+
+En esta entrada...</p>
               </div>
             </div>
           </a>
@@ -1087,38 +1148,6 @@ Fichero Gemfile
           </a>
         </article>
       
-        <article class="col">
-          <a href="/posts/jekyll-change-import/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1723097400"
-  data-df="ll"
-  
->
-  Aug  8, 2024
-</time>
-
-              <h4 class="pt-0 my-2">Jekyll - deprecated @import</h4>
-              <div class="text-muted">
-                <p>En esta entrada se indica uno de los “cambios radicales” respecto a @import y/o funciones globales del propio preprocesador CSS Sass.
-
-Migración del theme Chirpy
-
-En este sitio generado por Jekyll,...</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
     </nav>
   </aside>
   <!-- #related-posts -->
@@ -1134,22 +1163,18 @@ En este sitio generado por Jekyll,...</p>
 
   
     <a
-      href="/posts/ssg-hugo-theme-toha/"
+      href="/posts/jekyll-theme-chirpy-agregando-gemas/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>Hugo - theme Toha</p>
+      <p>Jekyll | bundle | modificando Gemfile</p>
     </a>
   
 
   
-    <a
-      href="/posts/ssg-hugo-theme-universal/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>Hugo - theme Universal</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 
